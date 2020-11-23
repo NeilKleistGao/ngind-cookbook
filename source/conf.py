@@ -47,8 +47,8 @@ breathe_default_project = "NginD"
 # ones.
 extensions = [
     "recommonmark",
-    "breathe",
-    "exhale"
+    # "breathe",
+    # "exhale"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -80,19 +80,19 @@ source_parsers = {
     '.md': CommonMarkParser,
 }
 
-exhale_args = {
-    # These arguments are required
-    "containmentFolder":     "./api",
-    "rootFileName":          "library_root.rst",
-    "rootFileTitle":         "NginD API",
-    "doxygenStripFromPath":  "..",
-    # Suggested optional arguments
-    "createTreeView":        True,
-    # TIP: if using the sphinx-bootstrap-theme, you need
-    # "treeViewIsBootstrap": True,
-    "exhaleExecutesDoxygen": True,
-    "exhaleDoxygenStdin":    "INPUT = /home/neilkleistgao/cpp/NginD/ngind"
-}
+# exhale_args = {
+#     # These arguments are required
+#     "containmentFolder":     "./api",
+#     "rootFileName":          "library_root.rst",
+#     "rootFileTitle":         "NginD API",
+#     "doxygenStripFromPath":  "..",
+#     # Suggested optional arguments
+#     "createTreeView":        True,
+#     # TIP: if using the sphinx-bootstrap-theme, you need
+#     # "treeViewIsBootstrap": True,
+#     "exhaleExecutesDoxygen": True,
+#     "exhaleDoxygenStdin":    "INPUT = /home/neilkleistgao/cpp/NginD/ngind"
+# }
 
 # Tell sphinx what the primary language being documented is.
 primary_domain = 'cpp'

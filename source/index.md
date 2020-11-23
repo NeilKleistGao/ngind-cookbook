@@ -3,7 +3,7 @@
 This is a open-source indie pixel 2D game engine. You can build your own game in an easier way.
 
 ## Resources
-+ [API Document](api/library_root.html)
++ API Document
 + Tourist
 + Demo
 + [Search](search.html)
