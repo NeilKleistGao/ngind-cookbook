@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_e700f8bdfbdcbbd639aae6b8c6574d59" kind="dir">
+    <compoundname>/home/neilkleistgao/cpp/NginD/ngind/kernel/log</compoundname>
+    <innerfile refid="log__level_8h">log_level.h</innerfile>
+    <innerfile refid="logger_8cc">logger.cc</innerfile>
+    <innerfile refid="logger_8h">logger.h</innerfile>
+    <innerfile refid="logger__factory_8cc">logger_factory.cc</innerfile>
+    <innerfile refid="logger__factory_8h">logger_factory.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/"/>
+  </compounddef>
+</doxygen>

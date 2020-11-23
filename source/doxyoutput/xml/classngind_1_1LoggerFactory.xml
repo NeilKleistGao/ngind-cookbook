@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1LoggerFactory" kind="class" language="C++" prot="public">
+    <compoundname>ngind::LoggerFactory</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1LoggerFactory_1a1873fab2a63ba507f412fb1b7a64a8a9" prot="private" static="yes" mutable="no">
+        <type><ref refid="classngind_1_1LoggerFactory" kindref="compound">LoggerFactory</ref> *</type>
+        <definition>LoggerFactory * ngind::LoggerFactory::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="74" column="26" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1LoggerFactory_1a51b9bfbdfdea0b2c220ade675c000878" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classngind_1_1Logger" kindref="compound">Logger</ref> * &gt;</type>
+        <definition>std::map&lt;std::string, Logger*&gt; ngind::LoggerFactory::_loggers</definition>
+        <argsstring></argsstring>
+        <name>_loggers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="78" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classngind_1_1LoggerFactory_1a3d26399090175566568cb1a70ac1b2be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1LoggerFactory" kindref="compound">LoggerFactory</ref> *</type>
+        <definition>LoggerFactory * ngind::LoggerFactory::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="50" column="26" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1LoggerFactory_1a5760fd4b2c24dabb90ee2bbae670866a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::LoggerFactory::destroyInstance</definition>
+        <argsstring>()</argsstring>
+        <name>destroyInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="57" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="40" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1LoggerFactory_1a1ebc88e1bbb5cf7e4ce13c931b3bc347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Logger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * ngind::LoggerFactory::getLogger</definition>
+        <argsstring>(const std::string &amp;, const LogLevel &amp;)</argsstring>
+        <name>getLogger</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>const LogLevel &amp;</type>
+          <defname>level</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="63" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="47" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classngind_1_1LoggerFactory_1ac4c6885de2468f1f79948de94097595a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::LoggerFactory::LoggerFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>LoggerFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="66" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1LoggerFactory_1a91bc172acedfd5041a5a8aa6df7a0da4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::LoggerFactory::~LoggerFactory</definition>
+        <argsstring>()</argsstring>
+        <name>~LoggerFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="69" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="56" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="43" column="20" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" bodystart="43" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classngind_1_1LoggerFactory_1a1873fab2a63ba507f412fb1b7a64a8a9" prot="private" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>_instance</name></member>
+      <member refid="classngind_1_1LoggerFactory_1a51b9bfbdfdea0b2c220ade675c000878" prot="private" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>_loggers</name></member>
+      <member refid="classngind_1_1LoggerFactory_1a5760fd4b2c24dabb90ee2bbae670866a" prot="public" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>destroyInstance</name></member>
+      <member refid="classngind_1_1LoggerFactory_1a3d26399090175566568cb1a70ac1b2be" prot="public" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>getInstance</name></member>
+      <member refid="classngind_1_1LoggerFactory_1a1ebc88e1bbb5cf7e4ce13c931b3bc347" prot="public" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>getLogger</name></member>
+      <member refid="classngind_1_1LoggerFactory_1ac4c6885de2468f1f79948de94097595a" prot="private" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>LoggerFactory</name></member>
+      <member refid="classngind_1_1LoggerFactory_1a91bc172acedfd5041a5a8aa6df7a0da4" prot="private" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>~LoggerFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

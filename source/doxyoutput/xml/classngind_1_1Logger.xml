@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Logger" kind="class" language="C++" prot="public">
+    <compoundname>ngind::Logger</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1Logger_1aa3700f37a11fbc22ef62106b2419e80b" prot="public" static="yes" mutable="no">
+        <type>const static std::string &amp;</type>
+        <definition>const std::string &amp; ngind::Logger::STDOUT</definition>
+        <argsstring></argsstring>
+        <name>STDOUT</name>
+        <initializer>= OutputStream::STDOUT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="58" column="30" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a26a1c0e1658ea9c201da1fdf4f282b21" prot="public" static="yes" mutable="no">
+        <type>const static std::string &amp;</type>
+        <definition>const std::string &amp; ngind::Logger::STDERR</definition>
+        <argsstring></argsstring>
+        <name>STDERR</name>
+        <initializer>= OutputStream::STDERR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="58" column="37" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1Logger_1a7d60ad6c096456de2dceafa402ac47bf" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::STD_INFO_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>STD_INFO_FORMAT</name>
+        <initializer>= &quot;\033[34m[info]\033[0m %\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="110" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a2c912a8f768d369e048294c1f6cf96b8" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::STD_DEBUG_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>STD_DEBUG_FORMAT</name>
+        <initializer>= &quot;\033[35m[debug]\033[0m %\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="115" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a23663321128f72a48a3c4229f0ad9c9a" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::STD_WARNING_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>STD_WARNING_FORMAT</name>
+        <initializer>= &quot;\033[33m[warning] %\033[0m\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="120" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1ab9e0387d2bc9c79bf7d5168dd572212b" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::STD_ERROR_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>STD_ERROR_FORMAT</name>
+        <initializer>= &quot;\033[31m[error] %\033[0m\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="125" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1af139d7ebf87d518a61502f8ffb2edb02" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::INFO_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>INFO_FORMAT</name>
+        <initializer>= &quot;[info] %\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="130" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1aa17e9b58a49ed92bd64575358804ed55" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::DEBUG_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>DEBUG_FORMAT</name>
+        <initializer>= &quot;[debug] %\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="135" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1ae547fb4ecd44f43e16d800b306837908" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::WARNING_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>WARNING_FORMAT</name>
+        <initializer>= &quot;[warning] %\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="140" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a5379c3a8348a2768033014cc3dcc3262" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static char</type>
+        <definition>constexpr static char ngind::Logger::ERROR_FORMAT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ERROR_FORMAT</name>
+        <initializer>= &quot;[error] %\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="145" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1Logger_1ab67004aa9661fe465552b6e70e7f40da" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ngind::Logger::_info_format</definition>
+        <argsstring></argsstring>
+        <name>_info_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="149" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a71d223b26ca9300f5ecd2b094e3c1721" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ngind::Logger::_debug_format</definition>
+        <argsstring></argsstring>
+        <name>_debug_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="153" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a142634cde3da15bf34a4543040e8ab2b" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ngind::Logger::_warning_format</definition>
+        <argsstring></argsstring>
+        <name>_warning_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="157" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a9000ecad2f7223eac6e034ba9444e967" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ngind::Logger::_error_format</definition>
+        <argsstring></argsstring>
+        <name>_error_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="161" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a04fd409abea1e331d21071fbada0f6d8" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1OutputStream" kindref="compound">OutputStream</ref></type>
+        <definition>OutputStream ngind::Logger::_stream</definition>
+        <argsstring></argsstring>
+        <name>_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="165" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Logger_1a21ef7c92fe1fedef928e93bb8a8fad0a" prot="private" static="no" mutable="no">
+        <type>LogLevel</type>
+        <definition>LogLevel ngind::Logger::_level</definition>
+        <argsstring></argsstring>
+        <name>_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="169" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Logger_1a5ab2dd08fd7525be6ae91d127b6396aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Logger::Logger</definition>
+        <argsstring>(const std::string &amp;, const LogLevel &amp;)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>const LogLevel &amp;</type>
+          <defname>level</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string&amp;: the filename this logger uses </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LogLevel&amp;: the level of logger </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="50" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.cc" bodystart="35" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Logger_1a9a774c390d1c734f66c8405b5da59750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Logger::~Logger</definition>
+        <argsstring>()</argsstring>
+        <name>~Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="53" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.cc" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Logger_1a216c0ebf7e27021c658ca9bf03079713" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ngind::Logger::log</definition>
+        <argsstring>(const T &amp;msg, const LogLevel &amp;level=LogLevel::LOG_LEVEL_DEBUG)</argsstring>
+        <name>log</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>const LogLevel &amp;</type>
+          <declname>level</declname>
+          <defval>LogLevel::LOG_LEVEL_DEBUG</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="67" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="67" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Logger_1ae5397f99ae0ca60b585101ed5ce0a727" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Logger::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="101" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="101" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" line="45" column="13" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h" bodystart="45" bodyend="170"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Logger_1a71d223b26ca9300f5ecd2b094e3c1721" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>_debug_format</name></member>
+      <member refid="classngind_1_1Logger_1a9000ecad2f7223eac6e034ba9444e967" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>_error_format</name></member>
+      <member refid="classngind_1_1Logger_1ab67004aa9661fe465552b6e70e7f40da" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>_info_format</name></member>
+      <member refid="classngind_1_1Logger_1a21ef7c92fe1fedef928e93bb8a8fad0a" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>_level</name></member>
+      <member refid="classngind_1_1Logger_1a04fd409abea1e331d21071fbada0f6d8" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>_stream</name></member>
+      <member refid="classngind_1_1Logger_1a142634cde3da15bf34a4543040e8ab2b" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>_warning_format</name></member>
+      <member refid="classngind_1_1Logger_1ae5397f99ae0ca60b585101ed5ce0a727" prot="public" virt="non-virtual"><scope>ngind::Logger</scope><name>close</name></member>
+      <member refid="classngind_1_1Logger_1aa17e9b58a49ed92bd64575358804ed55" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>DEBUG_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1a5379c3a8348a2768033014cc3dcc3262" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>ERROR_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1af139d7ebf87d518a61502f8ffb2edb02" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>INFO_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1a216c0ebf7e27021c658ca9bf03079713" prot="public" virt="non-virtual"><scope>ngind::Logger</scope><name>log</name></member>
+      <member refid="classngind_1_1Logger_1a5ab2dd08fd7525be6ae91d127b6396aa" prot="public" virt="non-virtual"><scope>ngind::Logger</scope><name>Logger</name></member>
+      <member refid="classngind_1_1Logger_1a2c912a8f768d369e048294c1f6cf96b8" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>STD_DEBUG_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1ab9e0387d2bc9c79bf7d5168dd572212b" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>STD_ERROR_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1a7d60ad6c096456de2dceafa402ac47bf" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>STD_INFO_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1a23663321128f72a48a3c4229f0ad9c9a" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>STD_WARNING_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1a26a1c0e1658ea9c201da1fdf4f282b21" prot="public" virt="non-virtual"><scope>ngind::Logger</scope><name>STDERR</name></member>
+      <member refid="classngind_1_1Logger_1aa3700f37a11fbc22ef62106b2419e80b" prot="public" virt="non-virtual"><scope>ngind::Logger</scope><name>STDOUT</name></member>
+      <member refid="classngind_1_1Logger_1ae547fb4ecd44f43e16d800b306837908" prot="private" virt="non-virtual"><scope>ngind::Logger</scope><name>WARNING_FORMAT</name></member>
+      <member refid="classngind_1_1Logger_1a9a774c390d1c734f66c8405b5da59750" prot="public" virt="non-virtual"><scope>ngind::Logger</scope><name>~Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

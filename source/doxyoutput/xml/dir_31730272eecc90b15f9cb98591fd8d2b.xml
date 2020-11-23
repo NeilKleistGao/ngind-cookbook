@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_31730272eecc90b15f9cb98591fd8d2b" kind="dir">
+    <compoundname>/home/neilkleistgao/cpp/NginD/ngind</compoundname>
+    <innerdir refid="dir_6a54fc216b49816b03c526f0f28cb3bd">/home/neilkleistgao/cpp/NginD/ngind/kernel</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/"/>
+  </compounddef>
+</doxygen>

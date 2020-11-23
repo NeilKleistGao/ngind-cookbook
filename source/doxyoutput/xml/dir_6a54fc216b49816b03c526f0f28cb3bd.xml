@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_6a54fc216b49816b03c526f0f28cb3bd" kind="dir">
+    <compoundname>/home/neilkleistgao/cpp/NginD/ngind/kernel</compoundname>
+    <innerdir refid="dir_e3c769ddd3f1c2b461622a945443f403">/home/neilkleistgao/cpp/NginD/ngind/kernel/components</innerdir>
+    <innerdir refid="dir_4071e9337baa1b491bfb7940798db17c">/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine</innerdir>
+    <innerdir refid="dir_c4a158c334a01b6211d05a0a6cbad207">/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem</innerdir>
+    <innerdir refid="dir_034ea801a6b1ffbeb027f1470d3f1ec2">/home/neilkleistgao/cpp/NginD/ngind/kernel/input</innerdir>
+    <innerdir refid="dir_e700f8bdfbdcbbd639aae6b8c6574d59">/home/neilkleistgao/cpp/NginD/ngind/kernel/log</innerdir>
+    <innerdir refid="dir_0016ab9913ff18594d4faead43627124">/home/neilkleistgao/cpp/NginD/ngind/kernel/math</innerdir>
+    <innerdir refid="dir_2883d43a71d0081a61be5387b0a5b58a">/home/neilkleistgao/cpp/NginD/ngind/kernel/memory</innerdir>
+    <innerdir refid="dir_a4d65c822f7e402884df1f88ff2f6211">/home/neilkleistgao/cpp/NginD/ngind/kernel/objects</innerdir>
+    <innerdir refid="dir_bd3a471d1c108a004bf4bf9c37b0c7d0">/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms</innerdir>
+    <innerdir refid="dir_1406316e24b9464ed50739b293a67b0a">/home/neilkleistgao/cpp/NginD/ngind/kernel/render</innerdir>
+    <innerdir refid="dir_f606a6e5411a5f81d7a574449189a612">/home/neilkleistgao/cpp/NginD/ngind/kernel/resources</innerdir>
+    <innerdir refid="dir_a3470d0121a43bd77246a7a8190a4bab">/home/neilkleistgao/cpp/NginD/ngind/kernel/timer</innerdir>
+    <innerdir refid="dir_985b60ad6c497a4f59a2ab4069d83fa5">/home/neilkleistgao/cpp/NginD/ngind/kernel/utils</innerdir>
+    <innerfile refid="game_8cc">game.cc</innerfile>
+    <innerfile refid="game_8h">game.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/"/>
+  </compounddef>
+</doxygen>

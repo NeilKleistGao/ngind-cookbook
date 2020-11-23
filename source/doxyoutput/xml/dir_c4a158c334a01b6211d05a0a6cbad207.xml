@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c4a158c334a01b6211d05a0a6cbad207" kind="dir">
+    <compoundname>/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem</compoundname>
+    <innerfile refid="audio__stream_8cc">audio_stream.cc</innerfile>
+    <innerfile refid="audio__stream_8h">audio_stream.h</innerfile>
+    <innerfile refid="cipher__input__stream_8cc">cipher_input_stream.cc</innerfile>
+    <innerfile refid="cipher__input__stream_8h">cipher_input_stream.h</innerfile>
+    <innerfile refid="cipher__output__stream_8cc">cipher_output_stream.cc</innerfile>
+    <innerfile refid="cipher__output__stream_8h">cipher_output_stream.h</innerfile>
+    <innerfile refid="data__input__stream_8cc">data_input_stream.cc</innerfile>
+    <innerfile refid="data__input__stream_8h">data_input_stream.h</innerfile>
+    <innerfile refid="file_8cc">file.cc</innerfile>
+    <innerfile refid="file_8h">file.h</innerfile>
+    <innerfile refid="file__input__stream_8cc">file_input_stream.cc</innerfile>
+    <innerfile refid="file__input__stream_8h">file_input_stream.h</innerfile>
+    <innerfile refid="file__output__stream_8cc">file_output_stream.cc</innerfile>
+    <innerfile refid="file__output__stream_8h">file_output_stream.h</innerfile>
+    <innerfile refid="filter__input__stream_8cc">filter_input_stream.cc</innerfile>
+    <innerfile refid="filter__input__stream_8h">filter_input_stream.h</innerfile>
+    <innerfile refid="input__stream_8cc">input_stream.cc</innerfile>
+    <innerfile refid="input__stream_8h">input_stream.h</innerfile>
+    <innerfile refid="object__input__stream_8cc">object_input_stream.cc</innerfile>
+    <innerfile refid="object__input__stream_8h">object_input_stream.h</innerfile>
+    <innerfile refid="object__output__stream_8cc">object_output_stream.cc</innerfile>
+    <innerfile refid="object__output__stream_8h">object_output_stream.h</innerfile>
+    <innerfile refid="output__stream_8cc">output_stream.cc</innerfile>
+    <innerfile refid="output__stream_8h">output_stream.h</innerfile>
+    <innerfile refid="zip__input__stream_8cc">zip_input_stream.cc</innerfile>
+    <innerfile refid="zip__input__stream_8h">zip_input_stream.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/"/>
+  </compounddef>
+</doxygen>

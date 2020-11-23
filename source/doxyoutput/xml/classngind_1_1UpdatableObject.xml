@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1UpdatableObject" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ngind::UpdatableObject</compoundname>
+    <derivedcompoundref refid="classngind_1_1Component" prot="public" virt="non-virtual">ngind::Component</derivedcompoundref>
+    <derivedcompoundref refid="classngind_1_1Object" prot="public" virt="non-virtual">ngind::Object</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1UpdatableObject_1a2baf1295ef0d226a08039de37be14598" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ngind::UpdatableObject::update</definition>
+        <argsstring>(const float &amp;)=0</argsstring>
+        <name>update</name>
+        <reimplementedby refid="classngind_1_1EntityObject_1acc8c01bfdde5273cba09b25bfaa515ee">update</reimplementedby>
+        <reimplementedby refid="classngind_1_1RenderComponent_1ae044f09d01355facfb7a0115eb24698d">update</reimplementedby>
+        <reimplementedby refid="classngind_1_1Component_1a0ec5e469d8760804c3c709a8c276d817">update</reimplementedby>
+        <reimplementedby refid="classngind_1_1Object_1af1af67da788d255e623f87702fbf09ec">update</reimplementedby>
+        <reimplementedby refid="classngind_1_1SpriteRender_1ace57d9a597944530d64fff8061489c84">update</reimplementedby>
+        <reimplementedby refid="classngind_1_1World_1a89eda5b336527a0c24fd9c3ba94e6c9f">update</reimplementedby>
+        <param>
+          <type>const float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h" line="45" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ngind::UpdatableObject</label>
+        <link refid="classngind_1_1UpdatableObject"/>
+      </node>
+      <node id="5">
+        <label>ngind::Object</label>
+        <link refid="classngind_1_1Object"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ngind::Component</label>
+        <link refid="classngind_1_1Component"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ngind::RenderComponent</label>
+        <link refid="classngind_1_1RenderComponent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ngind::SpriteRender</label>
+        <link refid="classngind_1_1SpriteRender"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ngind::EntityObject</label>
+        <link refid="classngind_1_1EntityObject"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ngind::World</label>
+        <link refid="classngind_1_1World"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h" line="38" column="22" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h" bodystart="38" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classngind_1_1UpdatableObject_1a2baf1295ef0d226a08039de37be14598" prot="public" virt="pure-virtual"><scope>ngind::UpdatableObject</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
