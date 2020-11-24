@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="true__type__font_8cpp" kind="file" language="C++">
+    <compoundname>true_type_font.cpp</compoundname>
+    <includes refid="true__type__font_8h" local="yes">true_type_font.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>FT_FREETYPE_H</label>
+      </node>
+      <node id="1">
+        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/render/true_type_font.cpp</label>
+        <link refid="true__type__font_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>true_type_font.h</label>
+        <link refid="true__type__font_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>freetype2/ft2build.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengind">ngind</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="true__type__font_8h" kindref="compound">true_type_font.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengind" kindref="compound">ngind</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">TrueTypeFont::TrueTypeFont()<sp/>:<sp/>_font_face(nullptr)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="classngind_1_1TrueTypeFont_1af1f1f62f8c03785948189a41db4dac01" kindref="member">TrueTypeFont::~TrueTypeFont</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>error<sp/>=<sp/>FT_Done_Face(_font_face);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ngind</highlight></codeline>
+    </programlisting>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/true_type_font.cpp"/>
+  </compounddef>
+</doxygen>

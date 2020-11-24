@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_2883d43a71d0081a61be5387b0a5b58a" kind="dir">
+    <compoundname>/home/neilkleistgao/cpp/NginD/ngind/kernel/memory</compoundname>
+    <innerfile refid="auto__collection__object_8cc">auto_collection_object.cc</innerfile>
+    <innerfile refid="auto__collection__object_8h">auto_collection_object.h</innerfile>
+    <innerfile refid="memory__pool_8cc">memory_pool.cc</innerfile>
+    <innerfile refid="memory__pool_8h">memory_pool.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_a3470d0121a43bd77246a7a8190a4bab" kind="dir">
+    <compoundname>/home/neilkleistgao/cpp/NginD/ngind/kernel/timer</compoundname>
+    <innerfile refid="timer_8cc">timer.cc</innerfile>
+    <innerfile refid="timer_8h">timer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/"/>
+  </compounddef>
+</doxygen>

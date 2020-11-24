@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Coroutine" kind="class" language="C++" prot="public">
+    <compoundname>ngind::Coroutine</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Type</type>
+      </param>
+      <param>
+        <type>typename ...</type>
+        <declname>Param</declname>
+        <defname>Param</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classngind_1_1Coroutine_1a7582ac8076cde0c6cb6546d4f65a803d" prot="public" static="no">
+        <type>std::function&lt; Type(Param ...)&gt;</type>
+        <definition>The type for coroutine ngind::Coroutine&lt; Type, Param &gt;::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="52" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classngind_1_1Coroutine_1aaa60d2670ebc68eb2f45ab1cfbd90751" prot="public" static="no">
+        <type>std::function&lt; void(Type)&gt;</type>
+        <definition>using ngind::Coroutine&lt; Type, Param &gt;::callback =  std::function&lt;void(Type)&gt;</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="55" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1Coroutine_1a2bd62455fc39d640da498cd0bfde657f" prot="private" static="no" mutable="no">
+        <type>boost::fibers::fiber</type>
+        <definition>boost::fibers::fiber ngind::Coroutine&lt; Type, Param &gt;::_fiber</definition>
+        <argsstring></argsstring>
+        <name>_fiber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="107" column="26" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Coroutine_1ab8f4054d846bae812544a9baf61c1713" prot="private" static="no" mutable="no">
+        <type>task</type>
+        <definition>task ngind::Coroutine&lt; Type, Param &gt;::_process</definition>
+        <argsstring></argsstring>
+        <name>_process</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="110" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Coroutine_1a73eeab742855dc1735a98de79601f6e9" prot="private" static="no" mutable="no">
+        <type>callback</type>
+        <definition>callback ngind::Coroutine&lt; Type, Param &gt;::_callback</definition>
+        <argsstring></argsstring>
+        <name>_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="113" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Coroutine_1a68f2033d33effbce2697557dbbcd3348" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Coroutine&lt; Type, Param &gt;::Coroutine</definition>
+        <argsstring>(task task_func)</argsstring>
+        <name>Coroutine</name>
+        <param>
+          <type>task</type>
+          <declname>task_func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task_func: main task function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="59" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Coroutine_1aaebe56f4b61bc38c7db939bfb479cc84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Coroutine&lt; Type, Param &gt;::Coroutine</definition>
+        <argsstring>(task task_func, callback callback_func)</argsstring>
+        <name>Coroutine</name>
+        <param>
+          <type>task</type>
+          <declname>task_func</declname>
+        </param>
+        <param>
+          <type>callback</type>
+          <declname>callback_func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task_func: main task function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback_func: callback function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="65" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="65" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Coroutine_1a7b1be16561524bb3186ab632716dad36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Coroutine&lt; Type, Param &gt;::run</definition>
+        <argsstring>(Param ... param)</argsstring>
+        <name>run</name>
+        <param>
+          <type>Param ...</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="72" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="72" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Coroutine_1af8975af62ef94ea9c2cb6d15bc91303b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Coroutine&lt; Type, Param &gt;::wait</definition>
+        <argsstring>()</argsstring>
+        <name>wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="90" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Coroutine_1a67a7d98e4ae8b05062c881f5c807a5ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Coroutine&lt; Type, Param &gt;::isRunning</definition>
+        <argsstring>()</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="100" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="48" column="16" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="48" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Coroutine_1a73eeab742855dc1735a98de79601f6e9" prot="private" virt="non-virtual"><scope>ngind::Coroutine</scope><name>_callback</name></member>
+      <member refid="classngind_1_1Coroutine_1a2bd62455fc39d640da498cd0bfde657f" prot="private" virt="non-virtual"><scope>ngind::Coroutine</scope><name>_fiber</name></member>
+      <member refid="classngind_1_1Coroutine_1ab8f4054d846bae812544a9baf61c1713" prot="private" virt="non-virtual"><scope>ngind::Coroutine</scope><name>_process</name></member>
+      <member refid="classngind_1_1Coroutine_1aaa60d2670ebc68eb2f45ab1cfbd90751" prot="public" virt="non-virtual"><scope>ngind::Coroutine</scope><name>callback</name></member>
+      <member refid="classngind_1_1Coroutine_1a68f2033d33effbce2697557dbbcd3348" prot="public" virt="non-virtual"><scope>ngind::Coroutine</scope><name>Coroutine</name></member>
+      <member refid="classngind_1_1Coroutine_1aaebe56f4b61bc38c7db939bfb479cc84" prot="public" virt="non-virtual"><scope>ngind::Coroutine</scope><name>Coroutine</name></member>
+      <member refid="classngind_1_1Coroutine_1a67a7d98e4ae8b05062c881f5c807a5ae" prot="public" virt="non-virtual"><scope>ngind::Coroutine</scope><name>isRunning</name></member>
+      <member refid="classngind_1_1Coroutine_1a7b1be16561524bb3186ab632716dad36" prot="public" virt="non-virtual"><scope>ngind::Coroutine</scope><name>run</name></member>
+      <member refid="classngind_1_1Coroutine_1a7582ac8076cde0c6cb6546d4f65a803d" prot="public" virt="non-virtual"><scope>ngind::Coroutine</scope><name>task</name></member>
+      <member refid="classngind_1_1Coroutine_1af8975af62ef94ea9c2cb6d15bc91303b" prot="public" virt="non-virtual"><scope>ngind::Coroutine</scope><name>wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

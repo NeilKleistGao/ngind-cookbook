@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1FontFactory" kind="class" language="C++" prot="public">
+    <compoundname>ngind::FontFactory</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1FontFactory_1adbbe13cd254c677745d6253b5b824ac3" prot="private" static="yes" mutable="no">
+        <type><ref refid="classngind_1_1FontFactory" kindref="compound">FontFactory</ref> *</type>
+        <definition>FontFactory * ngind::FontFactory::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="75" column="24" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1FontFactory_1a4c059e947af1bf44c54a6163db817aad" prot="private" static="no" mutable="no">
+        <type>FT_Library</type>
+        <definition>FT_Library ngind::FontFactory::_library</definition>
+        <argsstring></argsstring>
+        <name>_library</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="79" column="16" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classngind_1_1FontFactory_1a3f54eb3bae2c9ec96033a3c7f3e17dcb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1FontFactory" kindref="compound">FontFactory</ref> *</type>
+        <definition>FontFactory * ngind::FontFactory::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="50" column="24" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.cc" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1FontFactory_1a3d1cd23c2b3d7ef8508d9319b0f6c9df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::FontFactory::destroyInstance</definition>
+        <argsstring>()</argsstring>
+        <name>destroyInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="57" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.cc" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1FontFactory_1ae254d22faddfa0fc0de02875abf7be39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FT_Face</type>
+        <definition>FT_Face ngind::FontFactory::loadFontFace</definition>
+        <argsstring>(const std::string &amp;, const long &amp;)</argsstring>
+        <name>loadFontFace</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>const long &amp;</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="64" column="13" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.cc" bodystart="54" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classngind_1_1FontFactory_1aab9b2679ce568cb44384283c36f22bb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::FontFactory::FontFactory</definition>
+        <argsstring>()</argsstring>
+        <name>FontFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="67" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.cc" bodystart="32" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1FontFactory_1a74982bb64c86e342833c0d6777929b8f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::FontFactory::~FontFactory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FontFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="70" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" line="43" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/font_factory.h" bodystart="43" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classngind_1_1FontFactory_1adbbe13cd254c677745d6253b5b824ac3" prot="private" virt="non-virtual"><scope>ngind::FontFactory</scope><name>_instance</name></member>
+      <member refid="classngind_1_1FontFactory_1a4c059e947af1bf44c54a6163db817aad" prot="private" virt="non-virtual"><scope>ngind::FontFactory</scope><name>_library</name></member>
+      <member refid="classngind_1_1FontFactory_1a3d1cd23c2b3d7ef8508d9319b0f6c9df" prot="public" virt="non-virtual"><scope>ngind::FontFactory</scope><name>destroyInstance</name></member>
+      <member refid="classngind_1_1FontFactory_1aab9b2679ce568cb44384283c36f22bb3" prot="private" virt="non-virtual"><scope>ngind::FontFactory</scope><name>FontFactory</name></member>
+      <member refid="classngind_1_1FontFactory_1a3f54eb3bae2c9ec96033a3c7f3e17dcb" prot="public" virt="non-virtual"><scope>ngind::FontFactory</scope><name>getInstance</name></member>
+      <member refid="classngind_1_1FontFactory_1ae254d22faddfa0fc0de02875abf7be39" prot="public" virt="non-virtual"><scope>ngind::FontFactory</scope><name>loadFontFace</name></member>
+      <member refid="classngind_1_1FontFactory_1a74982bb64c86e342833c0d6777929b8f" prot="private" virt="non-virtual"><scope>ngind::FontFactory</scope><name>~FontFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
