@@ -3,7 +3,7 @@
 Class Serializable
 ==================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_utils_serialization.h`
+- Defined in :ref:`file_ngind_kernel_utils_serialization.h`
 
 
 Inheritance Relationships

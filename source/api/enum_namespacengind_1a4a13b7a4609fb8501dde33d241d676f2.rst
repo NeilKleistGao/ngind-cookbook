@@ -3,7 +3,7 @@
 Enum LogLevel
 =============
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_log_log_level.h`
+- Defined in :ref:`file_ngind_kernel_log_log_level.h`
 
 
 Enum Documentation

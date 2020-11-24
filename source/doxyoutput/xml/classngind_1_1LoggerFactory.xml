@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="74" column="26" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" bodystart="74" bodyend="-1"/>
+        <location file="ngind/kernel/log/logger_factory.h" line="74" column="26" bodyfile="ngind/kernel/log/logger_factory.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="78" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" bodystart="78" bodyend="-1"/>
+        <location file="ngind/kernel/log/logger_factory.h" line="78" column="14" bodyfile="ngind/kernel/log/logger_factory.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="50" column="26" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="32" bodyend="38"/>
+        <location file="ngind/kernel/log/logger_factory.h" line="50" column="26" bodyfile="ngind/kernel/log/logger_factory.cc" bodystart="32" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1LoggerFactory_1a5760fd4b2c24dabb90ee2bbae670866a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="57" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="40" bodyend="45"/>
+        <location file="ngind/kernel/log/logger_factory.h" line="57" column="17" bodyfile="ngind/kernel/log/logger_factory.cc" bodystart="40" bodyend="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="63" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="47" bodyend="54"/>
+        <location file="ngind/kernel/log/logger_factory.h" line="63" column="12" bodyfile="ngind/kernel/log/logger_factory.cc" bodystart="47" bodyend="54"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="66" column="5"/>
+        <location file="ngind/kernel/log/logger_factory.h" line="66" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1LoggerFactory_1a91bc172acedfd5041a5a8aa6df7a0da4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -109,14 +109,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="69" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc" bodystart="56" bodyend="63"/>
+        <location file="ngind/kernel/log/logger_factory.h" line="69" column="5" bodyfile="ngind/kernel/log/logger_factory.cc" bodystart="56" bodyend="63"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" line="43" column="20" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h" bodystart="43" bodyend="79"/>
+    <location file="ngind/kernel/log/logger_factory.h" line="43" column="20" bodyfile="ngind/kernel/log/logger_factory.h" bodystart="43" bodyend="79"/>
     <listofallmembers>
       <member refid="classngind_1_1LoggerFactory_1a1873fab2a63ba507f412fb1b7a64a8a9" prot="private" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>_instance</name></member>
       <member refid="classngind_1_1LoggerFactory_1a51b9bfbdfdea0b2c220ade675c000878" prot="private" virt="non-virtual"><scope>ngind::LoggerFactory</scope><name>_loggers</name></member>

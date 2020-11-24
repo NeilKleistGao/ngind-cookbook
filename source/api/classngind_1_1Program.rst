@@ -3,7 +3,7 @@
 Class Program
 =============
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_render_program.h`
+- Defined in :ref:`file_ngind_kernel_render_program.h`
 
 
 Class Documentation

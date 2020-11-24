@@ -3,7 +3,7 @@
 Function ngind::operator*
 =========================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_math_vector.h`
+- Defined in :ref:`file_ngind_kernel_math_vector.h`
 
 
 Function Documentation

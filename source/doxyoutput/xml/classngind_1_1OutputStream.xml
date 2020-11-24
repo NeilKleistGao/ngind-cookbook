@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="49" column="30" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="49" bodyend="-1"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="49" column="30" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1OutputStream_1a64de2a7a04eb89a847a953499d3ec87d" prot="public" static="yes" mutable="no">
         <type>const static std::string</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="49" column="37" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="49" bodyend="-1"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="49" column="37" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="98" column="19" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="98" bodyend="-1"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="98" column="19" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1OutputStream_1aefce009099bd3f51df67d953e9211835" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="101" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="101" bodyend="-1"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="101" column="17" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="53" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.cc" bodystart="33" bodyend="37"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="53" column="14" bodyfile="ngind/kernel/filesystem/output_stream.cc" bodystart="33" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1OutputStream_1a1863426ebcce8c2f9f6cb5930fa50848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="55" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.cc" bodystart="39" bodyend="41"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="55" column="5" bodyfile="ngind/kernel/filesystem/output_stream.cc" bodystart="39" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1OutputStream_1a3e2c52b28dfdf828499bd6184ea683c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="57" column="5"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="57" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1OutputStream_1af081ce6a24f12ffb139e9d9b2be11cb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classngind_1_1OutputStream" kindref="compound">OutputStream</ref> &amp;</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="58" column="18"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="58" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1OutputStream_1aa8d0ed8b89dcee7a28dda86dc5553f6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="66" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="66" bodyend="76"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="66" column="10" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="66" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1OutputStream_1a4d0461ecf3acd98d3bc75557f938319f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="82" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="82" bodyend="86"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="82" column="17" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="82" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1OutputStream_1ad3f11d94d78f3bd0b941fc078f88343c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -179,14 +179,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="92" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="92" bodyend="94"/>
+        <location file="ngind/kernel/filesystem/output_stream.h" line="92" column="17" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="92" bodyend="94"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" line="44" column="19" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h" bodystart="44" bodyend="102"/>
+    <location file="ngind/kernel/filesystem/output_stream.h" line="44" column="19" bodyfile="ngind/kernel/filesystem/output_stream.h" bodystart="44" bodyend="102"/>
     <listofallmembers>
       <member refid="classngind_1_1OutputStream_1aefce009099bd3f51df67d953e9211835" prot="private" virt="non-virtual"><scope>ngind::OutputStream</scope><name>_filename</name></member>
       <member refid="classngind_1_1OutputStream_1abc0098ce42b3f029ad5999a41e43e628" prot="private" virt="non-virtual"><scope>ngind::OutputStream</scope><name>_stream</name></member>

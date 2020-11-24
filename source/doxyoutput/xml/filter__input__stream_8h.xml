@@ -20,6 +20,6 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_FILTER_INPUT_STREAM_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/filter_input_stream.h"/>
+    <location file="ngind/kernel/filesystem/filter_input_stream.h"/>
   </compounddef>
 </doxygen>

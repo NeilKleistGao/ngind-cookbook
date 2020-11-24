@@ -3,7 +3,7 @@
 Template Class Coroutine
 ========================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_coroutine_coroutine.h`
+- Defined in :ref:`file_ngind_kernel_coroutine_coroutine.h`
 
 
 Class Documentation

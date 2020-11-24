@@ -18,14 +18,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/linux.h" line="46" column="24" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/linux.h" bodystart="46" bodyend="48"/>
+        <location file="ngind/kernel/platforms/linux.h" line="46" column="24" bodyfile="ngind/kernel/platforms/linux.h" bodystart="46" bodyend="48"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/linux.h" line="39" column="20" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/linux.h" bodystart="39" bodyend="49"/>
+    <location file="ngind/kernel/platforms/linux.h" line="39" column="20" bodyfile="ngind/kernel/platforms/linux.h" bodystart="39" bodyend="49"/>
     <listofallmembers>
       <member refid="classngind_1_1PlatformUtils_1a8df21f727151e8feb91b84c034a9c282" prot="public" virt="non-virtual"><scope>ngind::PlatformUtils</scope><name>sleep</name></member>
     </listofallmembers>

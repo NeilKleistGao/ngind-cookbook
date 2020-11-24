@@ -4,11 +4,11 @@
     <compoundname>output_stream.h</compoundname>
     <includes local="no">iostream</includes>
     <includes local="no">fstream</includes>
-    <includedby refid="output__stream_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.cc</includedby>
-    <includedby refid="logger_8h" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h</includedby>
+    <includedby refid="output__stream_8cc" local="yes">ngind/kernel/filesystem/output_stream.cc</includedby>
+    <includedby refid="logger_8h" local="yes">ngind/kernel/log/logger.h</includedby>
     <incdepgraph>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h</label>
+        <label>ngind/kernel/filesystem/output_stream.h</label>
         <link refid="output__stream_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -23,39 +23,39 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="6">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.cc</label>
-        <link refid="logger_8cc"/>
+      <node id="4">
+        <label>ngind/kernel/game.cc</label>
+        <link refid="game_8cc"/>
       </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h</label>
+        <label>ngind/kernel/filesystem/output_stream.h</label>
         <link refid="output__stream_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="2">
+        <label>ngind/kernel/log/logger.h</label>
+        <link refid="logger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
       <node id="3">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.h</label>
+        <label>ngind/kernel/log/logger_factory.h</label>
         <link refid="logger__factory_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/game.cc</label>
-        <link refid="game_8cc"/>
+      <node id="6">
+        <label>ngind/kernel/log/logger.cc</label>
+        <link refid="logger_8cc"/>
       </node>
       <node id="5">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger_factory.cc</label>
+        <label>ngind/kernel/log/logger_factory.cc</label>
         <link refid="logger__factory_8cc"/>
-      </node>
-      <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.h</label>
-        <link refid="logger_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1OutputStream" prot="public">ngind::OutputStream</innerclass>
@@ -122,6 +122,6 @@
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_OUTPUT_STREAM_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/output_stream.h"/>
+    <location file="ngind/kernel/filesystem/output_stream.h"/>
   </compounddef>
 </doxygen>

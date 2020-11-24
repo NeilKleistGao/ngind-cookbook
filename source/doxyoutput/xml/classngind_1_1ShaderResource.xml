@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" line="34" column="30" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" bodystart="34" bodyend="-1"/>
+        <location file="ngind/kernel/resources/shader_resource.h" line="34" column="30" bodyfile="ngind/kernel/resources/shader_resource.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" line="45" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" bodystart="45" bodyend="-1"/>
+        <location file="ngind/kernel/resources/shader_resource.h" line="45" column="12" bodyfile="ngind/kernel/resources/shader_resource.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" line="36" column="5"/>
+        <location file="ngind/kernel/resources/shader_resource.h" line="36" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1ShaderResource_1a2ba7115e4f3389e946a6554f13c972b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" line="37" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.cc" bodystart="30" bodyend="35"/>
+        <location file="ngind/kernel/resources/shader_resource.h" line="37" column="5" bodyfile="ngind/kernel/resources/shader_resource.cc" bodystart="30" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1ShaderResource_1a202155ff1d16e0eacf4a39251edc0ca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" line="39" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.cc" bodystart="37" bodyend="51"/>
+        <location file="ngind/kernel/resources/shader_resource.h" line="39" column="18" bodyfile="ngind/kernel/resources/shader_resource.cc" bodystart="37" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1ShaderResource_1a3496d3f594c37a252f56078372616a54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>GLuint</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" line="41" column="19" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" bodystart="41" bodyend="43"/>
+        <location file="ngind/kernel/resources/shader_resource.h" line="41" column="19" bodyfile="ngind/kernel/resources/shader_resource.h" bodystart="41" bodyend="43"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -133,7 +133,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" line="32" column="37" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/shader_resource.h" bodystart="32" bodyend="46"/>
+    <location file="ngind/kernel/resources/shader_resource.h" line="32" column="37" bodyfile="ngind/kernel/resources/shader_resource.h" bodystart="32" bodyend="46"/>
     <listofallmembers>
       <member refid="classngind_1_1Resource_1a4ebf2b5d0254928b6284c7aeece6c794" prot="protected" virt="non-virtual"><scope>ngind::ShaderResource</scope><name>_path</name></member>
       <member refid="classngind_1_1ShaderResource_1a2f5f569b1a8421754a7495ce880c2c94" prot="private" virt="non-virtual"><scope>ngind::ShaderResource</scope><name>_shader</name></member>

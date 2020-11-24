@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="42" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="42" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="42" column="18" bodyfile="ngind/kernel/render/render_command.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structngind_1_1RenderCommand_1a0f9e221c9d98ed436424a032dd78d2f5" prot="public" static="no" mutable="no">
         <type>const RenderCommandType</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="43" column="29" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="43" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="43" column="29" bodyfile="ngind/kernel/render/render_command.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structngind_1_1RenderCommand_1ab5ef89e4a7b0081427e7ba90b1362a3a" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="44" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="44" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="44" column="10" bodyfile="ngind/kernel/render/render_command.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="46" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="46" bodyend="47"/>
+        <location file="ngind/kernel/render/render_command.h" line="46" column="14" bodyfile="ngind/kernel/render/render_command.h" bodystart="46" bodyend="47"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -82,7 +82,7 @@
         <link refid="structngind_1_1RenderCommand"/>
       </node>
     </inheritancegraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="40" column="20" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="40" bodyend="48"/>
+    <location file="ngind/kernel/render/render_command.h" line="40" column="20" bodyfile="ngind/kernel/render/render_command.h" bodystart="40" bodyend="48"/>
     <listofallmembers>
       <member refid="structngind_1_1RenderCommand_1ae41974791b1b3236496740f0b7c163fd" prot="public" virt="non-virtual"><scope>ngind::RenderCommand</scope><name>RenderCommand</name></member>
       <member refid="structngind_1_1RenderCommand_1ab5ef89e4a7b0081427e7ba90b1362a3a" prot="public" virt="non-virtual"><scope>ngind::RenderCommand</scope><name>transparent</name></member>

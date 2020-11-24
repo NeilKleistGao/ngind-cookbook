@@ -2,17 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="platforms_8h" kind="file" language="C++">
     <compoundname>platforms.h</compoundname>
-    <includedby refid="timer_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.cc</includedby>
+    <includedby refid="timer_8cc" local="yes">ngind/kernel/timer/timer.cc</includedby>
     <invincdepgraph>
+      <node id="2">
+        <label>ngind/kernel/timer/timer.cc</label>
+        <link refid="timer_8cc"/>
+      </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/platforms.h</label>
+        <label>ngind/kernel/platforms/platforms.h</label>
         <link refid="platforms_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.cc</label>
-        <link refid="timer_8cc"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/platforms.h" line="33" column="9" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/platforms.h" bodystart="33" bodyend="-1"/>
+        <location file="ngind/kernel/platforms/platforms.h" line="33" column="9" bodyfile="ngind/kernel/platforms/platforms.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,6 +52,6 @@
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_PLATFORMS_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/platforms.h"/>
+    <location file="ngind/kernel/platforms/platforms.h"/>
   </compounddef>
 </doxygen>

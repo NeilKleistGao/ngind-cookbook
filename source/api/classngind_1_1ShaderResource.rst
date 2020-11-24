@@ -3,7 +3,7 @@
 Class ShaderResource
 ====================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_resources_shader_resource.h`
+- Defined in :ref:`file_ngind_kernel_resources_shader_resource.h`
 
 
 Inheritance Relationships

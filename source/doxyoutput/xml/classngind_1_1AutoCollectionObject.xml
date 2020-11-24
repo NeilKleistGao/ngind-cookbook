@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" line="81" column="11" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" bodystart="81" bodyend="-1"/>
+        <location file="ngind/kernel/memory/auto_collection_object.h" line="81" column="11" bodyfile="ngind/kernel/memory/auto_collection_object.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" line="44" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.cc" bodystart="32" bodyend="34"/>
+        <location file="ngind/kernel/memory/auto_collection_object.h" line="44" column="5" bodyfile="ngind/kernel/memory/auto_collection_object.cc" bodystart="32" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1AutoCollectionObject_1ac23c11f6fcb9d659a21112bad802e025" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" line="47" column="13"/>
+        <location file="ngind/kernel/memory/auto_collection_object.h" line="47" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1AutoCollectionObject_1a278c82737b3e590fcf6be818c3177f0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" line="53" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" bodystart="53" bodyend="61"/>
+        <location file="ngind/kernel/memory/auto_collection_object.h" line="53" column="17" bodyfile="ngind/kernel/memory/auto_collection_object.h" bodystart="53" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1AutoCollectionObject_1a3eedb12cec5bae9b931939b620d6076a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" line="68" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.cc" bodystart="36" bodyend="42"/>
+        <location file="ngind/kernel/memory/auto_collection_object.h" line="68" column="10" bodyfile="ngind/kernel/memory/auto_collection_object.cc" bodystart="36" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1AutoCollectionObject_1acab3095eb1245afd8beee51979f6690a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>short</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" line="74" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" bodystart="74" bodyend="76"/>
+        <location file="ngind/kernel/memory/auto_collection_object.h" line="74" column="18" bodyfile="ngind/kernel/memory/auto_collection_object.h" bodystart="74" bodyend="76"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -157,7 +157,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" line="41" column="27" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.h" bodystart="41" bodyend="82"/>
+    <location file="ngind/kernel/memory/auto_collection_object.h" line="41" column="27" bodyfile="ngind/kernel/memory/auto_collection_object.h" bodystart="41" bodyend="82"/>
     <listofallmembers>
       <member refid="classngind_1_1AutoCollectionObject_1a1919fc1054c03ce9a44705b5e4353f05" prot="private" virt="non-virtual"><scope>ngind::AutoCollectionObject</scope><name>_sustain</name></member>
       <member refid="classngind_1_1AutoCollectionObject_1a278c82737b3e590fcf6be818c3177f0b" prot="public" virt="non-virtual"><scope>ngind::AutoCollectionObject</scope><name>addReference</name></member>

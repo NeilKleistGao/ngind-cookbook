@@ -3,7 +3,7 @@
 Class MemoryPool
 ================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_memory_memory_pool.h`
+- Defined in :ref:`file_ngind_kernel_memory_memory_pool.h`
 
 
 Class Documentation

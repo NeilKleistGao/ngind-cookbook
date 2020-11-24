@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/utils/serialization.h" line="40" column="18"/>
+        <location file="ngind/kernel/utils/serialization.h" line="40" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Serializable_1a902169a42303308e843f2f9298b925ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/utils/serialization.h" line="41" column="18"/>
+        <location file="ngind/kernel/utils/serialization.h" line="41" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -67,7 +67,7 @@
         <link refid="classngind_1_1Serializable"/>
       </node>
     </inheritancegraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/utils/serialization.h" line="38" column="19" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/utils/serialization.h" bodystart="38" bodyend="42"/>
+    <location file="ngind/kernel/utils/serialization.h" line="38" column="19" bodyfile="ngind/kernel/utils/serialization.h" bodystart="38" bodyend="42"/>
     <listofallmembers>
       <member refid="classngind_1_1Serializable_1a902169a42303308e843f2f9298b925ca" prot="public" virt="pure-virtual"><scope>ngind::Serializable</scope><name>deserialize</name></member>
       <member refid="classngind_1_1Serializable_1a4a4c285a7d55dc5e591415cbf1d6b85d" prot="public" virt="pure-virtual"><scope>ngind::Serializable</scope><name>serialize</name></member>

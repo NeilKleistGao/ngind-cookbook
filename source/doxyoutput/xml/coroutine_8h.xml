@@ -5,8 +5,8 @@
     <includes local="no">functional</includes>
     <includes local="no">boost/fiber/all.hpp</includes>
     <includes local="no">utility</includes>
-    <includedby refid="file_8h" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/file.h</includedby>
-    <includedby refid="resources__manager_8h" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.h</includedby>
+    <includedby refid="file_8h" local="yes">ngind/kernel/filesystem/file.h</includedby>
+    <includedby refid="resources__manager_8h" local="yes">ngind/kernel/resources/resources_manager.h</includedby>
     <incdepgraph>
       <node id="3">
         <label>boost/fiber/all.hpp</label>
@@ -14,11 +14,8 @@
       <node id="2">
         <label>functional</label>
       </node>
-      <node id="4">
-        <label>utility</label>
-      </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h</label>
+        <label>ngind/kernel/coroutine/coroutine.h</label>
         <link refid="coroutine_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -27,14 +24,43 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="4">
+        <label>utility</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="3">
+        <label>ngind/kernel/filesystem/file.cc</label>
+        <link refid="file_8cc"/>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/coroutine/coroutine.h</label>
+        <link refid="coroutine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ngind/kernel/game.cc</label>
+        <link refid="game_8cc"/>
+      </node>
+      <node id="7">
+        <label>ngind/kernel/render/program.cc</label>
+        <link refid="program_8cc"/>
+      </node>
       <node id="5">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.cc</label>
+        <label>ngind/kernel/components/sprite_render.cc</label>
         <link refid="sprite__render_8cc"/>
       </node>
+      <node id="2">
+        <label>ngind/kernel/filesystem/file.h</label>
+        <link refid="file_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
       <node id="4">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.h</label>
+        <label>ngind/kernel/resources/resources_manager.h</label>
         <link refid="resources__manager_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -42,32 +68,6 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-      </node>
-      <node id="6">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/game.cc</label>
-        <link refid="game_8cc"/>
-      </node>
-      <node id="7">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/render/program.cc</label>
-        <link refid="program_8cc"/>
-      </node>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h</label>
-        <link refid="coroutine_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/file.h</label>
-        <link refid="file_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/file.cc</label>
-        <link refid="file_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1Coroutine" prot="public">ngind::Coroutine</innerclass>
@@ -270,6 +270,6 @@
 <codeline lineno="262"><highlight class="normal"></highlight></codeline>
 <codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_COROUTINE_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h"/>
+    <location file="ngind/kernel/coroutine/coroutine.h"/>
   </compounddef>
 </doxygen>

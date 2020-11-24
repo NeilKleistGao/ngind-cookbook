@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="41" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" bodystart="41" bodyend="-1"/>
+        <location file="ngind/kernel/resources/config_resource.h" line="41" column="5" bodyfile="ngind/kernel/resources/config_resource.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="35" column="30" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" bodystart="35" bodyend="-1"/>
+        <location file="ngind/kernel/resources/config_resource.h" line="35" column="30" bodyfile="ngind/kernel/resources/config_resource.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="47" column="25" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" bodystart="47" bodyend="-1"/>
+        <location file="ngind/kernel/resources/config_resource.h" line="47" column="25" bodyfile="ngind/kernel/resources/config_resource.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="37" column="5"/>
+        <location file="ngind/kernel/resources/config_resource.h" line="37" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1ConfigResource_1afcc45138e416b4e7446cedf288a0df7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="38" column="5"/>
+        <location file="ngind/kernel/resources/config_resource.h" line="38" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1ConfigResource_1ab681dc5fff144cd4f30881cff4f380b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="39" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.cc" bodystart="31" bodyend="38"/>
+        <location file="ngind/kernel/resources/config_resource.h" line="39" column="18" bodyfile="ngind/kernel/resources/config_resource.cc" bodystart="31" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1ConfigResource_1af48e099d4807a825ebab244f65500b33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>rapidjson::Document &amp;</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="43" column="32" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" bodystart="43" bodyend="45"/>
+        <location file="ngind/kernel/resources/config_resource.h" line="43" column="32" bodyfile="ngind/kernel/resources/config_resource.h" bodystart="43" bodyend="45"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -148,7 +148,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" line="33" column="37" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/config_resource.h" bodystart="33" bodyend="48"/>
+    <location file="ngind/kernel/resources/config_resource.h" line="33" column="37" bodyfile="ngind/kernel/resources/config_resource.h" bodystart="33" bodyend="48"/>
     <listofallmembers>
       <member refid="classngind_1_1ConfigResource_1ad63c82447e9371e724732e06c4f8eafa" prot="private" virt="non-virtual"><scope>ngind::ConfigResource</scope><name>_doc</name></member>
       <member refid="classngind_1_1Resource_1a4ebf2b5d0254928b6284c7aeece6c794" prot="protected" virt="non-virtual"><scope>ngind::ConfigResource</scope><name>_path</name></member>

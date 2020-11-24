@@ -4,18 +4,24 @@
     <compoundname>logger.cc</compoundname>
     <includes refid="logger_8h" local="yes">logger.h</includes>
     <incdepgraph>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.cc</label>
-        <link refid="logger_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
       <node id="6">
         <label>filesystem/output_stream.h</label>
         <link refid="output__stream_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>logger.h</label>
+        <link refid="logger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="7">
@@ -31,16 +37,10 @@
       <node id="3">
         <label>iostream</label>
       </node>
-      <node id="2">
-        <label>logger.h</label>
-        <link refid="logger_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
+      <node id="1">
+        <label>ngind/kernel/log/logger.cc</label>
+        <link refid="logger_8cc"/>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -85,6 +85,6 @@
 <codeline lineno="53"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ngind</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/log/logger.cc"/>
+    <location file="ngind/kernel/log/logger.cc"/>
   </compounddef>
 </doxygen>

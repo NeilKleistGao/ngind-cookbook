@@ -14,7 +14,7 @@
         <label>cmath</label>
       </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/math/vector.cc</label>
+        <label>ngind/kernel/math/vector.cc</label>
         <link refid="vector_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -157,6 +157,6 @@
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
 <codeline lineno="147"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ngind</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/math/vector.cc"/>
+    <location file="ngind/kernel/math/vector.cc"/>
   </compounddef>
 </doxygen>

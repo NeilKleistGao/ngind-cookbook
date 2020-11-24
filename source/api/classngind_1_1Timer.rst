@@ -3,7 +3,7 @@
 Class Timer
 ===========
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_timer_timer.h`
+- Defined in :ref:`file_ngind_kernel_timer_timer.h`
 
 
 Class Documentation

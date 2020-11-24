@@ -3,7 +3,7 @@
 Class Random
 ============
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_math_random.h`
+- Defined in :ref:`file_ngind_kernel_math_random.h`
 
 
 Class Documentation

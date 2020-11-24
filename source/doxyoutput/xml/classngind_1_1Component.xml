@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="83" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" bodystart="83" bodyend="-1"/>
+        <location file="ngind/kernel/components/component.h" line="83" column="12" bodyfile="ngind/kernel/components/component.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="43" column="5"/>
+        <location file="ngind/kernel/components/component.h" line="43" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Component_1a766ae758f334daa52da9fb6ea2efb727" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="44" column="13"/>
+        <location file="ngind/kernel/components/component.h" line="44" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Component_1a6a011d57263ed67fa77aceec2bdbc5e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="45" column="5"/>
+        <location file="ngind/kernel/components/component.h" line="45" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Component_1a2af6f548779f2dceb1a7c582fdb117dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classngind_1_1Component" kindref="compound">Component</ref> &amp;</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="46" column="15"/>
+        <location file="ngind/kernel/components/component.h" line="46" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Component_1a0ec5e469d8760804c3c709a8c276d817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="51" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" bodystart="51" bodyend="51"/>
+        <location file="ngind/kernel/components/component.h" line="51" column="18" bodyfile="ngind/kernel/components/component.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Component_1a4541726a86b48f683eec06b1af91a346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="59" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" bodystart="59" bodyend="59"/>
+        <location file="ngind/kernel/components/component.h" line="59" column="18" bodyfile="ngind/kernel/components/component.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Component_1a6c057a7590518530cb7088e028db6bb0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classngind_1_1Object" kindref="compound">Object</ref> *</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="66" column="19" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" bodystart="66" bodyend="68"/>
+        <location file="ngind/kernel/components/component.h" line="66" column="19" bodyfile="ngind/kernel/components/component.h" bodystart="66" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Component_1a41f611243bea4351d595f7a1ad01606e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="75" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" bodystart="75" bodyend="77"/>
+        <location file="ngind/kernel/components/component.h" line="75" column="17" bodyfile="ngind/kernel/components/component.h" bodystart="75" bodyend="77"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -253,7 +253,7 @@
         <link refid="classngind_1_1Serializable"/>
       </node>
     </collaborationgraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" line="41" column="39" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h" bodystart="41" bodyend="84"/>
+    <location file="ngind/kernel/components/component.h" line="41" column="39" bodyfile="ngind/kernel/components/component.h" bodystart="41" bodyend="84"/>
     <listofallmembers>
       <member refid="classngind_1_1Component_1a41cd82584802102c352b27145b7869d8" prot="protected" virt="non-virtual"><scope>ngind::Component</scope><name>_parent</name></member>
       <member refid="classngind_1_1Component_1aed9fdd196988164b1edb1f3dc5502881" prot="public" virt="non-virtual"><scope>ngind::Component</scope><name>Component</name></member>

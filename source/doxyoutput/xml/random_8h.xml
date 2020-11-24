@@ -3,16 +3,16 @@
   <compounddef id="random_8h" kind="file" language="C++">
     <compoundname>random.h</compoundname>
     <includes local="no">random</includes>
-    <includedby refid="random_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/math/random.cc</includedby>
+    <includedby refid="random_8cc" local="yes">ngind/kernel/math/random.cc</includedby>
     <incdepgraph>
+      <node id="2">
+        <label>random</label>
+      </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/math/random.h</label>
+        <label>ngind/kernel/math/random.h</label>
         <link refid="random_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>random</label>
       </node>
     </incdepgraph>
     <innerclass refid="classngind_1_1Random" prot="public">ngind::Random</innerclass>
@@ -56,6 +56,6 @@
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_RANDOM_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/math/random.h"/>
+    <location file="ngind/kernel/math/random.h"/>
   </compounddef>
 </doxygen>

@@ -3,7 +3,7 @@
 Class Perspective
 =================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_render_perspective.h`
+- Defined in :ref:`file_ngind_kernel_render_perspective.h`
 
 
 Class Documentation

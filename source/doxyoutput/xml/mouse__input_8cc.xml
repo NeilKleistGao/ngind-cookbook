@@ -14,7 +14,7 @@
         <label>cmath</label>
       </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/input/mouse_input.cc</label>
+        <label>ngind/kernel/input/mouse_input.cc</label>
         <link refid="mouse__input_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -121,6 +121,6 @@
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/input/mouse_input.cc"/>
+    <location file="ngind/kernel/input/mouse_input.cc"/>
   </compounddef>
 </doxygen>

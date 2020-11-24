@@ -4,43 +4,22 @@
     <compoundname>program_resource.h</compoundname>
     <includes refid="resource_8h" local="yes">resource.h</includes>
     <includes refid="program_8h" local="yes">render/program.h</includes>
-    <includedby refid="sprite__render_8h" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.h</includedby>
-    <includedby refid="perspective_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/render/perspective.cc</includedby>
-    <includedby refid="program__resource_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/program_resource.cc</includedby>
+    <includedby refid="sprite__render_8h" local="yes">ngind/kernel/components/sprite_render.h</includedby>
+    <includedby refid="perspective_8cc" local="yes">ngind/kernel/render/perspective.cc</includedby>
+    <includedby refid="program__resource_8cc" local="yes">ngind/kernel/resources/program_resource.cc</includedby>
     <incdepgraph>
-      <node id="2">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>render/shader.h</label>
-        <link refid="shader_8h_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
       <node id="6">
         <label>string</label>
       </node>
       <node id="9">
         <label>GL/glew.h</label>
       </node>
+      <node id="11">
+        <label>glm/gtc/type_ptr.hpp</label>
+      </node>
       <node id="4">
         <label>memory/auto_collection_object.h</label>
         <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="7">
-        <label>resources/shader_resource.h</label>
-        <link refid="shader__resource_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
       </node>
       <node id="5">
         <label>render/program.h</label>
@@ -54,46 +33,67 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="11">
-        <label>glm/gtc/type_ptr.hpp</label>
+      <node id="8">
+        <label>render/shader.h</label>
+        <link refid="shader_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>resources/shader_resource.h</label>
+        <link refid="shader__resource_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/program_resource.h</label>
+        <label>ngind/kernel/resources/program_resource.h</label>
         <link refid="program__resource_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>iostream</label>
-      </node>
       <node id="10">
         <label>glm/glm.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
-      </node>
       <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.h</label>
+        <label>ngind/kernel/components/sprite_render.h</label>
         <link refid="sprite__render_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
+      <node id="4">
+        <label>ngind/kernel/render/perspective.cc</label>
+        <link refid="perspective_8cc"/>
+      </node>
+      <node id="3">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
+      </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/program_resource.h</label>
+        <label>ngind/kernel/resources/program_resource.h</label>
         <link refid="program__resource_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/render/perspective.cc</label>
-        <link refid="perspective_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1ProgramResource" prot="public">ngind::ProgramResource</innerclass>
@@ -133,6 +133,6 @@
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_PROGRAM_RESOURCE_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/program_resource.h"/>
+    <location file="ngind/kernel/resources/program_resource.h"/>
   </compounddef>
 </doxygen>

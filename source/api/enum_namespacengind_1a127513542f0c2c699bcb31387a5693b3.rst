@@ -3,7 +3,7 @@
 Enum MouseCode
 ==============
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_input_mouse_input.h`
+- Defined in :ref:`file_ngind_kernel_input_mouse_input.h`
 
 
 Enum Documentation

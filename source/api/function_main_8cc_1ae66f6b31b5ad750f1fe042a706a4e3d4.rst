@@ -3,7 +3,7 @@
 Function main
 =============
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_main.cc`
+- Defined in :ref:`file_ngind_main.cc`
 
 
 Function Documentation

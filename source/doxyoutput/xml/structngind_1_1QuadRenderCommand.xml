@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="51" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="51" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="51" column="12" bodyfile="ngind/kernel/render/render_command.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structngind_1_1QuadRenderCommand_1ad4b66c87e7508236dc384a0d8a3e7351" prot="public" static="no" mutable="no">
         <type><ref refid="classngind_1_1Quad" kindref="compound">Quad</ref> *</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="52" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="52" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="52" column="10" bodyfile="ngind/kernel/render/render_command.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structngind_1_1QuadRenderCommand_1a85332b35e76ced8f051ab20b4f03fde5" prot="public" static="no" mutable="no">
         <type><ref refid="classngind_1_1Program" kindref="compound">Program</ref> *</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="53" column="13" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="53" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="53" column="13" bodyfile="ngind/kernel/render/render_command.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="55" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="55" bodyend="56"/>
+        <location file="ngind/kernel/render/render_command.h" line="55" column="5" bodyfile="ngind/kernel/render/render_command.h" bodystart="55" bodyend="56"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -102,7 +102,7 @@
         <link refid="classngind_1_1Quad"/>
       </node>
     </collaborationgraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" line="50" column="45" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render_command.h" bodystart="50" bodyend="57"/>
+    <location file="ngind/kernel/render/render_command.h" line="50" column="45" bodyfile="ngind/kernel/render/render_command.h" bodystart="50" bodyend="57"/>
     <listofallmembers>
       <member refid="structngind_1_1QuadRenderCommand_1a85332b35e76ced8f051ab20b4f03fde5" prot="public" virt="non-virtual"><scope>ngind::QuadRenderCommand</scope><name>program</name></member>
       <member refid="structngind_1_1QuadRenderCommand_1ad4b66c87e7508236dc384a0d8a3e7351" prot="public" virt="non-virtual"><scope>ngind::QuadRenderCommand</scope><name>quad</name></member>

@@ -3,7 +3,7 @@
 Class AutoCollectionObject
 ==========================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_memory_auto_collection_object.h`
+- Defined in :ref:`file_ngind_kernel_memory_auto_collection_object.h`
 
 
 Inheritance Relationships

@@ -3,7 +3,7 @@
 Class Texture
 =============
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_render_texture.h`
+- Defined in :ref:`file_ngind_kernel_render_texture.h`
 
 
 Class Documentation

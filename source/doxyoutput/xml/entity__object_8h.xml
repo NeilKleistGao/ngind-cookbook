@@ -4,18 +4,10 @@
     <compoundname>entity_object.h</compoundname>
     <includes refid="object_8h" local="yes">object.h</includes>
     <includes refid="vector_8h" local="yes">math/vector.h</includes>
-    <includedby refid="sprite__render_8h" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.h</includedby>
-    <includedby refid="entity__object_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/entity_object.cc</includedby>
-    <includedby refid="world_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/world.cc</includedby>
+    <includedby refid="sprite__render_8h" local="yes">ngind/kernel/components/sprite_render.h</includedby>
+    <includedby refid="entity__object_8cc" local="yes">ngind/kernel/objects/entity_object.cc</includedby>
+    <includedby refid="world_8cc" local="yes">ngind/kernel/objects/world.cc</includedby>
     <incdepgraph>
-      <node id="13">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
       <node id="15">
         <label>math/vector.h</label>
         <link refid="vector_8h"/>
@@ -30,28 +22,6 @@
       </node>
       <node id="14">
         <label>include/rapidjson/document.h</label>
-      </node>
-      <node id="3">
-        <label>map</label>
-      </node>
-      <node id="12">
-        <label>resources/config_resource.h</label>
-        <link refid="config__resource_8h_source"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="9">
-        <label>updatable_object.h</label>
-        <link refid="updatable__object_8h"/>
-      </node>
-      <node id="6">
-        <label>sstream</label>
       </node>
       <node id="2">
         <label>object.h</label>
@@ -69,29 +39,12 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>iostream</label>
+      <node id="3">
+        <label>map</label>
       </node>
-      <node id="5">
-        <label>kernel/utils/serialization.h</label>
-        <link refid="serialization_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/entity_object.h</label>
-        <link refid="entity__object_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>type_traits</label>
+      <node id="9">
+        <label>updatable_object.h</label>
+        <link refid="updatable__object_8h"/>
       </node>
       <node id="10">
         <label>components/component.h</label>
@@ -103,24 +56,71 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
+      <node id="5">
+        <label>kernel/utils/serialization.h</label>
+        <link refid="serialization_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/objects/entity_object.h</label>
+        <link refid="entity__object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>resources/config_resource.h</label>
+        <link refid="config__resource_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>type_traits</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
+      <node id="4">
+        <label>ngind/kernel/objects/entity_object.cc</label>
+        <link refid="entity__object_8cc"/>
       </node>
       <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.h</label>
+        <label>ngind/kernel/components/sprite_render.h</label>
         <link refid="sprite__render_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/entity_object.cc</label>
-        <link refid="entity__object_8cc"/>
+      <node id="3">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
       </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/entity_object.h</label>
+        <label>ngind/kernel/objects/entity_object.h</label>
         <link refid="entity__object_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -249,6 +249,6 @@
 <codeline lineno="214"><highlight class="normal"></highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_ENTITY_OBJECT_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/entity_object.h"/>
+    <location file="ngind/kernel/objects/entity_object.h"/>
   </compounddef>
 </doxygen>

@@ -7,14 +7,17 @@
       <node id="5">
         <label>FT_FREETYPE_H</label>
       </node>
+      <node id="3">
+        <label>string</label>
+      </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/render/true_type_font.cpp</label>
+        <label>ngind/kernel/render/true_type_font.cpp</label>
         <link refid="true__type__font_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>string</label>
+      <node id="4">
+        <label>freetype2/ft2build.h</label>
       </node>
       <node id="2">
         <label>true_type_font.h</label>
@@ -25,9 +28,6 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>freetype2/ft2build.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacengind">ngind</innernamespace>
@@ -53,6 +53,6 @@
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ngind</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/true_type_font.cpp"/>
+    <location file="ngind/kernel/render/true_type_font.cpp"/>
   </compounddef>
 </doxygen>

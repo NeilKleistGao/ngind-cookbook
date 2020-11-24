@@ -4,39 +4,29 @@
     <compoundname>resources_manager.cc</compoundname>
     <includes refid="resources__manager_8h" local="yes">resources_manager.h</includes>
     <incdepgraph>
-      <node id="5">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
       <node id="9">
         <label>boost/fiber/all.hpp</label>
       </node>
       <node id="4">
         <label>functional</label>
       </node>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.cc</label>
-        <link refid="resources__manager_8cc"/>
-        <childnode refid="2" relation="include">
+      <node id="8">
+        <label>coroutine/coroutine.h</label>
+        <link refid="coroutine_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="3">
         <label>map</label>
       </node>
-      <node id="2">
-        <label>resources_manager.h</label>
-        <link refid="resources__manager_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
+      <node id="1">
+        <label>ngind/kernel/resources/resources_manager.cc</label>
+        <link refid="resources__manager_8cc"/>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="7">
@@ -49,14 +39,24 @@
       <node id="6">
         <label>iostream</label>
       </node>
-      <node id="8">
-        <label>coroutine/coroutine.h</label>
-        <link refid="coroutine_8h"/>
+      <node id="5">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>resources_manager.h</label>
+        <link refid="resources__manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -104,6 +104,6 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ngind</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.cc"/>
+    <location file="ngind/kernel/resources/resources_manager.cc"/>
   </compounddef>
 </doxygen>

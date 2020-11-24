@@ -301,11 +301,6 @@ Functions
 .. toctree::
    :maxdepth: 5
 
-   function_CMakeLists_8txt_1a0871c9a2de3ace0032b6a7f0a5c88d6f.rst
-
-.. toctree::
-   :maxdepth: 5
-
    function_main_8cc_1ae66f6b31b5ad750f1fe042a706a4e3d4.rst
 
 .. toctree::
@@ -317,11 +312,6 @@ Functions
    :maxdepth: 5
 
    function_namespacengind_1ae7da1debf28c9f0f49e2c0f500cee76b.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   function_CMakeLists_8txt_1ab12e2fbb66e1397a7d7a5ef8a1064d01.rst
 
 Variables
 *********

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="83" column="23" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" bodystart="83" bodyend="-1"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="83" column="23" bodyfile="ngind/kernel/memory/memory_pool.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="87" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" bodystart="87" bodyend="-1"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="87" column="14" bodyfile="ngind/kernel/memory/memory_pool.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="50" column="23" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc" bodystart="34" bodyend="40"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="50" column="23" bodyfile="ngind/kernel/memory/memory_pool.cc" bodystart="34" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1MemoryPool_1aff69074c6e59d1bf7026be7a7915964e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="57" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc" bodystart="42" bodyend="45"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="57" column="17" bodyfile="ngind/kernel/memory/memory_pool.cc" bodystart="42" bodyend="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="63" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc" bodystart="47" bodyend="54"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="63" column="10" bodyfile="ngind/kernel/memory/memory_pool.cc" bodystart="47" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1MemoryPool_1abf2ba5fbdb0938b30a54a0748e34efb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="69" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" bodystart="69" bodyend="71"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="69" column="17" bodyfile="ngind/kernel/memory/memory_pool.h" bodystart="69" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1MemoryPool_1a6ccf284192c39f589e1a31ee2adf03d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="77" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc" bodystart="64" bodyend="69"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="77" column="10" bodyfile="ngind/kernel/memory/memory_pool.cc" bodystart="64" bodyend="69"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="90" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc" bodystart="56" bodyend="58"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="90" column="5" bodyfile="ngind/kernel/memory/memory_pool.cc" bodystart="56" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1MemoryPool_1a042038eb91d096e8cd15b33935b1d22d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -135,14 +135,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="93" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc" bodystart="60" bodyend="62"/>
+        <location file="ngind/kernel/memory/memory_pool.h" line="93" column="5" bodyfile="ngind/kernel/memory/memory_pool.cc" bodystart="60" bodyend="62"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" line="43" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h" bodystart="43" bodyend="94"/>
+    <location file="ngind/kernel/memory/memory_pool.h" line="43" column="17" bodyfile="ngind/kernel/memory/memory_pool.h" bodystart="43" bodyend="94"/>
     <listofallmembers>
       <member refid="classngind_1_1MemoryPool_1af9efa2d1fe5e2b80d143f919f14aeaef" prot="private" virt="non-virtual"><scope>ngind::MemoryPool</scope><name>_instance</name></member>
       <member refid="classngind_1_1MemoryPool_1a30a194f9d961a6db6c481e709f1cfb73" prot="private" virt="non-virtual"><scope>ngind::MemoryPool</scope><name>_pool</name></member>

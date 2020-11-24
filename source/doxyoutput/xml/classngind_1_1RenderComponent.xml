@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="50" column="5"/>
+        <location file="ngind/kernel/components/render_component.h" line="50" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1RenderComponent_1a0d94d318fa133cc0c4b6138c66213126" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="52" column="13"/>
+        <location file="ngind/kernel/components/render_component.h" line="52" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1RenderComponent_1acbb38dfee1c8442c9b98ecb7c438dace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="53" column="5"/>
+        <location file="ngind/kernel/components/render_component.h" line="53" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1RenderComponent_1a7de6ba2a38374535b14d7066b2f12198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classngind_1_1RenderComponent" kindref="compound">RenderComponent</ref> &amp;</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="54" column="21"/>
+        <location file="ngind/kernel/components/render_component.h" line="54" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1RenderComponent_1ae044f09d01355facfb7a0115eb24698d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="59" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" bodystart="59" bodyend="59"/>
+        <location file="ngind/kernel/components/render_component.h" line="59" column="18" bodyfile="ngind/kernel/components/render_component.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1RenderComponent_1a392eb333198b27d4e25d05f96df88a3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="66" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" bodystart="66" bodyend="66"/>
+        <location file="ngind/kernel/components/render_component.h" line="66" column="18" bodyfile="ngind/kernel/components/render_component.h" bodystart="66" bodyend="66"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="73" column="18"/>
+        <location file="ngind/kernel/components/render_component.h" line="73" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -202,7 +202,7 @@
         <link refid="classngind_1_1Serializable"/>
       </node>
     </collaborationgraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" line="47" column="39" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h" bodystart="47" bodyend="74"/>
+    <location file="ngind/kernel/components/render_component.h" line="47" column="39" bodyfile="ngind/kernel/components/render_component.h" bodystart="47" bodyend="74"/>
     <listofallmembers>
       <member refid="classngind_1_1Component_1a41cd82584802102c352b27145b7869d8" prot="protected" virt="non-virtual"><scope>ngind::RenderComponent</scope><name>_parent</name></member>
       <member refid="classngind_1_1Component_1aed9fdd196988164b1edb1f3dc5502881" prot="public" virt="non-virtual"><scope>ngind::RenderComponent</scope><name>Component</name></member>

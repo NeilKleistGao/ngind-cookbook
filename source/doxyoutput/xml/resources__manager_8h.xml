@@ -6,50 +6,17 @@
     <includes local="no">functional</includes>
     <includes refid="resource_8h" local="yes">resource.h</includes>
     <includes refid="coroutine_8h" local="yes">coroutine/coroutine.h</includes>
-    <includedby refid="sprite__render_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.cc</includedby>
-    <includedby refid="game_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/game.cc</includedby>
-    <includedby refid="world_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/world.cc</includedby>
-    <includedby refid="program_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/render/program.cc</includedby>
-    <includedby refid="resources__manager_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.cc</includedby>
+    <includedby refid="sprite__render_8cc" local="yes">ngind/kernel/components/sprite_render.cc</includedby>
+    <includedby refid="game_8cc" local="yes">ngind/kernel/game.cc</includedby>
+    <includedby refid="world_8cc" local="yes">ngind/kernel/objects/world.cc</includedby>
+    <includedby refid="program_8cc" local="yes">ngind/kernel/render/program.cc</includedby>
+    <includedby refid="resources__manager_8cc" local="yes">ngind/kernel/resources/resources_manager.cc</includedby>
     <incdepgraph>
-      <node id="4">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
       <node id="8">
         <label>boost/fiber/all.hpp</label>
       </node>
       <node id="3">
         <label>functional</label>
-      </node>
-      <node id="2">
-        <label>map</label>
-      </node>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.h</label>
-        <link refid="resources__manager_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="9">
-        <label>utility</label>
-      </node>
-      <node id="5">
-        <label>iostream</label>
       </node>
       <node id="7">
         <label>coroutine/coroutine.h</label>
@@ -61,14 +28,29 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
+      <node id="9">
+        <label>utility</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.h</label>
+        <label>ngind/kernel/resources/resources_manager.h</label>
         <link refid="resources__manager_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -76,14 +58,32 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="3">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/game.cc</label>
+        <label>ngind/kernel/game.cc</label>
         <link refid="game_8cc"/>
       </node>
       <node id="4">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/render/program.cc</label>
+        <label>ngind/kernel/render/program.cc</label>
         <link refid="program_8cc"/>
+      </node>
+      <node id="2">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/resources/resources_manager.h</label>
+        <link refid="resources__manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1ResourcesManager" prot="public">ngind::ResourcesManager</innerclass>
@@ -155,6 +155,6 @@
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_RESOURCES_MANAGER_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/resources_manager.h"/>
+    <location file="ngind/kernel/resources/resources_manager.h"/>
   </compounddef>
 </doxygen>

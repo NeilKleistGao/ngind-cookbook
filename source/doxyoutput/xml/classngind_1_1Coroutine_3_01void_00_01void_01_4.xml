@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="223" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="223" bodyend="-1"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="223" column="5" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classngind_1_1Coroutine_3_01void_00_01void_01_4_1a0b52edeaef96a8bb8d229741998b0b2b" prot="public" static="no">
         <type>std::function&lt; void(void)&gt;</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="224" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="224" bodyend="-1"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="224" column="5" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="257" column="26" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="257" bodyend="-1"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="257" column="26" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Coroutine_3_01void_00_01void_01_4_1a956c8036c61aa470ae8d6876dd235b85" prot="private" static="no" mutable="no">
         <type>task</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="258" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="258" bodyend="-1"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="258" column="10" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Coroutine_3_01void_00_01void_01_4_1ab4e113560ecd6aee69e9e93cda4d3e79" prot="private" static="no" mutable="no">
         <type>callback</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="259" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="259" bodyend="-1"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="259" column="14" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="259" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="226" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="226" bodyend="227"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="226" column="14" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="226" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Coroutine_3_01void_00_01void_01_4_1ae8c3f399ca97b8bf7f209a3877a9f90f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="229" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="229" bodyend="230"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="229" column="5" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="229" bodyend="230"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Coroutine_3_01void_00_01void_01_4_1a1c7dd19fb0f2d99ffc5125bb3fde7bfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="232" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="232" bodyend="245"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="232" column="10" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="232" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Coroutine_3_01void_00_01void_01_4_1a4f86a73bb1ea9e95c3877726d8b0ba63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="247" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="247" bodyend="251"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="247" column="10" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="247" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Coroutine_3_01void_00_01void_01_4_1ad435d6e2b6135950ee31618af9d18c6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -149,14 +149,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="253" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="253" bodyend="255"/>
+        <location file="ngind/kernel/coroutine/coroutine.h" line="253" column="17" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="253" bodyend="255"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" line="221" column="1" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/coroutine/coroutine.h" bodystart="220" bodyend="260"/>
+    <location file="ngind/kernel/coroutine/coroutine.h" line="221" column="1" bodyfile="ngind/kernel/coroutine/coroutine.h" bodystart="220" bodyend="260"/>
     <listofallmembers>
       <member refid="classngind_1_1Coroutine_3_01void_00_01void_01_4_1ab4e113560ecd6aee69e9e93cda4d3e79" prot="private" virt="non-virtual"><scope>ngind::Coroutine&lt; void, void &gt;</scope><name>_callback</name></member>
       <member refid="classngind_1_1Coroutine_3_01void_00_01void_01_4_1ad05819db176e8290a90a0c9f28563a39" prot="private" virt="non-virtual"><scope>ngind::Coroutine&lt; void, void &gt;</scope><name>_fiber</name></member>

@@ -99,7 +99,7 @@ if not on_rtd:
         # TIP: if using the sphinx-bootstrap-theme, you need
         # "treeViewIsBootstrap": True,
         "exhaleExecutesDoxygen": True,
-        "exhaleDoxygenStdin":    "INPUT = /home/neilkleistgao/cpp/NginD/ngind"
+        "exhaleDoxygenStdin":    "INPUT = ../ngind"
     }
 
 # Tell sphinx what the primary language being documented is.

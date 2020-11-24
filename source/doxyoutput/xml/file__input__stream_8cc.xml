@@ -16,6 +16,6 @@
 <codeline lineno="1"></codeline>
 <codeline lineno="21"></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/filesystem/file_input_stream.cc"/>
+    <location file="ngind/kernel/filesystem/file_input_stream.cc"/>
   </compounddef>
 </doxygen>

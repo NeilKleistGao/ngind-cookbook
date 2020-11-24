@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="147" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="147" bodyend="-1"/>
+        <location file="ngind/kernel/objects/object.h" line="147" column="14" bodyfile="ngind/kernel/objects/object.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Object_1abea60fb415d3f8e90cd9a00718277b45" prot="protected" static="no" mutable="no">
         <type>std::map&lt; std::string, <ref refid="classngind_1_1Component" kindref="compound">Component</ref> * &gt;</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="151" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="151" bodyend="-1"/>
+        <location file="ngind/kernel/objects/object.h" line="151" column="14" bodyfile="ngind/kernel/objects/object.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Object_1a3c0d537903fac0169f5dda61375c7140" prot="protected" static="no" mutable="no">
         <type><ref refid="classngind_1_1Object" kindref="compound">Object</ref> *</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="155" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="155" bodyend="-1"/>
+        <location file="ngind/kernel/objects/object.h" line="155" column="12" bodyfile="ngind/kernel/objects/object.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="51" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="31" bodyend="34"/>
+        <location file="ngind/kernel/objects/object.h" line="51" column="5" bodyfile="ngind/kernel/objects/object.cc" bodystart="31" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1afc7cc04b450206872a07e0e9223232a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="54" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="36" bodyend="53"/>
+        <location file="ngind/kernel/objects/object.h" line="54" column="5" bodyfile="ngind/kernel/objects/object.cc" bodystart="36" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1a29477ebe004bfa11fe329cb0fd1de2ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="57" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="55" bodyend="56"/>
+        <location file="ngind/kernel/objects/object.h" line="57" column="10" bodyfile="ngind/kernel/objects/object.cc" bodystart="55" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1a011e3c753ece454a2321f510e895ef60" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="60" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="58" bodyend="59"/>
+        <location file="ngind/kernel/objects/object.h" line="60" column="10" bodyfile="ngind/kernel/objects/object.cc" bodystart="58" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1ac44b331af2e8d7ec9c9e71a6829db99f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="67" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="61" bodyend="68"/>
+        <location file="ngind/kernel/objects/object.h" line="67" column="10" bodyfile="ngind/kernel/objects/object.cc" bodystart="61" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1a39fc8041dd7dda56d2858b587e326dcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="74" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="70" bodyend="86"/>
+        <location file="ngind/kernel/objects/object.h" line="74" column="10" bodyfile="ngind/kernel/objects/object.cc" bodystart="70" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1ad2e75f229c37471a7b3f78b25e6afdf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classngind_1_1Object" kindref="compound">Object</ref> *</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="80" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="88" bodyend="96"/>
+        <location file="ngind/kernel/objects/object.h" line="80" column="12" bodyfile="ngind/kernel/objects/object.cc" bodystart="88" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1a89baa583c8a1f6986c63fac74baf1e96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="86" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="86" bodyend="88"/>
+        <location file="ngind/kernel/objects/object.h" line="86" column="17" bodyfile="ngind/kernel/objects/object.h" bodystart="86" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1ad94ffebe20a8f62f211a9d563e1bccc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classngind_1_1Object" kindref="compound">Object</ref> *</type>
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="94" column="19" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="94" bodyend="96"/>
+        <location file="ngind/kernel/objects/object.h" line="94" column="19" bodyfile="ngind/kernel/objects/object.h" bodystart="94" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1af1af67da788d255e623f87702fbf09ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="99" column="18" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc" bodystart="98" bodyend="106"/>
+        <location file="ngind/kernel/objects/object.h" line="99" column="18" bodyfile="ngind/kernel/objects/object.cc" bodystart="98" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1ace459fc5526d53c07faaf82462cd7239" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="106" column="25" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="106" bodyend="111"/>
+        <location file="ngind/kernel/objects/object.h" line="106" column="25" bodyfile="ngind/kernel/objects/object.h" bodystart="106" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1a95bf1c30b935d4ecda64fd62d6ec4d5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="119" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="119" bodyend="125"/>
+        <location file="ngind/kernel/objects/object.h" line="119" column="10" bodyfile="ngind/kernel/objects/object.h" bodystart="119" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Object_1ad75393a26f6ca91e0e746e936143b5c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -301,7 +301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="133" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="133" bodyend="142"/>
+        <location file="ngind/kernel/objects/object.h" line="133" column="10" bodyfile="ngind/kernel/objects/object.h" bodystart="133" bodyend="142"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -371,7 +371,7 @@
         <link refid="classngind_1_1Serializable"/>
       </node>
     </collaborationgraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" line="48" column="86" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h" bodystart="48" bodyend="156"/>
+    <location file="ngind/kernel/objects/object.h" line="48" column="86" bodyfile="ngind/kernel/objects/object.h" bodystart="48" bodyend="156"/>
     <listofallmembers>
       <member refid="classngind_1_1Object_1a9b61093110a6a5e3a591299a88baadff" prot="protected" virt="non-virtual"><scope>ngind::Object</scope><name>_children</name></member>
       <member refid="classngind_1_1Object_1abea60fb415d3f8e90cd9a00718277b45" prot="protected" virt="non-virtual"><scope>ngind::Object</scope><name>_components</name></member>

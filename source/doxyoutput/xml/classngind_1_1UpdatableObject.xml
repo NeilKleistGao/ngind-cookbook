@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h" line="45" column="18"/>
+        <location file="ngind/kernel/objects/updatable_object.h" line="45" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -74,7 +74,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h" line="38" column="22" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h" bodystart="38" bodyend="46"/>
+    <location file="ngind/kernel/objects/updatable_object.h" line="38" column="22" bodyfile="ngind/kernel/objects/updatable_object.h" bodystart="38" bodyend="46"/>
     <listofallmembers>
       <member refid="classngind_1_1UpdatableObject_1a2baf1295ef0d226a08039de37be14598" prot="public" virt="pure-virtual"><scope>ngind::UpdatableObject</scope><name>update</name></member>
     </listofallmembers>

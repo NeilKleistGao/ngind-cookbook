@@ -6,12 +6,155 @@
     <includes refid="render_8h" local="yes">render.h</includes>
     <includes refid="perspective_8h" local="yes">perspective.h</includes>
     <incdepgraph>
+      <node id="1">
+        <label>ngind/kernel/render/render.cc</label>
+        <link refid="render_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>math/vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>cmath</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="4">
+        <label>render_queue.h</label>
+        <link refid="render__queue_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>perspective.h</label>
+        <link refid="perspective_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>render_command.h</label>
+        <link refid="render__command_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>quad.h</label>
+        <link refid="quad_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cstdio</label>
+      </node>
+      <node id="17">
+        <label>glm/gtc/type_ptr.hpp</label>
+      </node>
+      <node id="14">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
+      <node id="23">
+        <label>vector</label>
+      </node>
+      <node id="26">
+        <label>png_image.h</label>
+        <link refid="png__image_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>program.h</label>
+        <link refid="program_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>utils/converter.h</label>
+        <link refid="converter_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>render/shader.h</label>
+        <link refid="shader_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="29">
+        <label>include/glm/glm.hpp</label>
+      </node>
       <node id="12">
         <label>resource.h</label>
         <link refid="resource_8h_source"/>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>rgba.h</label>
+        <link refid="rgba_8h_source"/>
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -26,69 +169,6 @@
         <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="18">
-        <label>math/vector.h</label>
-        <link refid="vector_8h"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>render/shader.h</label>
-        <link refid="shader_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="28">
-        <label>perspective.h</label>
-        <link refid="perspective_8h"/>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>cmath</label>
-      </node>
-      <node id="10">
-        <label>string</label>
-      </node>
-      <node id="2">
-        <label>GL/glew.h</label>
-      </node>
-      <node id="20">
-        <label>rgba.h</label>
-        <link refid="rgba_8h_source"/>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>quad.h</label>
-        <link refid="quad_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="5">
-        <label>render_command.h</label>
-        <link refid="render__command_8h_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-      </node>
       <node id="11">
         <label>resources/shader_resource.h</label>
         <link refid="shader__resource_8h_source"/>
@@ -96,86 +176,6 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-      </node>
-      <node id="9">
-        <label>program.h</label>
-        <link refid="program_8h"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>cstdio</label>
-      </node>
-      <node id="17">
-        <label>glm/gtc/type_ptr.hpp</label>
-      </node>
-      <node id="24">
-        <label>window.h</label>
-        <link refid="window_8h"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="23">
-        <label>vector</label>
-      </node>
-      <node id="21">
-        <label>utils/converter.h</label>
-        <link refid="converter_8h"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>render_queue.h</label>
-        <link refid="render__queue_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>sstream</label>
-      </node>
-      <node id="26">
-        <label>png_image.h</label>
-        <link refid="png__image_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render.cc</label>
-        <link refid="render_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>iostream</label>
-      </node>
-      <node id="29">
-        <label>include/glm/glm.hpp</label>
       </node>
       <node id="27">
         <label>glfw3.h</label>
@@ -293,6 +293,6 @@
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ngind</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/render/render.cc"/>
+    <location file="ngind/kernel/render/render.cc"/>
   </compounddef>
 </doxygen>

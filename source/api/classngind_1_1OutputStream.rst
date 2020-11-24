@@ -3,7 +3,7 @@
 Class OutputStream
 ==================
 
-- Defined in :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_filesystem_output_stream.h`
+- Defined in :ref:`file_ngind_kernel_filesystem_output_stream.h`
 
 
 Class Documentation

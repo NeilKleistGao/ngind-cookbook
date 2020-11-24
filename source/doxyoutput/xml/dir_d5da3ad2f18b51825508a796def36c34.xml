@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d5da3ad2f18b51825508a796def36c34" kind="dir">
+    <compoundname>ngind/kernel</compoundname>
+    <innerdir refid="dir_2b82e90be7846ef67fd53bd7dfb60c2b">ngind/kernel/components</innerdir>
+    <innerdir refid="dir_44bd1e719e165836fcde03ab71680905">ngind/kernel/coroutine</innerdir>
+    <innerdir refid="dir_a6b2b93db10a9fd2dd4aac11698e1786">ngind/kernel/filesystem</innerdir>
+    <innerdir refid="dir_fb6bfcc18a2edc98cc6a3843294b1af2">ngind/kernel/input</innerdir>
+    <innerdir refid="dir_f0069a7d941b1c54b538a982721c2523">ngind/kernel/log</innerdir>
+    <innerdir refid="dir_2ff48e37badb317871335d1e3941956e">ngind/kernel/math</innerdir>
+    <innerdir refid="dir_2959f58fa4f4e6d97aaa1937d599c528">ngind/kernel/memory</innerdir>
+    <innerdir refid="dir_b060bb5ef3e32852f79cf0ac0c6fe4eb">ngind/kernel/objects</innerdir>
+    <innerdir refid="dir_79eb812b9d6467252e2c21b0dadbd275">ngind/kernel/platforms</innerdir>
+    <innerdir refid="dir_ea626fb24f569e05d25761021b15c91e">ngind/kernel/render</innerdir>
+    <innerdir refid="dir_1c8a777549058f3d761fb8437019b66a">ngind/kernel/resources</innerdir>
+    <innerdir refid="dir_607c04853f8ff040904672a0802ec2ba">ngind/kernel/timer</innerdir>
+    <innerdir refid="dir_1baf29b5490d0c3016c7d366d3dc21b9">ngind/kernel/utils</innerdir>
+    <innerfile refid="game_8cc">game.cc</innerfile>
+    <innerfile refid="game_8h">game.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/"/>
+  </compounddef>
+</doxygen>

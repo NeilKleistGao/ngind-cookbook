@@ -66,7 +66,7 @@ This file includes the implementations of vector class.
 
 This file define the random number generator class by myself. Use this rather than srand/rand functions.
 
-This file defines the logger factory. You should include this file rather than :ref:`file__home_neilkleistgao_cpp_NginD_ngind_kernel_log_logger.h`.
+This file defines the logger factory. You should include this file rather than :ref:`file_ngind_kernel_log_logger.h`.
 
 This file includes the implementations of logger factory.
 

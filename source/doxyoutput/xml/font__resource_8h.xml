@@ -4,10 +4,28 @@
     <compoundname>font_resource.h</compoundname>
     <includes refid="resource_8h" local="yes">resource.h</includes>
     <includes refid="true__type__font_8h" local="yes">render/true_type_font.h</includes>
-    <includedby refid="font__resource_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/font_resource.cc</includedby>
+    <includedby refid="font__resource_8cc" local="yes">ngind/kernel/resources/font_resource.cc</includedby>
     <incdepgraph>
       <node id="8">
         <label>FT_FREETYPE_H</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/resources/font_resource.h</label>
+        <link refid="font__resource_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
       </node>
       <node id="2">
         <label>resource.h</label>
@@ -17,8 +35,8 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="6">
-        <label>string</label>
+      <node id="7">
+        <label>freetype2/ft2build.h</label>
       </node>
       <node id="5">
         <label>render/true_type_font.h</label>
@@ -29,24 +47,6 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/font_resource.h</label>
-        <link refid="font__resource_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>iostream</label>
-      </node>
-      <node id="7">
-        <label>freetype2/ft2build.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classngind_1_1FontResource" prot="public">ngind::FontResource</innerclass>
@@ -84,6 +84,6 @@
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_FONT_RESOURCE_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/resources/font_resource.h"/>
+    <location file="ngind/kernel/resources/font_resource.h"/>
   </compounddef>
 </doxygen>

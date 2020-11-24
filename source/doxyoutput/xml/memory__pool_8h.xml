@@ -5,11 +5,11 @@
     <includes local="no">set</includes>
     <includes local="no">memory</includes>
     <includes refid="auto__collection__object_8h" local="yes">auto_collection_object.h</includes>
-    <includedby refid="auto__collection__object_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/auto_collection_object.cc</includedby>
-    <includedby refid="memory__pool_8cc" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc</includedby>
+    <includedby refid="auto__collection__object_8cc" local="yes">ngind/kernel/memory/auto_collection_object.cc</includedby>
+    <includedby refid="memory__pool_8cc" local="yes">ngind/kernel/memory/memory_pool.cc</includedby>
     <incdepgraph>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h</label>
+        <label>ngind/kernel/memory/memory_pool.h</label>
         <link refid="memory__pool_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -31,11 +31,11 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc</label>
+        <label>ngind/kernel/memory/memory_pool.cc</label>
         <link refid="memory__pool_8cc"/>
       </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h</label>
+        <label>ngind/kernel/memory/memory_pool.h</label>
         <link refid="memory__pool_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -92,6 +92,6 @@
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_MEMORY_POOL_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.h"/>
+    <location file="ngind/kernel/memory/memory_pool.h"/>
   </compounddef>
 </doxygen>

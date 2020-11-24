@@ -6,7 +6,7 @@
     <includes local="no">iostream</includes>
     <incdepgraph>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc</label>
+        <label>ngind/kernel/memory/memory_pool.cc</label>
         <link refid="memory__pool_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -98,6 +98,6 @@
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ngind</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/memory/memory_pool.cc"/>
+    <location file="ngind/kernel/memory/memory_pool.cc"/>
   </compounddef>
 </doxygen>

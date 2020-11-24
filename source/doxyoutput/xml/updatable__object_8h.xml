@@ -2,57 +2,21 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="updatable__object_8h" kind="file" language="C++">
     <compoundname>updatable_object.h</compoundname>
-    <includedby refid="component_8h" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h</includedby>
-    <includedby refid="object_8h" local="yes">/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h</includedby>
+    <includedby refid="component_8h" local="yes">ngind/kernel/components/component.h</includedby>
+    <includedby refid="object_8h" local="yes">ngind/kernel/objects/object.h</includedby>
     <invincdepgraph>
-      <node id="5">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
-      </node>
-      <node id="4">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/sprite_render.h</label>
-        <link refid="sprite__render_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/render_component.h</label>
-        <link refid="render__component_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/game.h</label>
-        <link refid="game_8h"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/main.cc</label>
-        <link refid="main_8cc"/>
+      <node id="9">
+        <label>ngind/kernel/game.cc</label>
+        <link refid="game_8cc"/>
       </node>
       <node id="7">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/world.h</label>
+        <label>ngind/kernel/objects/world.h</label>
         <link refid="world_8h"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="12">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/entity_object.cc</label>
-        <link refid="entity__object_8cc"/>
-      </node>
-      <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h</label>
-        <link refid="updatable__object_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
       <node id="6">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.h</label>
+        <label>ngind/kernel/objects/object.h</label>
         <link refid="object_8h"/>
         <childnode refid="7" relation="include">
         </childnode>
@@ -61,30 +25,66 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/game.cc</label>
-        <link refid="game_8cc"/>
+      <node id="1">
+        <label>ngind/kernel/objects/updatable_object.h</label>
+        <link refid="updatable__object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
-      <node id="11">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/entity_object.h</label>
-        <link refid="entity__object_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
+      <node id="12">
+        <label>ngind/kernel/objects/entity_object.cc</label>
+        <link refid="entity__object_8cc"/>
       </node>
       <node id="13">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/object.cc</label>
+        <label>ngind/kernel/objects/object.cc</label>
         <link refid="object_8cc"/>
       </node>
+      <node id="10">
+        <label>ngind/main.cc</label>
+        <link refid="main_8cc"/>
+      </node>
       <node id="2">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/components/component.h</label>
+        <label>ngind/kernel/components/component.h</label>
         <link refid="component_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ngind/kernel/components/sprite_render.h</label>
+        <link refid="sprite__render_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
+      </node>
+      <node id="11">
+        <label>ngind/kernel/objects/entity_object.h</label>
+        <link refid="entity__object_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ngind/kernel/game.h</label>
+        <link refid="game_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ngind/kernel/components/render_component.h</label>
+        <link refid="render__component_8h"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -116,6 +116,6 @@
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_UPDATABLE_OBJECT_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/objects/updatable_object.h"/>
+    <location file="ngind/kernel/objects/updatable_object.h"/>
   </compounddef>
 </doxygen>

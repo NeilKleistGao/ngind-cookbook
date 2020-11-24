@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="41" column="5" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="41" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="41" column="5" bodyfile="ngind/kernel/timer/timer.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="123" column="11" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="123" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="123" column="11" bodyfile="ngind/kernel/timer/timer.h" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Timer_1a602fe634556c167b5a97306f709667af" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="127" column="11" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="127" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="127" column="11" bodyfile="ngind/kernel/timer/timer.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Timer_1a14ee58d472a1d560bb89b72693078d2f" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="131" column="11" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="131" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="131" column="11" bodyfile="ngind/kernel/timer/timer.h" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Timer_1a6f5ee5e7bbc4120d3d2fe38dcc89d4fc" prot="private" static="no" mutable="no">
         <type>time_type</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="135" column="15" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="135" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="135" column="15" bodyfile="ngind/kernel/timer/timer.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Timer_1acdb114b747608221b9d272682d6603a3" prot="private" static="no" mutable="no">
         <type>time_type</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="139" column="15" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="139" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="139" column="15" bodyfile="ngind/kernel/timer/timer.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Timer_1a938b82de71ab33933a18b9c0e9eedd88" prot="private" static="no" mutable="no">
         <type>time_type</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="143" column="15" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="143" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="143" column="15" bodyfile="ngind/kernel/timer/timer.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classngind_1_1Timer_1a4121b52ad99e4dce1b252461fece429d" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="147" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="147" bodyend="-1"/>
+        <location file="ngind/kernel/timer/timer.h" line="147" column="10" bodyfile="ngind/kernel/timer/timer.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="45" column="14" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.cc" bodystart="31" bodyend="33"/>
+        <location file="ngind/kernel/timer/timer.h" line="45" column="14" bodyfile="ngind/kernel/timer/timer.cc" bodystart="31" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1aff0515016bece717be85d81770f58a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="48" column="5"/>
+        <location file="ngind/kernel/timer/timer.h" line="48" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1a7bc81416218023ca60b6463e3af8f962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -175,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="54" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.cc" bodystart="35" bodyend="39"/>
+        <location file="ngind/kernel/timer/timer.h" line="54" column="10" bodyfile="ngind/kernel/timer/timer.cc" bodystart="35" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1a8f44f53bbdac746d30fd07845e011a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="60" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.cc" bodystart="41" bodyend="46"/>
+        <location file="ngind/kernel/timer/timer.h" line="60" column="10" bodyfile="ngind/kernel/timer/timer.cc" bodystart="41" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1acb7c7d0ebc2cf5788878d8c20eb5de7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="66" column="10" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.cc" bodystart="48" bodyend="55"/>
+        <location file="ngind/kernel/timer/timer.h" line="66" column="10" bodyfile="ngind/kernel/timer/timer.cc" bodystart="48" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1a927c4ae849f99974cca6d80906847261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="72" column="11" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.cc" bodystart="57" bodyend="70"/>
+        <location file="ngind/kernel/timer/timer.h" line="72" column="11" bodyfile="ngind/kernel/timer/timer.cc" bodystart="57" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1aa656dc4933d0dae053bfe0c94a917ab9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -231,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="87" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="87" bodyend="89"/>
+        <location file="ngind/kernel/timer/timer.h" line="87" column="17" bodyfile="ngind/kernel/timer/timer.h" bodystart="87" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1a4ecd482942105d7294c65b4a11c4f318" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -247,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="92" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="92" bodyend="95"/>
+        <location file="ngind/kernel/timer/timer.h" line="92" column="17" bodyfile="ngind/kernel/timer/timer.h" bodystart="92" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1a36cd7bd973690e9828b7c9abcc9444ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -264,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="101" column="17" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="101" bodyend="103"/>
+        <location file="ngind/kernel/timer/timer.h" line="101" column="17" bodyfile="ngind/kernel/timer/timer.h" bodystart="101" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1ac5a8a6993627a9b48fa829644c567bee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const float</type>
@@ -277,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="109" column="24" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="109" bodyend="111"/>
+        <location file="ngind/kernel/timer/timer.h" line="109" column="24" bodyfile="ngind/kernel/timer/timer.h" bodystart="109" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="classngind_1_1Timer_1ac61a1ac27093b910287d913f711c5c51" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const float</type>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="117" column="24" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="117" bodyend="119"/>
+        <location file="ngind/kernel/timer/timer.h" line="117" column="24" bodyfile="ngind/kernel/timer/timer.h" bodystart="117" bodyend="119"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -305,14 +305,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="79" column="29" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="79" bodyend="81"/>
+        <location file="ngind/kernel/timer/timer.h" line="79" column="29" bodyfile="ngind/kernel/timer/timer.h" bodystart="79" bodyend="81"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" line="37" column="12" bodyfile="/home/neilkleistgao/cpp/NginD/ngind/kernel/timer/timer.h" bodystart="37" bodyend="148"/>
+    <location file="ngind/kernel/timer/timer.h" line="37" column="12" bodyfile="ngind/kernel/timer/timer.h" bodystart="37" bodyend="148"/>
     <listofallmembers>
       <member refid="classngind_1_1Timer_1a602fe634556c167b5a97306f709667af" prot="private" virt="non-virtual"><scope>ngind::Timer</scope><name>_local_clock</name></member>
       <member refid="classngind_1_1Timer_1a938b82de71ab33933a18b9c0e9eedd88" prot="private" virt="non-virtual"><scope>ngind::Timer</scope><name>_pause_end</name></member>

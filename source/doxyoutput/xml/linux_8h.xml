@@ -4,14 +4,14 @@
     <compoundname>linux.h</compoundname>
     <includes local="no">unistd.h</includes>
     <incdepgraph>
+      <node id="2">
+        <label>unistd.h</label>
+      </node>
       <node id="1">
-        <label>/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/linux.h</label>
+        <label>ngind/kernel/platforms/linux.h</label>
         <link refid="linux_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>unistd.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classngind_1_1PlatformUtils" prot="public">ngind::PlatformUtils</innerclass>
@@ -46,6 +46,6 @@
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//NGIND_LINUX_H</highlight></codeline>
     </programlisting>
-    <location file="/home/neilkleistgao/cpp/NginD/ngind/kernel/platforms/linux.h"/>
+    <location file="ngind/kernel/platforms/linux.h"/>
   </compounddef>
 </doxygen>
