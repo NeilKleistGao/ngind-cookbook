@@ -5,56 +5,9 @@
     <includes refid="game_8h" local="yes">kernel/game.h</includes>
     <includes local="no">iostream</includes>
     <incdepgraph>
-      <node id="13">
-        <label>objects/world.h</label>
-        <link refid="world_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>string</label>
-      </node>
-      <node id="10">
-        <label>include/rapidjson/document.h</label>
-      </node>
-      <node id="14">
-        <label>object.h</label>
-        <link refid="object_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>map</label>
-      </node>
       <node id="18">
         <label>updatable_object.h</label>
         <link refid="updatable__object_8h"/>
-      </node>
-      <node id="1">
-        <label>ngind/main.cc</label>
-        <link refid="main_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
       </node>
       <node id="19">
         <label>components/component.h</label>
@@ -66,36 +19,32 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="15">
-        <label>kernel/utils/serialization.h</label>
-        <link refid="serialization_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
       <node id="9">
         <label>memory/auto_collection_object.h</label>
         <link refid="auto__collection__object_8h"/>
       </node>
-      <node id="5">
-        <label>stack</label>
+      <node id="20">
+        <label>render/rgba.h</label>
+        <link refid="rgba_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
       </node>
-      <node id="16">
-        <label>sstream</label>
-      </node>
-      <node id="21">
-        <label>utils/converter.h</label>
-        <link refid="converter_8h"/>
+      <node id="1">
+        <label>ngind/main.cc</label>
+        <link refid="main_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
       </node>
-      <node id="8">
-        <label>iostream</label>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>include/rapidjson/document.h</label>
+      </node>
+      <node id="3">
+        <label>map</label>
       </node>
       <node id="6">
         <label>resources/config_resource.h</label>
@@ -113,15 +62,6 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="20">
-        <label>render/rgba.h</label>
-        <link refid="rgba_8h_source"/>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>chrono</label>
-      </node>
       <node id="2">
         <label>kernel/game.h</label>
         <link refid="game_8h"/>
@@ -138,14 +78,74 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="17">
-        <label>type_traits</label>
+      <node id="15">
+        <label>kernel/utils/serialization.h</label>
+        <link refid="serialization_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>objects/world.h</label>
+        <link refid="world_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stack</label>
+      </node>
+      <node id="14">
+        <label>object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sstream</label>
+      </node>
+      <node id="21">
+        <label>utils/converter.h</label>
+        <link refid="converter_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>chrono</label>
       </node>
       <node id="11">
         <label>timer/timer.h</label>
         <link refid="timer_8h"/>
         <childnode refid="12" relation="include">
         </childnode>
+      </node>
+      <node id="17">
+        <label>type_traits</label>
       </node>
     </incdepgraph>
       <sectiondef kind="func">

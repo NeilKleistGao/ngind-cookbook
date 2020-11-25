@@ -5,6 +5,10 @@
     <includes refid="timer_8h" local="yes">timer.h</includes>
     <includes refid="platforms_8h" local="yes">platforms/platforms.h</includes>
     <incdepgraph>
+      <node id="4">
+        <label>platforms/platforms.h</label>
+        <link refid="platforms_8h"/>
+      </node>
       <node id="1">
         <label>ngind/kernel/timer/timer.cc</label>
         <link refid="timer_8cc"/>
@@ -12,10 +16,6 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>platforms/platforms.h</label>
-        <link refid="platforms_8h"/>
       </node>
       <node id="3">
         <label>chrono</label>

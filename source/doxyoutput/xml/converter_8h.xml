@@ -23,17 +23,13 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="17">
-        <label>ngind/kernel/input/input.cc</label>
-        <link refid="input_8cc"/>
-      </node>
       <node id="7">
         <label>ngind/kernel/game.cc</label>
         <link refid="game_8cc"/>
       </node>
-      <node id="12">
-        <label>ngind/kernel/render/render.cc</label>
-        <link refid="render_8cc"/>
+      <node id="18">
+        <label>ngind/kernel/render/window.cc</label>
+        <link refid="window_8cc"/>
       </node>
       <node id="15">
         <label>ngind/kernel/render/window.h</label>
@@ -45,47 +41,9 @@
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="5">
-        <label>ngind/kernel/objects/world.h</label>
-        <link refid="world_8h"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>ngind/kernel/resources/texture_resource.h</label>
-        <link refid="texture__resource_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>ngind/kernel/utils/converter.cc</label>
-        <link refid="converter_8cc"/>
-      </node>
-      <node id="8">
-        <label>ngind/main.cc</label>
-        <link refid="main_8cc"/>
-      </node>
-      <node id="10">
-        <label>ngind/kernel/render/render_queue.h</label>
-        <link refid="render__queue_8h"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>ngind/kernel/render/render_command.h</label>
-        <link refid="render__command_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>ngind/kernel/components/sprite_render.h</label>
-        <link refid="sprite__render_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
+      <node id="13">
+        <label>ngind/kernel/render/render_queue.cc</label>
+        <link refid="render__queue_8cc"/>
       </node>
       <node id="14">
         <label>ngind/kernel/render/png_image.h</label>
@@ -94,26 +52,6 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-      </node>
-      <node id="13">
-        <label>ngind/kernel/render/render_queue.cc</label>
-        <link refid="render__queue_8cc"/>
-      </node>
-      <node id="1">
-        <label>ngind/kernel/utils/converter.h</label>
-        <link refid="converter_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
-      </node>
-      <node id="18">
-        <label>ngind/kernel/render/window.cc</label>
-        <link refid="window_8cc"/>
       </node>
       <node id="2">
         <label>ngind/kernel/render/rgba.h</label>
@@ -127,6 +65,18 @@
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ngind/main.cc</label>
+        <link refid="main_8cc"/>
+      </node>
+      <node id="9">
+        <label>ngind/kernel/render/render_command.h</label>
+        <link refid="render__command_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -147,6 +97,44 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
+      <node id="19">
+        <label>ngind/kernel/resources/texture_resource.h</label>
+        <link refid="texture__resource_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
+      </node>
+      <node id="5">
+        <label>ngind/kernel/objects/world.h</label>
+        <link refid="world_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ngind/kernel/components/sprite_render.h</label>
+        <link refid="sprite__render_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ngind/kernel/utils/converter.cc</label>
+        <link refid="converter_8cc"/>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/utils/converter.h</label>
+        <link refid="converter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ngind/kernel/input/input.cc</label>
+        <link refid="input_8cc"/>
+      </node>
       <node id="16">
         <label>ngind/kernel/input/input.h</label>
         <link refid="input_8h"/>
@@ -154,6 +142,18 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+      </node>
+      <node id="10">
+        <label>ngind/kernel/render/render_queue.h</label>
+        <link refid="render__queue_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ngind/kernel/render/render.cc</label>
+        <link refid="render_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1Converter" prot="public">ngind::Converter</innerclass>

@@ -4,15 +4,15 @@
     <compoundname>platforms.h</compoundname>
     <includedby refid="timer_8cc" local="yes">ngind/kernel/timer/timer.cc</includedby>
     <invincdepgraph>
-      <node id="2">
-        <label>ngind/kernel/timer/timer.cc</label>
-        <link refid="timer_8cc"/>
-      </node>
       <node id="1">
         <label>ngind/kernel/platforms/platforms.h</label>
         <link refid="platforms_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>ngind/kernel/timer/timer.cc</label>
+        <link refid="timer_8cc"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

@@ -7,14 +7,14 @@
       <node id="5">
         <label>FT_FREETYPE_H</label>
       </node>
+      <node id="3">
+        <label>string</label>
+      </node>
       <node id="1">
         <label>ngind/kernel/render/font_factory.cc</label>
         <link refid="font__factory_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>string</label>
       </node>
       <node id="2">
         <label>font_factory.h</label>

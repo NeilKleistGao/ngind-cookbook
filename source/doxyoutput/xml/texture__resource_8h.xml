@@ -10,10 +10,49 @@
     <includedby refid="sprite__render_8h" local="yes">ngind/kernel/components/sprite_render.h</includedby>
     <includedby refid="texture__resource_8cc" local="yes">ngind/kernel/resources/texture_resource.cc</includedby>
     <incdepgraph>
+      <node id="9">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
       <node id="6">
         <label>math/vector.h</label>
         <link refid="vector_8h"/>
         <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>render/png_image.h</label>
+        <link refid="png__image_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>rgba.h</label>
+        <link refid="rgba_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="8">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -26,41 +65,6 @@
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>cmath</label>
-      </node>
-      <node id="4">
-        <label>string</label>
-      </node>
-      <node id="5">
-        <label>GL/glew.h</label>
-      </node>
-      <node id="3">
-        <label>render/texture.h</label>
-        <link refid="texture_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="10">
-        <label>render/png_image.h</label>
-        <link refid="png__image_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -79,18 +83,14 @@
       <node id="2">
         <label>iostream</label>
       </node>
-      <node id="8">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="2" relation="include">
+      <node id="3">
+        <label>render/texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-      </node>
-      <node id="12">
-        <label>rgba.h</label>
-        <link refid="rgba_8h_source"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -104,15 +104,15 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
+      </node>
       <node id="2">
         <label>ngind/kernel/components/sprite_render.h</label>
         <link refid="sprite__render_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1TextureResource" prot="public">ngind::TextureResource</innerclass>

@@ -12,6 +12,10 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
+      <node id="5">
+        <label>log_level.h</label>
+        <link refid="log__level_8h"/>
+      </node>
       <node id="2">
         <label>logger.h</label>
         <link refid="logger_8h"/>
@@ -29,10 +33,6 @@
       </node>
       <node id="4">
         <label>cstdio</label>
-      </node>
-      <node id="5">
-        <label>log_level.h</label>
-        <link refid="log__level_8h"/>
       </node>
       <node id="3">
         <label>iostream</label>

@@ -10,6 +10,9 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>set</label>
+      </node>
       <node id="2">
         <label>keyboard_input.h</label>
         <link refid="keyboard__input_8h"/>
@@ -17,9 +20,6 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>set</label>
       </node>
       <node id="4">
         <label>glfw3.h</label>

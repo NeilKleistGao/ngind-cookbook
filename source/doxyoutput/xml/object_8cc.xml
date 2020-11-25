@@ -4,11 +4,64 @@
     <compoundname>object.cc</compoundname>
     <includes refid="object_8h" local="yes">object.h</includes>
     <incdepgraph>
+      <node id="9">
+        <label>updatable_object.h</label>
+        <link refid="updatable__object_8h"/>
+      </node>
+      <node id="10">
+        <label>components/component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
       <node id="11">
         <label>string</label>
       </node>
       <node id="14">
         <label>include/rapidjson/document.h</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>resources/config_resource.h</label>
+        <link refid="config__resource_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kernel/utils/serialization.h</label>
+        <link refid="serialization_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/objects/object.cc</label>
+        <link refid="object_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>object.h</label>
@@ -26,64 +79,11 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>map</label>
-      </node>
-      <node id="9">
-        <label>updatable_object.h</label>
-        <link refid="updatable__object_8h"/>
-      </node>
-      <node id="1">
-        <label>ngind/kernel/objects/object.cc</label>
-        <link refid="object_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>components/component.h</label>
-        <link refid="component_8h"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>kernel/utils/serialization.h</label>
-        <link refid="serialization_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
       <node id="6">
         <label>sstream</label>
       </node>
       <node id="4">
         <label>iostream</label>
-      </node>
-      <node id="12">
-        <label>resources/config_resource.h</label>
-        <link refid="config__resource_8h_source"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
       </node>
       <node id="7">
         <label>type_traits</label>

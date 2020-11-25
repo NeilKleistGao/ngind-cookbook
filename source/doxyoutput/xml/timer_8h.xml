@@ -17,10 +17,6 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5">
-        <label>ngind/kernel/timer/timer.cc</label>
-        <link refid="timer_8cc"/>
-      </node>
       <node id="3">
         <label>ngind/kernel/game.cc</label>
         <link refid="game_8cc"/>
@@ -36,6 +32,10 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+      </node>
+      <node id="5">
+        <label>ngind/kernel/timer/timer.cc</label>
+        <link refid="timer_8cc"/>
       </node>
       <node id="1">
         <label>ngind/kernel/timer/timer.h</label>

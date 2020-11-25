@@ -15,14 +15,14 @@
       <node id="4">
         <label>fstream</label>
       </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
       <node id="1">
         <label>ngind/kernel/filesystem/output_stream.cc</label>
         <link refid="output__stream_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>iostream</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacengind">ngind</innernamespace>

@@ -4,14 +4,14 @@
     <compoundname>linux.h</compoundname>
     <includes local="no">unistd.h</includes>
     <incdepgraph>
-      <node id="2">
-        <label>unistd.h</label>
-      </node>
       <node id="1">
         <label>ngind/kernel/platforms/linux.h</label>
         <link refid="linux_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>unistd.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classngind_1_1PlatformUtils" prot="public">ngind::PlatformUtils</innerclass>

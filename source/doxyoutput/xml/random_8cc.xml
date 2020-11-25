@@ -5,6 +5,12 @@
     <includes refid="random_8h" local="yes">random.h</includes>
     <includes local="no">chrono</includes>
     <incdepgraph>
+      <node id="2">
+        <label>random.h</label>
+        <link refid="random_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>ngind/kernel/math/random.cc</label>
         <link refid="random_8cc"/>
@@ -18,12 +24,6 @@
       </node>
       <node id="4">
         <label>chrono</label>
-      </node>
-      <node id="2">
-        <label>random.h</label>
-        <link refid="random_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacengind">ngind</innernamespace>

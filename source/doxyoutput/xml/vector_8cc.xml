@@ -4,6 +4,12 @@
     <compoundname>vector.cc</compoundname>
     <includes refid="vector_8h" local="yes">vector.h</includes>
     <incdepgraph>
+      <node id="1">
+        <label>ngind/kernel/math/vector.cc</label>
+        <link refid="vector_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>vector.h</label>
         <link refid="vector_8h"/>
@@ -12,12 +18,6 @@
       </node>
       <node id="3">
         <label>cmath</label>
-      </node>
-      <node id="1">
-        <label>ngind/kernel/math/vector.cc</label>
-        <link refid="vector_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacengind">ngind</innernamespace>

@@ -4,21 +4,15 @@
     <compoundname>shader_resource.cc</compoundname>
     <includes refid="shader__resource_8h" local="yes">shader_resource.h</includes>
     <incdepgraph>
+      <node id="5">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
       <node id="7">
         <label>string</label>
       </node>
       <node id="8">
         <label>GL/glew.h</label>
-      </node>
-      <node id="1">
-        <label>ngind/kernel/resources/shader_resource.cc</label>
-        <link refid="shader__resource_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
       </node>
       <node id="6">
         <label>render/shader.h</label>
@@ -28,9 +22,6 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>iostream</label>
-      </node>
       <node id="3">
         <label>resource.h</label>
         <link refid="resource_8h_source"/>
@@ -38,6 +29,15 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/resources/shader_resource.cc</label>
+        <link refid="shader__resource_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
       </node>
       <node id="2">
         <label>shader_resource.h</label>

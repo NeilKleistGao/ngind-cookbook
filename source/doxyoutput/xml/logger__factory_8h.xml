@@ -16,8 +16,15 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="7">
+        <label>log_level.h</label>
+        <link refid="log__level_8h"/>
+      </node>
       <node id="3">
         <label>string</label>
+      </node>
+      <node id="2">
+        <label>map</label>
       </node>
       <node id="4">
         <label>logger.h</label>
@@ -31,8 +38,14 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>map</label>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>cstdio</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
       </node>
       <node id="1">
         <label>ngind/kernel/log/logger_factory.h</label>
@@ -44,24 +57,15 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>fstream</label>
-      </node>
-      <node id="6">
-        <label>cstdio</label>
-      </node>
-      <node id="7">
-        <label>log_level.h</label>
-        <link refid="log__level_8h"/>
-      </node>
-      <node id="5">
-        <label>iostream</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
         <label>ngind/kernel/game.cc</label>
         <link refid="game_8cc"/>
+      </node>
+      <node id="3">
+        <label>ngind/kernel/log/logger_factory.cc</label>
+        <link refid="logger__factory_8cc"/>
       </node>
       <node id="1">
         <label>ngind/kernel/log/logger_factory.h</label>
@@ -70,10 +74,6 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>ngind/kernel/log/logger_factory.cc</label>
-        <link refid="logger__factory_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1LoggerFactory" prot="public">ngind::LoggerFactory</innerclass>

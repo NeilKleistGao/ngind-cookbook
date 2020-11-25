@@ -4,10 +4,42 @@
     <compoundname>entity_object.cc</compoundname>
     <includes refid="entity__object_8h" local="yes">entity_object.h</includes>
     <incdepgraph>
+      <node id="10">
+        <label>updatable_object.h</label>
+        <link refid="updatable__object_8h"/>
+      </node>
+      <node id="11">
+        <label>components/component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/objects/entity_object.cc</label>
+        <link refid="entity__object_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
       <node id="16">
         <label>math/vector.h</label>
         <link refid="vector_8h"/>
         <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>entity_object.h</label>
+        <link refid="entity__object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -18,6 +50,35 @@
       </node>
       <node id="15">
         <label>include/rapidjson/document.h</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>resources/config_resource.h</label>
+        <link refid="config__resource_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>kernel/utils/serialization.h</label>
+        <link refid="serialization_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>object.h</label>
@@ -35,72 +96,11 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>map</label>
-      </node>
-      <node id="10">
-        <label>updatable_object.h</label>
-        <link refid="updatable__object_8h"/>
-      </node>
-      <node id="1">
-        <label>ngind/kernel/objects/entity_object.cc</label>
-        <link refid="entity__object_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>components/component.h</label>
-        <link refid="component_8h"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>kernel/utils/serialization.h</label>
-        <link refid="serialization_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
       <node id="7">
         <label>sstream</label>
       </node>
-      <node id="2">
-        <label>entity_object.h</label>
-        <link refid="entity__object_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
       <node id="5">
         <label>iostream</label>
-      </node>
-      <node id="13">
-        <label>resources/config_resource.h</label>
-        <link refid="config__resource_8h_source"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
       </node>
       <node id="8">
         <label>type_traits</label>

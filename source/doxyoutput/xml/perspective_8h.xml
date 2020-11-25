@@ -18,6 +18,9 @@
       <node id="3">
         <label>cmath</label>
       </node>
+      <node id="4">
+        <label>include/glm/glm.hpp</label>
+      </node>
       <node id="1">
         <label>ngind/kernel/render/perspective.h</label>
         <link refid="perspective_8h"/>
@@ -26,18 +29,29 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>include/glm/glm.hpp</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="4">
         <label>ngind/kernel/game.cc</label>
         <link refid="game_8cc"/>
       </node>
-      <node id="5">
-        <label>ngind/kernel/render/render.cc</label>
-        <link refid="render_8cc"/>
+      <node id="3">
+        <label>ngind/kernel/render/render.h</label>
+        <link refid="render_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
+      </node>
+      <node id="6">
+        <label>ngind/kernel/render/perspective.cc</label>
+        <link refid="perspective_8cc"/>
       </node>
       <node id="1">
         <label>ngind/kernel/render/perspective.h</label>
@@ -51,23 +65,9 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="6">
-        <label>ngind/kernel/render/perspective.cc</label>
-        <link refid="perspective_8cc"/>
-      </node>
-      <node id="2">
-        <label>ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
-      </node>
-      <node id="3">
-        <label>ngind/kernel/render/render.h</label>
-        <link refid="render_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
+      <node id="5">
+        <label>ngind/kernel/render/render.cc</label>
+        <link refid="render_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1Perspective" prot="public">ngind::Perspective</innerclass>

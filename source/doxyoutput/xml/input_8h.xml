@@ -12,16 +12,6 @@
       <node id="10">
         <label>list</label>
       </node>
-      <node id="8">
-        <label>text_input.h</label>
-        <link refid="text__input_8h"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
       <node id="11">
         <label>render/window.h</label>
         <link refid="window_8h"/>
@@ -34,28 +24,21 @@
         <childnode refid="15" relation="include">
         </childnode>
       </node>
+      <node id="8">
+        <label>text_input.h</label>
+        <link refid="text__input_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
       <node id="6">
         <label>math/vector.h</label>
         <link refid="vector_8h"/>
         <childnode refid="7" relation="include">
         </childnode>
-      </node>
-      <node id="7">
-        <label>cmath</label>
-      </node>
-      <node id="9">
-        <label>string</label>
-      </node>
-      <node id="2">
-        <label>keyboard_input.h</label>
-        <link refid="keyboard__input_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>cstdio</label>
       </node>
       <node id="15">
         <label>png_image.h</label>
@@ -69,16 +52,23 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="16">
+        <label>rgba.h</label>
+        <link refid="rgba_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>cstdio</label>
+      </node>
       <node id="18">
         <label>sstream</label>
-      </node>
-      <node id="17">
-        <label>utils/converter.h</label>
-        <link refid="converter_8h"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
       </node>
       <node id="5">
         <label>mouse_input.h</label>
@@ -90,20 +80,16 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="12">
-        <label>iostream</label>
-      </node>
-      <node id="16">
-        <label>rgba.h</label>
-        <link refid="rgba_8h_source"/>
-        <childnode refid="17" relation="include">
+      <node id="17">
+        <label>utils/converter.h</label>
+        <link refid="converter_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>set</label>
-      </node>
-      <node id="4">
-        <label>glfw3.h</label>
+      <node id="12">
+        <label>iostream</label>
       </node>
       <node id="1">
         <label>ngind/kernel/input/input.h</label>
@@ -117,18 +103,32 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>set</label>
+      </node>
+      <node id="2">
+        <label>keyboard_input.h</label>
+        <link refid="keyboard__input_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>glfw3.h</label>
+      </node>
       <node id="14">
         <label>include/opengl/glfw3.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>ngind/kernel/input/input.cc</label>
-        <link refid="input_8cc"/>
-      </node>
       <node id="3">
         <label>ngind/kernel/render/window.cc</label>
         <link refid="window_8cc"/>
+      </node>
+      <node id="2">
+        <label>ngind/kernel/input/input.cc</label>
+        <link refid="input_8cc"/>
       </node>
       <node id="1">
         <label>ngind/kernel/input/input.h</label>

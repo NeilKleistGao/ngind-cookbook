@@ -4,10 +4,49 @@
     <compoundname>texture_resource.cc</compoundname>
     <includes refid="texture__resource_8h" local="yes">texture_resource.h</includes>
     <incdepgraph>
+      <node id="10">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
       <node id="7">
         <label>math/vector.h</label>
         <link refid="vector_8h"/>
         <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>render/png_image.h</label>
+        <link refid="png__image_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>rgba.h</label>
+        <link refid="rgba_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="9">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -20,47 +59,6 @@
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>cmath</label>
-      </node>
-      <node id="5">
-        <label>string</label>
-      </node>
-      <node id="6">
-        <label>GL/glew.h</label>
-      </node>
-      <node id="1">
-        <label>ngind/kernel/resources/texture_resource.cc</label>
-        <link refid="texture__resource_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>render/texture.h</label>
-        <link refid="texture_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="11">
-        <label>render/png_image.h</label>
-        <link refid="png__image_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -79,18 +77,20 @@
       <node id="3">
         <label>iostream</label>
       </node>
-      <node id="9">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
+      <node id="1">
+        <label>ngind/kernel/resources/texture_resource.cc</label>
+        <link refid="texture__resource_8cc"/>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>rgba.h</label>
-        <link refid="rgba_8h_source"/>
-        <childnode refid="14" relation="include">
+      <node id="4">
+        <label>render/texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="12">

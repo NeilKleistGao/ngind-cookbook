@@ -17,6 +17,10 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
+      <node id="4">
+        <label>log_level.h</label>
+        <link refid="log__level_8h"/>
+      </node>
       <node id="1">
         <label>ngind/kernel/log/logger.h</label>
         <link refid="logger_8h"/>
@@ -35,10 +39,6 @@
       <node id="3">
         <label>cstdio</label>
       </node>
-      <node id="4">
-        <label>log_level.h</label>
-        <link refid="log__level_8h"/>
-      </node>
       <node id="2">
         <label>iostream</label>
       </node>
@@ -56,14 +56,6 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>ngind/kernel/log/logger_factory.h</label>
-        <link refid="logger__factory_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
       <node id="5">
         <label>ngind/kernel/log/logger.cc</label>
         <link refid="logger_8cc"/>
@@ -71,6 +63,14 @@
       <node id="4">
         <label>ngind/kernel/log/logger_factory.cc</label>
         <link refid="logger__factory_8cc"/>
+      </node>
+      <node id="2">
+        <label>ngind/kernel/log/logger_factory.h</label>
+        <link refid="logger__factory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1Logger" prot="public">ngind::Logger</innerclass>

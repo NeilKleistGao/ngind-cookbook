@@ -7,6 +7,9 @@
     <includedby refid="input_8h" local="yes">ngind/kernel/input/input.h</includedby>
     <includedby refid="keyboard__input_8cc" local="yes">ngind/kernel/input/keyboard_input.cc</includedby>
     <incdepgraph>
+      <node id="2">
+        <label>set</label>
+      </node>
       <node id="1">
         <label>ngind/kernel/input/keyboard_input.h</label>
         <link refid="keyboard__input_8h"/>
@@ -15,33 +18,22 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>set</label>
-      </node>
       <node id="3">
         <label>glfw3.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>ngind/kernel/input/input.cc</label>
-        <link refid="input_8cc"/>
+      <node id="4">
+        <label>ngind/kernel/render/window.cc</label>
+        <link refid="window_8cc"/>
       </node>
       <node id="5">
         <label>ngind/kernel/input/keyboard_input.cc</label>
         <link refid="keyboard__input_8cc"/>
       </node>
-      <node id="1">
-        <label>ngind/kernel/input/keyboard_input.h</label>
-        <link refid="keyboard__input_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>ngind/kernel/render/window.cc</label>
-        <link refid="window_8cc"/>
+      <node id="3">
+        <label>ngind/kernel/input/input.cc</label>
+        <link refid="input_8cc"/>
       </node>
       <node id="2">
         <label>ngind/kernel/input/input.h</label>
@@ -49,6 +41,14 @@
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ngind/kernel/input/keyboard_input.h</label>
+        <link refid="keyboard__input_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

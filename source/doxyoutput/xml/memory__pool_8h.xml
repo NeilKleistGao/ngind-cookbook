@@ -8,6 +8,10 @@
     <includedby refid="auto__collection__object_8cc" local="yes">ngind/kernel/memory/auto_collection_object.cc</includedby>
     <includedby refid="memory__pool_8cc" local="yes">ngind/kernel/memory/memory_pool.cc</includedby>
     <incdepgraph>
+      <node id="4">
+        <label>auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
       <node id="1">
         <label>ngind/kernel/memory/memory_pool.h</label>
         <link refid="memory__pool_8h"/>
@@ -18,10 +22,6 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
       <node id="2">
         <label>set</label>
       </node>
@@ -30,15 +30,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>ngind/kernel/memory/memory_pool.cc</label>
-        <link refid="memory__pool_8cc"/>
-      </node>
       <node id="1">
         <label>ngind/kernel/memory/memory_pool.h</label>
         <link refid="memory__pool_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>ngind/kernel/memory/memory_pool.cc</label>
+        <link refid="memory__pool_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1MemoryPool" prot="public">ngind::MemoryPool</innerclass>

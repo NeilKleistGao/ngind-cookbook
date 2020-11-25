@@ -15,10 +15,121 @@
     <includes local="yes">rttr/registration.h</includes>
     <includedby refid="sprite__render_8cc" local="yes">ngind/kernel/components/sprite_render.cc</includedby>
     <incdepgraph>
+      <node id="23">
+        <label>objects/updatable_object.h</label>
+        <link refid="updatable__object_8h"/>
+      </node>
+      <node id="22">
+        <label>component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>memory/auto_collection_object.h</label>
+        <link refid="auto__collection__object_8h"/>
+      </node>
       <node id="16">
         <label>math/vector.h</label>
         <link refid="vector_8h"/>
         <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>quad.h</label>
+        <link refid="quad_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>objects/entity_object.h</label>
+        <link refid="entity__object_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>render/png_image.h</label>
+        <link refid="png__image_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cmath</label>
+      </node>
+      <node id="18">
+        <label>rgba.h</label>
+        <link refid="rgba_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="25">
+        <label>include/rapidjson/document.h</label>
+      </node>
+      <node id="13">
+        <label>render/shader.h</label>
+        <link refid="shader_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>render/render_command.h</label>
+        <link refid="render__command_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>resources/config_resource.h</label>
+        <link refid="config__resource_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>resource.h</label>
+        <link refid="resource_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>render_component.h</label>
+        <link refid="render__component_8h"/>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="26">
@@ -35,17 +146,24 @@
         <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="17">
-        <label>cmath</label>
+      <node id="33">
+        <label>kernel/utils/serialization.h</label>
+        <link refid="serialization_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
       </node>
-      <node id="2">
-        <label>string</label>
+      <node id="7">
+        <label>cstdio</label>
       </node>
-      <node id="5">
-        <label>GL/glew.h</label>
+      <node id="15">
+        <label>glm/gtc/type_ptr.hpp</label>
       </node>
-      <node id="25">
-        <label>include/rapidjson/document.h</label>
+      <node id="36">
+        <label>rttr/registration.h</label>
       </node>
       <node id="31">
         <label>object.h</label>
@@ -63,54 +181,8 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="32">
-        <label>map</label>
-      </node>
-      <node id="23">
-        <label>objects/updatable_object.h</label>
-        <link refid="updatable__object_8h"/>
-      </node>
-      <node id="27">
-        <label>render/texture.h</label>
-        <link refid="texture_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>component.h</label>
-        <link refid="component_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-      </node>
-      <node id="33">
-        <label>kernel/utils/serialization.h</label>
-        <link refid="serialization_8h_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>render/render_command.h</label>
-        <link refid="render__command_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
+      <node id="20">
+        <label>sstream</label>
       </node>
       <node id="1">
         <label>ngind/kernel/components/sprite_render.h</label>
@@ -138,44 +210,6 @@
         <childnode refid="36" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>quad.h</label>
-        <link refid="quad_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>cstdio</label>
-      </node>
-      <node id="15">
-        <label>glm/gtc/type_ptr.hpp</label>
-      </node>
-      <node id="12">
-        <label>memory/auto_collection_object.h</label>
-        <link refid="auto__collection__object_8h"/>
-      </node>
-      <node id="36">
-        <label>rttr/registration.h</label>
-      </node>
-      <node id="28">
-        <label>render/png_image.h</label>
-        <link refid="png__image_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>sstream</label>
-      </node>
       <node id="8">
         <label>program.h</label>
         <link refid="program_8h"/>
@@ -196,45 +230,25 @@
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>render/shader.h</label>
-        <link refid="shader_8h_source"/>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="35">
+        <label>resources/program_resource.h</label>
+        <link refid="program__resource_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>render/texture.h</label>
+        <link refid="texture_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-      </node>
-      <node id="30">
-        <label>objects/entity_object.h</label>
-        <link refid="entity__object_8h"/>
-        <childnode refid="31" relation="include">
-        </childnode>
         <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>iostream</label>
-      </node>
-      <node id="24">
-        <label>resources/config_resource.h</label>
-        <link refid="config__resource_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>resource.h</label>
-        <link refid="resource_8h_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>rgba.h</label>
-        <link refid="rgba_8h_source"/>
-        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="34">
@@ -251,20 +265,6 @@
       <node id="29">
         <label>glfw3.h</label>
       </node>
-      <node id="35">
-        <label>resources/program_resource.h</label>
-        <link refid="program__resource_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>render_component.h</label>
-        <link refid="render__component_8h"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
       <node id="6">
         <label>initializer_list</label>
       </node>
@@ -273,15 +273,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="2">
+        <label>ngind/kernel/components/sprite_render.cc</label>
+        <link refid="sprite__render_8cc"/>
+      </node>
       <node id="1">
         <label>ngind/kernel/components/sprite_render.h</label>
         <link refid="sprite__render_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>ngind/kernel/components/sprite_render.cc</label>
-        <link refid="sprite__render_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1SpriteRender" prot="public">ngind::SpriteRender</innerclass>

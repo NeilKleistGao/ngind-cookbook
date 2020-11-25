@@ -23,15 +23,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
-        <label>ngind/kernel/game.cc</label>
-        <link refid="game_8cc"/>
-      </node>
       <node id="1">
         <label>ngind/kernel/filesystem/output_stream.h</label>
         <link refid="output__stream_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="4">
+        <label>ngind/kernel/game.cc</label>
+        <link refid="game_8cc"/>
       </node>
       <node id="2">
         <label>ngind/kernel/log/logger.h</label>
@@ -41,14 +41,6 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>ngind/kernel/log/logger_factory.h</label>
-        <link refid="logger__factory_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
       <node id="6">
         <label>ngind/kernel/log/logger.cc</label>
         <link refid="logger_8cc"/>
@@ -56,6 +48,14 @@
       <node id="5">
         <label>ngind/kernel/log/logger_factory.cc</label>
         <link refid="logger__factory_8cc"/>
+      </node>
+      <node id="3">
+        <label>ngind/kernel/log/logger_factory.h</label>
+        <link refid="logger__factory_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classngind_1_1OutputStream" prot="public">ngind::OutputStream</innerclass>

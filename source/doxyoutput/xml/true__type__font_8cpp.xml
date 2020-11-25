@@ -16,9 +16,6 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>freetype2/ft2build.h</label>
-      </node>
       <node id="2">
         <label>true_type_font.h</label>
         <link refid="true__type__font_8h"/>
@@ -28,6 +25,9 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="4">
+        <label>freetype2/ft2build.h</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacengind">ngind</innernamespace>

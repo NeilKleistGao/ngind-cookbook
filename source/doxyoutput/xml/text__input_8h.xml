@@ -29,9 +29,9 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>ngind/kernel/input/input.cc</label>
-        <link refid="input_8cc"/>
+      <node id="4">
+        <label>ngind/kernel/render/window.cc</label>
+        <link refid="window_8cc"/>
       </node>
       <node id="1">
         <label>ngind/kernel/input/text_input.h</label>
@@ -39,9 +39,9 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>ngind/kernel/render/window.cc</label>
-        <link refid="window_8cc"/>
+      <node id="3">
+        <label>ngind/kernel/input/input.cc</label>
+        <link refid="input_8cc"/>
       </node>
       <node id="2">
         <label>ngind/kernel/input/input.h</label>

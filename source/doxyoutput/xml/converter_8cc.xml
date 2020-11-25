@@ -5,6 +5,9 @@
     <includes refid="converter_8h" local="yes">converter.h</includes>
     <includes local="no">cctype</includes>
     <incdepgraph>
+      <node id="4">
+        <label>sstream</label>
+      </node>
       <node id="1">
         <label>ngind/kernel/utils/converter.cc</label>
         <link refid="converter_8cc"/>
@@ -13,8 +16,8 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>sstream</label>
+      <node id="5">
+        <label>cctype</label>
       </node>
       <node id="2">
         <label>converter.h</label>
@@ -23,9 +26,6 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="5">
-        <label>cctype</label>
       </node>
       <node id="3">
         <label>iostream</label>
