@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Vector2D" kind="class" language="C++" prot="public">
+    <compoundname>ngind::Vector2D</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1Vector2D_1a222fabee5409d04465adaa4d6225f2e0" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>const Vector2D ngind::Vector2D::INVALID</definition>
+        <argsstring></argsstring>
+        <name>INVALID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="206" column="27" bodyfile="ngind/kernel/math/vector.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Vector2D_1a1640f3c385c4be30fbe904780ea8b242" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>const Vector2D ngind::Vector2D::ORIGIN</definition>
+        <argsstring></argsstring>
+        <name>ORIGIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="206" column="35" bodyfile="ngind/kernel/math/vector.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1Vector2D_1a8253f6bb917cdb34d99e053b38ff2efb" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr static float</type>
+        <definition>constexpr static float ngind::Vector2D::EPSILON</definition>
+        <argsstring></argsstring>
+        <name>EPSILON</name>
+        <initializer>= 1e-6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="227" column="28" bodyfile="ngind/kernel/math/vector.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1Vector2D_1a1ae52a6425886ace59a9c31c67f8b52b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ngind::Vector2D::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="231" column="11" bodyfile="ngind/kernel/math/vector.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Vector2D_1a5335f9bb12596a8f1a326233a7d2eeca" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ngind::Vector2D::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="231" column="14" bodyfile="ngind/kernel/math/vector.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a599343ced5b7832fb405a6f9f56890e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Vector2D::Vector2D</definition>
+        <argsstring>()</argsstring>
+        <name>Vector2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a53b61429f43a408674b9bee820704741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Vector2D::Vector2D</definition>
+        <argsstring>(const float &amp;, const float &amp;)</argsstring>
+        <name>Vector2D</name>
+        <param>
+          <type>const float &amp;</type>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float&amp;: x component of vector </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float&amp;: y component of vector </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="51" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1ab62b6c21031bd3e48a603bcb18352632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Vector2D::Vector2D</definition>
+        <argsstring>(const Vector2D &amp;)</argsstring>
+        <name>Vector2D</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref>&amp;: reference of another vector to be copied </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a09321550743fbcd53dca638ba19f88b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ngind::Vector2D::getX</definition>
+        <argsstring>() const</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="61" column="18" bodyfile="ngind/kernel/math/vector.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1ac5035efce01e9997c8cb837f5ebfbb9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ngind::Vector2D::getY</definition>
+        <argsstring>() const</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="69" column="18" bodyfile="ngind/kernel/math/vector.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1ad92bcb1eedafee66c2de9914c8a5d523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Vector2D::setX</definition>
+        <argsstring>(const float &amp;x)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="77" column="17" bodyfile="ngind/kernel/math/vector.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1abbb6ac62fe1d9d0a199a854ee4bf708b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Vector2D::setY</definition>
+        <argsstring>(const float &amp;y)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="85" column="17" bodyfile="ngind/kernel/math/vector.h" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1abc7559ff207f8bc3406a44b1b94e145c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Vector2D::operator*</definition>
+        <argsstring>(const float &amp;) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="93" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a42b288e12dd9b32b8a57e06ad1ccd51f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D&amp; ngind::Vector2D::operator*=</definition>
+        <argsstring>(const float &amp;)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const float &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="99" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a976c554fffd34cd010731f2e1c19846e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Vector2D::operator+</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="105" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1ad1a55fd534f7c94e9df9c9607f0950f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D&amp; ngind::Vector2D::operator+=</definition>
+        <argsstring>(const Vector2D &amp;)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="111" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1aa2fa53ce68e8adf03ff663792bd409e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Vector2D::operator-</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="117" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1af1d3c6cd5ffb0a87d47aa322a45849b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D&amp; ngind::Vector2D::operator-=</definition>
+        <argsstring>(const Vector2D &amp;)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="123" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1ad387bf97eb82bd9c1beae9722357d6da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Vector2D::operator==</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1aa7c86175e5ce743d92ce72d58e18522c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Vector2D::operator!=</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1aa44ea7a2cf10cea81a024b0f25eaae41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        <definition>Vector2D&amp; ngind::Vector2D::operator=</definition>
+        <argsstring>(const Vector2D &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="141" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a828972a6f9299ace7426963b9d3b830a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ngind::Vector2D::operator*</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="147" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a8752ba953c9a61aa127e13dccbf31291" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ngind::Vector2D::getMagnitude</definition>
+        <argsstring>() const</argsstring>
+        <name>getMagnitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="153" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a7baeb5fbba8ea69df9a99973ec63978a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ngind::Vector2D::getMagnitude2</definition>
+        <argsstring>() const</argsstring>
+        <name>getMagnitude2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="159" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a1ee641b9afaee681e31f87e4571cca16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Vector2D::normalize</definition>
+        <argsstring>() const</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="165" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1aea5322ec8ea925082efa1ab62d91581b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Vector2D::getNormalOrthogonalVector</definition>
+        <argsstring>() const</argsstring>
+        <name>getNormalOrthogonalVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="171" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a9f436ea22fa6fbeee64f471e48a39549" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Vector2D::project</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>project</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="177" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a352c02e10ed3b5c7849749900c839dd9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ngind::Vector2D::getAngle</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>getAngle</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="183" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a367a0af5a0b55c74ee5dc391aa1a5751" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Vector2D::isCollinear</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>isCollinear</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="189" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a08108ce9d2290983b5a421d7f79e2567" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Vector2D::isReverse</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>isReverse</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="195" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a5b7faaa8f0bf553ff62f167bf91b7a7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Vector2D::isOrthogonal</definition>
+        <argsstring>(const Vector2D &amp;) const</argsstring>
+        <name>isOrthogonal</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="201" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a2ad926940b91921d76bd88ffd1f78697" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Vector2D::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="212" column="17" bodyfile="ngind/kernel/math/vector.h" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Vector2D_1a64bdbf8370d50f109870592b0defd4bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ngind::Vector2D::cross</definition>
+        <argsstring>(const Vector2D &amp;v) const</argsstring>
+        <name>cross</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/math/vector.h" line="220" column="18" bodyfile="ngind/kernel/math/vector.h" bodystart="220" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ngind::Vector2D</label>
+        <link refid="classngind_1_1Vector2D"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ORIGIN</edgelabel>
+          <edgelabel>INVALID</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ngind/kernel/math/vector.h" line="42" column="15" bodyfile="ngind/kernel/math/vector.h" bodystart="42" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Vector2D_1a1ae52a6425886ace59a9c31c67f8b52b" prot="private" virt="non-virtual"><scope>ngind::Vector2D</scope><name>_x</name></member>
+      <member refid="classngind_1_1Vector2D_1a5335f9bb12596a8f1a326233a7d2eeca" prot="private" virt="non-virtual"><scope>ngind::Vector2D</scope><name>_y</name></member>
+      <member refid="classngind_1_1Vector2D_1a64bdbf8370d50f109870592b0defd4bc" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>cross</name></member>
+      <member refid="classngind_1_1Vector2D_1a8253f6bb917cdb34d99e053b38ff2efb" prot="private" virt="non-virtual"><scope>ngind::Vector2D</scope><name>EPSILON</name></member>
+      <member refid="classngind_1_1Vector2D_1a352c02e10ed3b5c7849749900c839dd9" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>getAngle</name></member>
+      <member refid="classngind_1_1Vector2D_1a8752ba953c9a61aa127e13dccbf31291" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>getMagnitude</name></member>
+      <member refid="classngind_1_1Vector2D_1a7baeb5fbba8ea69df9a99973ec63978a" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>getMagnitude2</name></member>
+      <member refid="classngind_1_1Vector2D_1aea5322ec8ea925082efa1ab62d91581b" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>getNormalOrthogonalVector</name></member>
+      <member refid="classngind_1_1Vector2D_1a09321550743fbcd53dca638ba19f88b0" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>getX</name></member>
+      <member refid="classngind_1_1Vector2D_1ac5035efce01e9997c8cb837f5ebfbb9e" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>getY</name></member>
+      <member refid="classngind_1_1Vector2D_1a222fabee5409d04465adaa4d6225f2e0" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>INVALID</name></member>
+      <member refid="classngind_1_1Vector2D_1a367a0af5a0b55c74ee5dc391aa1a5751" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>isCollinear</name></member>
+      <member refid="classngind_1_1Vector2D_1a5b7faaa8f0bf553ff62f167bf91b7a7f" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>isOrthogonal</name></member>
+      <member refid="classngind_1_1Vector2D_1a08108ce9d2290983b5a421d7f79e2567" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>isReverse</name></member>
+      <member refid="classngind_1_1Vector2D_1a2ad926940b91921d76bd88ffd1f78697" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>isValid</name></member>
+      <member refid="classngind_1_1Vector2D_1a1ee641b9afaee681e31f87e4571cca16" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>normalize</name></member>
+      <member refid="classngind_1_1Vector2D_1aa7c86175e5ce743d92ce72d58e18522c" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator!=</name></member>
+      <member refid="classngind_1_1Vector2D_1abc7559ff207f8bc3406a44b1b94e145c" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator*</name></member>
+      <member refid="classngind_1_1Vector2D_1a828972a6f9299ace7426963b9d3b830a" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator*</name></member>
+      <member refid="classngind_1_1Vector2D_1a42b288e12dd9b32b8a57e06ad1ccd51f" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator*=</name></member>
+      <member refid="classngind_1_1Vector2D_1a976c554fffd34cd010731f2e1c19846e" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator+</name></member>
+      <member refid="classngind_1_1Vector2D_1ad1a55fd534f7c94e9df9c9607f0950f9" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator+=</name></member>
+      <member refid="classngind_1_1Vector2D_1aa2fa53ce68e8adf03ff663792bd409e8" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator-</name></member>
+      <member refid="classngind_1_1Vector2D_1af1d3c6cd5ffb0a87d47aa322a45849b1" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator-=</name></member>
+      <member refid="classngind_1_1Vector2D_1aa44ea7a2cf10cea81a024b0f25eaae41" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator=</name></member>
+      <member refid="classngind_1_1Vector2D_1ad387bf97eb82bd9c1beae9722357d6da" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>operator==</name></member>
+      <member refid="classngind_1_1Vector2D_1a1640f3c385c4be30fbe904780ea8b242" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>ORIGIN</name></member>
+      <member refid="classngind_1_1Vector2D_1a9f436ea22fa6fbeee64f471e48a39549" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>project</name></member>
+      <member refid="classngind_1_1Vector2D_1ad92bcb1eedafee66c2de9914c8a5d523" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>setX</name></member>
+      <member refid="classngind_1_1Vector2D_1abbb6ac62fe1d9d0a199a854ee4bf708b" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>setY</name></member>
+      <member refid="classngind_1_1Vector2D_1a599343ced5b7832fb405a6f9f56890e1" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>Vector2D</name></member>
+      <member refid="classngind_1_1Vector2D_1a53b61429f43a408674b9bee820704741" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>Vector2D</name></member>
+      <member refid="classngind_1_1Vector2D_1ab62b6c21031bd3e48a603bcb18352632" prot="public" virt="non-virtual"><scope>ngind::Vector2D</scope><name>Vector2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -12,8 +12,11 @@
 #
 import os
 import sys
+import subprocess
 
 sys.path.insert(0, os.path.abspath('../ngind'))
+
+subprocess.call('cd .. ; doxygen', shell=True)
 
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd = os.environ.get('READ_THE_DOCS', None) == 'True'
@@ -71,6 +74,7 @@ exclude_patterns = []
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_extra_path = ['../build/html']
 
 
 # html_theme = 'sphinx_rtd_theme'

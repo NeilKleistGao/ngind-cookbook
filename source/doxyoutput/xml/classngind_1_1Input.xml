@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Input" kind="class" language="C++" prot="public">
+    <compoundname>ngind::Input</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classngind_1_1Input_1a553f958a25683445088050a69d3de8e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Window</definition>
+        <argsstring></argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allow <ref refid="classngind_1_1Window" kindref="compound">Window</ref> class access to function setWindowHandler <simplesect kind="see"><para><ref refid="window_8h" kindref="compound">kernel/render/window.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="141" column="5" bodyfile="ngind/kernel/input/input.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1Input_1ae38444eb6a647508fccf778c8aed9baf" prot="private" static="yes" mutable="no">
+        <type><ref refid="classngind_1_1Input" kindref="compound">Input</ref> *</type>
+        <definition>Input* ngind::Input::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="146" column="18" bodyfile="ngind/kernel/input/input.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1Input_1a3f0ce7649f15c96ca4073fa67ac7b9ec" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1KeyboardInput" kindref="compound">KeyboardInput</ref> *</type>
+        <definition>KeyboardInput* ngind::Input::_keyboard</definition>
+        <argsstring></argsstring>
+        <name>_keyboard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="150" column="19" bodyfile="ngind/kernel/input/input.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Input_1af40ef370d20c73c02a7c27a50b326e49" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1MouseInput" kindref="compound">MouseInput</ref> *</type>
+        <definition>MouseInput* ngind::Input::_mouse</definition>
+        <argsstring></argsstring>
+        <name>_mouse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="154" column="16" bodyfile="ngind/kernel/input/input.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Input_1a98d9c065bf40e4032f61c75dcee88862" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1TextInput" kindref="compound">TextInput</ref> *</type>
+        <definition>TextInput* ngind::Input::_text</definition>
+        <argsstring></argsstring>
+        <name>_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="158" column="15" bodyfile="ngind/kernel/input/input.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Input_1ae8426ca17550e75a52404937f38d0c4f" prot="private" static="no" mutable="no">
+        <type>GLFWwindow *</type>
+        <definition>GLFWwindow* ngind::Input::_window_handler</definition>
+        <argsstring></argsstring>
+        <name>_window_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="162" column="16" bodyfile="ngind/kernel/input/input.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Input_1a12a24526506bca09469e010b8039c9e1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::Input::_text_mod</definition>
+        <argsstring></argsstring>
+        <name>_text_mod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="166" column="10" bodyfile="ngind/kernel/input/input.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classngind_1_1Input_1aa2a50c21334c1ef9305a22e48b255118" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Input" kindref="compound">Input</ref> *</type>
+        <definition>static Input* ngind::Input::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="55" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1aad28ff72cf54bd1dfaac5766f6756d24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ngind::Input::destroyInstance</definition>
+        <argsstring>()</argsstring>
+        <name>destroyInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="62" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Input_1af4e6088c8a0ceda398f373249b03e878" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Input::getKey</definition>
+        <argsstring>(const KeyboardCode &amp;code)</argsstring>
+        <name>getKey</name>
+        <param>
+          <type>const KeyboardCode &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="68" column="17" bodyfile="ngind/kernel/input/input.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1a3f0469f05b90ee06ee29d1d9b17b4e92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Input::getKeyPressed</definition>
+        <argsstring>(const KeyboardCode &amp;code)</argsstring>
+        <name>getKeyPressed</name>
+        <param>
+          <type>const KeyboardCode &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="76" column="17" bodyfile="ngind/kernel/input/input.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1ae46f22f73891b8e641d3d02bb1d13fc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Input::getKeyReleased</definition>
+        <argsstring>(const KeyboardCode &amp;code)</argsstring>
+        <name>getKeyReleased</name>
+        <param>
+          <type>const KeyboardCode &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="84" column="17" bodyfile="ngind/kernel/input/input.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1a0494606e326e33d0a74d66306f329911" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Input::getMousePressed</definition>
+        <argsstring>(const MouseCode &amp;code)</argsstring>
+        <name>getMousePressed</name>
+        <param>
+          <type>const MouseCode &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="92" column="21" bodyfile="ngind/kernel/input/input.h" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1ad3a3dd0722ef46a611c1c80fcd19cb57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Input::getMouse</definition>
+        <argsstring>(const MouseCode &amp;code)</argsstring>
+        <name>getMouse</name>
+        <param>
+          <type>const MouseCode &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="100" column="21" bodyfile="ngind/kernel/input/input.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1a82bc36387ad2f2ccea7a7ef921bd4fd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Input::getMouseReleased</definition>
+        <argsstring>(const MouseCode &amp;code)</argsstring>
+        <name>getMouseReleased</name>
+        <param>
+          <type>const MouseCode &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="108" column="21" bodyfile="ngind/kernel/input/input.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1a8fbccf39573188bf6201e32c27697f71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::Input::getMouseMoving</definition>
+        <argsstring>()</argsstring>
+        <name>getMouseMoving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="116" column="21" bodyfile="ngind/kernel/input/input.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1a20c698069b8578247e215c32a5c91382" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ngind::Input::getString</definition>
+        <argsstring>(const EncodingType &amp;encoding)</argsstring>
+        <name>getString</name>
+        <param>
+          <type>const <ref refid="namespacengind_1a313a8f3ca7c14a64ad0b049e36be4038" kindref="member">EncodingType</ref> &amp;</type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="124" column="24" bodyfile="ngind/kernel/input/input.h" bodystart="124" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1af0218586af5c2e44a15ebaf4c3bd1c5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Input::switchTextMod</definition>
+        <argsstring>(const bool &amp;is_enable)</argsstring>
+        <name>switchTextMod</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>is_enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="135" column="17" bodyfile="ngind/kernel/input/input.h" bodystart="135" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classngind_1_1Input_1ae0b1a52905a669eddfe77e0aa78e5729" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Input::setWindowHandler</definition>
+        <argsstring>(GLFWwindow *window)</argsstring>
+        <name>setWindowHandler</name>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="172" column="17" bodyfile="ngind/kernel/input/input.h" bodystart="172" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1ab4fb21b7d7309958dcb53d2bc45ec968" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Input::Input</definition>
+        <argsstring>()</argsstring>
+        <name>Input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Newing a input instance is not allowed outside the getInstance function </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="181" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Input_1a02bb1ad03c87d365c97bd75b892e0d7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Input::~Input</definition>
+        <argsstring>()</argsstring>
+        <name>~Input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Deleting a input instance is not allowed outside the getInstance function </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/input.h" line="185" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/input/input.h" line="48" column="12" bodyfile="ngind/kernel/input/input.h" bodystart="48" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Input_1ae38444eb6a647508fccf778c8aed9baf" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>_instance</name></member>
+      <member refid="classngind_1_1Input_1a3f0ce7649f15c96ca4073fa67ac7b9ec" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>_keyboard</name></member>
+      <member refid="classngind_1_1Input_1af40ef370d20c73c02a7c27a50b326e49" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>_mouse</name></member>
+      <member refid="classngind_1_1Input_1a98d9c065bf40e4032f61c75dcee88862" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>_text</name></member>
+      <member refid="classngind_1_1Input_1a12a24526506bca09469e010b8039c9e1" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>_text_mod</name></member>
+      <member refid="classngind_1_1Input_1ae8426ca17550e75a52404937f38d0c4f" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>_window_handler</name></member>
+      <member refid="classngind_1_1Input_1aad28ff72cf54bd1dfaac5766f6756d24" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>destroyInstance</name></member>
+      <member refid="classngind_1_1Input_1aa2a50c21334c1ef9305a22e48b255118" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getInstance</name></member>
+      <member refid="classngind_1_1Input_1af4e6088c8a0ceda398f373249b03e878" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getKey</name></member>
+      <member refid="classngind_1_1Input_1a3f0469f05b90ee06ee29d1d9b17b4e92" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getKeyPressed</name></member>
+      <member refid="classngind_1_1Input_1ae46f22f73891b8e641d3d02bb1d13fc8" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getKeyReleased</name></member>
+      <member refid="classngind_1_1Input_1ad3a3dd0722ef46a611c1c80fcd19cb57" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getMouse</name></member>
+      <member refid="classngind_1_1Input_1a8fbccf39573188bf6201e32c27697f71" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getMouseMoving</name></member>
+      <member refid="classngind_1_1Input_1a0494606e326e33d0a74d66306f329911" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getMousePressed</name></member>
+      <member refid="classngind_1_1Input_1a82bc36387ad2f2ccea7a7ef921bd4fd3" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getMouseReleased</name></member>
+      <member refid="classngind_1_1Input_1a20c698069b8578247e215c32a5c91382" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>getString</name></member>
+      <member refid="classngind_1_1Input_1ab4fb21b7d7309958dcb53d2bc45ec968" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>Input</name></member>
+      <member refid="classngind_1_1Input_1ae0b1a52905a669eddfe77e0aa78e5729" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>setWindowHandler</name></member>
+      <member refid="classngind_1_1Input_1af0218586af5c2e44a15ebaf4c3bd1c5b" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>switchTextMod</name></member>
+      <member refid="classngind_1_1Input_1a553f958a25683445088050a69d3de8e9" prot="public" virt="non-virtual"><scope>ngind::Input</scope><name>Window</name></member>
+      <member refid="classngind_1_1Input_1a02bb1ad03c87d365c97bd75b892e0d7b" prot="private" virt="non-virtual"><scope>ngind::Input</scope><name>~Input</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

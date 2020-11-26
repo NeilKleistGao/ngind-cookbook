@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1File" kind="class" language="C++" prot="public">
+    <compoundname>ngind::File</compoundname>
+    <basecompoundref refid="classngind_1_1AutoCollectionObject" prot="public" virt="non-virtual">ngind::AutoCollectionObject</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1File_1a1a8e662cd799e0f9ec1533a86cd70eab" prot="public" static="yes" mutable="no">
+        <type>const static std::string</type>
+        <definition>const static std::string ngind::File::STDIN</definition>
+        <argsstring></argsstring>
+        <name>STDIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="74" column="30" bodyfile="ngind/kernel/filesystem/file.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1File_1a050d0eba90d856fc2354c0ed8de17786" prot="public" static="yes" mutable="no">
+        <type>const static std::string</type>
+        <definition>const static std::string ngind::File::STDOUT</definition>
+        <argsstring></argsstring>
+        <name>STDOUT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="74" column="36" bodyfile="ngind/kernel/filesystem/file.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1File_1a3214c7879d64d971fb4e00aefae2a3a7" prot="public" static="yes" mutable="no">
+        <type>const static std::string</type>
+        <definition>const static std::string ngind::File::STDERR</definition>
+        <argsstring></argsstring>
+        <name>STDERR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="74" column="43" bodyfile="ngind/kernel/filesystem/file.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1File_1a2a5e1308ac4de7371b7031b36110e92b" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* ngind::File::_fp</definition>
+        <argsstring></argsstring>
+        <name>_fp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="197" column="10" bodyfile="ngind/kernel/filesystem/file.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1File_1a7713b18b34442f355d61bbd0edc08d09" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::File::_open</definition>
+        <argsstring></argsstring>
+        <name>_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="200" column="10" bodyfile="ngind/kernel/filesystem/file.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1File_1a4cf9a921a1b4af7f1cc80aeb9140ba73" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::File::_readable</definition>
+        <argsstring></argsstring>
+        <name>_readable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="200" column="16" bodyfile="ngind/kernel/filesystem/file.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1File_1a509f42f4316a3ba1a656f89af019b885" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::File::_writeable</definition>
+        <argsstring></argsstring>
+        <name>_writeable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="200" column="26" bodyfile="ngind/kernel/filesystem/file.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1File_1afe21f26ba1ab0fdb5fe284293bfd11d8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::File::_binary</definition>
+        <argsstring></argsstring>
+        <name>_binary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="200" column="37" bodyfile="ngind/kernel/filesystem/file.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1File_1a38aa7dcff242d44a2d8602fa492c6ef4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::File::_redirect</definition>
+        <argsstring></argsstring>
+        <name>_redirect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="200" column="45" bodyfile="ngind/kernel/filesystem/file.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1File_1af2090e41a9f77895cd1c96fe6ee044a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::File::File</definition>
+        <argsstring>()</argsstring>
+        <name>File</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1aa7d5adf278395b2737b76c6f5cb2bc7a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::File::File</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>File</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string&amp;: the path of file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="58" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1abf1011ffd5328d350f801a878409e3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::File::File</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>File</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string&amp;: the path of file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string&amp;: the mode of file, same as fopen </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="63" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1aefd59a70fc8e86a9b65bf6475a970860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::File::File</definition>
+        <argsstring>(const File &amp;)=delete</argsstring>
+        <name>File</name>
+        <param>
+          <type>const <ref refid="classngind_1_1File" kindref="compound">File</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="65" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a3a2e0f7213972383e4bb6c13e1da5825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::File::File</definition>
+        <argsstring>(File &amp;&amp;)=delete</argsstring>
+        <name>File</name>
+        <param>
+          <type><ref refid="classngind_1_1File" kindref="compound">File</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="66" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1ac64834d4af547aa141d60a55396a5b8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::File::~File</definition>
+        <argsstring>()</argsstring>
+        <name>~File</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="69" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1af0b8ca34da0bb089bc544b6cd55c7401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::File::writeLine</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>writeLine</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a6ce10d16cf68ae51fe644f72fb45d974" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ngind::File::readLine</definition>
+        <argsstring>()</argsstring>
+        <name>readLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="86" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a5394461108eef8d1cfdc5375e5cd9cc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::File::write</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a462a5ae6687c021da8c55af49b03e26f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::File::write</definition>
+        <argsstring>(const char *, const size_t &amp;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>const size_t &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a200b4dfe7a337f0ecf683f188362989b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* ngind::File::read</definition>
+        <argsstring>(const size_t &amp;)</argsstring>
+        <name>read</name>
+        <param>
+          <type>const size_t &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a4a6dd25afe5e86b6f575c5284254f01a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ngind::File::readToEnd</definition>
+        <argsstring>()</argsstring>
+        <name>readToEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="111" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1ac02a446ae2a6ebcc00629a31efb260b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::File::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="117" column="17" bodyfile="ngind/kernel/filesystem/file.h" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a62f7838984ea618f3da70d46963e72f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::File::isOpen</definition>
+        <argsstring>() const</argsstring>
+        <name>isOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="125" column="17" bodyfile="ngind/kernel/filesystem/file.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a02bcdcf8dc0387189d689d356cbcdf64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::File::isReadable</definition>
+        <argsstring>() const</argsstring>
+        <name>isReadable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="133" column="17" bodyfile="ngind/kernel/filesystem/file.h" bodystart="133" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a6f6039748a83a39ca4365865703ef69c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::File::isWriteable</definition>
+        <argsstring>() const</argsstring>
+        <name>isWriteable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="141" column="17" bodyfile="ngind/kernel/filesystem/file.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1ae3683e0bfc60c1610dc52dcafa481223" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::File::isBinary</definition>
+        <argsstring>() const</argsstring>
+        <name>isBinary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="149" column="17" bodyfile="ngind/kernel/filesystem/file.h" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a4f2fd876ae0f3bc0035a824210d44b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::File::open</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1aa4325c02b9834198ae5b84bd6fac9af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::File::open</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="164" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a3dfa020ddf992c24dcd79930f3bf5f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::File::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="170" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1aec1ed9e236ff7b2c34fd74029019a9e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Coroutine" kindref="compound">Coroutine</ref>&lt; char *, const size_t &amp; &gt;</type>
+        <definition>Coroutine&lt;char*, const size_t&amp;&gt; ngind::File::readAsync</definition>
+        <argsstring>(const size_t &amp;, typename Coroutine&lt; char *, const size_t &amp; &gt;::callback)</argsstring>
+        <name>readAsync</name>
+        <param>
+          <type>const size_t &amp;</type>
+        </param>
+        <param>
+          <type>typename <ref refid="classngind_1_1Coroutine" kindref="compound">Coroutine</ref>&lt; char *, const size_t &amp; &gt;::callback</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="177" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a045fb0da0a4ff926cfab519ee6893fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Coroutine" kindref="compound">Coroutine</ref>&lt; void, const std::string &amp; &gt;</type>
+        <definition>Coroutine&lt;void, const std::string&amp;&gt; ngind::File::writeAsync</definition>
+        <argsstring>(const std::string &amp;, typename Coroutine&lt; void, const std::string &amp; &gt;::callback)</argsstring>
+        <name>writeAsync</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>typename <ref refid="classngind_1_1Coroutine" kindref="compound">Coroutine</ref>&lt; void, const std::string &amp; &gt;::callback</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="184" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1File_1a5496d6f63f98ddb0ded0d03bab670a4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Coroutine" kindref="compound">Coroutine</ref>&lt; void, const char *, const size_t &amp; &gt;</type>
+        <definition>Coroutine&lt;void, const char*, const size_t&amp;&gt; ngind::File::writeAsync</definition>
+        <argsstring>(const char *, const size_t &amp;, typename Coroutine&lt; void, const char *, const size_t &amp; &gt;::callback)</argsstring>
+        <name>writeAsync</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>const size_t &amp;</type>
+        </param>
+        <param>
+          <type>typename <ref refid="classngind_1_1Coroutine" kindref="compound">Coroutine</ref>&lt; void, const char *, const size_t &amp; &gt;::callback</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/filesystem/file.h" line="192" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ngind::AutoCollectionObject</label>
+        <link refid="classngind_1_1AutoCollectionObject"/>
+      </node>
+      <node id="1">
+        <label>ngind::File</label>
+        <link refid="classngind_1_1File"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ngind::AutoCollectionObject</label>
+        <link refid="classngind_1_1AutoCollectionObject"/>
+      </node>
+      <node id="1">
+        <label>ngind::File</label>
+        <link refid="classngind_1_1File"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ngind/kernel/filesystem/file.h" line="52" column="39" bodyfile="ngind/kernel/filesystem/file.h" bodystart="52" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classngind_1_1File_1afe21f26ba1ab0fdb5fe284293bfd11d8" prot="private" virt="non-virtual"><scope>ngind::File</scope><name>_binary</name></member>
+      <member refid="classngind_1_1File_1a2a5e1308ac4de7371b7031b36110e92b" prot="private" virt="non-virtual"><scope>ngind::File</scope><name>_fp</name></member>
+      <member refid="classngind_1_1File_1a7713b18b34442f355d61bbd0edc08d09" prot="private" virt="non-virtual"><scope>ngind::File</scope><name>_open</name></member>
+      <member refid="classngind_1_1File_1a4cf9a921a1b4af7f1cc80aeb9140ba73" prot="private" virt="non-virtual"><scope>ngind::File</scope><name>_readable</name></member>
+      <member refid="classngind_1_1File_1a38aa7dcff242d44a2d8602fa492c6ef4" prot="private" virt="non-virtual"><scope>ngind::File</scope><name>_redirect</name></member>
+      <member refid="classngind_1_1File_1a509f42f4316a3ba1a656f89af019b885" prot="private" virt="non-virtual"><scope>ngind::File</scope><name>_writeable</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1a278c82737b3e590fcf6be818c3177f0b" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>addReference</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1a2a6ce9412a14f9a6870b80043cf02979" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>AutoCollectionObject</name></member>
+      <member refid="classngind_1_1File_1a3dfa020ddf992c24dcd79930f3bf5f1d" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>close</name></member>
+      <member refid="classngind_1_1File_1af2090e41a9f77895cd1c96fe6ee044a5" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>File</name></member>
+      <member refid="classngind_1_1File_1aa7d5adf278395b2737b76c6f5cb2bc7a" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>File</name></member>
+      <member refid="classngind_1_1File_1abf1011ffd5328d350f801a878409e3dc" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>File</name></member>
+      <member refid="classngind_1_1File_1aefd59a70fc8e86a9b65bf6475a970860" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>File</name></member>
+      <member refid="classngind_1_1File_1a3a2e0f7213972383e4bb6c13e1da5825" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>File</name></member>
+      <member refid="classngind_1_1File_1ac02a446ae2a6ebcc00629a31efb260b7" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>flush</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1acab3095eb1245afd8beee51979f6690a" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>getSustain</name></member>
+      <member refid="classngind_1_1File_1ae3683e0bfc60c1610dc52dcafa481223" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>isBinary</name></member>
+      <member refid="classngind_1_1File_1a62f7838984ea618f3da70d46963e72f5" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>isOpen</name></member>
+      <member refid="classngind_1_1File_1a02bcdcf8dc0387189d689d356cbcdf64" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>isReadable</name></member>
+      <member refid="classngind_1_1File_1a6f6039748a83a39ca4365865703ef69c" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>isWriteable</name></member>
+      <member refid="classngind_1_1File_1a4f2fd876ae0f3bc0035a824210d44b0a" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>open</name></member>
+      <member refid="classngind_1_1File_1aa4325c02b9834198ae5b84bd6fac9af5" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>open</name></member>
+      <member refid="classngind_1_1File_1a200b4dfe7a337f0ecf683f188362989b" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>read</name></member>
+      <member refid="classngind_1_1File_1aec1ed9e236ff7b2c34fd74029019a9e5" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>readAsync</name></member>
+      <member refid="classngind_1_1File_1a6ce10d16cf68ae51fe644f72fb45d974" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>readLine</name></member>
+      <member refid="classngind_1_1File_1a4a6dd25afe5e86b6f575c5284254f01a" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>readToEnd</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1a3eedb12cec5bae9b931939b620d6076a" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>removeReference</name></member>
+      <member refid="classngind_1_1File_1a3214c7879d64d971fb4e00aefae2a3a7" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>STDERR</name></member>
+      <member refid="classngind_1_1File_1a1a8e662cd799e0f9ec1533a86cd70eab" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>STDIN</name></member>
+      <member refid="classngind_1_1File_1a050d0eba90d856fc2354c0ed8de17786" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>STDOUT</name></member>
+      <member refid="classngind_1_1File_1a5394461108eef8d1cfdc5375e5cd9cc3" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>write</name></member>
+      <member refid="classngind_1_1File_1a462a5ae6687c021da8c55af49b03e26f" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>write</name></member>
+      <member refid="classngind_1_1File_1a045fb0da0a4ff926cfab519ee6893fb8" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>writeAsync</name></member>
+      <member refid="classngind_1_1File_1a5496d6f63f98ddb0ded0d03bab670a4a" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>writeAsync</name></member>
+      <member refid="classngind_1_1File_1af0b8ca34da0bb089bc544b6cd55c7401" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>writeLine</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1ac23c11f6fcb9d659a21112bad802e025" prot="public" virt="virtual"><scope>ngind::File</scope><name>~AutoCollectionObject</name></member>
+      <member refid="classngind_1_1File_1ac64834d4af547aa141d60a55396a5b8d" prot="public" virt="non-virtual"><scope>ngind::File</scope><name>~File</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

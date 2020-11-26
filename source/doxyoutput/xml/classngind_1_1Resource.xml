@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Resource" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ngind::Resource</compoundname>
+    <basecompoundref refid="classngind_1_1AutoCollectionObject" prot="public" virt="non-virtual">ngind::AutoCollectionObject</basecompoundref>
+    <derivedcompoundref refid="classngind_1_1ConfigResource" prot="public" virt="non-virtual">ngind::ConfigResource</derivedcompoundref>
+    <derivedcompoundref refid="classngind_1_1FontResource" prot="public" virt="non-virtual">ngind::FontResource</derivedcompoundref>
+    <derivedcompoundref refid="classngind_1_1ProgramResource" prot="public" virt="non-virtual">ngind::ProgramResource</derivedcompoundref>
+    <derivedcompoundref refid="classngind_1_1ShaderResource" prot="public" virt="non-virtual">ngind::ShaderResource</derivedcompoundref>
+    <derivedcompoundref refid="classngind_1_1TextureResource" prot="public" virt="non-virtual">ngind::TextureResource</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classngind_1_1Resource_1a4ebf2b5d0254928b6284c7aeece6c794" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ngind::Resource::_path</definition>
+        <argsstring></argsstring>
+        <name>_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/resources/resource.h" line="43" column="17" bodyfile="ngind/kernel/resources/resource.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Resource_1aef00a8ca99b228a8c1426ccdb10e1d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ngind::Resource::~Resource</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/resources/resource.h" line="35" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Resource_1ae1e99a7fc1940bd7d4b16ca6a8a302ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ngind::Resource::load</definition>
+        <argsstring>(const std::string &amp;)=0</argsstring>
+        <name>load</name>
+        <reimplementedby refid="classngind_1_1ShaderResource_1a839fb6abf6ec9ec404fe6ee19316c94f">load</reimplementedby>
+        <reimplementedby refid="classngind_1_1ConfigResource_1a17c36b0989faad05782dd1ba7523f3d2">load</reimplementedby>
+        <reimplementedby refid="classngind_1_1TextureResource_1aa73196f3b33057a2b710020789145be9">load</reimplementedby>
+        <reimplementedby refid="classngind_1_1ProgramResource_1a1bc6b60c9ae4f280860378ef75052fc6">load</reimplementedby>
+        <reimplementedby refid="classngind_1_1FontResource_1ae158730e24b9fc2baa4bf7f6b9bfdf8a">load</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/resources/resource.h" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Resource_1ac57b58ebd5a62c6837755c24855a7eb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string ngind::Resource::getResourcePath</definition>
+        <argsstring>() const</argsstring>
+        <name>getResourcePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/resources/resource.h" line="38" column="30" bodyfile="ngind/kernel/resources/resource.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ngind::AutoCollectionObject</label>
+        <link refid="classngind_1_1AutoCollectionObject"/>
+      </node>
+      <node id="1">
+        <label>ngind::Resource</label>
+        <link refid="classngind_1_1Resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ngind::FontResource</label>
+        <link refid="classngind_1_1FontResource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ngind::ProgramResource</label>
+        <link refid="classngind_1_1ProgramResource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ngind::ConfigResource</label>
+        <link refid="classngind_1_1ConfigResource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ngind::ShaderResource</label>
+        <link refid="classngind_1_1ShaderResource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ngind::TextureResource</label>
+        <link refid="classngind_1_1TextureResource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ngind::AutoCollectionObject</label>
+        <link refid="classngind_1_1AutoCollectionObject"/>
+      </node>
+      <node id="1">
+        <label>ngind::Resource</label>
+        <link refid="classngind_1_1Resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ngind/kernel/resources/resource.h" line="33" column="43" bodyfile="ngind/kernel/resources/resource.h" bodystart="33" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Resource_1a4ebf2b5d0254928b6284c7aeece6c794" prot="protected" virt="non-virtual"><scope>ngind::Resource</scope><name>_path</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1a278c82737b3e590fcf6be818c3177f0b" prot="public" virt="non-virtual"><scope>ngind::Resource</scope><name>addReference</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1a2a6ce9412a14f9a6870b80043cf02979" prot="public" virt="non-virtual"><scope>ngind::Resource</scope><name>AutoCollectionObject</name></member>
+      <member refid="classngind_1_1Resource_1ac57b58ebd5a62c6837755c24855a7eb3" prot="public" virt="non-virtual"><scope>ngind::Resource</scope><name>getResourcePath</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1acab3095eb1245afd8beee51979f6690a" prot="public" virt="non-virtual"><scope>ngind::Resource</scope><name>getSustain</name></member>
+      <member refid="classngind_1_1Resource_1ae1e99a7fc1940bd7d4b16ca6a8a302ef" prot="public" virt="pure-virtual"><scope>ngind::Resource</scope><name>load</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1a3eedb12cec5bae9b931939b620d6076a" prot="public" virt="non-virtual"><scope>ngind::Resource</scope><name>removeReference</name></member>
+      <member refid="classngind_1_1AutoCollectionObject_1ac23c11f6fcb9d659a21112bad802e025" prot="public" virt="virtual"><scope>ngind::Resource</scope><name>~AutoCollectionObject</name></member>
+      <member refid="classngind_1_1Resource_1aef00a8ca99b228a8c1426ccdb10e1d68" prot="public" virt="virtual"><scope>ngind::Resource</scope><name>~Resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
