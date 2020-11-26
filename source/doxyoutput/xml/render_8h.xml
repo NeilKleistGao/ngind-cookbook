@@ -76,7 +76,7 @@
       </node>
       <node id="3">
         <label>render_command.h</label>
-        <link refid="render__command_8h_source"/>
+        <link refid="render__command_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="8" relation="include">

@@ -50,7 +50,7 @@
       </node>
       <node id="15">
         <label>ngind/kernel/render/render_command.h</label>
-        <link refid="render__command_8h_source"/>
+        <link refid="render__command_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="16" relation="include">

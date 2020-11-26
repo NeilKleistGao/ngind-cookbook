@@ -11,8 +11,6 @@ Program Listing for File render_command.h
 .. code-block:: cpp
 
    
-   // FILENAME: render_command.h
-   // LAST MODIFY: 2020/11/1
    
    #ifndef NGIND_RENDER_COMMAND_H
    #define NGIND_RENDER_COMMAND_H
@@ -42,7 +40,9 @@ Program Listing for File render_command.h
    
    struct QuadRenderCommand : public RenderCommand {
        GLuint texture_id{};
+   
        Quad* quad;
+   
        Program* program;
    
        QuadRenderCommand()

@@ -3,6 +3,7 @@
   <compounddef id="structngind_1_1QuadRenderCommand" kind="struct" language="C++" prot="public">
     <compoundname>ngind::QuadRenderCommand</compoundname>
     <basecompoundref refid="structngind_1_1RenderCommand" prot="public" virt="non-virtual">ngind::RenderCommand</basecompoundref>
+    <includes refid="render__command_8h" local="no">render_command.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structngind_1_1QuadRenderCommand_1af9dcd7fe8cde4fa21ed3e5b3e578619b" prot="public" static="no" mutable="no">
         <type>GLuint</type>
@@ -13,10 +14,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>ID of texture that render will use </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ngind/kernel/render/render_command.h" line="51" column="12" bodyfile="ngind/kernel/render/render_command.h" bodystart="51" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="59" column="12" bodyfile="ngind/kernel/render/render_command.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structngind_1_1QuadRenderCommand_1ad4b66c87e7508236dc384a0d8a3e7351" prot="public" static="no" mutable="no">
         <type><ref refid="classngind_1_1Quad" kindref="compound">Quad</ref> *</type>
@@ -26,10 +28,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><ref refid="classngind_1_1Quad" kindref="compound">Quad</ref> data </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ngind/kernel/render/render_command.h" line="52" column="10" bodyfile="ngind/kernel/render/render_command.h" bodystart="52" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="64" column="10" bodyfile="ngind/kernel/render/render_command.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structngind_1_1QuadRenderCommand_1a85332b35e76ced8f051ab20b4f03fde5" prot="public" static="no" mutable="no">
         <type><ref refid="classngind_1_1Program" kindref="compound">Program</ref> *</type>
@@ -39,10 +42,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para><ref refid="classngind_1_1Render" kindref="compound">Render</ref> program </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ngind/kernel/render/render_command.h" line="53" column="13" bodyfile="ngind/kernel/render/render_command.h" bodystart="53" bodyend="-1"/>
+        <location file="ngind/kernel/render/render_command.h" line="69" column="13" bodyfile="ngind/kernel/render/render_command.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -57,12 +61,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ngind/kernel/render/render_command.h" line="55" column="5" bodyfile="ngind/kernel/render/render_command.h" bodystart="55" bodyend="56"/>
+        <location file="ngind/kernel/render/render_command.h" line="71" column="5" bodyfile="ngind/kernel/render/render_command.h" bodystart="71" bodyend="72"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para>This command is designed for quad render. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -102,7 +107,7 @@
         <link refid="classngind_1_1Quad"/>
       </node>
     </collaborationgraph>
-    <location file="ngind/kernel/render/render_command.h" line="50" column="45" bodyfile="ngind/kernel/render/render_command.h" bodystart="50" bodyend="57"/>
+    <location file="ngind/kernel/render/render_command.h" line="55" column="45" bodyfile="ngind/kernel/render/render_command.h" bodystart="55" bodyend="73"/>
     <listofallmembers>
       <member refid="structngind_1_1QuadRenderCommand_1a85332b35e76ced8f051ab20b4f03fde5" prot="public" virt="non-virtual"><scope>ngind::QuadRenderCommand</scope><name>program</name></member>
       <member refid="structngind_1_1QuadRenderCommand_1ad4b66c87e7508236dc384a0d8a3e7351" prot="public" virt="non-virtual"><scope>ngind::QuadRenderCommand</scope><name>quad</name></member>
