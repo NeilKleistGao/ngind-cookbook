@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1TextInput" kind="class" language="C++" prot="public">
+    <compoundname>ngind::TextInput</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1TextInput_1a028712f57f30e4f3c64fdab5af72bc30" prot="private" static="no" mutable="no">
+        <type>std::list&lt; unsigned int &gt;</type>
+        <definition>std::list&lt;unsigned int&gt; ngind::TextInput::_buff</definition>
+        <argsstring></argsstring>
+        <name>_buff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="85" column="15" bodyfile="ngind/kernel/input/text_input.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1TextInput_1a5843d39b21795807f644daf89cad6144" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::TextInput::_enabled</definition>
+        <argsstring></argsstring>
+        <name>_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="93" column="10" bodyfile="ngind/kernel/input/text_input.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1TextInput_1adbb2d5a49bb9c2d9f04cd2d08a0d356e" prot="private" static="yes" mutable="no">
+        <type><ref refid="classngind_1_1TextInput" kindref="compound">TextInput</ref> *</type>
+        <definition>TextInput* ngind::TextInput::_self</definition>
+        <argsstring></argsstring>
+        <name>_self</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="89" column="22" bodyfile="ngind/kernel/input/text_input.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1TextInput_1a3c193e89b370c3ab532664684e84a585" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::TextInput::TextInput</definition>
+        <argsstring>(GLFWwindow *&amp;)</argsstring>
+        <name>TextInput</name>
+        <param>
+          <type>GLFWwindow *&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GLFWwindow*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the GLFW window that is the event listener </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="59" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1TextInput_1aa84b3b489a532d19d6d0a55daa9f4379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::TextInput::~TextInput</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TextInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="62" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1TextInput_1acd2dd7b46582d3da4c2ae1d6eedaed24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ngind::TextInput::getString</definition>
+        <argsstring>(const EncodingType &amp;encoding=EncodingType::ENCODING_ASCII)</argsstring>
+        <name>getString</name>
+        <param>
+          <type>const <ref refid="namespacengind_1a313a8f3ca7c14a64ad0b049e36be4038" kindref="member">EncodingType</ref> &amp;</type>
+          <declname>encoding</declname>
+          <defval>EncodingType::ENCODING_ASCII</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="input_8h" kindref="compound">kernel/input/input.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="65" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1TextInput_1afffc781e51f615fbdfa92b419f8d5fc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::TextInput::setEnable</definition>
+        <argsstring>(const bool &amp;enable)</argsstring>
+        <name>setEnable</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="71" column="17" bodyfile="ngind/kernel/input/text_input.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classngind_1_1TextInput_1a6e842584ab6d12bbd41b7c8b20299a4b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ngind::TextInput::textCallBack</definition>
+        <argsstring>(GLFWwindow *, unsigned int)</argsstring>
+        <name>textCallBack</name>
+        <param>
+          <type>GLFWwindow *</type>
+        </param>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/text_input.h" line="81" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/input/text_input.h" line="55" column="16" bodyfile="ngind/kernel/input/text_input.h" bodystart="55" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classngind_1_1TextInput_1a028712f57f30e4f3c64fdab5af72bc30" prot="private" virt="non-virtual"><scope>ngind::TextInput</scope><name>_buff</name></member>
+      <member refid="classngind_1_1TextInput_1a5843d39b21795807f644daf89cad6144" prot="private" virt="non-virtual"><scope>ngind::TextInput</scope><name>_enabled</name></member>
+      <member refid="classngind_1_1TextInput_1adbb2d5a49bb9c2d9f04cd2d08a0d356e" prot="private" virt="non-virtual"><scope>ngind::TextInput</scope><name>_self</name></member>
+      <member refid="classngind_1_1TextInput_1acd2dd7b46582d3da4c2ae1d6eedaed24" prot="public" virt="non-virtual"><scope>ngind::TextInput</scope><name>getString</name></member>
+      <member refid="classngind_1_1TextInput_1afffc781e51f615fbdfa92b419f8d5fc5" prot="public" virt="non-virtual"><scope>ngind::TextInput</scope><name>setEnable</name></member>
+      <member refid="classngind_1_1TextInput_1a6e842584ab6d12bbd41b7c8b20299a4b" prot="private" virt="non-virtual"><scope>ngind::TextInput</scope><name>textCallBack</name></member>
+      <member refid="classngind_1_1TextInput_1a3c193e89b370c3ab532664684e84a585" prot="public" virt="non-virtual"><scope>ngind::TextInput</scope><name>TextInput</name></member>
+      <member refid="classngind_1_1TextInput_1aa84b3b489a532d19d6d0a55daa9f4379" prot="public" virt="non-virtual"><scope>ngind::TextInput</scope><name>~TextInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

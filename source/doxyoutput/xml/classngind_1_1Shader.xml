@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Shader" kind="class" language="C++" prot="public">
+    <compoundname>ngind::Shader</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1Shader_1aa5f7bc0a21165c669538c8b25697cd67" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint ngind::Shader::_shader</definition>
+        <argsstring></argsstring>
+        <name>_shader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/shader.h" line="44" column="12" bodyfile="ngind/kernel/render/shader.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Shader_1a28b213d480a5ac8c60e0515d9a137a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Shader::Shader</definition>
+        <argsstring>(const std::string &amp;, const int &amp;)</argsstring>
+        <name>Shader</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/shader.h" line="35" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Shader_1a65b409f94435d81e6121810b29a808c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Shader::~Shader</definition>
+        <argsstring>()</argsstring>
+        <name>~Shader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/shader.h" line="36" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Shader_1aea8e98b576ec088c499e63bfaf7e5b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Shader::Shader</definition>
+        <argsstring>(const Shader &amp;)=delete</argsstring>
+        <name>Shader</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/shader.h" line="37" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Shader_1ab1b32939319c3c3f1af9cf35177d265d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+        <definition>Shader&amp; ngind::Shader::operator=</definition>
+        <argsstring>(const Shader &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classngind_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/shader.h" line="38" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Shader_1a44f39506e0ae2a9d81e49d96e4379f40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint ngind::Shader::getShader</definition>
+        <argsstring>() const</argsstring>
+        <name>getShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/shader.h" line="40" column="19" bodyfile="ngind/kernel/render/shader.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/render/shader.h" line="33" column="13" bodyfile="ngind/kernel/render/shader.h" bodystart="33" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Shader_1aa5f7bc0a21165c669538c8b25697cd67" prot="private" virt="non-virtual"><scope>ngind::Shader</scope><name>_shader</name></member>
+      <member refid="classngind_1_1Shader_1a44f39506e0ae2a9d81e49d96e4379f40" prot="public" virt="non-virtual"><scope>ngind::Shader</scope><name>getShader</name></member>
+      <member refid="classngind_1_1Shader_1ab1b32939319c3c3f1af9cf35177d265d" prot="public" virt="non-virtual"><scope>ngind::Shader</scope><name>operator=</name></member>
+      <member refid="classngind_1_1Shader_1a28b213d480a5ac8c60e0515d9a137a83" prot="public" virt="non-virtual"><scope>ngind::Shader</scope><name>Shader</name></member>
+      <member refid="classngind_1_1Shader_1aea8e98b576ec088c499e63bfaf7e5b85" prot="public" virt="non-virtual"><scope>ngind::Shader</scope><name>Shader</name></member>
+      <member refid="classngind_1_1Shader_1a65b409f94435d81e6121810b29a808c9" prot="public" virt="non-virtual"><scope>ngind::Shader</scope><name>~Shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

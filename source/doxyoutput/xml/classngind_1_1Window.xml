@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Window" kind="class" language="C++" prot="public">
+    <compoundname>ngind::Window</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1Window_1a8b9ae9ccd8baf5b4a229cd32dfd6333a" prot="private" static="no" mutable="no">
+        <type>GLFWwindow *</type>
+        <definition>GLFWwindow* ngind::Window::_window</definition>
+        <argsstring></argsstring>
+        <name>_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="121" column="16" bodyfile="ngind/kernel/render/window.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Window_1ae3800e3dc1d3e60560ec11ac605b522e" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1PNGImage" kindref="compound">PNGImage</ref> *</type>
+        <definition>PNGImage* ngind::Window::_icon</definition>
+        <argsstring></argsstring>
+        <name>_icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="125" column="14" bodyfile="ngind/kernel/render/window.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Window_1ac284978bef7cd484deb901f4cf0e142d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Window::Window</definition>
+        <argsstring>(const size_t &amp;, const size_t &amp;, const std::string &amp;, const bool &amp;is_full=false)</argsstring>
+        <name>Window</name>
+        <param>
+          <type>const size_t &amp;</type>
+        </param>
+        <param>
+          <type>const size_t &amp;</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>is_full</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size_t&amp;: width of window </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size_t&amp;: height of window </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string&amp;: title of window </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool&amp; is_full: true if window should be fullscreen and default is false </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a727e4c3767cb9c244167e19fbb758b90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="51" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a1db263382abbeb7f5a7d6d382f09a1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Window::setIcon</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setIcon</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a951788c5dbc03700518617ba0139fd1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngind::Window::isLoopEnd</definition>
+        <argsstring>()</argsstring>
+        <name>isLoopEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="63" column="17" bodyfile="ngind/kernel/render/window.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a65d05504532fbd87926ca638fd70c8db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Window::swapBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>swapBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="71" column="17" bodyfile="ngind/kernel/render/window.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a718c92ff537aeebbbee6d19e7284a6bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; float, float &gt;</type>
+        <definition>std::pair&lt;float, float&gt; ngind::Window::getContentScale</definition>
+        <argsstring>()</argsstring>
+        <name>getContentScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="79" column="22" bodyfile="ngind/kernel/render/window.h" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a324d6c87d7bfbaa8f677a0abf3e8fe95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Window::setTitle</definition>
+        <argsstring>(const std::string &amp;title)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="89" column="17" bodyfile="ngind/kernel/render/window.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a902e27dea7b295ed770f0bd81a56e704" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Window::setFullScreen</definition>
+        <argsstring>(const bool &amp;is_full)</argsstring>
+        <name>setFullScreen</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>is_full</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="97" column="17" bodyfile="ngind/kernel/render/window.h" bodystart="97" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Window_1a8e764d0819bae23b8ebb431a3821fc87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Window::resize</definition>
+        <argsstring>(const size_t &amp;width, const size_t &amp;height)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>const size_t &amp;</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const size_t &amp;</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/window.h" line="114" column="17" bodyfile="ngind/kernel/render/window.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/render/window.h" line="41" column="13" bodyfile="ngind/kernel/render/window.h" bodystart="41" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Window_1ae3800e3dc1d3e60560ec11ac605b522e" prot="private" virt="non-virtual"><scope>ngind::Window</scope><name>_icon</name></member>
+      <member refid="classngind_1_1Window_1a8b9ae9ccd8baf5b4a229cd32dfd6333a" prot="private" virt="non-virtual"><scope>ngind::Window</scope><name>_window</name></member>
+      <member refid="classngind_1_1Window_1a718c92ff537aeebbbee6d19e7284a6bd" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>getContentScale</name></member>
+      <member refid="classngind_1_1Window_1a951788c5dbc03700518617ba0139fd1a" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>isLoopEnd</name></member>
+      <member refid="classngind_1_1Window_1a8e764d0819bae23b8ebb431a3821fc87" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>resize</name></member>
+      <member refid="classngind_1_1Window_1a902e27dea7b295ed770f0bd81a56e704" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>setFullScreen</name></member>
+      <member refid="classngind_1_1Window_1a1db263382abbeb7f5a7d6d382f09a1d9" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>setIcon</name></member>
+      <member refid="classngind_1_1Window_1a324d6c87d7bfbaa8f677a0abf3e8fe95" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>setTitle</name></member>
+      <member refid="classngind_1_1Window_1a65d05504532fbd87926ca638fd70c8db" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>swapBuffer</name></member>
+      <member refid="classngind_1_1Window_1ac284978bef7cd484deb901f4cf0e142d" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>Window</name></member>
+      <member refid="classngind_1_1Window_1a727e4c3767cb9c244167e19fbb758b90" prot="public" virt="non-virtual"><scope>ngind::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

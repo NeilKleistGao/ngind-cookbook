@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1MouseInput" kind="class" language="C++" prot="public">
+    <compoundname>ngind::MouseInput</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1MouseInput_1a23fe388a315430113993c341a0f2276b" prot="private" static="no" mutable="no">
+        <type>std::set&lt; MouseCode &gt;</type>
+        <definition>std::set&lt;MouseCode&gt; ngind::MouseInput::_pressed</definition>
+        <argsstring></argsstring>
+        <name>_pressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/mouse_input.h" line="81" column="14" bodyfile="ngind/kernel/input/mouse_input.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1MouseInput_1abad32a30041f8c19deb79764d143d341" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::MouseInput::MouseInput</definition>
+        <argsstring>(GLFWwindow *&amp;)</argsstring>
+        <name>MouseInput</name>
+        <param>
+          <type>GLFWwindow *&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GLFWwindow*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>window: the GLFW window that is the event listener </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/mouse_input.h" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1MouseInput_1a2467c8609d22416db9fbf5b0794f3087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::MouseInput::~MouseInput</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MouseInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/mouse_input.h" line="65" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1MouseInput_1a511f672c1373482499c34c73e0188daa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::MouseInput::getMousePressed</definition>
+        <argsstring>(GLFWwindow *&amp;, const MouseCode &amp;)</argsstring>
+        <name>getMousePressed</name>
+        <param>
+          <type>GLFWwindow *&amp;</type>
+        </param>
+        <param>
+          <type>const MouseCode &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="input_8h" kindref="compound">kernel/input/input.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/mouse_input.h" line="68" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1MouseInput_1a67b7167bd6de97d60e3c09e2751a7bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::MouseInput::getMouse</definition>
+        <argsstring>(GLFWwindow *&amp;, const MouseCode &amp;)</argsstring>
+        <name>getMouse</name>
+        <param>
+          <type>GLFWwindow *&amp;</type>
+        </param>
+        <param>
+          <type>const MouseCode &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="input_8h" kindref="compound">kernel/input/input.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/mouse_input.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1MouseInput_1ade7e18ebf8d8895dbb31cbe9ac878eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::MouseInput::getMouseReleased</definition>
+        <argsstring>(GLFWwindow *&amp;, const MouseCode &amp;)</argsstring>
+        <name>getMouseReleased</name>
+        <param>
+          <type>GLFWwindow *&amp;</type>
+        </param>
+        <param>
+          <type>const MouseCode &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="input_8h" kindref="compound">kernel/input/input.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/mouse_input.h" line="74" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1MouseInput_1a711340f1ea80f821645f9fc14c723fa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Vector2D" kindref="compound">Vector2D</ref></type>
+        <definition>Vector2D ngind::MouseInput::getMouseMoving</definition>
+        <argsstring>(GLFWwindow *&amp;)</argsstring>
+        <name>getMouseMoving</name>
+        <param>
+          <type>GLFWwindow *&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="input_8h" kindref="compound">kernel/input/input.h</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/input/mouse_input.h" line="77" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/input/mouse_input.h" line="58" column="17" bodyfile="ngind/kernel/input/mouse_input.h" bodystart="58" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classngind_1_1MouseInput_1a23fe388a315430113993c341a0f2276b" prot="private" virt="non-virtual"><scope>ngind::MouseInput</scope><name>_pressed</name></member>
+      <member refid="classngind_1_1MouseInput_1a67b7167bd6de97d60e3c09e2751a7bca" prot="public" virt="non-virtual"><scope>ngind::MouseInput</scope><name>getMouse</name></member>
+      <member refid="classngind_1_1MouseInput_1a711340f1ea80f821645f9fc14c723fa0" prot="public" virt="non-virtual"><scope>ngind::MouseInput</scope><name>getMouseMoving</name></member>
+      <member refid="classngind_1_1MouseInput_1a511f672c1373482499c34c73e0188daa" prot="public" virt="non-virtual"><scope>ngind::MouseInput</scope><name>getMousePressed</name></member>
+      <member refid="classngind_1_1MouseInput_1ade7e18ebf8d8895dbb31cbe9ac878eb0" prot="public" virt="non-virtual"><scope>ngind::MouseInput</scope><name>getMouseReleased</name></member>
+      <member refid="classngind_1_1MouseInput_1abad32a30041f8c19deb79764d143d341" prot="public" virt="non-virtual"><scope>ngind::MouseInput</scope><name>MouseInput</name></member>
+      <member refid="classngind_1_1MouseInput_1a2467c8609d22416db9fbf5b0794f3087" prot="public" virt="non-virtual"><scope>ngind::MouseInput</scope><name>~MouseInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
