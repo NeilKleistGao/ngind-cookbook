@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structngind_1_1RGBA" kind="struct" language="C++" prot="public">
+    <compoundname>ngind::RGBA</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structngind_1_1RGBA_1ad00aad8b566c10f7ea55cb1756db90b7" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char ngind::RGBA::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/rgba.h" line="41" column="19" bodyfile="ngind/kernel/render/rgba.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structngind_1_1RGBA_1a3fbad46db0bf4dd550bfbe91284f6cc8" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char ngind::RGBA::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/rgba.h" line="41" column="21" bodyfile="ngind/kernel/render/rgba.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structngind_1_1RGBA_1acd451063da3c42c04a208c4642bf8f45" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char ngind::RGBA::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/rgba.h" line="41" column="23" bodyfile="ngind/kernel/render/rgba.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structngind_1_1RGBA_1a00c59989c9961c885438efd255e0563d" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char ngind::RGBA::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/rgba.h" line="41" column="25" bodyfile="ngind/kernel/render/rgba.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structngind_1_1RGBA_1a3430d2b3d7d616862ab84e3e3b1694bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::RGBA::RGBA</definition>
+        <argsstring>()=default</argsstring>
+        <name>RGBA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/rgba.h" line="32" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structngind_1_1RGBA_1a0814967322fe59cc8c84a236786669ed" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngind::RGBA::RGBA</definition>
+        <argsstring>(const std::string &amp;code)</argsstring>
+        <name>RGBA</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/render/rgba.h" line="33" column="14" bodyfile="ngind/kernel/render/rgba.h" bodystart="33" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/render/rgba.h" line="31" column="11" bodyfile="ngind/kernel/render/rgba.h" bodystart="31" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structngind_1_1RGBA_1a00c59989c9961c885438efd255e0563d" prot="public" virt="non-virtual"><scope>ngind::RGBA</scope><name>a</name></member>
+      <member refid="structngind_1_1RGBA_1acd451063da3c42c04a208c4642bf8f45" prot="public" virt="non-virtual"><scope>ngind::RGBA</scope><name>b</name></member>
+      <member refid="structngind_1_1RGBA_1a3fbad46db0bf4dd550bfbe91284f6cc8" prot="public" virt="non-virtual"><scope>ngind::RGBA</scope><name>g</name></member>
+      <member refid="structngind_1_1RGBA_1ad00aad8b566c10f7ea55cb1756db90b7" prot="public" virt="non-virtual"><scope>ngind::RGBA</scope><name>r</name></member>
+      <member refid="structngind_1_1RGBA_1a3430d2b3d7d616862ab84e3e3b1694bc" prot="public" virt="non-virtual"><scope>ngind::RGBA</scope><name>RGBA</name></member>
+      <member refid="structngind_1_1RGBA_1a0814967322fe59cc8c84a236786669ed" prot="public" virt="non-virtual"><scope>ngind::RGBA</scope><name>RGBA</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

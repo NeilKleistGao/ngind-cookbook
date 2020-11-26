@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_79eb812b9d6467252e2c21b0dadbd275" kind="dir">
+    <compoundname>ngind/kernel/platforms</compoundname>
+    <innerfile refid="linux_8h">linux.h</innerfile>
+    <innerfile refid="platforms_8h">platforms.h</innerfile>
+    <innerfile refid="windows_8h">windows.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/platforms/"/>
+  </compounddef>
+</doxygen>

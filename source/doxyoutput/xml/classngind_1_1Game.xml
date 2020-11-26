@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classngind_1_1Game" kind="class" language="C++" prot="public">
+    <compoundname>ngind::Game</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classngind_1_1Game_1afb0b1c94426c5c7dfe6c7db47dc625b3" prot="private" static="yes" mutable="no">
+        <type><ref refid="classngind_1_1Game" kindref="compound">Game</ref> *</type>
+        <definition>Game* ngind::Game::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="120" column="17" bodyfile="ngind/kernel/game.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngind_1_1Game_1a043301ad672f273ba49c4a1056b6b17e" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1ConfigResource" kindref="compound">ConfigResource</ref> *</type>
+        <definition>ConfigResource* ngind::Game::_global_settings</definition>
+        <argsstring></argsstring>
+        <name>_global_settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="124" column="20" bodyfile="ngind/kernel/game.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Game_1aba2d91d193505ccbba3aa50dbeeef44f" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer ngind::Game::_global_timer</definition>
+        <argsstring></argsstring>
+        <name>_global_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="128" column="11" bodyfile="ngind/kernel/game.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Game_1ad578d9f9484a443cbe2c98327dca115f" prot="private" static="no" mutable="no">
+        <type><ref refid="classngind_1_1World" kindref="compound">World</ref> *</type>
+        <definition>World* ngind::Game::_current_world</definition>
+        <argsstring></argsstring>
+        <name>_current_world</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="132" column="11" bodyfile="ngind/kernel/game.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Game_1a29aa79993c1072680e17655e65da53ab" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classngind_1_1World" kindref="compound">World</ref> * &gt;</type>
+        <definition>std::map&lt;std::string, World*&gt; ngind::Game::_worlds</definition>
+        <argsstring></argsstring>
+        <name>_worlds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="136" column="14" bodyfile="ngind/kernel/game.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Game_1a00dcf30f334c384ddafdf4319b5a232e" prot="private" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="classngind_1_1World" kindref="compound">World</ref> * &gt;</type>
+        <definition>std::stack&lt;World*&gt; ngind::Game::_stack</definition>
+        <argsstring></argsstring>
+        <name>_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="140" column="16" bodyfile="ngind/kernel/game.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngind_1_1Game_1a9004b89e02d54af62128b206ea169809" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngind::Game::_loop_flag</definition>
+        <argsstring></argsstring>
+        <name>_loop_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="144" column="10" bodyfile="ngind/kernel/game.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classngind_1_1Game_1ac9a9a72ea927535d84da8ec2a38d16c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngind_1_1Game" kindref="compound">Game</ref> *</type>
+        <definition>static Game* ngind::Game::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="49" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1a1ab1ff1d225d70be5ade18a90b0426b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ngind::Game::destroyInstance</definition>
+        <argsstring>()</argsstring>
+        <name>destroyInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="56" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngind_1_1Game_1a976f39af64e8f5a55ac7fc70bcd5c9d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Game::loadWorld</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>loadWorld</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1ad05a0986f974f45e62a51dcac17a88ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Game::destroyWorld</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>destroyWorld</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1a51c4524a4bc9949839b13337934be3de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Game::pushAndLoadWorld</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>pushAndLoadWorld</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1a44d503ee1019010de3dad8d85467e7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Game::popAndLoadWorld</definition>
+        <argsstring>(const bool &amp;)</argsstring>
+        <name>popAndLoadWorld</name>
+        <param>
+          <type>const bool &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1a49ea3cf5031b4f91eb143d36a4d15266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Game::DestroyAndLoadWorld</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>DestroyAndLoadWorld</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1aef71568b610a89f5b4f6219e68abc90b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Game::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1a33db56ee5a9a3e0871a58c74b8bc1f7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngind_1_1World" kindref="compound">World</ref> *</type>
+        <definition>World* ngind::Game::getCurrentWorld</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="98" column="18" bodyfile="ngind/kernel/game.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1a2dd2e24176b689fc81198087d3b82fd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ngind::Game::quit</definition>
+        <argsstring>()</argsstring>
+        <name>quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="106" column="17" bodyfile="ngind/kernel/game.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classngind_1_1Game_1a07421aa29ac4ef19a3b514c8d3a62265" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Game::Game</definition>
+        <argsstring>()</argsstring>
+        <name>Game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="112" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classngind_1_1Game_1a7d8388ce30b65b736c1153fdfc7ebb51" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngind::Game::~Game</definition>
+        <argsstring>()</argsstring>
+        <name>~Game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ngind/kernel/game.h" line="115" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ngind/kernel/game.h" line="42" column="11" bodyfile="ngind/kernel/game.h" bodystart="42" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classngind_1_1Game_1ad578d9f9484a443cbe2c98327dca115f" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>_current_world</name></member>
+      <member refid="classngind_1_1Game_1a043301ad672f273ba49c4a1056b6b17e" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>_global_settings</name></member>
+      <member refid="classngind_1_1Game_1aba2d91d193505ccbba3aa50dbeeef44f" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>_global_timer</name></member>
+      <member refid="classngind_1_1Game_1afb0b1c94426c5c7dfe6c7db47dc625b3" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>_instance</name></member>
+      <member refid="classngind_1_1Game_1a9004b89e02d54af62128b206ea169809" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>_loop_flag</name></member>
+      <member refid="classngind_1_1Game_1a00dcf30f334c384ddafdf4319b5a232e" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>_stack</name></member>
+      <member refid="classngind_1_1Game_1a29aa79993c1072680e17655e65da53ab" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>_worlds</name></member>
+      <member refid="classngind_1_1Game_1a49ea3cf5031b4f91eb143d36a4d15266" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>DestroyAndLoadWorld</name></member>
+      <member refid="classngind_1_1Game_1a1ab1ff1d225d70be5ade18a90b0426b9" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>destroyInstance</name></member>
+      <member refid="classngind_1_1Game_1ad05a0986f974f45e62a51dcac17a88ba" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>destroyWorld</name></member>
+      <member refid="classngind_1_1Game_1a07421aa29ac4ef19a3b514c8d3a62265" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>Game</name></member>
+      <member refid="classngind_1_1Game_1a33db56ee5a9a3e0871a58c74b8bc1f7b" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>getCurrentWorld</name></member>
+      <member refid="classngind_1_1Game_1ac9a9a72ea927535d84da8ec2a38d16c8" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>getInstance</name></member>
+      <member refid="classngind_1_1Game_1a976f39af64e8f5a55ac7fc70bcd5c9d4" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>loadWorld</name></member>
+      <member refid="classngind_1_1Game_1a44d503ee1019010de3dad8d85467e7bd" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>popAndLoadWorld</name></member>
+      <member refid="classngind_1_1Game_1a51c4524a4bc9949839b13337934be3de" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>pushAndLoadWorld</name></member>
+      <member refid="classngind_1_1Game_1a2dd2e24176b689fc81198087d3b82fd9" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>quit</name></member>
+      <member refid="classngind_1_1Game_1aef71568b610a89f5b4f6219e68abc90b" prot="public" virt="non-virtual"><scope>ngind::Game</scope><name>start</name></member>
+      <member refid="classngind_1_1Game_1a7d8388ce30b65b736c1153fdfc7ebb51" prot="private" virt="non-virtual"><scope>ngind::Game</scope><name>~Game</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
