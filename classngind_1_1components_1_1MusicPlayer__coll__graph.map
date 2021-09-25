@@ -1,0 +1,9 @@
+<map id="ngind::components::MusicPlayer" name="ngind::components::MusicPlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="909,69,1064,110"/>
+<area shape="rect" id="node2" href="$classngind_1_1components_1_1Component.html" title=" " alt="" coords="616,97,771,138"/>
+<area shape="rect" id="node3" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,49,228,90"/>
+<area shape="rect" id="node5" href="$classngind_1_1objects_1_1Object.html" title=" " alt="" coords="295,145,457,172"/>
+<area shape="rect" id="node7" href="$classngind_1_1resources_1_1Resource.html" title=" " alt="" coords="277,5,475,32"/>
+<area shape="rect" id="node4" href="$classngind_1_1objects_1_1UpdatableObject.html" title=" " alt="" coords="23,167,211,209"/>
+<area shape="rect" id="node6" href="$classngind_1_1resources_1_1MusicResource.html" title=" " alt="" coords="576,25,811,52"/>
+</map>

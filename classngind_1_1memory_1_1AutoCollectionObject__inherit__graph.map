@@ -1,0 +1,44 @@
+<map id="ngind::memory::AutoCollectionObject" name="ngind::memory::AutoCollectionObject">
+<area shape="rect" id="node1" title=" " alt="" coords="5,936,228,977"/>
+<area shape="rect" id="node2" href="$classngind_1_1components_1_1Component.html" title=" " alt="" coords="300,300,455,341"/>
+<area shape="rect" id="node19" href="$classngind_1_1filesystem_1_1InputStream.html" title=" " alt="" coords="306,681,449,723"/>
+<area shape="rect" id="node24" href="$classngind_1_1filesystem_1_1OutputStream.html" title=" " alt="" coords="306,877,449,919"/>
+<area shape="rect" id="node27" href="$classngind_1_1objects_1_1Object.html" title=" " alt="" coords="296,943,459,970"/>
+<area shape="rect" id="node30" href="$classngind_1_1rendering_1_1Quad.html" title=" " alt="" coords="292,994,463,1021"/>
+<area shape="rect" id="node31" href="$classngind_1_1rendering_1_1RenderingCommand.html" title=" " alt="" coords="276,1045,479,1087"/>
+<area shape="rect" id="node34" href="$classngind_1_1resources_1_1Resource.html" title=" " alt="" coords="279,1373,476,1399"/>
+<area shape="rect" id="node3" href="$classngind_1_1components_1_1Animation.html" title=" " alt="" coords="567,5,722,47"/>
+<area shape="rect" id="node4" href="$classngind_1_1components_1_1Button.html" title=" " alt="" coords="567,71,722,112"/>
+<area shape="rect" id="node5" href="$classngind_1_1components_1_1EffectPlayer.html" title=" " alt="" coords="567,136,722,177"/>
+<area shape="rect" id="node6" href="$classngind_1_1components_1_1MusicPlayer.html" title=" " alt="" coords="567,201,722,243"/>
+<area shape="rect" id="node7" href="$classngind_1_1components_1_1RendererComponent.html" title=" " alt="" coords="567,267,723,308"/>
+<area shape="rect" id="node10" href="$classngind_1_1components_1_1StateMachine.html" title=" " alt="" coords="567,332,722,373"/>
+<area shape="rect" id="node11" href="$classngind_1_1physics_1_1PhysicsJoint.html" title=" " alt="" coords="544,398,745,425"/>
+<area shape="rect" id="node17" href="$classngind_1_1physics_1_1PhysicsWorld.html" title=" " alt="" coords="540,449,749,475"/>
+<area shape="rect" id="node18" href="$classngind_1_1physics_1_1RigidBody.html" title=" " alt="" coords="550,499,739,526"/>
+<area shape="rect" id="node8" href="$classngind_1_1components_1_1Label.html" title=" " alt="" coords="829,201,984,243"/>
+<area shape="rect" id="node9" href="$classngind_1_1components_1_1Sprite.html" title=" " alt="" coords="829,267,984,308"/>
+<area shape="rect" id="node12" href="$classngind_1_1physics_1_1DistanceJoint.html" title=" " alt="" coords="817,332,997,373"/>
+<area shape="rect" id="node13" href="$classngind_1_1physics_1_1GearJoint.html" title=" " alt="" coords="815,398,998,425"/>
+<area shape="rect" id="node14" href="$classngind_1_1physics_1_1PrismaticJoint.html" title=" " alt="" coords="815,449,999,491"/>
+<area shape="rect" id="node15" href="$classngind_1_1physics_1_1PulleyJoint.html" title=" " alt="" coords="811,515,1003,542"/>
+<area shape="rect" id="node16" href="$classngind_1_1physics_1_1RevoluteJoint.html" title=" " alt="" coords="816,567,997,608"/>
+<area shape="rect" id="node20" href="$classngind_1_1filesystem_1_1CipherInputStream.html" title=" " alt="" coords="573,551,717,592"/>
+<area shape="rect" id="node21" href="$classngind_1_1filesystem_1_1DataInputStream.html" title=" " alt="" coords="573,616,716,657"/>
+<area shape="rect" id="node22" href="$classngind_1_1filesystem_1_1FileInputStream.html" title=" " alt="" coords="573,681,716,723"/>
+<area shape="rect" id="node23" href="$classngind_1_1filesystem_1_1ZipInputStream.html" title=" " alt="" coords="573,747,716,788"/>
+<area shape="rect" id="node25" href="$classngind_1_1filesystem_1_1CipherOutputStream.html" title=" " alt="" coords="567,812,722,853"/>
+<area shape="rect" id="node26" href="$classngind_1_1filesystem_1_1FileOutputStream.html" title=" " alt="" coords="573,877,716,919"/>
+<area shape="rect" id="node28" href="$classngind_1_1objects_1_1EntityObject.html" title=" " alt="" coords="544,943,745,970"/>
+<area shape="rect" id="node29" href="$classngind_1_1objects_1_1World.html" title=" " alt="" coords="565,994,724,1021"/>
+<area shape="rect" id="node32" href="$classngind_1_1rendering_1_1BatchQuadRenderingCommand.html" title=" " alt="" coords="541,1045,748,1087"/>
+<area shape="rect" id="node33" href="$classngind_1_1rendering_1_1QuadRenderingCommand.html" title=" " alt="" coords="527,1111,763,1152"/>
+<area shape="rect" id="node35" href="$classngind_1_1resources_1_1AnimationResource.html" title=" " alt="" coords="543,1176,747,1217"/>
+<area shape="rect" id="node36" href="$classngind_1_1resources_1_1ConfigResource.html" title=" " alt="" coords="555,1241,734,1283"/>
+<area shape="rect" id="node37" href="$classngind_1_1resources_1_1EffectResource.html" title=" " alt="" coords="557,1307,732,1348"/>
+<area shape="rect" id="node38" href="$classngind_1_1resources_1_1FontResource.html" title=" " alt="" coords="532,1373,757,1399"/>
+<area shape="rect" id="node39" href="$classngind_1_1resources_1_1MusicResource.html" title=" " alt="" coords="527,1423,762,1450"/>
+<area shape="rect" id="node40" href="$classngind_1_1resources_1_1ProgramResource.html" title=" " alt="" coords="549,1475,741,1516"/>
+<area shape="rect" id="node41" href="$classngind_1_1resources_1_1ShaderResource.html" title=" " alt="" coords="553,1540,736,1581"/>
+<area shape="rect" id="node42" href="$classngind_1_1resources_1_1TextureResource.html" title=" " alt="" coords="552,1605,737,1647"/>
+</map>

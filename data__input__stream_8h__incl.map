@@ -1,0 +1,15 @@
+<map id="kernel/filesystem/data_input_stream.h" name="kernel/filesystem/data_input_stream.h">
+<area shape="rect" id="node1" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="81,5,247,47"/>
+<area shape="rect" id="node2" href="$input__stream_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="104,95,224,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,169,67,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="120,483,179,509"/>
+<area shape="rect" id="node5" href="$output__stream_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="151,169,281,196"/>
+<area shape="rect" id="node7" href="$auto__collection__object_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="283,244,463,285"/>
+<area shape="rect" id="node6" title=" " alt="" coords="192,251,259,278"/>
+<area shape="rect" id="node8" href="$lua__registration_8h.html" title=" " alt="" coords="285,333,461,360"/>
+<area shape="rect" id="node9" href="$lua__state_8h.html" title=" " alt="" coords="326,408,421,435"/>
+<area shape="rect" id="node10" title=" " alt="" coords="203,483,317,509"/>
+<area shape="rect" id="node11" title=" " alt="" coords="342,483,405,509"/>
+<area shape="rect" id="node12" title=" " alt="" coords="429,483,523,509"/>
+<area shape="rect" id="node13" title=" " alt="" coords="548,483,716,509"/>
+</map>

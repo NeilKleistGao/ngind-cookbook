@@ -1,0 +1,11 @@
+<map id="ngind::physics::PulleyJoint" name="ngind::physics::PulleyJoint">
+<area shape="rect" id="node1" title=" " alt="" coords="1399,45,1591,71"/>
+<area shape="rect" id="node2" href="$classngind_1_1physics_1_1PhysicsJoint.html" title=" " alt="" coords="1148,45,1349,71"/>
+<area shape="rect" id="node3" href="$classngind_1_1components_1_1Component.html" title=" " alt="" coords="570,21,725,63"/>
+<area shape="rect" id="node7" href="$classngind_1_1physics_1_1RigidBody.html" title=" " alt="" coords="852,78,1041,105"/>
+<area shape="rect" id="node4" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,84,228,125"/>
+<area shape="rect" id="node6" href="$classngind_1_1objects_1_1Object.html" title=" " alt="" coords="277,123,440,150"/>
+<area shape="rect" id="node5" href="$classngind_1_1objects_1_1UpdatableObject.html" title=" " alt="" coords="23,5,211,47"/>
+<area shape="rect" id="node9" href="$classngind_1_1objects_1_1EntityObject.html" title=" " alt="" coords="547,138,748,165"/>
+<area shape="rect" id="node8" href="$structngind_1_1physics_1_1PhysicsShape.html" title=" " alt="" coords="541,87,753,114"/>
+</map>

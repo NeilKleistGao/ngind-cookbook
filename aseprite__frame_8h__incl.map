@@ -1,0 +1,17 @@
+<map id="kernel/animation/aseprite_frame.h" name="kernel/animation/aseprite_frame.h">
+<area shape="rect" id="node1" title=" " alt="" coords="53,5,243,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,72,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="96,95,200,121"/>
+<area shape="rect" id="node4" href="$config__resource_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="224,95,427,121"/>
+<area shape="rect" id="node5" href="$resource_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="191,169,281,196"/>
+<area shape="rect" id="node15" title=" " alt="" coords="306,169,521,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="119,251,199,278"/>
+<area shape="rect" id="node7" href="$auto__collection__object_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="223,244,403,285"/>
+<area shape="rect" id="node8" href="$lua__registration_8h.html" title=" " alt="" coords="225,333,401,360"/>
+<area shape="rect" id="node9" href="$lua__state_8h.html" title=" " alt="" coords="266,408,361,435"/>
+<area shape="rect" id="node10" title=" " alt="" coords="60,483,119,509"/>
+<area shape="rect" id="node11" title=" " alt="" coords="143,483,257,509"/>
+<area shape="rect" id="node12" title=" " alt="" coords="282,483,345,509"/>
+<area shape="rect" id="node13" title=" " alt="" coords="369,483,463,509"/>
+<area shape="rect" id="node14" title=" " alt="" coords="488,483,656,509"/>
+</map>

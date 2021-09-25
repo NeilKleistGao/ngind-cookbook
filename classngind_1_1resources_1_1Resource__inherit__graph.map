@@ -1,0 +1,12 @@
+<map id="ngind::resources::Resource" name="ngind::resources::Resource">
+<area shape="rect" id="node1" title=" " alt="" coords="276,227,473,254"/>
+<area shape="rect" id="node3" href="$classngind_1_1resources_1_1AnimationResource.html" title=" " alt="" coords="537,5,741,47"/>
+<area shape="rect" id="node4" href="$classngind_1_1resources_1_1ConfigResource.html" title=" " alt="" coords="549,71,728,112"/>
+<area shape="rect" id="node5" href="$classngind_1_1resources_1_1EffectResource.html" title=" " alt="" coords="551,136,726,177"/>
+<area shape="rect" id="node6" href="$classngind_1_1resources_1_1FontResource.html" title=" " alt="" coords="526,202,751,229"/>
+<area shape="rect" id="node7" href="$classngind_1_1resources_1_1MusicResource.html" title=" " alt="" coords="521,253,756,279"/>
+<area shape="rect" id="node8" href="$classngind_1_1resources_1_1ProgramResource.html" title=" " alt="" coords="543,304,735,345"/>
+<area shape="rect" id="node9" href="$classngind_1_1resources_1_1ShaderResource.html" title=" " alt="" coords="547,369,730,411"/>
+<area shape="rect" id="node10" href="$classngind_1_1resources_1_1TextureResource.html" title=" " alt="" coords="546,435,731,476"/>
+<area shape="rect" id="node2" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,220,228,261"/>
+</map>

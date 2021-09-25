@@ -1,0 +1,13 @@
+<map id="kernel/rendering/quad.h" name="kernel/rendering/quad.h">
+<area shape="rect" id="node1" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="287,5,463,32"/>
+<area shape="rect" id="node2" href="$sprite_8h_source.html" title=" " alt="" coords="24,259,223,285"/>
+<area shape="rect" id="node5" href="$label_8h.html" title=" " alt="" coords="535,259,730,285"/>
+<area shape="rect" id="node7" href="$rendering__command_8h_source.html" title=" " alt="" coords="278,80,473,121"/>
+<area shape="rect" id="node8" href="$batch__quad__rendering__command_8h.html" title=" " alt="" coords="497,169,712,211"/>
+<area shape="rect" id="node9" href="$quad__rendering__command_8h.html" title=" " alt="" coords="79,169,253,211"/>
+<area shape="rect" id="node3" href="$animation_8h.html" title=" " alt="" coords="5,333,233,360"/>
+<area shape="rect" id="node4" href="$button_8h.html" title=" " alt="" coords="257,333,461,360"/>
+<area shape="rect" id="node6" href="$visual__logger_8h.html" title=" " alt="" coords="539,333,727,360"/>
+<area shape="rect" id="node10" href="$rendering__queue_8h_source.html" title=" " alt="" coords="278,169,473,211"/>
+<area shape="rect" id="node11" href="$renderer_8h_source.html" title=" " alt="" coords="276,259,475,285"/>
+</map>

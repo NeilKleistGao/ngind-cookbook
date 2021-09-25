@@ -1,0 +1,23 @@
+<map id="ngind::objects::UpdatableObject" name="ngind::objects::UpdatableObject">
+<area shape="rect" id="node1" title=" " alt="" coords="5,437,193,479"/>
+<area shape="rect" id="node2" href="$classngind_1_1components_1_1Component.html" title=" " alt="" coords="245,300,400,341"/>
+<area shape="rect" id="node19" href="$classngind_1_1objects_1_1Object.html" title=" " alt="" coords="241,550,404,577"/>
+<area shape="rect" id="node3" href="$classngind_1_1components_1_1Animation.html" title=" " alt="" coords="479,5,634,47"/>
+<area shape="rect" id="node4" href="$classngind_1_1components_1_1Button.html" title=" " alt="" coords="479,71,634,112"/>
+<area shape="rect" id="node5" href="$classngind_1_1components_1_1EffectPlayer.html" title=" " alt="" coords="479,136,634,177"/>
+<area shape="rect" id="node6" href="$classngind_1_1components_1_1MusicPlayer.html" title=" " alt="" coords="479,201,634,243"/>
+<area shape="rect" id="node7" href="$classngind_1_1components_1_1RendererComponent.html" title=" " alt="" coords="479,267,635,308"/>
+<area shape="rect" id="node10" href="$classngind_1_1components_1_1StateMachine.html" title=" " alt="" coords="479,332,634,373"/>
+<area shape="rect" id="node11" href="$classngind_1_1physics_1_1PhysicsJoint.html" title=" " alt="" coords="456,398,657,425"/>
+<area shape="rect" id="node17" href="$classngind_1_1physics_1_1PhysicsWorld.html" title=" " alt="" coords="452,449,661,475"/>
+<area shape="rect" id="node18" href="$classngind_1_1physics_1_1RigidBody.html" title=" " alt="" coords="462,499,651,526"/>
+<area shape="rect" id="node8" href="$classngind_1_1components_1_1Label.html" title=" " alt="" coords="728,201,883,243"/>
+<area shape="rect" id="node9" href="$classngind_1_1components_1_1Sprite.html" title=" " alt="" coords="728,267,883,308"/>
+<area shape="rect" id="node12" href="$classngind_1_1physics_1_1DistanceJoint.html" title=" " alt="" coords="715,332,895,373"/>
+<area shape="rect" id="node13" href="$classngind_1_1physics_1_1GearJoint.html" title=" " alt="" coords="714,398,897,425"/>
+<area shape="rect" id="node14" href="$classngind_1_1physics_1_1PrismaticJoint.html" title=" " alt="" coords="713,449,897,491"/>
+<area shape="rect" id="node15" href="$classngind_1_1physics_1_1PulleyJoint.html" title=" " alt="" coords="709,515,901,542"/>
+<area shape="rect" id="node16" href="$classngind_1_1physics_1_1RevoluteJoint.html" title=" " alt="" coords="715,567,896,608"/>
+<area shape="rect" id="node20" href="$classngind_1_1objects_1_1EntityObject.html" title=" " alt="" coords="456,550,657,577"/>
+<area shape="rect" id="node21" href="$classngind_1_1objects_1_1World.html" title=" " alt="" coords="477,601,636,627"/>
+</map>

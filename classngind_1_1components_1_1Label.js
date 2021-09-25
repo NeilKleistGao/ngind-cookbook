@@ -1,0 +1,38 @@
+var classngind_1_1components_1_1Label =
+[
+    [ "Alignment", "classngind_1_1components_1_1Label.html#a0bd83c686761e064601bf2e5155683fb", [
+      [ "ALIGNMENT_LEFT", "classngind_1_1components_1_1Label.html#a0bd83c686761e064601bf2e5155683fba6d75533a570c79726ddae3ecce5d53c7", null ],
+      [ "ALIGNMENT_RIGHT", "classngind_1_1components_1_1Label.html#a0bd83c686761e064601bf2e5155683fba008fcd549972b00eac03ae7c747e223c", null ],
+      [ "ALIGNMENT_CENTER", "classngind_1_1components_1_1Label.html#a0bd83c686761e064601bf2e5155683fbac3f03957a2beffb6834760149921d1cc", null ]
+    ] ],
+    [ "Label", "classngind_1_1components_1_1Label.html#a881a329e0aaf311f93c3c54aac3fd4d1", null ],
+    [ "~Label", "classngind_1_1components_1_1Label.html#ae93f29ca24c3072022977a8a083b096c", null ],
+    [ "Label", "classngind_1_1components_1_1Label.html#a485b873bb4f794989d924db8964ac637", null ],
+    [ "create", "classngind_1_1components_1_1Label.html#a08a853eda954dc7cf008415af3d54007", null ],
+    [ "draw", "classngind_1_1components_1_1Label.html#aaa03583af3f66ba1832eb55bf38aba4c", null ],
+    [ "getAlignment", "classngind_1_1components_1_1Label.html#af6e9838951e0a0e6ed3d94e45aaf52ec", null ],
+    [ "getComponent", "classngind_1_1components_1_1Label.html#a7704bf92185103fe5142ff794dbafcc1", null ],
+    [ "getLineSpace", "classngind_1_1components_1_1Label.html#a3f58775cafb2e92eaee4f8c0380b4128", null ],
+    [ "getModelMatrix", "classngind_1_1components_1_1Label.html#a3113fdf19dd0fe836e30f17cd108cf62", null ],
+    [ "getText", "classngind_1_1components_1_1Label.html#aa434503a3b13455652cf864c36320175", null ],
+    [ "getTextSize", "classngind_1_1components_1_1Label.html#abb96c00d89eff4b0be6a977cdc57a405", null ],
+    [ "init", "classngind_1_1components_1_1Label.html#aa40cc9946fa387bac9443bf01cf5184a", null ],
+    [ "operator=", "classngind_1_1components_1_1Label.html#a6459ea9b00365f795f86989aa40e0a60", null ],
+    [ "parseText", "classngind_1_1components_1_1Label.html#a8d5925839fd9edc41bc5b494f294d8d5", null ],
+    [ "parseUTF8Text", "classngind_1_1components_1_1Label.html#a33d0bc463b81cc826ce2c0754f407aba", null ],
+    [ "replaceEscape", "classngind_1_1components_1_1Label.html#a3f4a7d6d980b2a7de1c6bc65f85391d4", null ],
+    [ "setAlignment", "classngind_1_1components_1_1Label.html#ae4c0eda3b4ec817b0d5922cad5f6f5bd", null ],
+    [ "setLineSpace", "classngind_1_1components_1_1Label.html#a60e4233ce7debe16bab4e23b6d1d03d0", null ],
+    [ "setText", "classngind_1_1components_1_1Label.html#af0210691535f5253bbdfcd6101cb1db5", null ],
+    [ "setTextSize", "classngind_1_1components_1_1Label.html#ae94bd14a452c9463a36e3ba96c4105cc", null ],
+    [ "update", "classngind_1_1components_1_1Label.html#abaae0c903085bc5f8812fc4e3e41f45b", null ],
+    [ "ngind::log::VisualLogger", "classngind_1_1components_1_1Label.html#aa73879c1a81233b37c53e3933974c7f6", null ],
+    [ "_alignment", "classngind_1_1components_1_1Label.html#a3da8000541303a431043f425f2b1bd14", null ],
+    [ "_colors", "classngind_1_1components_1_1Label.html#afac58adeddd12e8e8ea543d5343b4915", null ],
+    [ "_commands", "classngind_1_1components_1_1Label.html#a5356a4060b1b7e905e8a4aca018e427a", null ],
+    [ "_font", "classngind_1_1components_1_1Label.html#ad39cfee9a546cab9b1b373f997b73b98", null ],
+    [ "_line_space", "classngind_1_1components_1_1Label.html#adde9b1a143bb5356719e070209102e10", null ],
+    [ "_quads", "classngind_1_1components_1_1Label.html#aa14e8f6bfa5448bbda0d51c4860c5ebf", null ],
+    [ "_size", "classngind_1_1components_1_1Label.html#a848034bbdcf5eced4b42a31357f9b6e8", null ],
+    [ "_text", "classngind_1_1components_1_1Label.html#a1f8092cd8cf330111f87312ef910fa81", null ]
+];

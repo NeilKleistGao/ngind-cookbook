@@ -1,0 +1,9 @@
+<map id="ngind::physics::RigidBody" name="ngind::physics::RigidBody">
+<area shape="rect" id="node1" title=" " alt="" coords="852,115,1041,142"/>
+<area shape="rect" id="node2" href="$classngind_1_1components_1_1Component.html" title=" " alt="" coords="570,49,725,91"/>
+<area shape="rect" id="node3" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,71,228,112"/>
+<area shape="rect" id="node5" href="$classngind_1_1objects_1_1Object.html" title=" " alt="" coords="277,151,440,178"/>
+<area shape="rect" id="node4" href="$classngind_1_1objects_1_1UpdatableObject.html" title=" " alt="" coords="23,5,211,47"/>
+<area shape="rect" id="node7" href="$classngind_1_1objects_1_1EntityObject.html" title=" " alt="" coords="547,166,748,193"/>
+<area shape="rect" id="node6" href="$structngind_1_1physics_1_1PhysicsShape.html" title=" " alt="" coords="541,115,753,142"/>
+</map>

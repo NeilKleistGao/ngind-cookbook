@@ -1,0 +1,7 @@
+<map id="ngind::objects::Object" name="ngind::objects::Object">
+<area shape="rect" id="node1" title=" " alt="" coords="150,95,313,121"/>
+<area shape="rect" id="node4" href="$classngind_1_1objects_1_1EntityObject.html" title=" " alt="" coords="29,169,231,196"/>
+<area shape="rect" id="node5" href="$classngind_1_1objects_1_1World.html" title=" " alt="" coords="255,169,413,196"/>
+<area shape="rect" id="node2" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,5,228,47"/>
+<area shape="rect" id="node3" href="$classngind_1_1objects_1_1UpdatableObject.html" title=" " alt="" coords="252,5,440,47"/>
+</map>

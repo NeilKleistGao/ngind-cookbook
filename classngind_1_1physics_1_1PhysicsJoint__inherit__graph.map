@@ -1,0 +1,11 @@
+<map id="ngind::physics::PhysicsJoint" name="ngind::physics::PhysicsJoint">
+<area shape="rect" id="node1" title=" " alt="" coords="479,130,680,157"/>
+<area shape="rect" id="node5" href="$classngind_1_1physics_1_1DistanceJoint.html" title=" " alt="" coords="734,5,914,47"/>
+<area shape="rect" id="node6" href="$classngind_1_1physics_1_1GearJoint.html" title=" " alt="" coords="733,71,915,98"/>
+<area shape="rect" id="node7" href="$classngind_1_1physics_1_1PrismaticJoint.html" title=" " alt="" coords="732,123,916,164"/>
+<area shape="rect" id="node8" href="$classngind_1_1physics_1_1PulleyJoint.html" title=" " alt="" coords="728,189,920,215"/>
+<area shape="rect" id="node9" href="$classngind_1_1physics_1_1RevoluteJoint.html" title=" " alt="" coords="733,240,915,281"/>
+<area shape="rect" id="node2" href="$classngind_1_1components_1_1Component.html" title=" " alt="" coords="276,123,431,164"/>
+<area shape="rect" id="node3" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,89,228,131"/>
+<area shape="rect" id="node4" href="$classngind_1_1objects_1_1UpdatableObject.html" title=" " alt="" coords="23,155,211,196"/>
+</map>

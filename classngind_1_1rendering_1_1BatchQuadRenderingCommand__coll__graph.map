@@ -1,0 +1,12 @@
+<map id="ngind::rendering::BatchQuadRenderingCommand" name="ngind::rendering::BatchQuadRenderingCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="1595,185,1801,226"/>
+<area shape="rect" id="node2" href="$classngind_1_1rendering_1_1RenderingCommand.html" title=" " alt="" coords="1343,66,1545,107"/>
+<area shape="rect" id="node3" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,117,228,158"/>
+<area shape="rect" id="node6" href="$classngind_1_1resources_1_1Resource.html" title=" " alt="" coords="277,124,475,151"/>
+<area shape="rect" id="node10" href="$classngind_1_1rendering_1_1Quad.html" title=" " alt="" coords="499,237,669,264"/>
+<area shape="rect" id="node4" href="$classngind_1_1rendering_1_1Program.html" title=" " alt="" coords="1037,115,1228,141"/>
+<area shape="rect" id="node5" href="$classngind_1_1resources_1_1ConfigResource.html" title=" " alt="" coords="695,107,874,149"/>
+<area shape="rect" id="node7" href="$classngind_1_1resources_1_1ShaderResource.html" title=" " alt="" coords="693,173,876,214"/>
+<area shape="rect" id="node8" href="$classngind_1_1rendering_1_1Shader.html" title=" " alt="" coords="285,183,467,209"/>
+<area shape="rect" id="node9" href="$structngind_1_1rendering_1_1Color.html" title=" " alt="" coords="1047,5,1218,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ngind::animation::Aseprite" name="ngind::animation::Aseprite">
+<area shape="rect" id="node1" title=" " alt="" coords="185,276,379,303"/>
+<area shape="rect" id="node2" href="$classngind_1_1resources_1_1ConfigResource.html" title=" " alt="" coords="27,172,206,213"/>
+<area shape="rect" id="node3" href="$classngind_1_1resources_1_1Resource.html" title=" " alt="" coords="18,96,215,123"/>
+<area shape="rect" id="node4" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,5,228,47"/>
+<area shape="rect" id="node5" href="$classngind_1_1animation_1_1AsepriteTag.html" title=" " alt="" coords="230,179,446,206"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="ngind::physics::PhysicsWorld" name="ngind::physics::PhysicsWorld">
+<area shape="rect" id="node1" title=" " alt="" coords="867,155,1076,181"/>
+<area shape="rect" id="node2" href="$classngind_1_1components_1_1Component.html" title=" " alt="" coords="576,67,731,109"/>
+<area shape="rect" id="node3" href="$classngind_1_1memory_1_1AutoCollectionObject.html" title=" " alt="" coords="5,7,228,49"/>
+<area shape="rect" id="node5" href="$classngind_1_1objects_1_1Object.html" title=" " alt="" coords="277,63,440,89"/>
+<area shape="rect" id="node4" href="$classngind_1_1objects_1_1UpdatableObject.html" title=" " alt="" coords="23,73,211,114"/>
+<area shape="rect" id="node6" href="$classngind_1_1physics_1_1PhysicsListener.html" title=" " alt="" coords="541,155,765,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="289,164,429,191"/>
+<area shape="rect" id="node8" href="$classngind_1_1timer_1_1Timer.html" title=" " alt="" coords="580,205,727,232"/>
+</map>

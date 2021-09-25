@@ -1,0 +1,20 @@
+<map id="kernel/log/logger.h" name="kernel/log/logger.h">
+<area shape="rect" id="node1" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="269,5,411,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,87,85,114"/>
+<area shape="rect" id="node3" title=" " alt="" coords="109,87,171,114"/>
+<area shape="rect" id="node4" title=" " alt="" coords="195,87,269,114"/>
+<area shape="rect" id="node5" href="$log__level_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="293,87,387,114"/>
+<area shape="rect" id="node6" href="$file__output__stream_8h.html" title=" " alt="" coords="411,80,573,121"/>
+<area shape="rect" id="node11" href="$lua__registration_8h.html" title=" " alt="" coords="400,333,576,360"/>
+<area shape="rect" id="node17" href="$timer_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="648,87,755,114"/>
+<area shape="rect" id="node7" href="$output__stream_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="345,169,474,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="235,483,293,509"/>
+<area shape="rect" id="node9" title=" " alt="" coords="301,251,368,278"/>
+<area shape="rect" id="node10" href="$auto__collection__object_8h.html" title="MIT License Copyright (c) 2020 NeilKleistGao Permission is hereby granted, free of charge,..." alt="" coords="393,244,573,285"/>
+<area shape="rect" id="node12" href="$lua__state_8h.html" title=" " alt="" coords="441,408,535,435"/>
+<area shape="rect" id="node13" title=" " alt="" coords="317,483,432,509"/>
+<area shape="rect" id="node14" title=" " alt="" coords="457,483,519,509"/>
+<area shape="rect" id="node15" title=" " alt="" coords="543,483,638,509"/>
+<area shape="rect" id="node16" title=" " alt="" coords="663,483,831,509"/>
+<area shape="rect" id="node18" title=" " alt="" coords="668,169,735,196"/>
+</map>
