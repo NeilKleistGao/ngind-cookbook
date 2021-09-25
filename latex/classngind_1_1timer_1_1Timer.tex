@@ -1,0 +1,212 @@
+\hypertarget{classngind_1_1timer_1_1Timer}{}\doxysection{ngind\+::timer\+::Timer Class Reference}
+\label{classngind_1_1timer_1_1Timer}\index{ngind::timer::Timer@{ngind::timer::Timer}}
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a9cf14883f9240ea302b8bdf023b36214}\label{classngind_1_1timer_1_1Timer_a9cf14883f9240ea302b8bdf023b36214}} 
+using {\bfseries time\+\_\+type} = std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1timer_1_1Timer_ad5ba0c555b84ce2240ab93905f4829a8}{Timer}} (const float \&scale=1.\+0f)
+\item 
+void \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a8d70aef4e57def1b7fa3598b50146125}{pause}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a0a328a7ea84bd9c78b9d580c4dcffa55}{resume}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1timer_1_1Timer_ae8346ef81c1638a86f1422b89f7bf045}{sleep}} (const float \&sec)
+\item 
+float \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a1f61fdf19d78f27a02f59f048b207ee0}{get\+Tick}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a2e7b909b3f62fbe12739e683cd7e485b}{start}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a45c6a027877b8e19df80adac55695ef7}{the\+World}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a52db75fab0bc0efa16430717527f8048}{set\+Time\+Scale}} (const float \&scale)
+\item 
+const float \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a1293812241af89222ba2dc14be3b1124}{get\+Time\+Scale}} () const
+\item 
+const float \mbox{\hyperlink{classngind_1_1timer_1_1Timer_aed4c54e9af7933246f61fa7b9e16c06f}{Get\+Local\+Clock}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static time\+\_\+type \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a117d389ce53682724279f99c09773dfb}{get\+Now}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a24a4c9688955436ba46a34a5b8090b7c}{\+\_\+time\+\_\+scale}}
+\item 
+float \mbox{\hyperlink{classngind_1_1timer_1_1Timer_ac1d477d7bd073207c4c2687701bfc541}{\+\_\+local\+\_\+clock}}
+\item 
+float \mbox{\hyperlink{classngind_1_1timer_1_1Timer_ac0cd49b8920eebd9e1b9813fa5b3b316}{\+\_\+pause\+\_\+used}}
+\item 
+time\+\_\+type \mbox{\hyperlink{classngind_1_1timer_1_1Timer_adf2ddf99a9c97ba0f2db3bc4b11a7c1e}{\+\_\+previous}}
+\item 
+time\+\_\+type \mbox{\hyperlink{classngind_1_1timer_1_1Timer_ac06ca6c7c1ce73e5e131e973b2ad8e83}{\+\_\+pause\+\_\+start}}
+\item 
+time\+\_\+type \mbox{\hyperlink{classngind_1_1timer_1_1Timer_aee3f389c7802f91b889dd1bbf6d76d34}{\+\_\+pause\+\_\+end}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a982ee75e4d47bf5305d8f6f073e24178}{\+\_\+paused}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A smarter timer allowing you to time and scale time even pause it. You can use different timer for different usage. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_ad5ba0c555b84ce2240ab93905f4829a8}\label{classngind_1_1timer_1_1Timer_ad5ba0c555b84ce2240ab93905f4829a8}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily ngind\+::timer\+::\+Timer\+::\+Timer (\begin{DoxyParamCaption}\item[{const float \&}]{scale = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & scale of time speed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_aed4c54e9af7933246f61fa7b9e16c06f}\label{classngind_1_1timer_1_1Timer_aed4c54e9af7933246f61fa7b9e16c06f}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!GetLocalClock@{GetLocalClock}}
+\index{GetLocalClock@{GetLocalClock}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{GetLocalClock()}{GetLocalClock()}}
+{\footnotesize\ttfamily const float ngind\+::timer\+::\+Timer\+::\+Get\+Local\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the actual passed time \begin{DoxyReturn}{Returns}
+float, seconds passed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a117d389ce53682724279f99c09773dfb}\label{classngind_1_1timer_1_1Timer_a117d389ce53682724279f99c09773dfb}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!getNow@{getNow}}
+\index{getNow@{getNow}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{getNow()}{getNow()}}
+{\footnotesize\ttfamily static time\+\_\+type ngind\+::timer\+::\+Timer\+::get\+Now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get current time. \begin{DoxyReturn}{Returns}
+time\+\_\+type, current time point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a1f61fdf19d78f27a02f59f048b207ee0}\label{classngind_1_1timer_1_1Timer_a1f61fdf19d78f27a02f59f048b207ee0}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!getTick@{getTick}}
+\index{getTick@{getTick}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{getTick()}{getTick()}}
+{\footnotesize\ttfamily float ngind\+::timer\+::\+Timer\+::get\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculate how many seconds passed \begin{DoxyReturn}{Returns}
+float, time passed in second 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a1293812241af89222ba2dc14be3b1124}\label{classngind_1_1timer_1_1Timer_a1293812241af89222ba2dc14be3b1124}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!getTimeScale@{getTimeScale}}
+\index{getTimeScale@{getTimeScale}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{getTimeScale()}{getTimeScale()}}
+{\footnotesize\ttfamily const float ngind\+::timer\+::\+Timer\+::get\+Time\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get time scale \begin{DoxyReturn}{Returns}
+float, time scale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a8d70aef4e57def1b7fa3598b50146125}\label{classngind_1_1timer_1_1Timer_a8d70aef4e57def1b7fa3598b50146125}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!pause@{pause}}
+\index{pause@{pause}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void ngind\+::timer\+::\+Timer\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Pause current timer. \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a0a328a7ea84bd9c78b9d580c4dcffa55}\label{classngind_1_1timer_1_1Timer_a0a328a7ea84bd9c78b9d580c4dcffa55}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!resume@{resume}}
+\index{resume@{resume}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void ngind\+::timer\+::\+Timer\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resume current timer from pause. \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a52db75fab0bc0efa16430717527f8048}\label{classngind_1_1timer_1_1Timer_a52db75fab0bc0efa16430717527f8048}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!setTimeScale@{setTimeScale}}
+\index{setTimeScale@{setTimeScale}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{setTimeScale()}{setTimeScale()}}
+{\footnotesize\ttfamily void ngind\+::timer\+::\+Timer\+::set\+Time\+Scale (\begin{DoxyParamCaption}\item[{const float \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set time scale 
+\begin{DoxyParams}{Parameters}
+{\em scale} & time scale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_ae8346ef81c1638a86f1422b89f7bf045}\label{classngind_1_1timer_1_1Timer_ae8346ef81c1638a86f1422b89f7bf045}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!sleep@{sleep}}
+\index{sleep@{sleep}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void ngind\+::timer\+::\+Timer\+::sleep (\begin{DoxyParamCaption}\item[{const float \&}]{sec }\end{DoxyParamCaption})}
+
+Sleep for a while and block current thread. 
+\begin{DoxyParams}{Parameters}
+{\em sec} & time to sleep in second \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a2e7b909b3f62fbe12739e683cd7e485b}\label{classngind_1_1timer_1_1Timer_a2e7b909b3f62fbe12739e683cd7e485b}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!start@{start}}
+\index{start@{start}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void ngind\+::timer\+::\+Timer\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start timing. \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a45c6a027877b8e19df80adac55695ef7}\label{classngind_1_1timer_1_1Timer_a45c6a027877b8e19df80adac55695ef7}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!theWorld@{theWorld}}
+\index{theWorld@{theWorld}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{theWorld()}{theWorld()}}
+{\footnotesize\ttfamily void ngind\+::timer\+::\+Timer\+::the\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxySeeAlso}{See also}
+void \mbox{\hyperlink{classngind_1_1timer_1_1Timer_a8d70aef4e57def1b7fa3598b50146125}{pause()}}; 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1timer_1_1Timer_ac1d477d7bd073207c4c2687701bfc541}\label{classngind_1_1timer_1_1Timer_ac1d477d7bd073207c4c2687701bfc541}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!\_local\_clock@{\_local\_clock}}
+\index{\_local\_clock@{\_local\_clock}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{\_local\_clock}{\_local\_clock}}
+{\footnotesize\ttfamily float ngind\+::timer\+::\+Timer\+::\+\_\+local\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}
+
+Actual time lock \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_aee3f389c7802f91b889dd1bbf6d76d34}\label{classngind_1_1timer_1_1Timer_aee3f389c7802f91b889dd1bbf6d76d34}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!\_pause\_end@{\_pause\_end}}
+\index{\_pause\_end@{\_pause\_end}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{\_pause\_end}{\_pause\_end}}
+{\footnotesize\ttfamily time\+\_\+type ngind\+::timer\+::\+Timer\+::\+\_\+pause\+\_\+end\hspace{0.3cm}{\ttfamily [private]}}
+
+Time point when pause ended \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_ac06ca6c7c1ce73e5e131e973b2ad8e83}\label{classngind_1_1timer_1_1Timer_ac06ca6c7c1ce73e5e131e973b2ad8e83}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!\_pause\_start@{\_pause\_start}}
+\index{\_pause\_start@{\_pause\_start}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{\_pause\_start}{\_pause\_start}}
+{\footnotesize\ttfamily time\+\_\+type ngind\+::timer\+::\+Timer\+::\+\_\+pause\+\_\+start\hspace{0.3cm}{\ttfamily [private]}}
+
+Time point when pause started \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_ac0cd49b8920eebd9e1b9813fa5b3b316}\label{classngind_1_1timer_1_1Timer_ac0cd49b8920eebd9e1b9813fa5b3b316}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!\_pause\_used@{\_pause\_used}}
+\index{\_pause\_used@{\_pause\_used}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{\_pause\_used}{\_pause\_used}}
+{\footnotesize\ttfamily float ngind\+::timer\+::\+Timer\+::\+\_\+pause\+\_\+used\hspace{0.3cm}{\ttfamily [private]}}
+
+Time passed when timer is paused \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a982ee75e4d47bf5305d8f6f073e24178}\label{classngind_1_1timer_1_1Timer_a982ee75e4d47bf5305d8f6f073e24178}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!\_paused@{\_paused}}
+\index{\_paused@{\_paused}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{\_paused}{\_paused}}
+{\footnotesize\ttfamily bool ngind\+::timer\+::\+Timer\+::\+\_\+paused\hspace{0.3cm}{\ttfamily [private]}}
+
+If timer paused \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_adf2ddf99a9c97ba0f2db3bc4b11a7c1e}\label{classngind_1_1timer_1_1Timer_adf2ddf99a9c97ba0f2db3bc4b11a7c1e}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!\_previous@{\_previous}}
+\index{\_previous@{\_previous}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{\_previous}{\_previous}}
+{\footnotesize\ttfamily time\+\_\+type ngind\+::timer\+::\+Timer\+::\+\_\+previous\hspace{0.3cm}{\ttfamily [private]}}
+
+Previous time point \mbox{\Hypertarget{classngind_1_1timer_1_1Timer_a24a4c9688955436ba46a34a5b8090b7c}\label{classngind_1_1timer_1_1Timer_a24a4c9688955436ba46a34a5b8090b7c}} 
+\index{ngind::timer::Timer@{ngind::timer::Timer}!\_time\_scale@{\_time\_scale}}
+\index{\_time\_scale@{\_time\_scale}!ngind::timer::Timer@{ngind::timer::Timer}}
+\doxysubsubsection{\texorpdfstring{\_time\_scale}{\_time\_scale}}
+{\footnotesize\ttfamily float ngind\+::timer\+::\+Timer\+::\+\_\+time\+\_\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+Time scale 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/timer/\mbox{\hyperlink{timer_8h}{timer.\+h}}\end{DoxyCompactItemize}

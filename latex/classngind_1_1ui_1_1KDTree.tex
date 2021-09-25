@@ -1,0 +1,177 @@
+\hypertarget{classngind_1_1ui_1_1KDTree}{}\doxysection{ngind\+::ui\+::K\+D\+Tree Class Reference}
+\label{classngind_1_1ui_1_1KDTree}\index{ngind::ui::KDTree@{ngind::ui::KDTree}}
+
+
+Collaboration diagram for ngind\+::ui\+::K\+D\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classngind_1_1ui_1_1KDTree__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_ad93d8aa97a9b0cc99895faa88ce72fb6}{insert}} (const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&value)
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_a804cc5a6e32de70ffa8099680e94545a}{erase}} (const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&value)
+\item 
+\mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_a5b1886382978187421bd68ec4d8a1687}{query}} (const glm\+::vec2 \&point)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_a55b3213fd4442fdca39a5a3ba3debf80}{erase}} (\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$node)
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_a8c8c99c2c33e8ecdf73b9f01f32b55d3}{erase}} (\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$node, const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&value, float top, float bottom, float left, float right)
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_a70c625a09fd3c7af7acec7c719915094}{insert}} (\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$node, const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&value, float top, float bottom, float left, float right)
+\item 
+\mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_a6e5fd69e183ef11c36886a3b6eb49976}{query}} (\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$node, const glm\+::vec2 \&point)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_a897854c48fb8b908cf3939c75a6062a7}{\+\_\+root}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static size\+\_\+t \mbox{\hyperlink{classngind_1_1ui_1_1KDTree_ade768047d82beb862ac036657614fced}{M\+A\+X\+\_\+\+N\+O\+D\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}} = 8
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_a804cc5a6e32de70ffa8099680e94545a}\label{classngind_1_1ui_1_1KDTree_a804cc5a6e32de70ffa8099680e94545a}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!erase@{erase}}
+\index{erase@{erase}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+K\+D\+Tree\+::erase (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&}]{value }\end{DoxyParamCaption})}
+
+Erase some receiver from the tree. 
+\begin{DoxyParams}{Parameters}
+{\em value} & receiver to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_a55b3213fd4442fdca39a5a3ba3debf80}\label{classngind_1_1ui_1_1KDTree_a55b3213fd4442fdca39a5a3ba3debf80}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!erase@{erase}}
+\index{erase@{erase}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+K\+D\+Tree\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Erase all data in a node recursively. 
+\begin{DoxyParams}{Parameters}
+{\em node} & given node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_a8c8c99c2c33e8ecdf73b9f01f32b55d3}\label{classngind_1_1ui_1_1KDTree_a8c8c99c2c33e8ecdf73b9f01f32b55d3}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!erase@{erase}}
+\index{erase@{erase}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+K\+D\+Tree\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$}]{node,  }\item[{const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&}]{value,  }\item[{float}]{top,  }\item[{float}]{bottom,  }\item[{float}]{left,  }\item[{float}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Erase a receiver with calculated boundary recursively. 
+\begin{DoxyParams}{Parameters}
+{\em node} & current node \\
+\hline
+{\em value} & receiver to be removed \\
+\hline
+{\em top} & top of receiver\textquotesingle{}s area \\
+\hline
+{\em bottom} & bottom of receiver\textquotesingle{}s area \\
+\hline
+{\em left} & left of receiver\textquotesingle{}s area \\
+\hline
+{\em right} & right of receiver\textquotesingle{}s area \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_ad93d8aa97a9b0cc99895faa88ce72fb6}\label{classngind_1_1ui_1_1KDTree_ad93d8aa97a9b0cc99895faa88ce72fb6}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!insert@{insert}}
+\index{insert@{insert}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+K\+D\+Tree\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&}]{value }\end{DoxyParamCaption})}
+
+Insert a new clickable receiver. 
+\begin{DoxyParams}{Parameters}
+{\em value} & new clickable receiver \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_a70c625a09fd3c7af7acec7c719915094}\label{classngind_1_1ui_1_1KDTree_a70c625a09fd3c7af7acec7c719915094}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!insert@{insert}}
+\index{insert@{insert}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+K\+D\+Tree\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$}]{node,  }\item[{const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&}]{value,  }\item[{float}]{top,  }\item[{float}]{bottom,  }\item[{float}]{left,  }\item[{float}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Insert a new receiver recursively. 
+\begin{DoxyParams}{Parameters}
+{\em node} & current node \\
+\hline
+{\em value} & receiver to be inserted \\
+\hline
+{\em top} & top of receiver\textquotesingle{}s area \\
+\hline
+{\em bottom} & bottom of receiver\textquotesingle{}s area \\
+\hline
+{\em left} & left of receiver\textquotesingle{}s area \\
+\hline
+{\em right} & right of receiver\textquotesingle{}s area \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_a5b1886382978187421bd68ec4d8a1687}\label{classngind_1_1ui_1_1KDTree_a5b1886382978187421bd68ec4d8a1687}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!query@{query}}
+\index{query@{query}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}}$\ast$ ngind\+::ui\+::\+K\+D\+Tree\+::query (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if given point is in some receiver\textquotesingle{}s area. 
+\begin{DoxyParams}{Parameters}
+{\em point} & given 2D point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Clickable\+Receiver$\ast$, the receiver containing this point, null if receiver doesn\textquotesingle{}t exit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_a6e5fd69e183ef11c36886a3b6eb49976}\label{classngind_1_1ui_1_1KDTree_a6e5fd69e183ef11c36886a3b6eb49976}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!query@{query}}
+\index{query@{query}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}}$\ast$ ngind\+::ui\+::\+K\+D\+Tree\+::query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}} $\ast$}]{node,  }\item[{const glm\+::vec2 \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Check given point\textquotesingle{}s state recursively. 
+\begin{DoxyParams}{Parameters}
+{\em node} & current node \\
+\hline
+{\em point} & given point \\
+\hline
+{\em last} & last receiver satisfying the condition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Clickable\+Receiver$\ast$, the receiver containing this point, null if receiver doesn\textquotesingle{}t exit 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_a897854c48fb8b908cf3939c75a6062a7}\label{classngind_1_1ui_1_1KDTree_a897854c48fb8b908cf3939c75a6062a7}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!\_root@{\_root}}
+\index{\_root@{\_root}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{\_root}{\_root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1ui_1_1KDTree_1_1KDNode}{K\+D\+Node}}$\ast$ ngind\+::ui\+::\+K\+D\+Tree\+::\+\_\+root\hspace{0.3cm}{\ttfamily [private]}}
+
+Root of KD tree. \mbox{\Hypertarget{classngind_1_1ui_1_1KDTree_ade768047d82beb862ac036657614fced}\label{classngind_1_1ui_1_1KDTree_ade768047d82beb862ac036657614fced}} 
+\index{ngind::ui::KDTree@{ngind::ui::KDTree}!MAX\_NODE\_THRESHOLD@{MAX\_NODE\_THRESHOLD}}
+\index{MAX\_NODE\_THRESHOLD@{MAX\_NODE\_THRESHOLD}!ngind::ui::KDTree@{ngind::ui::KDTree}}
+\doxysubsubsection{\texorpdfstring{MAX\_NODE\_THRESHOLD}{MAX\_NODE\_THRESHOLD}}
+{\footnotesize\ttfamily constexpr static size\+\_\+t ngind\+::ui\+::\+K\+D\+Tree\+::\+M\+A\+X\+\_\+\+N\+O\+D\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD = 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+Max receiver a node can contain. If too many receivers in the same node, split it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/ui/\mbox{\hyperlink{kd__tree_8h}{kd\+\_\+tree.\+h}}\end{DoxyCompactItemize}

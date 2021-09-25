@@ -1,0 +1,366 @@
+\hypertarget{classngind_1_1components_1_1Label}{}\doxysection{ngind\+::components\+::Label Class Reference}
+\label{classngind_1_1components_1_1Label}\index{ngind::components::Label@{ngind::components::Label}}
+
+
+{\ttfamily \#include $<$label.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::components\+::Label\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Label__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::Label\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Label__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classngind_1_1components_1_1Label_a0bd83c686761e064601bf2e5155683fb}{Alignment}} \{ {\bfseries A\+L\+I\+G\+N\+M\+E\+N\+T\+\_\+\+L\+E\+FT} = 0, 
+{\bfseries A\+L\+I\+G\+N\+M\+E\+N\+T\+\_\+\+R\+I\+G\+HT} = 1, 
+{\bfseries A\+L\+I\+G\+N\+M\+E\+N\+T\+\_\+\+C\+E\+N\+T\+ER} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a485b873bb4f794989d924db8964ac637}\label{classngind_1_1components_1_1Label_a485b873bb4f794989d924db8964ac637}} 
+{\bfseries Label} (const \mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a6459ea9b00365f795f86989aa40e0a60}\label{classngind_1_1components_1_1Label_a6459ea9b00365f795f86989aa40e0a60}} 
+\mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_abaae0c903085bc5f8812fc4e3e41f45b}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_aa40cc9946fa387bac9443bf01cf5184a}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_af0210691535f5253bbdfcd6101cb1db5}{set\+Text}} (const std\+::string \&text)
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Label_aa434503a3b13455652cf864c36320175}{get\+Text}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_ae4c0eda3b4ec817b0d5922cad5f6f5bd}{set\+Alignment}} (int alignment)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_a60e4233ce7debe16bab4e23b6d1d03d0}{set\+Line\+Space}} (size\+\_\+t line\+\_\+space)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_ae94bd14a452c9463a36e3ba96c4105cc}{set\+Text\+Size}} (size\+\_\+t size)
+\item 
+int \mbox{\hyperlink{classngind_1_1components_1_1Label_af6e9838951e0a0e6ed3d94e45aaf52ec}{get\+Alignment}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1components_1_1Label_a3f58775cafb2e92eaee4f8c0380b4128}{get\+Line\+Space}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1components_1_1Label_abb96c00d89eff4b0be6a977cdc57a405}{get\+Text\+Size}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Label_a08a853eda954dc7cf008415af3d54007}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Label_a7704bf92185103fe5142ff794dbafcc1}{get\+Component}} (\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_aaa03583af3f66ba1832eb55bf38aba4c}{draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_a8d5925839fd9edc41bc5b494f294d8d5}{parse\+Text}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_a33d0bc463b81cc826ce2c0754f407aba}{parse\+U\+T\+F8\+Text}} (const std\+::wstring \&text)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Label_a3f4a7d6d980b2a7de1c6bc65f85391d4}{replace\+Escape}} ()
+\item 
+glm\+::mat4 \mbox{\hyperlink{classngind_1_1components_1_1Label_a3113fdf19dd0fe836e30f17cd108cf62}{get\+Model\+Matrix}} (const float \&max\+\_\+width, const float \&width, const float \&max\+\_\+height)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Label_a1f8092cd8cf330111f87312ef910fa81}{\+\_\+text}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1FontResource}{resources\+::\+Font\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Label_ad39cfee9a546cab9b1b373f997b73b98}{\+\_\+font}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1components_1_1Label_a848034bbdcf5eced4b42a31357f9b6e8}{\+\_\+size}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{rendering\+::\+Quad}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1components_1_1Label_aa14e8f6bfa5448bbda0d51c4860c5ebf}{\+\_\+quads}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand}{rendering\+::\+Batch\+Quad\+Rendering\+Command}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1components_1_1Label_a5356a4060b1b7e905e8a4aca018e427a}{\+\_\+commands}}
+\item 
+std\+::vector$<$ std\+::tuple$<$ \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}}, unsigned int, unsigned int $>$ $>$ \mbox{\hyperlink{classngind_1_1components_1_1Label_afac58adeddd12e8e8ea543d5343b4915}{\+\_\+colors}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1components_1_1Label_adde9b1a143bb5356719e070209102e10}{\+\_\+line\+\_\+space}}
+\item 
+\mbox{\hyperlink{classngind_1_1components_1_1Label_a0bd83c686761e064601bf2e5155683fb}{Alignment}} \mbox{\hyperlink{classngind_1_1components_1_1Label_a3da8000541303a431043f425f2b1bd14}{\+\_\+alignment}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_aa73879c1a81233b37c53e3933974c7f6}\label{classngind_1_1components_1_1Label_aa73879c1a81233b37c53e3933974c7f6}} 
+class {\bfseries ngind\+::log\+::\+Visual\+Logger}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}} used to show text on the screen. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a0bd83c686761e064601bf2e5155683fb}\label{classngind_1_1components_1_1Label_a0bd83c686761e064601bf2e5155683fb}} 
+\index{ngind::components::Label@{ngind::components::Label}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{Alignment}{Alignment}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classngind_1_1components_1_1Label_a0bd83c686761e064601bf2e5155683fb}{ngind\+::components\+::\+Label\+::\+Alignment}}}
+
+Alignment method the label uses. It works only if there are more than one lines text. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a08a853eda954dc7cf008415af3d54007}\label{classngind_1_1components_1_1Label_a08a853eda954dc7cf008415af3d54007}} 
+\index{ngind::components::Label@{ngind::components::Label}!create@{create}}
+\index{create@{create}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}}$\ast$ ngind\+::components\+::\+Label\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a label. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Label$\ast$, a new label 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_aaa03583af3f66ba1832eb55bf38aba4c}\label{classngind_1_1components_1_1Label_aaa03583af3f66ba1832eb55bf38aba4c}} 
+\index{ngind::components::Label@{ngind::components::Label}!draw@{draw}}
+\index{draw@{draw}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+components/render\+\_\+component.\+h 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1components_1_1RendererComponent_a4529dd713533d10dad31646099bf3616}{ngind\+::components\+::\+Renderer\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_af6e9838951e0a0e6ed3d94e45aaf52ec}\label{classngind_1_1components_1_1Label_af6e9838951e0a0e6ed3d94e45aaf52ec}} 
+\index{ngind::components::Label@{ngind::components::Label}!getAlignment@{getAlignment}}
+\index{getAlignment@{getAlignment}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{getAlignment()}{getAlignment()}}
+{\footnotesize\ttfamily int ngind\+::components\+::\+Label\+::get\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the alignment of text \begin{DoxyReturn}{Returns}
+int, index of alignment 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a7704bf92185103fe5142ff794dbafcc1}\label{classngind_1_1components_1_1Label_a7704bf92185103fe5142ff794dbafcc1}} 
+\index{ngind::components::Label@{ngind::components::Label}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1Label}{Label}}$\ast$ ngind\+::components\+::\+Label\+::get\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get label component from an object. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & the parent object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Label$\ast$, the label component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a3f58775cafb2e92eaee4f8c0380b4128}\label{classngind_1_1components_1_1Label_a3f58775cafb2e92eaee4f8c0380b4128}} 
+\index{ngind::components::Label@{ngind::components::Label}!getLineSpace@{getLineSpace}}
+\index{getLineSpace@{getLineSpace}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{getLineSpace()}{getLineSpace()}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::components\+::\+Label\+::get\+Line\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the line space of this text \begin{DoxyReturn}{Returns}
+size\+\_\+t, line space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a3113fdf19dd0fe836e30f17cd108cf62}\label{classngind_1_1components_1_1Label_a3113fdf19dd0fe836e30f17cd108cf62}} 
+\index{ngind::components::Label@{ngind::components::Label}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 ngind\+::components\+::\+Label\+::get\+Model\+Matrix (\begin{DoxyParamCaption}\item[{const float \&}]{max\+\_\+width,  }\item[{const float \&}]{width,  }\item[{const float \&}]{max\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Calculate the model matrix 
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+width} & the width of the whole label \\
+\hline
+{\em width} & the width of current line \\
+\hline
+{\em max\+\_\+height} & the height of the whole label \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+glm\+::mat4, the model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_aa434503a3b13455652cf864c36320175}\label{classngind_1_1components_1_1Label_aa434503a3b13455652cf864c36320175}} 
+\index{ngind::components::Label@{ngind::components::Label}!getText@{getText}}
+\index{getText@{getText}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Label\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the text this label holds \begin{DoxyReturn}{Returns}
+std\+::string, the text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_abb96c00d89eff4b0be6a977cdc57a405}\label{classngind_1_1components_1_1Label_abb96c00d89eff4b0be6a977cdc57a405}} 
+\index{ngind::components::Label@{ngind::components::Label}!getTextSize@{getTextSize}}
+\index{getTextSize@{getTextSize}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{getTextSize()}{getTextSize()}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::components\+::\+Label\+::get\+Text\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the size of text \begin{DoxyReturn}{Returns}
+size\+\_\+t, size of text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_aa40cc9946fa387bac9443bf01cf5184a}\label{classngind_1_1components_1_1Label_aa40cc9946fa387bac9443bf01cf5184a}} 
+\index{ngind::components::Label@{ngind::components::Label}!init@{init}}
+\index{init@{init}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{component_8h}{kernel/components/component.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a8d5925839fd9edc41bc5b494f294d8d5}\label{classngind_1_1components_1_1Label_a8d5925839fd9edc41bc5b494f294d8d5}} 
+\index{ngind::components::Label@{ngind::components::Label}!parseText@{parseText}}
+\index{parseText@{parseText}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{parseText()}{parseText()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::parse\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Parse the text to determine rendering commands \mbox{\Hypertarget{classngind_1_1components_1_1Label_a33d0bc463b81cc826ce2c0754f407aba}\label{classngind_1_1components_1_1Label_a33d0bc463b81cc826ce2c0754f407aba}} 
+\index{ngind::components::Label@{ngind::components::Label}!parseUTF8Text@{parseUTF8Text}}
+\index{parseUTF8Text@{parseUTF8Text}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{parseUTF8Text()}{parseUTF8Text()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::parse\+U\+T\+F8\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Parse the U\+T\+F8 text to determine rendering commands \mbox{\Hypertarget{classngind_1_1components_1_1Label_a3f4a7d6d980b2a7de1c6bc65f85391d4}\label{classngind_1_1components_1_1Label_a3f4a7d6d980b2a7de1c6bc65f85391d4}} 
+\index{ngind::components::Label@{ngind::components::Label}!replaceEscape@{replaceEscape}}
+\index{replaceEscape@{replaceEscape}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{replaceEscape()}{replaceEscape()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::replace\+Escape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Replace all $<$color$>$$<$/color$>$ \mbox{\Hypertarget{classngind_1_1components_1_1Label_ae4c0eda3b4ec817b0d5922cad5f6f5bd}\label{classngind_1_1components_1_1Label_ae4c0eda3b4ec817b0d5922cad5f6f5bd}} 
+\index{ngind::components::Label@{ngind::components::Label}!setAlignment@{setAlignment}}
+\index{setAlignment@{setAlignment}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{setAlignment()}{setAlignment()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::set\+Alignment (\begin{DoxyParamCaption}\item[{int}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set Text alignment. 
+\begin{DoxyParams}{Parameters}
+{\em alignment} & alignment index\+: 0 -\/$>$ left, 1 -\/$>$ right, 2 -\/$>$ center. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a60e4233ce7debe16bab4e23b6d1d03d0}\label{classngind_1_1components_1_1Label_a60e4233ce7debe16bab4e23b6d1d03d0}} 
+\index{ngind::components::Label@{ngind::components::Label}!setLineSpace@{setLineSpace}}
+\index{setLineSpace@{setLineSpace}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{setLineSpace()}{setLineSpace()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::set\+Line\+Space (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{line\+\_\+space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set new line space for text 
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+space} & line space value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_af0210691535f5253bbdfcd6101cb1db5}\label{classngind_1_1components_1_1Label_af0210691535f5253bbdfcd6101cb1db5}} 
+\index{ngind::components::Label@{ngind::components::Label}!setText@{setText}}
+\index{setText@{setText}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set new text of label. 
+\begin{DoxyParams}{Parameters}
+{\em text} & new text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_ae94bd14a452c9463a36e3ba96c4105cc}\label{classngind_1_1components_1_1Label_ae94bd14a452c9463a36e3ba96c4105cc}} 
+\index{ngind::components::Label@{ngind::components::Label}!setTextSize@{setTextSize}}
+\index{setTextSize@{setTextSize}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{setTextSize()}{setTextSize()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::set\+Text\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set size of text 
+\begin{DoxyParams}{Parameters}
+{\em size} & size of text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_abaae0c903085bc5f8812fc4e3e41f45b}\label{classngind_1_1components_1_1Label_abaae0c903085bc5f8812fc4e3e41f45b}} 
+\index{ngind::components::Label@{ngind::components::Label}!update@{update}}
+\index{update@{update}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Label\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{kernel/objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Label_a3da8000541303a431043f425f2b1bd14}\label{classngind_1_1components_1_1Label_a3da8000541303a431043f425f2b1bd14}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_alignment@{\_alignment}}
+\index{\_alignment@{\_alignment}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_alignment}{\_alignment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1components_1_1Label_a0bd83c686761e064601bf2e5155683fb}{Alignment}} ngind\+::components\+::\+Label\+::\+\_\+alignment\hspace{0.3cm}{\ttfamily [private]}}
+
+Alignment method \mbox{\Hypertarget{classngind_1_1components_1_1Label_afac58adeddd12e8e8ea543d5343b4915}\label{classngind_1_1components_1_1Label_afac58adeddd12e8e8ea543d5343b4915}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_colors@{\_colors}}
+\index{\_colors@{\_colors}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_colors}{\_colors}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::tuple$<$\mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}}, unsigned int, unsigned int$>$ $>$ ngind\+::components\+::\+Label\+::\+\_\+colors\hspace{0.3cm}{\ttfamily [private]}}
+
+Colors each segment uses \mbox{\Hypertarget{classngind_1_1components_1_1Label_a5356a4060b1b7e905e8a4aca018e427a}\label{classngind_1_1components_1_1Label_a5356a4060b1b7e905e8a4aca018e427a}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_commands@{\_commands}}
+\index{\_commands@{\_commands}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_commands}{\_commands}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand}{rendering\+::\+Batch\+Quad\+Rendering\+Command}}$\ast$$>$ ngind\+::components\+::\+Label\+::\+\_\+commands\hspace{0.3cm}{\ttfamily [private]}}
+
+Rendering commands of label \mbox{\Hypertarget{classngind_1_1components_1_1Label_ad39cfee9a546cab9b1b373f997b73b98}\label{classngind_1_1components_1_1Label_ad39cfee9a546cab9b1b373f997b73b98}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_font@{\_font}}
+\index{\_font@{\_font}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_font}{\_font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1FontResource}{resources\+::\+Font\+Resource}}$\ast$ ngind\+::components\+::\+Label\+::\+\_\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+Font resource the label uses \mbox{\Hypertarget{classngind_1_1components_1_1Label_adde9b1a143bb5356719e070209102e10}\label{classngind_1_1components_1_1Label_adde9b1a143bb5356719e070209102e10}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_line\_space@{\_line\_space}}
+\index{\_line\_space@{\_line\_space}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_line\_space}{\_line\_space}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::components\+::\+Label\+::\+\_\+line\+\_\+space\hspace{0.3cm}{\ttfamily [private]}}
+
+Additional space between two lines \mbox{\Hypertarget{classngind_1_1components_1_1Label_aa14e8f6bfa5448bbda0d51c4860c5ebf}\label{classngind_1_1components_1_1Label_aa14e8f6bfa5448bbda0d51c4860c5ebf}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_quads@{\_quads}}
+\index{\_quads@{\_quads}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_quads}{\_quads}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{rendering\+::\+Quad}}$\ast$$>$ ngind\+::components\+::\+Label\+::\+\_\+quads\hspace{0.3cm}{\ttfamily [private]}}
+
+Quads data of label \mbox{\Hypertarget{classngind_1_1components_1_1Label_a848034bbdcf5eced4b42a31357f9b6e8}\label{classngind_1_1components_1_1Label_a848034bbdcf5eced4b42a31357f9b6e8}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_size@{\_size}}
+\index{\_size@{\_size}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::components\+::\+Label\+::\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+Text size \mbox{\Hypertarget{classngind_1_1components_1_1Label_a1f8092cd8cf330111f87312ef910fa81}\label{classngind_1_1components_1_1Label_a1f8092cd8cf330111f87312ef910fa81}} 
+\index{ngind::components::Label@{ngind::components::Label}!\_text@{\_text}}
+\index{\_text@{\_text}!ngind::components::Label@{ngind::components::Label}}
+\doxysubsubsection{\texorpdfstring{\_text}{\_text}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Label\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+Text of label 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{label_8h}{label.\+h}}\end{DoxyCompactItemize}

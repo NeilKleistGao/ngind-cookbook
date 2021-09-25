@@ -1,0 +1,52 @@
+\hypertarget{classngind_1_1objects_1_1ObjectFactory}{}\doxysection{ngind\+::objects\+::Object\+Factory Class Reference}
+\label{classngind_1_1objects_1_1ObjectFactory}\index{ngind::objects::ObjectFactory@{ngind::objects::ObjectFactory}}
+
+
+{\ttfamily \#include $<$object\+\_\+factory.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1ObjectFactory_a666bd3d78445fa177f0fc6cdb5b08274}{create\+Entity\+Object}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1Component}{components\+::\+Component}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1ObjectFactory_ab0d5823e683a8bf566ee38f924a423b8}{create\+Component}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory providing interface to create objects and components 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1ObjectFactory_ab0d5823e683a8bf566ee38f924a423b8}\label{classngind_1_1objects_1_1ObjectFactory_ab0d5823e683a8bf566ee38f924a423b8}} 
+\index{ngind::objects::ObjectFactory@{ngind::objects::ObjectFactory}!createComponent@{createComponent}}
+\index{createComponent@{createComponent}!ngind::objects::ObjectFactory@{ngind::objects::ObjectFactory}}
+\doxysubsubsection{\texorpdfstring{createComponent()}{createComponent()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1Component}{components\+::\+Component}}$\ast$ ngind\+::objects\+::\+Object\+Factory\+::create\+Component (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a component with given config data 
+\begin{DoxyParams}{Parameters}
+{\em data} & given config data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classngind_1_1components_1_1Component}{components\+::\+Component}}$\ast$, a new component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1ObjectFactory_a666bd3d78445fa177f0fc6cdb5b08274}\label{classngind_1_1objects_1_1ObjectFactory_a666bd3d78445fa177f0fc6cdb5b08274}} 
+\index{ngind::objects::ObjectFactory@{ngind::objects::ObjectFactory}!createEntityObject@{createEntityObject}}
+\index{createEntityObject@{createEntityObject}!ngind::objects::ObjectFactory@{ngind::objects::ObjectFactory}}
+\doxysubsubsection{\texorpdfstring{createEntityObject()}{createEntityObject()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$ ngind\+::objects\+::\+Object\+Factory\+::create\+Entity\+Object (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an entity object with given config data 
+\begin{DoxyParams}{Parameters}
+{\em data} & given config data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity\+Object$\ast$, a new entity object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/objects/\mbox{\hyperlink{object__factory_8h}{object\+\_\+factory.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\hypertarget{classngind_1_1objects_1_1PrefabFactory}{}\doxysection{ngind\+::objects\+::Prefab\+Factory Class Reference}
+\label{classngind_1_1objects_1_1PrefabFactory}\index{ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}}
+
+
+{\ttfamily \#include $<$prefab\+\_\+factory.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::objects\+::Prefab\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classngind_1_1objects_1_1PrefabFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_aa98edb0e5ff45ed09d41b2de2b03d617}\label{classngind_1_1objects_1_1PrefabFactory_aa98edb0e5ff45ed09d41b2de2b03d617}} 
+{\bfseries Prefab\+Factory} (const \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory}{Prefab\+Factory}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_ad88b318d590f54b7a5a2ffebebd9d598}\label{classngind_1_1objects_1_1PrefabFactory_ad88b318d590f54b7a5a2ffebebd9d598}} 
+\mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory}{Prefab\+Factory}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory}{Prefab\+Factory}} \&)=delete
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory_aeb9f84358fc7aec9ecd12d6b02345162}{load\+Prefab}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory_ada269215fd94039380bba85493d494c9}{clear\+Cache}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory}{Prefab\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory_a802b967093e2f422a5786fef55e2feb3}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory_a7375f110b9afc1f46e42f1d57b88d97d}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory_a6d1403c09b868457964315806b760397}{\+\_\+cache}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory}{Prefab\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory_a2be91ae015f90d5d7742be3c5a204c53}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory allowing users instantiate object from prefab. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_ada269215fd94039380bba85493d494c9}\label{classngind_1_1objects_1_1PrefabFactory_ada269215fd94039380bba85493d494c9}} 
+\index{ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}!clearCache@{clearCache}}
+\index{clearCache@{clearCache}!ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}}
+\doxysubsubsection{\texorpdfstring{clearCache()}{clearCache()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+Prefab\+Factory\+::clear\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove all prefab from the cache \mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_a7375f110b9afc1f46e42f1d57b88d97d}\label{classngind_1_1objects_1_1PrefabFactory_a7375f110b9afc1f46e42f1d57b88d97d}} 
+\index{ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::objects\+::\+Prefab\+Factory\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the unique instance if it exists. \mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_a802b967093e2f422a5786fef55e2feb3}\label{classngind_1_1objects_1_1PrefabFactory_a802b967093e2f422a5786fef55e2feb3}} 
+\index{ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory}{Prefab\+Factory}}$\ast$ ngind\+::objects\+::\+Prefab\+Factory\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the unique instance of factory. If it does not exist, this function will create one. \begin{DoxyReturn}{Returns}
+Prefab\+Factory$\ast$, the unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_aeb9f84358fc7aec9ecd12d6b02345162}\label{classngind_1_1objects_1_1PrefabFactory_aeb9f84358fc7aec9ecd12d6b02345162}} 
+\index{ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}!loadPrefab@{loadPrefab}}
+\index{loadPrefab@{loadPrefab}!ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}}
+\doxysubsubsection{\texorpdfstring{loadPrefab()}{loadPrefab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$ ngind\+::objects\+::\+Prefab\+Factory\+::load\+Prefab (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Load and instantiate a prefab. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of prefab \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity\+Object$\ast$, the instance of prefab 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_a6d1403c09b868457964315806b760397}\label{classngind_1_1objects_1_1PrefabFactory_a6d1403c09b868457964315806b760397}} 
+\index{ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}}
+\doxysubsubsection{\texorpdfstring{\_cache}{\_cache}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}}$\ast$$>$ ngind\+::objects\+::\+Prefab\+Factory\+::\+\_\+cache\hspace{0.3cm}{\ttfamily [private]}}
+
+The prefabs cache. \mbox{\Hypertarget{classngind_1_1objects_1_1PrefabFactory_a2be91ae015f90d5d7742be3c5a204c53}\label{classngind_1_1objects_1_1PrefabFactory_a2be91ae015f90d5d7742be3c5a204c53}} 
+\index{ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::objects::PrefabFactory@{ngind::objects::PrefabFactory}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1PrefabFactory}{Prefab\+Factory}}$\ast$ ngind\+::objects\+::\+Prefab\+Factory\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/objects/\mbox{\hyperlink{prefab__factory_8h}{prefab\+\_\+factory.\+h}}\end{DoxyCompactItemize}

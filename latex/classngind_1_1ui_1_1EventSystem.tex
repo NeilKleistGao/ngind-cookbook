@@ -1,0 +1,169 @@
+\hypertarget{classngind_1_1ui_1_1EventSystem}{}\doxysection{ngind\+::ui\+::Event\+System Class Reference}
+\label{classngind_1_1ui_1_1EventSystem}\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+
+
+{\ttfamily \#include $<$event\+\_\+system.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::ui\+::Event\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1ui_1_1EventSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_a2713264889b82cb9b778e1ab9c34d7b5}\label{classngind_1_1ui_1_1EventSystem_a2713264889b82cb9b778e1ab9c34d7b5}} 
+{\bfseries Event\+System} (const \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_a20ab1c8bdb622d6ca720a11bda286910}\label{classngind_1_1ui_1_1EventSystem_a20ab1c8bdb622d6ca720a11bda286910}} 
+\mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_ad6c9a6fb86d2ac0fda003527791150a4}{register\+Event}} (const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&receiver)
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_a1cef4dd1ee8b24852f6d4b3e3fe0addf}{unregister\+Event}} (const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&receiver)
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_aadbcf3d1ccc8d692f167bb5478072808}{update}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_a4adc9aa217f6600b07257e637c202326}{init}} (const size\+\_\+t \&win\+\_\+height)
+\item 
+void \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_a9eaa2e38e6cb52036a6105f08466d05d}{init}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_a109c25088a7005ca78b6460fcfcc8344}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_ad03545d5a2e8854e55dc82387fc10f89}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1ui_1_1KDTree}{K\+D\+Tree}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_a4bbf084d9de83639154014db41476e5a}{\+\_\+tree}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_acaa00a54252b3eb945ab142f76e34275}{\+\_\+win\+\_\+height}}
+\item 
+\mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_abdf14bc01eaa09367b4bc494ae856604}{\+\_\+current\+\_\+receiver}}
+\item 
+\mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_aa2c8e70e78968b9710c32355f2d15007}{\+\_\+current\+\_\+moving}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}} $\ast$ \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem_abd1d5af67d36a581977fd5e3d8c81b08}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class dealing with ui events. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_ad03545d5a2e8854e55dc82387fc10f89}\label{classngind_1_1ui_1_1EventSystem_ad03545d5a2e8854e55dc82387fc10f89}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::ui\+::\+Event\+System\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the unique instance of \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}}. \mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_a109c25088a7005ca78b6460fcfcc8344}\label{classngind_1_1ui_1_1EventSystem_a109c25088a7005ca78b6460fcfcc8344}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}}$\ast$ ngind\+::ui\+::\+Event\+System\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get instance of \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}}. Create if instance is null. \begin{DoxyReturn}{Returns}
+Event\+System$\ast$, the unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_a9eaa2e38e6cb52036a6105f08466d05d}\label{classngind_1_1ui_1_1EventSystem_a9eaa2e38e6cb52036a6105f08466d05d}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!init@{init}}
+\index{init@{init}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+Event\+System\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize or reinitialize quad tree with world\textquotesingle{}s size. 
+\begin{DoxyParams}{Parameters}
+{\em width} & world\textquotesingle{}s width \\
+\hline
+{\em height} & world\textquotesingle{}s height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_a4adc9aa217f6600b07257e637c202326}\label{classngind_1_1ui_1_1EventSystem_a4adc9aa217f6600b07257e637c202326}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!init@{init}}
+\index{init@{init}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+Event\+System\+::init (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{win\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialize the window\textquotesingle{}s height. 
+\begin{DoxyParams}{Parameters}
+{\em win\+\_\+height} & window\textquotesingle{}s height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_ad6c9a6fb86d2ac0fda003527791150a4}\label{classngind_1_1ui_1_1EventSystem_ad6c9a6fb86d2ac0fda003527791150a4}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!registerEvent@{registerEvent}}
+\index{registerEvent@{registerEvent}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{registerEvent()}{registerEvent()}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+Event\+System\+::register\+Event (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&}]{receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Register a new click event. 
+\begin{DoxyParams}{Parameters}
+{\em receiver} & clickable area data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_a1cef4dd1ee8b24852f6d4b3e3fe0addf}\label{classngind_1_1ui_1_1EventSystem_a1cef4dd1ee8b24852f6d4b3e3fe0addf}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!unregisterEvent@{unregisterEvent}}
+\index{unregisterEvent@{unregisterEvent}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{unregisterEvent()}{unregisterEvent()}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+Event\+System\+::unregister\+Event (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&}]{receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unregister some click event. 
+\begin{DoxyParams}{Parameters}
+{\em receiver} & clickable area data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_aadbcf3d1ccc8d692f167bb5478072808}\label{classngind_1_1ui_1_1EventSystem_aadbcf3d1ccc8d692f167bb5478072808}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!update@{update}}
+\index{update@{update}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::ui\+::\+Event\+System\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update events\textquotesingle{} states each frame. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_aa2c8e70e78968b9710c32355f2d15007}\label{classngind_1_1ui_1_1EventSystem_aa2c8e70e78968b9710c32355f2d15007}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!\_current\_moving@{\_current\_moving}}
+\index{\_current\_moving@{\_current\_moving}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{\_current\_moving}{\_current\_moving}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}}$\ast$ ngind\+::ui\+::\+Event\+System\+::\+\_\+current\+\_\+moving\hspace{0.3cm}{\ttfamily [private]}}
+
+Clickable receiver on processing of moving. \mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_abdf14bc01eaa09367b4bc494ae856604}\label{classngind_1_1ui_1_1EventSystem_abdf14bc01eaa09367b4bc494ae856604}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!\_current\_receiver@{\_current\_receiver}}
+\index{\_current\_receiver@{\_current\_receiver}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{\_current\_receiver}{\_current\_receiver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}}$\ast$ ngind\+::ui\+::\+Event\+System\+::\+\_\+current\+\_\+receiver\hspace{0.3cm}{\ttfamily [private]}}
+
+Clickable receiver on processing of click. \mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_abd1d5af67d36a581977fd5e3d8c81b08}\label{classngind_1_1ui_1_1EventSystem_abd1d5af67d36a581977fd5e3d8c81b08}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}}$\ast$ ngind\+::ui\+::\+Event\+System\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance of \mbox{\hyperlink{classngind_1_1ui_1_1EventSystem}{Event\+System}}. \mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_a4bbf084d9de83639154014db41476e5a}\label{classngind_1_1ui_1_1EventSystem_a4bbf084d9de83639154014db41476e5a}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!\_tree@{\_tree}}
+\index{\_tree@{\_tree}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{\_tree}{\_tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1ui_1_1KDTree}{K\+D\+Tree}}$\ast$ ngind\+::ui\+::\+Event\+System\+::\+\_\+tree\hspace{0.3cm}{\ttfamily [private]}}
+
+Quad tree maintaining receiver data. \mbox{\Hypertarget{classngind_1_1ui_1_1EventSystem_acaa00a54252b3eb945ab142f76e34275}\label{classngind_1_1ui_1_1EventSystem_acaa00a54252b3eb945ab142f76e34275}} 
+\index{ngind::ui::EventSystem@{ngind::ui::EventSystem}!\_win\_height@{\_win\_height}}
+\index{\_win\_height@{\_win\_height}!ngind::ui::EventSystem@{ngind::ui::EventSystem}}
+\doxysubsubsection{\texorpdfstring{\_win\_height}{\_win\_height}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::ui\+::\+Event\+System\+::\+\_\+win\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+Window\textquotesingle{}s height. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/ui/\mbox{\hyperlink{event__system_8h}{event\+\_\+system.\+h}}\end{DoxyCompactItemize}

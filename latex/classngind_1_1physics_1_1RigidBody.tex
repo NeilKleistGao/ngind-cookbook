@@ -1,0 +1,256 @@
+\hypertarget{classngind_1_1physics_1_1RigidBody}{}\doxysection{ngind\+::physics\+::Rigid\+Body Class Reference}
+\label{classngind_1_1physics_1_1RigidBody}\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+
+
+Inheritance diagram for ngind\+::physics\+::Rigid\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1RigidBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Rigid\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1RigidBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a0a3775499a9fe7cc66316259cfb7f2c7}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a9363b76558b9d23a4c6051c5e53a0fb4}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a040d2862aabcc3cf78b56f4f7ea60c9a}{get\+Body}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a773c998d285b42d6d024b492959b33b9}{apply\+Force}} (const glm\+::vec2 \&force)
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_ae9f677af142cc6bba24f8479a20d3bbb}{apply\+Torque}} (float torque)
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a2c75c5e73f428ed7f211a7f9e9da5ded}{set\+Velocity}} (const glm\+::vec2 \&velocity)
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_ac4aab22ef0068e9e0aa4ececc8d2a616}{set\+Angular\+Velocity}} (float velocity)
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a8ec0eaf7ad67da9ba1b35e0ae80b94b3}{set\+Sleeping\+Allowed}} (bool allowed)
+\item 
+bool \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_acb037c08c126eadbf052bf13f13b9d48}{is\+Sleeping\+Allowed}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a10ad6fe32947a9426d16bd3394ff7ba7}{set\+Rotation\+Fixed}} (bool fixed)
+\item 
+bool \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a51001be23b3d026589310b24c2bec61d}{is\+Rotation\+Fixed}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_aa3a3af75c0b1ff141b84ed728a7b5ff0}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Body\+Def \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a3948ffaa31a9c4cb53d24ac7e42e7326}{\+\_\+def}}
+\item 
+b2\+Fixture\+Def \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a70b94eb121772a8df28aed6d1c70db70}{\+\_\+fixture\+\_\+def}}
+\item 
+b2\+Fixture $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a350f5da8afcd9a10d11e75da994ead3d}{\+\_\+fixture}}
+\item 
+\mbox{\hyperlink{structngind_1_1physics_1_1PhysicsShape}{Physics\+Shape}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a5a8d08d28447f3d455e6edab42d0b962}{\+\_\+shape}}
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a7ccce490b9b69cc5ceeb78d629e8547f}{\+\_\+body}}
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{objects\+::\+Entity\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a87ec7d4521d40a21ab88a25a8b1788fd}{\+\_\+ep}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_abd7959b8cbcd7c25bc6c0c8b1ea26ce6}\label{classngind_1_1physics_1_1RigidBody_abd7959b8cbcd7c25bc6c0c8b1ea26ce6}} 
+class {\bfseries Physics\+World}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a773c998d285b42d6d024b492959b33b9}\label{classngind_1_1physics_1_1RigidBody_a773c998d285b42d6d024b492959b33b9}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!applyForce@{applyForce}}
+\index{applyForce@{applyForce}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{applyForce()}{applyForce()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::apply\+Force (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{force }\end{DoxyParamCaption})}
+
+Apply force on this rigid body. 
+\begin{DoxyParams}{Parameters}
+{\em force} & force on this rigid body. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_ae9f677af142cc6bba24f8479a20d3bbb}\label{classngind_1_1physics_1_1RigidBody_ae9f677af142cc6bba24f8479a20d3bbb}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!applyTorque@{applyTorque}}
+\index{applyTorque@{applyTorque}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{applyTorque()}{applyTorque()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::apply\+Torque (\begin{DoxyParamCaption}\item[{float}]{torque }\end{DoxyParamCaption})}
+
+Apply torque on this rigid body. 
+\begin{DoxyParams}{Parameters}
+{\em torque} & torque on this rigid body. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_aa3a3af75c0b1ff141b84ed728a7b5ff0}\label{classngind_1_1physics_1_1RigidBody_aa3a3af75c0b1ff141b84ed728a7b5ff0}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!create@{create}}
+\index{create@{create}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}}$\ast$ ngind\+::physics\+::\+Rigid\+Body\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a rigid body component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pulley\+Joint$\ast$, the instance of pulley joint component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a040d2862aabcc3cf78b56f4f7ea60c9a}\label{classngind_1_1physics_1_1RigidBody_a040d2862aabcc3cf78b56f4f7ea60c9a}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!getBody@{getBody}}
+\index{getBody@{getBody}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getBody()}{getBody()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ ngind\+::physics\+::\+Rigid\+Body\+::get\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get b2\+Body object. \begin{DoxyReturn}{Returns}
+b2\+Body$\ast$, b2\+Body object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a9363b76558b9d23a4c6051c5e53a0fb4}\label{classngind_1_1physics_1_1RigidBody_a9363b76558b9d23a4c6051c5e53a0fb4}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!init@{init}}
+\index{init@{init}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from Component 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a51001be23b3d026589310b24c2bec61d}\label{classngind_1_1physics_1_1RigidBody_a51001be23b3d026589310b24c2bec61d}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!isRotationFixed@{isRotationFixed}}
+\index{isRotationFixed@{isRotationFixed}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{isRotationFixed()}{isRotationFixed()}}
+{\footnotesize\ttfamily bool ngind\+::physics\+::\+Rigid\+Body\+::is\+Rotation\+Fixed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Can this rigid body rotate. \begin{DoxyReturn}{Returns}
+bool, true if this body can\textquotesingle{}t rotate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_acb037c08c126eadbf052bf13f13b9d48}\label{classngind_1_1physics_1_1RigidBody_acb037c08c126eadbf052bf13f13b9d48}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!isSleepingAllowed@{isSleepingAllowed}}
+\index{isSleepingAllowed@{isSleepingAllowed}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{isSleepingAllowed()}{isSleepingAllowed()}}
+{\footnotesize\ttfamily bool ngind\+::physics\+::\+Rigid\+Body\+::is\+Sleeping\+Allowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Can this rigid body sleep. \begin{DoxyReturn}{Returns}
+bool, true if this body can sleep 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_ac4aab22ef0068e9e0aa4ececc8d2a616}\label{classngind_1_1physics_1_1RigidBody_ac4aab22ef0068e9e0aa4ececc8d2a616}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!setAngularVelocity@{setAngularVelocity}}
+\index{setAngularVelocity@{setAngularVelocity}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setAngularVelocity()}{setAngularVelocity()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::set\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{float}]{velocity }\end{DoxyParamCaption})}
+
+Set angular velocity of this rigid body directly. 
+\begin{DoxyParams}{Parameters}
+{\em velocity} & angular velocity of this rigid body \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a10ad6fe32947a9426d16bd3394ff7ba7}\label{classngind_1_1physics_1_1RigidBody_a10ad6fe32947a9426d16bd3394ff7ba7}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!setRotationFixed@{setRotationFixed}}
+\index{setRotationFixed@{setRotationFixed}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setRotationFixed()}{setRotationFixed()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::set\+Rotation\+Fixed (\begin{DoxyParamCaption}\item[{bool}]{fixed }\end{DoxyParamCaption})}
+
+Allow this rigid body to rotate or not. 
+\begin{DoxyParams}{Parameters}
+{\em fixed} & true if this body can\textquotesingle{}t rotate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a8ec0eaf7ad67da9ba1b35e0ae80b94b3}\label{classngind_1_1physics_1_1RigidBody_a8ec0eaf7ad67da9ba1b35e0ae80b94b3}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!setSleepingAllowed@{setSleepingAllowed}}
+\index{setSleepingAllowed@{setSleepingAllowed}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setSleepingAllowed()}{setSleepingAllowed()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::set\+Sleeping\+Allowed (\begin{DoxyParamCaption}\item[{bool}]{allowed }\end{DoxyParamCaption})}
+
+Allow this rigid body to sleep or not. 
+\begin{DoxyParams}{Parameters}
+{\em allowed} & true if this body can sleep \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a2c75c5e73f428ed7f211a7f9e9da5ded}\label{classngind_1_1physics_1_1RigidBody_a2c75c5e73f428ed7f211a7f9e9da5ded}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{velocity }\end{DoxyParamCaption})}
+
+Set velocity of this rigid body directly. 
+\begin{DoxyParams}{Parameters}
+{\em velocity} & velocity of this rigid body \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a0a3775499a9fe7cc66316259cfb7f2c7}\label{classngind_1_1physics_1_1RigidBody_a0a3775499a9fe7cc66316259cfb7f2c7}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!update@{update}}
+\index{update@{update}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Rigid\+Body\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a7ccce490b9b69cc5ceeb78d629e8547f}\label{classngind_1_1physics_1_1RigidBody_a7ccce490b9b69cc5ceeb78d629e8547f}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!\_body@{\_body}}
+\index{\_body@{\_body}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{\_body}{\_body}}
+{\footnotesize\ttfamily b2\+Body$\ast$ ngind\+::physics\+::\+Rigid\+Body\+::\+\_\+body\hspace{0.3cm}{\ttfamily [private]}}
+
+B2 body object. \mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a3948ffaa31a9c4cb53d24ac7e42e7326}\label{classngind_1_1physics_1_1RigidBody_a3948ffaa31a9c4cb53d24ac7e42e7326}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!\_def@{\_def}}
+\index{\_def@{\_def}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{\_def}{\_def}}
+{\footnotesize\ttfamily b2\+Body\+Def ngind\+::physics\+::\+Rigid\+Body\+::\+\_\+def\hspace{0.3cm}{\ttfamily [private]}}
+
+Body definition. \mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a87ec7d4521d40a21ab88a25a8b1788fd}\label{classngind_1_1physics_1_1RigidBody_a87ec7d4521d40a21ab88a25a8b1788fd}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!\_ep@{\_ep}}
+\index{\_ep@{\_ep}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{\_ep}{\_ep}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{objects\+::\+Entity\+Object}}$\ast$ ngind\+::physics\+::\+Rigid\+Body\+::\+\_\+ep\hspace{0.3cm}{\ttfamily [private]}}
+
+Entity parent object. \mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a350f5da8afcd9a10d11e75da994ead3d}\label{classngind_1_1physics_1_1RigidBody_a350f5da8afcd9a10d11e75da994ead3d}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!\_fixture@{\_fixture}}
+\index{\_fixture@{\_fixture}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{\_fixture}{\_fixture}}
+{\footnotesize\ttfamily b2\+Fixture$\ast$ ngind\+::physics\+::\+Rigid\+Body\+::\+\_\+fixture\hspace{0.3cm}{\ttfamily [private]}}
+
+Fixture of body. \mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a70b94eb121772a8df28aed6d1c70db70}\label{classngind_1_1physics_1_1RigidBody_a70b94eb121772a8df28aed6d1c70db70}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!\_fixture\_def@{\_fixture\_def}}
+\index{\_fixture\_def@{\_fixture\_def}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{\_fixture\_def}{\_fixture\_def}}
+{\footnotesize\ttfamily b2\+Fixture\+Def ngind\+::physics\+::\+Rigid\+Body\+::\+\_\+fixture\+\_\+def\hspace{0.3cm}{\ttfamily [private]}}
+
+Fixture definition. \mbox{\Hypertarget{classngind_1_1physics_1_1RigidBody_a5a8d08d28447f3d455e6edab42d0b962}\label{classngind_1_1physics_1_1RigidBody_a5a8d08d28447f3d455e6edab42d0b962}} 
+\index{ngind::physics::RigidBody@{ngind::physics::RigidBody}!\_shape@{\_shape}}
+\index{\_shape@{\_shape}!ngind::physics::RigidBody@{ngind::physics::RigidBody}}
+\doxysubsubsection{\texorpdfstring{\_shape}{\_shape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1physics_1_1PhysicsShape}{Physics\+Shape}}$\ast$ ngind\+::physics\+::\+Rigid\+Body\+::\+\_\+shape\hspace{0.3cm}{\ttfamily [private]}}
+
+Collision shape. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/\mbox{\hyperlink{rigid__body_8h}{rigid\+\_\+body.\+h}}\end{DoxyCompactItemize}

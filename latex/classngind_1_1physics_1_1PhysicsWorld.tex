@@ -1,0 +1,258 @@
+\hypertarget{classngind_1_1physics_1_1PhysicsWorld}{}\doxysection{ngind\+::physics\+::Physics\+World Class Reference}
+\label{classngind_1_1physics_1_1PhysicsWorld}\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+
+
+{\ttfamily \#include $<$physics\+\_\+world.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::physics\+::Physics\+World\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PhysicsWorld__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Physics\+World\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PhysicsWorld__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a3f02246e40e40c691421448cba7c5532}\label{classngind_1_1physics_1_1PhysicsWorld_a3f02246e40e40c691421448cba7c5532}} 
+{\bfseries Physics\+World} (const \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld}{Physics\+World}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_abd10203b0164a3d8b5c121db27ad8290}\label{classngind_1_1physics_1_1PhysicsWorld_abd10203b0164a3d8b5c121db27ad8290}} 
+\mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld}{Physics\+World}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld}{Physics\+World}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_aa3ae11cba9badd5b28528f12fe06fe28}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_acc88c94341897ce604ddb06ad0b8a868}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_aebaf69beac28685afdc8766387515c62}{set\+Gravity}} (const float \&x, const float \&y)
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_abd376bb7621da89e2bd104f326c7a4a2}{set\+GravityX}} (float x)
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_afdf3567c8832fc94d7a0237f337f0b1d}{set\+GravityY}} (float y)
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_adf8444f1155a57aa37f271c8cf825c81}{get\+Gravity}} () const
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a7b7f1f999df4b687688b9df689b420b8}{get\+GravityX}} () const
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a846df6008c94d5cf9c60708ad739c297}{get\+GravityY}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld}{Physics\+World}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a73a55caa89a37f981f6911032afb8a90}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a155f24be4f479a3a797973d810f909da}{clear\+Rigid\+Body}} (\mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a96bb69c0a91cbe14a16955855e06be4d}{\+\_\+gravity}}
+\item 
+b2\+World \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a6f128dd058ed6f0ed77d98a1a707e8b4}{\+\_\+world}}
+\item 
+\mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener}{Physics\+Listener}} \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a0dc357a863d9296c1e2587f0c2166c63}{listener}}
+\item 
+\mbox{\hyperlink{classngind_1_1timer_1_1Timer}{timer\+::\+Timer}} \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_acffff969a56b977cfad1b4933735b8f2}{\+\_\+timer}}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_a73f92f73e580470bc85cb8d37e7524ee}{\+\_\+passed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_abb8b03bec6b0a8e0834c8358c93039d2}\label{classngind_1_1physics_1_1PhysicsWorld_abb8b03bec6b0a8e0834c8358c93039d2}} 
+class {\bfseries Rigid\+Body}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a97cb3600a187c2beffbbaf043aae4f4e}\label{classngind_1_1physics_1_1PhysicsWorld_a97cb3600a187c2beffbbaf043aae4f4e}} 
+class {\bfseries Distance\+Joint}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a3895145e395d71cf775f45ab3e0245fc}\label{classngind_1_1physics_1_1PhysicsWorld_a3895145e395d71cf775f45ab3e0245fc}} 
+class {\bfseries Revolute\+Joint}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a4352f9ea9ac25bfeab0d6f8c3586fd55}\label{classngind_1_1physics_1_1PhysicsWorld_a4352f9ea9ac25bfeab0d6f8c3586fd55}} 
+class {\bfseries Prismatic\+Joint}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a836c38499ede57b3b398d89825ffca1e}\label{classngind_1_1physics_1_1PhysicsWorld_a836c38499ede57b3b398d89825ffca1e}} 
+class {\bfseries Pulley\+Joint}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_abfbad0e2efb727a1ccecbf50e985fc4d}\label{classngind_1_1physics_1_1PhysicsWorld_abfbad0e2efb727a1ccecbf50e985fc4d}} 
+class {\bfseries Gear\+Joint}
+\item 
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_ab39a7306c77b4aa6667c1f3c9d70fda3}\label{classngind_1_1physics_1_1PhysicsWorld_ab39a7306c77b4aa6667c1f3c9d70fda3}} 
+class {\bfseries objects\+::\+Object}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Physics simulation component for world. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a155f24be4f479a3a797973d810f909da}\label{classngind_1_1physics_1_1PhysicsWorld_a155f24be4f479a3a797973d810f909da}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!clearRigidBody@{clearRigidBody}}
+\index{clearRigidBody@{clearRigidBody}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{clearRigidBody()}{clearRigidBody()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+World\+::clear\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Clear all rigid body in the given node. 
+\begin{DoxyParams}{Parameters}
+{\em node} & the given node. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a73a55caa89a37f981f6911032afb8a90}\label{classngind_1_1physics_1_1PhysicsWorld_a73a55caa89a37f981f6911032afb8a90}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!create@{create}}
+\index{create@{create}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld}{Physics\+World}}$\ast$ ngind\+::physics\+::\+Physics\+World\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a physics world component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Physics\+World$\ast$, the instance of physics world component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_adf8444f1155a57aa37f271c8cf825c81}\label{classngind_1_1physics_1_1PhysicsWorld_adf8444f1155a57aa37f271c8cf825c81}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!getGravity@{getGravity}}
+\index{getGravity@{getGravity}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{getGravity()}{getGravity()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Physics\+World\+::get\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get gravity vector. \begin{DoxyReturn}{Returns}
+glm\+::vec2, gravity vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a7b7f1f999df4b687688b9df689b420b8}\label{classngind_1_1physics_1_1PhysicsWorld_a7b7f1f999df4b687688b9df689b420b8}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!getGravityX@{getGravityX}}
+\index{getGravityX@{getGravityX}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{getGravityX()}{getGravityX()}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Physics\+World\+::get\+GravityX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get gravity in x axis. \begin{DoxyReturn}{Returns}
+float, gravity in x axis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a846df6008c94d5cf9c60708ad739c297}\label{classngind_1_1physics_1_1PhysicsWorld_a846df6008c94d5cf9c60708ad739c297}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!getGravityY@{getGravityY}}
+\index{getGravityY@{getGravityY}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{getGravityY()}{getGravityY()}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Physics\+World\+::get\+GravityY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get gravity in y axis. \begin{DoxyReturn}{Returns}
+float, gravity in y axis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_acc88c94341897ce604ddb06ad0b8a868}\label{classngind_1_1physics_1_1PhysicsWorld_acc88c94341897ce604ddb06ad0b8a868}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!init@{init}}
+\index{init@{init}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+World\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from Component 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_aebaf69beac28685afdc8766387515c62}\label{classngind_1_1physics_1_1PhysicsWorld_aebaf69beac28685afdc8766387515c62}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!setGravity@{setGravity}}
+\index{setGravity@{setGravity}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{setGravity()}{setGravity()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+World\+::set\+Gravity (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set gravity in this world. 
+\begin{DoxyParams}{Parameters}
+{\em x} & x factor \\
+\hline
+{\em y} & y factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_abd376bb7621da89e2bd104f326c7a4a2}\label{classngind_1_1physics_1_1PhysicsWorld_abd376bb7621da89e2bd104f326c7a4a2}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!setGravityX@{setGravityX}}
+\index{setGravityX@{setGravityX}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{setGravityX()}{setGravityX()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+World\+::set\+GravityX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set gravity in x axis. 
+\begin{DoxyParams}{Parameters}
+{\em x} & value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_afdf3567c8832fc94d7a0237f337f0b1d}\label{classngind_1_1physics_1_1PhysicsWorld_afdf3567c8832fc94d7a0237f337f0b1d}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!setGravityY@{setGravityY}}
+\index{setGravityY@{setGravityY}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{setGravityY()}{setGravityY()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+World\+::set\+GravityY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set gravity in y axis. 
+\begin{DoxyParams}{Parameters}
+{\em y} & value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_aa3ae11cba9badd5b28528f12fe06fe28}\label{classngind_1_1physics_1_1PhysicsWorld_aa3ae11cba9badd5b28528f12fe06fe28}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!update@{update}}
+\index{update@{update}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+World\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a96bb69c0a91cbe14a16955855e06be4d}\label{classngind_1_1physics_1_1PhysicsWorld_a96bb69c0a91cbe14a16955855e06be4d}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!\_gravity@{\_gravity}}
+\index{\_gravity@{\_gravity}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{\_gravity}{\_gravity}}
+{\footnotesize\ttfamily b2\+Vec2 ngind\+::physics\+::\+Physics\+World\+::\+\_\+gravity\hspace{0.3cm}{\ttfamily [private]}}
+
+Gravity vector in this world. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a73f92f73e580470bc85cb8d37e7524ee}\label{classngind_1_1physics_1_1PhysicsWorld_a73f92f73e580470bc85cb8d37e7524ee}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!\_passed@{\_passed}}
+\index{\_passed@{\_passed}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{\_passed}{\_passed}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Physics\+World\+::\+\_\+passed\hspace{0.3cm}{\ttfamily [private]}}
+
+Time passed. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_acffff969a56b977cfad1b4933735b8f2}\label{classngind_1_1physics_1_1PhysicsWorld_acffff969a56b977cfad1b4933735b8f2}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!\_timer@{\_timer}}
+\index{\_timer@{\_timer}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1timer_1_1Timer}{timer\+::\+Timer}} ngind\+::physics\+::\+Physics\+World\+::\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Physics fixed timer. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a6f128dd058ed6f0ed77d98a1a707e8b4}\label{classngind_1_1physics_1_1PhysicsWorld_a6f128dd058ed6f0ed77d98a1a707e8b4}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!\_world@{\_world}}
+\index{\_world@{\_world}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{\_world}{\_world}}
+{\footnotesize\ttfamily b2\+World ngind\+::physics\+::\+Physics\+World\+::\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+b2\+World object. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsWorld_a0dc357a863d9296c1e2587f0c2166c63}\label{classngind_1_1physics_1_1PhysicsWorld_a0dc357a863d9296c1e2587f0c2166c63}} 
+\index{ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}!listener@{listener}}
+\index{listener@{listener}!ngind::physics::PhysicsWorld@{ngind::physics::PhysicsWorld}}
+\doxysubsubsection{\texorpdfstring{listener}{listener}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener}{Physics\+Listener}} ngind\+::physics\+::\+Physics\+World\+::listener\hspace{0.3cm}{\ttfamily [private]}}
+
+Event listener. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/physics\+\_\+world.\+h\end{DoxyCompactItemize}

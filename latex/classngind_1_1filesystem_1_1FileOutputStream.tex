@@ -1,0 +1,189 @@
+\hypertarget{classngind_1_1filesystem_1_1FileOutputStream}{}\doxysection{ngind\+::filesystem\+::File\+Output\+Stream Class Reference}
+\label{classngind_1_1filesystem_1_1FileOutputStream}\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+
+
+{\ttfamily \#include $<$file\+\_\+output\+\_\+stream.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::filesystem\+::File\+Output\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1FileOutputStream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::filesystem\+::File\+Output\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1FileOutputStream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_a6bb18ddcd27ea6046739290495c54858}{File\+Output\+Stream}} (const std\+::string \&filename)
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_a29682ae8953d107cfc9effbc7867b630}{File\+Output\+Stream}} (const std\+::string \&filename, const bool \&append)
+\item 
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a7c978ff36fee26d2c2184c679f25d327}\label{classngind_1_1filesystem_1_1FileOutputStream_a7c978ff36fee26d2c2184c679f25d327}} 
+{\bfseries File\+Output\+Stream} (const \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream}{File\+Output\+Stream}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a40a42abda6542f8a0ca721301d784fdf}\label{classngind_1_1filesystem_1_1FileOutputStream_a40a42abda6542f8a0ca721301d784fdf}} 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream}{File\+Output\+Stream}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream}{File\+Output\+Stream}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_ac13eacf2104b058c03230d937ac49fe2}{open}} (const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_a69653b87e694ed2920566c5f901b8ee9}{open}} (const std\+::string \&filename, const bool \&append)
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_a5e53fc7005df212097ffeb5463d8bd26}{write}} (const char \&c) override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_ae456244bcc3edd121d2e0a9ce7d40c16}{write}} (const std\+::string \&str) override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_adc4b1fac016a22f05a5dfaf9fed0f81f}{flush}} () override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_aac4d449c24df52385baf6bf30341961c}{close}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_a33b1928105bb132cd5063c89072fdd40}{\+\_\+filename}}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_a1c9ba30b8bca949d04fa6dabbd98290d}{\+\_\+fp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Text file output class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a6bb18ddcd27ea6046739290495c54858}\label{classngind_1_1filesystem_1_1FileOutputStream_a6bb18ddcd27ea6046739290495c54858}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!FileOutputStream@{FileOutputStream}}
+\index{FileOutputStream@{FileOutputStream}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{FileOutputStream()}{FileOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ngind\+::filesystem\+::\+File\+Output\+Stream\+::\+File\+Output\+Stream (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & name of file to be opened. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a29682ae8953d107cfc9effbc7867b630}\label{classngind_1_1filesystem_1_1FileOutputStream_a29682ae8953d107cfc9effbc7867b630}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!FileOutputStream@{FileOutputStream}}
+\index{FileOutputStream@{FileOutputStream}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{FileOutputStream()}{FileOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ngind\+::filesystem\+::\+File\+Output\+Stream\+::\+File\+Output\+Stream (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const bool \&}]{append }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & name of file to be opened. \\
+\hline
+{\em append} & true if append text at end of file. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_aac4d449c24df52385baf6bf30341961c}\label{classngind_1_1filesystem_1_1FileOutputStream_aac4d449c24df52385baf6bf30341961c}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!close@{close}}
+\index{close@{close}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Output\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{output__stream_8h}{kernel/filesystem/output\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_adefebb0f809662ab583fd571866cd090}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_adc4b1fac016a22f05a5dfaf9fed0f81f}\label{classngind_1_1filesystem_1_1FileOutputStream_adc4b1fac016a22f05a5dfaf9fed0f81f}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!flush@{flush}}
+\index{flush@{flush}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Output\+Stream\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{output__stream_8h}{kernel/filesystem/output\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_ab0ed5a3b5b8288d9d263eabdeabe010e}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_ac13eacf2104b058c03230d937ac49fe2}\label{classngind_1_1filesystem_1_1FileOutputStream_ac13eacf2104b058c03230d937ac49fe2}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!open@{open}}
+\index{open@{open}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Output\+Stream\+::open (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Open a file. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & file\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a69653b87e694ed2920566c5f901b8ee9}\label{classngind_1_1filesystem_1_1FileOutputStream_a69653b87e694ed2920566c5f901b8ee9}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!open@{open}}
+\index{open@{open}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Output\+Stream\+::open (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const bool \&}]{append }\end{DoxyParamCaption})}
+
+Open a file. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & file\textquotesingle{}s name \\
+\hline
+{\em append\+:true} & if append text at end of file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a5e53fc7005df212097ffeb5463d8bd26}\label{classngind_1_1filesystem_1_1FileOutputStream_a5e53fc7005df212097ffeb5463d8bd26}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const char \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{output__stream_8h}{kernel/filesystem/output\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a3a43ce904af8dc5e3b9ef91194d95d5e}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_ae456244bcc3edd121d2e0a9ce7d40c16}\label{classngind_1_1filesystem_1_1FileOutputStream_ae456244bcc3edd121d2e0a9ce7d40c16}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Write a string into the file. 
+\begin{DoxyParams}{Parameters}
+{\em str} & string to be written. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a9483ec5527b492a08574847f14ed3880}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a33b1928105bb132cd5063c89072fdd40}\label{classngind_1_1filesystem_1_1FileOutputStream_a33b1928105bb132cd5063c89072fdd40}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!\_filename@{\_filename}}
+\index{\_filename@{\_filename}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{\_filename}{\_filename}}
+{\footnotesize\ttfamily std\+::string ngind\+::filesystem\+::\+File\+Output\+Stream\+::\+\_\+filename\hspace{0.3cm}{\ttfamily [private]}}
+
+File\textquotesingle{}s name. If no file is opened, it\textquotesingle{}s a blank string. \mbox{\Hypertarget{classngind_1_1filesystem_1_1FileOutputStream_a1c9ba30b8bca949d04fa6dabbd98290d}\label{classngind_1_1filesystem_1_1FileOutputStream_a1c9ba30b8bca949d04fa6dabbd98290d}} 
+\index{ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}!\_fp@{\_fp}}
+\index{\_fp@{\_fp}!ngind::filesystem::FileOutputStream@{ngind::filesystem::FileOutputStream}}
+\doxysubsubsection{\texorpdfstring{\_fp}{\_fp}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ ngind\+::filesystem\+::\+File\+Output\+Stream\+::\+\_\+fp\hspace{0.3cm}{\ttfamily [private]}}
+
+File pointer of C. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/filesystem/\mbox{\hyperlink{file__output__stream_8h}{file\+\_\+output\+\_\+stream.\+h}}\end{DoxyCompactItemize}

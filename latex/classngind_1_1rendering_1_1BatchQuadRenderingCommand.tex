@@ -1,0 +1,132 @@
+\hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand}{}\doxysection{ngind\+::rendering\+::Batch\+Quad\+Rendering\+Command Class Reference}
+\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand}\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+
+
+{\ttfamily \#include $<$batch\+\_\+quad\+\_\+rendering\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::rendering\+::Batch\+Quad\+Rendering\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1rendering_1_1BatchQuadRenderingCommand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::rendering\+::Batch\+Quad\+Rendering\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1rendering_1_1BatchQuadRenderingCommand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a3c705e910f386063cb05c5c72885d18e}{Batch\+Quad\+Rendering\+Command}} (\mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}} $\ast$quad, const size\+\_\+t \&size)
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_abd871f6de9253718a994b6aaa02642a5}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_abd871f6de9253718a994b6aaa02642a5}} 
+{\bfseries Batch\+Quad\+Rendering\+Command} (const \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand}{Batch\+Quad\+Rendering\+Command}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_ada1b43753f3b0569f8b60aa93e367149}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_ada1b43753f3b0569f8b60aa93e367149}} 
+\mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand}{Batch\+Quad\+Rendering\+Command}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand}{Batch\+Quad\+Rendering\+Command}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a67f39cbec2d12cbaeadcce7207ae08f9}{call}} () override
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_abfeab8a0416067de37b938ba396701e5}{push}} (std\+::initializer\+\_\+list$<$ G\+Lfloat $>$ vertex, const G\+Luint \&texture)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a7a33afba21de776a5f3944914fc52080}{\+\_\+quad}}
+\item 
+std\+::vector$<$ G\+Lfloat $\ast$ $>$ \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a8095050a59cf2c70e4e3a4237a404662}{\+\_\+vertex}}
+\item 
+std\+::vector$<$ G\+Luint $>$ \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a5ecb09dd40cff8cf87a1f8eb0d97e9c5}{\+\_\+textures}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a8adbcec638d955723421abcf3e3d0b38}{\+\_\+size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Batch of quad rendering commands. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a3c705e910f386063cb05c5c72885d18e}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a3c705e910f386063cb05c5c72885d18e}} 
+\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}!BatchQuadRenderingCommand@{BatchQuadRenderingCommand}}
+\index{BatchQuadRenderingCommand@{BatchQuadRenderingCommand}!ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+\doxysubsubsection{\texorpdfstring{BatchQuadRenderingCommand()}{BatchQuadRenderingCommand()}}
+{\footnotesize\ttfamily ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command\+::\+Batch\+Quad\+Rendering\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}} $\ast$}]{quad,  }\item[{const size\+\_\+t \&}]{size }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em quad} & the quad data \\
+\hline
+{\em size} & size of vertex \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a67f39cbec2d12cbaeadcce7207ae08f9}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a67f39cbec2d12cbaeadcce7207ae08f9}} 
+\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}!call@{call}}
+\index{call@{call}!ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command\+::call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rendering__command_8h_source}{kernel/rendering/rendering\+\_\+command.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a936536d04df34e0db7eba5e37b4fc3af}{ngind\+::rendering\+::\+Rendering\+Command}}.
+
+\mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_abfeab8a0416067de37b938ba396701e5}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_abfeab8a0416067de37b938ba396701e5}} 
+\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}!push@{push}}
+\index{push@{push}!ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command\+::push (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ G\+Lfloat $>$}]{vertex,  }\item[{const G\+Luint \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push new vertex data into batch. 
+\begin{DoxyParams}{Parameters}
+{\em vertex} & vertex data \\
+\hline
+{\em texture} & the texture id \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a7a33afba21de776a5f3944914fc52080}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a7a33afba21de776a5f3944914fc52080}} 
+\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}!\_quad@{\_quad}}
+\index{\_quad@{\_quad}!ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_quad}{\_quad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}}$\ast$ ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command\+::\+\_\+quad\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}} data \mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a8adbcec638d955723421abcf3e3d0b38}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a8adbcec638d955723421abcf3e3d0b38}} 
+\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}!\_size@{\_size}}
+\index{\_size@{\_size}!ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command\+::\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+Size of vertex \mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a5ecb09dd40cff8cf87a1f8eb0d97e9c5}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a5ecb09dd40cff8cf87a1f8eb0d97e9c5}} 
+\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}!\_textures@{\_textures}}
+\index{\_textures@{\_textures}!ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_textures}{\_textures}}
+{\footnotesize\ttfamily std\+::vector$<$G\+Luint$>$ ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command\+::\+\_\+textures\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1rendering_1_1Texture}{Texture}} list \mbox{\Hypertarget{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a8095050a59cf2c70e4e3a4237a404662}\label{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a8095050a59cf2c70e4e3a4237a404662}} 
+\index{ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}!\_vertex@{\_vertex}}
+\index{\_vertex@{\_vertex}!ngind::rendering::BatchQuadRenderingCommand@{ngind::rendering::BatchQuadRenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_vertex}{\_vertex}}
+{\footnotesize\ttfamily std\+::vector$<$G\+Lfloat$\ast$$>$ ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command\+::\+\_\+vertex\hspace{0.3cm}{\ttfamily [private]}}
+
+Vertex list 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{batch__quad__rendering__command_8h}{batch\+\_\+quad\+\_\+rendering\+\_\+command.\+h}}\end{DoxyCompactItemize}

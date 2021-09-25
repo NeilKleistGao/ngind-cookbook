@@ -1,0 +1,163 @@
+\hypertarget{classngind_1_1filesystem_1_1FileInputStream}{}\doxysection{ngind\+::filesystem\+::File\+Input\+Stream Class Reference}
+\label{classngind_1_1filesystem_1_1FileInputStream}\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+
+
+{\ttfamily \#include $<$file\+\_\+input\+\_\+stream.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::filesystem\+::File\+Input\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1FileInputStream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::filesystem\+::File\+Input\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1FileInputStream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_aaa1a1234136ff7ff0338c87e3b0c2568}{File\+Input\+Stream}} (const std\+::string \&filename)
+\item 
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_a238f9322a81c323510d1373a648c273b}\label{classngind_1_1filesystem_1_1FileInputStream_a238f9322a81c323510d1373a648c273b}} 
+{\bfseries File\+Input\+Stream} (const \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream}{File\+Input\+Stream}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_afafe9d34205416ba8ecc14ee11834662}\label{classngind_1_1filesystem_1_1FileInputStream_afafe9d34205416ba8ecc14ee11834662}} 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream}{File\+Input\+Stream}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream}{File\+Input\+Stream}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_a7232e5669a5896bd93424c614d9e0ea2}{open}} (const std\+::string \&filename)
+\item 
+char \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_a7ae1e90563aff15c102222fc3ab862bd}{read}} () override
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_a835bfaab31b29681ba3ee0ac0b9b6540}{read}} (const size\+\_\+t \&size)
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_a01fa051382dbe6671fc61a8f600a1522}{close}} () override
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_a9da9d6884230b264c201d69254e4c712}{read\+All\+Characters}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_acb9504511898b9a26f3159f336614571}{\+\_\+filename}}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classngind_1_1filesystem_1_1FileInputStream_a33e58c1726b8b2bdaf1ad425829bb8b2}{\+\_\+fp}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Text file input class, used to read configuration files, text files vice versa. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_aaa1a1234136ff7ff0338c87e3b0c2568}\label{classngind_1_1filesystem_1_1FileInputStream_aaa1a1234136ff7ff0338c87e3b0c2568}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!FileInputStream@{FileInputStream}}
+\index{FileInputStream@{FileInputStream}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{FileInputStream()}{FileInputStream()}}
+{\footnotesize\ttfamily ngind\+::filesystem\+::\+File\+Input\+Stream\+::\+File\+Input\+Stream (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_a01fa051382dbe6671fc61a8f600a1522}\label{classngind_1_1filesystem_1_1FileInputStream_a01fa051382dbe6671fc61a8f600a1522}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!close@{close}}
+\index{close@{close}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Input\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input__stream_8h}{kernel/filesystem/input\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream_aad8fcb1d6b0fccdd67ce27e4792935de}{ngind\+::filesystem\+::\+Input\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_a7232e5669a5896bd93424c614d9e0ea2}\label{classngind_1_1filesystem_1_1FileInputStream_a7232e5669a5896bd93424c614d9e0ea2}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!open@{open}}
+\index{open@{open}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+File\+Input\+Stream\+::open (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Open a file. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & file\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_a7ae1e90563aff15c102222fc3ab862bd}\label{classngind_1_1filesystem_1_1FileInputStream_a7ae1e90563aff15c102222fc3ab862bd}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!read@{read}}
+\index{read@{read}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char ngind\+::filesystem\+::\+File\+Input\+Stream\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input__stream_8h}{kernel/filesystem/input\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream_ab5c25429f846492f3821ac3e724c938c}{ngind\+::filesystem\+::\+Input\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_a835bfaab31b29681ba3ee0ac0b9b6540}\label{classngind_1_1filesystem_1_1FileInputStream_a835bfaab31b29681ba3ee0ac0b9b6540}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!read@{read}}
+\index{read@{read}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string ngind\+::filesystem\+::\+File\+Input\+Stream\+::read (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Read a string from file. 
+\begin{DoxyParams}{Parameters}
+{\em size} & how many characters would be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string, the string read from file. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream_a16b30d89f174cde385070d2005180dca}{ngind\+::filesystem\+::\+Input\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_a9da9d6884230b264c201d69254e4c712}\label{classngind_1_1filesystem_1_1FileInputStream_a9da9d6884230b264c201d69254e4c712}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!readAllCharacters@{readAllCharacters}}
+\index{readAllCharacters@{readAllCharacters}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{readAllCharacters()}{readAllCharacters()}}
+{\footnotesize\ttfamily std\+::string ngind\+::filesystem\+::\+File\+Input\+Stream\+::read\+All\+Characters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input__stream_8h}{kernel/filesystem/input\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream_ac4f0bafec082360e5f85ba8571368afe}{ngind\+::filesystem\+::\+Input\+Stream}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_acb9504511898b9a26f3159f336614571}\label{classngind_1_1filesystem_1_1FileInputStream_acb9504511898b9a26f3159f336614571}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!\_filename@{\_filename}}
+\index{\_filename@{\_filename}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{\_filename}{\_filename}}
+{\footnotesize\ttfamily std\+::string ngind\+::filesystem\+::\+File\+Input\+Stream\+::\+\_\+filename\hspace{0.3cm}{\ttfamily [private]}}
+
+File\textquotesingle{}s name. If no file is opened, it\textquotesingle{}s a blank string. \mbox{\Hypertarget{classngind_1_1filesystem_1_1FileInputStream_a33e58c1726b8b2bdaf1ad425829bb8b2}\label{classngind_1_1filesystem_1_1FileInputStream_a33e58c1726b8b2bdaf1ad425829bb8b2}} 
+\index{ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}!\_fp@{\_fp}}
+\index{\_fp@{\_fp}!ngind::filesystem::FileInputStream@{ngind::filesystem::FileInputStream}}
+\doxysubsubsection{\texorpdfstring{\_fp}{\_fp}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ ngind\+::filesystem\+::\+File\+Input\+Stream\+::\+\_\+fp\hspace{0.3cm}{\ttfamily [private]}}
+
+File pointer of C. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/filesystem/\mbox{\hyperlink{file__input__stream_8h}{file\+\_\+input\+\_\+stream.\+h}}\end{DoxyCompactItemize}

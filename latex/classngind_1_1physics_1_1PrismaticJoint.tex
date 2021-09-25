@@ -1,0 +1,170 @@
+\hypertarget{classngind_1_1physics_1_1PrismaticJoint}{}\doxysection{ngind\+::physics\+::Prismatic\+Joint Class Reference}
+\label{classngind_1_1physics_1_1PrismaticJoint}\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+
+
+{\ttfamily \#include $<$physics\+\_\+joint.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::physics\+::Prismatic\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PrismaticJoint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Prismatic\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PrismaticJoint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a8372afbd2e380d7c215c0a7b81b14502}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_abca5840de7034c960386b9507dfb10a2}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint}{Prismatic\+Joint}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a45948fe08ca35177acb2363ccf7e917b}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Prismatic\+Joint\+Def \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a1018230dfc6e0a0f2a4aaf9f4cc05349}{\+\_\+def}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a9eb640d11e3c7e77052f1330414f54ec}{\+\_\+center}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a8341eacb7046fa91c7d1cf1ab9f694d6}{\+\_\+axis}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_aabd8121206e393c891108d74c3946575}{\+\_\+lower\+\_\+trans}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a71542babed9756979205938726b93c5e}{\+\_\+upper\+\_\+trans}} \{\}
+\item 
+bool \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_aec26a726eb7d80c9335fce1d2e249f65}{\+\_\+enable\+\_\+limit}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_acc7b5f0ba739ca888342ec2c3e9d2600}{\+\_\+max\+\_\+force}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a90a765e9826d089758fc1c0b90581cb9}{\+\_\+motor\+\_\+speed}} \{\}
+\item 
+bool \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a92060906ef7d08a236503971b37aaf9b}{\+\_\+enable\+\_\+motor}} \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Prismatic joint. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a45948fe08ca35177acb2363ccf7e917b}\label{classngind_1_1physics_1_1PrismaticJoint_a45948fe08ca35177acb2363ccf7e917b}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!create@{create}}
+\index{create@{create}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint}{Prismatic\+Joint}}$\ast$ ngind\+::physics\+::\+Prismatic\+Joint\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a prismatic joint component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prismatic\+Joint$\ast$, the instance of prismatic joint component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_abca5840de7034c960386b9507dfb10a2}\label{classngind_1_1physics_1_1PrismaticJoint_abca5840de7034c960386b9507dfb10a2}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!init@{init}}
+\index{init@{init}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Prismatic\+Joint\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from Component 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+\mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a8372afbd2e380d7c215c0a7b81b14502}\label{classngind_1_1physics_1_1PrismaticJoint_a8372afbd2e380d7c215c0a7b81b14502}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!update@{update}}
+\index{update@{update}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Prismatic\+Joint\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a8341eacb7046fa91c7d1cf1ab9f694d6}\label{classngind_1_1physics_1_1PrismaticJoint_a8341eacb7046fa91c7d1cf1ab9f694d6}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_axis@{\_axis}}
+\index{\_axis@{\_axis}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_axis}{\_axis}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+axis \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Joint axis. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a9eb640d11e3c7e77052f1330414f54ec}\label{classngind_1_1physics_1_1PrismaticJoint_a9eb640d11e3c7e77052f1330414f54ec}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_center@{\_center}}
+\index{\_center@{\_center}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_center}{\_center}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+center \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Central position. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a1018230dfc6e0a0f2a4aaf9f4cc05349}\label{classngind_1_1physics_1_1PrismaticJoint_a1018230dfc6e0a0f2a4aaf9f4cc05349}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_def@{\_def}}
+\index{\_def@{\_def}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_def}{\_def}}
+{\footnotesize\ttfamily b2\+Prismatic\+Joint\+Def ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+def\hspace{0.3cm}{\ttfamily [private]}}
+
+Joint definition data. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_aec26a726eb7d80c9335fce1d2e249f65}\label{classngind_1_1physics_1_1PrismaticJoint_aec26a726eb7d80c9335fce1d2e249f65}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_enable\_limit@{\_enable\_limit}}
+\index{\_enable\_limit@{\_enable\_limit}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_enable\_limit}{\_enable\_limit}}
+{\footnotesize\ttfamily bool ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+enable\+\_\+limit \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Enable the joint limit. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a92060906ef7d08a236503971b37aaf9b}\label{classngind_1_1physics_1_1PrismaticJoint_a92060906ef7d08a236503971b37aaf9b}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_enable\_motor@{\_enable\_motor}}
+\index{\_enable\_motor@{\_enable\_motor}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_enable\_motor}{\_enable\_motor}}
+{\footnotesize\ttfamily bool ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+enable\+\_\+motor \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Enable the joint motor. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_aabd8121206e393c891108d74c3946575}\label{classngind_1_1physics_1_1PrismaticJoint_aabd8121206e393c891108d74c3946575}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_lower\_trans@{\_lower\_trans}}
+\index{\_lower\_trans@{\_lower\_trans}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_lower\_trans}{\_lower\_trans}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+lower\+\_\+trans \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The lower translation limit, usually in meters. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_acc7b5f0ba739ca888342ec2c3e9d2600}\label{classngind_1_1physics_1_1PrismaticJoint_acc7b5f0ba739ca888342ec2c3e9d2600}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_max\_force@{\_max\_force}}
+\index{\_max\_force@{\_max\_force}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_max\_force}{\_max\_force}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+max\+\_\+force \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The maximum motor torque, usually in N-\/m. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a90a765e9826d089758fc1c0b90581cb9}\label{classngind_1_1physics_1_1PrismaticJoint_a90a765e9826d089758fc1c0b90581cb9}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_motor\_speed@{\_motor\_speed}}
+\index{\_motor\_speed@{\_motor\_speed}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_motor\_speed}{\_motor\_speed}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+motor\+\_\+speed \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The desired motor speed in radians per second. \mbox{\Hypertarget{classngind_1_1physics_1_1PrismaticJoint_a71542babed9756979205938726b93c5e}\label{classngind_1_1physics_1_1PrismaticJoint_a71542babed9756979205938726b93c5e}} 
+\index{ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}!\_upper\_trans@{\_upper\_trans}}
+\index{\_upper\_trans@{\_upper\_trans}!ngind::physics::PrismaticJoint@{ngind::physics::PrismaticJoint}}
+\doxysubsubsection{\texorpdfstring{\_upper\_trans}{\_upper\_trans}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Prismatic\+Joint\+::\+\_\+upper\+\_\+trans \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The upper translation limit, usually in meters. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/\mbox{\hyperlink{physics__joint_8h}{physics\+\_\+joint.\+h}}\end{DoxyCompactItemize}

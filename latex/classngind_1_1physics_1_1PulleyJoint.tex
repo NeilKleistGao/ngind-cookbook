@@ -1,0 +1,168 @@
+\hypertarget{classngind_1_1physics_1_1PulleyJoint}{}\doxysection{ngind\+::physics\+::Pulley\+Joint Class Reference}
+\label{classngind_1_1physics_1_1PulleyJoint}\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+
+
+{\ttfamily \#include $<$physics\+\_\+joint.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::physics\+::Pulley\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PulleyJoint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Pulley\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PulleyJoint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a254a20bfc739f43ec0e480d46c7302b0}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a26b40e7db9cfcfda81ecc2fbd478018e}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a5ef0f7ec06ba96a14692565a823b4a40}{get\+Current\+LengthA}} () const
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a1c73ea5481ab43eec3e8c7432861829e}{get\+Current\+LengthB}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint}{Pulley\+Joint}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a8cbd11b5aaa79655840601eae9422e09}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Pulley\+Joint\+Def \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a2c9909d848ffb26d5b323b515653f208}{\+\_\+def}}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a607839b081adcee37545bb8a6fc0f4ec}{\+\_\+ratio}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a40fc34eda8792862caf131de61fc1085}{\+\_\+anchor\+\_\+a}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a2747f8491c859c526841b7955c7168f7}{\+\_\+anchor\+\_\+b}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_acfdbfcfd545d836d629439fa18984eed}{\+\_\+ground\+\_\+a}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a2a6e4e811a2951b8e91a4295b14edd40}{\+\_\+ground\+\_\+b}} \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Pulley joint. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a8cbd11b5aaa79655840601eae9422e09}\label{classngind_1_1physics_1_1PulleyJoint_a8cbd11b5aaa79655840601eae9422e09}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!create@{create}}
+\index{create@{create}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint}{Pulley\+Joint}}$\ast$ ngind\+::physics\+::\+Pulley\+Joint\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a pulley joint component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pulley\+Joint$\ast$, the instance of pulley joint component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a5ef0f7ec06ba96a14692565a823b4a40}\label{classngind_1_1physics_1_1PulleyJoint_a5ef0f7ec06ba96a14692565a823b4a40}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!getCurrentLengthA@{getCurrentLengthA}}
+\index{getCurrentLengthA@{getCurrentLengthA}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{getCurrentLengthA()}{getCurrentLengthA()}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Pulley\+Joint\+::get\+Current\+LengthA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the current length of the segment attached to the first body. \begin{DoxyReturn}{Returns}
+float, current length of the segment 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a1c73ea5481ab43eec3e8c7432861829e}\label{classngind_1_1physics_1_1PulleyJoint_a1c73ea5481ab43eec3e8c7432861829e}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!getCurrentLengthB@{getCurrentLengthB}}
+\index{getCurrentLengthB@{getCurrentLengthB}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{getCurrentLengthB()}{getCurrentLengthB()}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Pulley\+Joint\+::get\+Current\+LengthB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the current length of the segment attached to the second body. \begin{DoxyReturn}{Returns}
+float, current length of the segment 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a26b40e7db9cfcfda81ecc2fbd478018e}\label{classngind_1_1physics_1_1PulleyJoint_a26b40e7db9cfcfda81ecc2fbd478018e}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!init@{init}}
+\index{init@{init}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Pulley\+Joint\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from Component 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+\mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a254a20bfc739f43ec0e480d46c7302b0}\label{classngind_1_1physics_1_1PulleyJoint_a254a20bfc739f43ec0e480d46c7302b0}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!update@{update}}
+\index{update@{update}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Pulley\+Joint\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a40fc34eda8792862caf131de61fc1085}\label{classngind_1_1physics_1_1PulleyJoint_a40fc34eda8792862caf131de61fc1085}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!\_anchor\_a@{\_anchor\_a}}
+\index{\_anchor\_a@{\_anchor\_a}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{\_anchor\_a}{\_anchor\_a}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Pulley\+Joint\+::\+\_\+anchor\+\_\+a \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The local anchor point relative to bodyA\textquotesingle{}s origin. \mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a2747f8491c859c526841b7955c7168f7}\label{classngind_1_1physics_1_1PulleyJoint_a2747f8491c859c526841b7955c7168f7}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!\_anchor\_b@{\_anchor\_b}}
+\index{\_anchor\_b@{\_anchor\_b}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{\_anchor\_b}{\_anchor\_b}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Pulley\+Joint\+::\+\_\+anchor\+\_\+b \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The local anchor point relative to bodyB\textquotesingle{}s origin. \mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a2c9909d848ffb26d5b323b515653f208}\label{classngind_1_1physics_1_1PulleyJoint_a2c9909d848ffb26d5b323b515653f208}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!\_def@{\_def}}
+\index{\_def@{\_def}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{\_def}{\_def}}
+{\footnotesize\ttfamily b2\+Pulley\+Joint\+Def ngind\+::physics\+::\+Pulley\+Joint\+::\+\_\+def\hspace{0.3cm}{\ttfamily [private]}}
+
+Joint definition data. \mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_acfdbfcfd545d836d629439fa18984eed}\label{classngind_1_1physics_1_1PulleyJoint_acfdbfcfd545d836d629439fa18984eed}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!\_ground\_a@{\_ground\_a}}
+\index{\_ground\_a@{\_ground\_a}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{\_ground\_a}{\_ground\_a}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Pulley\+Joint\+::\+\_\+ground\+\_\+a \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The first ground anchor in world coordinates. This point never moves. \mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a2a6e4e811a2951b8e91a4295b14edd40}\label{classngind_1_1physics_1_1PulleyJoint_a2a6e4e811a2951b8e91a4295b14edd40}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!\_ground\_b@{\_ground\_b}}
+\index{\_ground\_b@{\_ground\_b}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{\_ground\_b}{\_ground\_b}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Pulley\+Joint\+::\+\_\+ground\+\_\+b \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The second ground anchor in world coordinates. This point never moves. \mbox{\Hypertarget{classngind_1_1physics_1_1PulleyJoint_a607839b081adcee37545bb8a6fc0f4ec}\label{classngind_1_1physics_1_1PulleyJoint_a607839b081adcee37545bb8a6fc0f4ec}} 
+\index{ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}!\_ratio@{\_ratio}}
+\index{\_ratio@{\_ratio}!ngind::physics::PulleyJoint@{ngind::physics::PulleyJoint}}
+\doxysubsubsection{\texorpdfstring{\_ratio}{\_ratio}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Pulley\+Joint\+::\+\_\+ratio \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+The pulley ratio, used to simulate a block-\/and-\/tackle. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/\mbox{\hyperlink{physics__joint_8h}{physics\+\_\+joint.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+\hypertarget{classngind_1_1animation_1_1Aseprite}{}\doxysection{ngind\+::animation\+::Aseprite Class Reference}
+\label{classngind_1_1animation_1_1Aseprite}\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+
+
+{\ttfamily \#include $<$aseprite.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::animation\+::Aseprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1animation_1_1Aseprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_af026bd2b5a618528f30f8b1f5792bd97}{Aseprite}} (const std\+::string \&name)
+\item 
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a9e4d3fbfa5ba1fdfb6f3496e1443da1b}\label{classngind_1_1animation_1_1Aseprite_a9e4d3fbfa5ba1fdfb6f3496e1443da1b}} 
+{\bfseries Aseprite} (const \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite}{Aseprite}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_af397f6fd483ab0ee147927ec33139c09}\label{classngind_1_1animation_1_1Aseprite_af397f6fd483ab0ee147927ec33139c09}} 
+\mbox{\hyperlink{classngind_1_1animation_1_1Aseprite}{Aseprite}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite}{Aseprite}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_ae2ea09e60cd7cfc892f7fc409b28de81}\label{classngind_1_1animation_1_1Aseprite_ae2ea09e60cd7cfc892f7fc409b28de81}} 
+{\bfseries Aseprite} (\mbox{\hyperlink{classngind_1_1animation_1_1Aseprite}{Aseprite}} \&\&)=delete
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_a46b7bb5cb59e84ec6d878a281b45f18e}{get\+Filename}} () const
+\item 
+\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}} \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_acd88b79daa946eded7f28df57e672e17}{play}} (const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}} \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_adb4a4553e32262f12758e873331ef266}{next}} ()
+\item 
+bool \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_a857202a9cc560b4384268bd21c90535a}{is\+End}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_a8d126d530bd8176365b64af3e1927d83}{\+\_\+image\+\_\+path}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}} $>$ \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_a4189aa7eaa19292ac4ac3b18ca77dd5b}{\+\_\+frames}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteTag}{Aseprite\+Tag}} $>$ \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_a4a685a323a9887511f324d7188ad8cc0}{\+\_\+tags}}
+\item 
+\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteTag}{Aseprite\+Tag}} $\ast$ \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_a1e416032dd5c884fbc5e53ab03e7d1eb}{\+\_\+current\+\_\+tag}}
+\item 
+unsigned int \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_a4400fd92782e2ffd997b2868f0c7d42f}{\+\_\+current\+\_\+index}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite_ab552e85310fdfc01222176c40ba62929}{\+\_\+config}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1animation_1_1Aseprite}{Aseprite}} animation data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_af026bd2b5a618528f30f8b1f5792bd97}\label{classngind_1_1animation_1_1Aseprite_af026bd2b5a618528f30f8b1f5792bd97}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!Aseprite@{Aseprite}}
+\index{Aseprite@{Aseprite}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{Aseprite()}{Aseprite()}}
+{\footnotesize\ttfamily ngind\+::animation\+::\+Aseprite\+::\+Aseprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & animation\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a46b7bb5cb59e84ec6d878a281b45f18e}\label{classngind_1_1animation_1_1Aseprite_a46b7bb5cb59e84ec6d878a281b45f18e}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!getFilename@{getFilename}}
+\index{getFilename@{getFilename}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{getFilename()}{getFilename()}}
+{\footnotesize\ttfamily std\+::string ngind\+::animation\+::\+Aseprite\+::get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get image\textquotesingle{}s filename used in this animation. \begin{DoxyReturn}{Returns}
+std\+::string, image\textquotesingle{}s filename 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a857202a9cc560b4384268bd21c90535a}\label{classngind_1_1animation_1_1Aseprite_a857202a9cc560b4384268bd21c90535a}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{isEnd()}{isEnd()}}
+{\footnotesize\ttfamily bool ngind\+::animation\+::\+Aseprite\+::is\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Has this clip finished. \begin{DoxyReturn}{Returns}
+boo, true if this clip has finished 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_adb4a4553e32262f12758e873331ef266}\label{classngind_1_1animation_1_1Aseprite_adb4a4553e32262f12758e873331ef266}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!next@{next}}
+\index{next@{next}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}} ngind\+::animation\+::\+Aseprite\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get next frame in this clip. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}}, next frame\textquotesingle{}s data. If this is the last frame, return the same data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_acd88b79daa946eded7f28df57e672e17}\label{classngind_1_1animation_1_1Aseprite_acd88b79daa946eded7f28df57e672e17}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!play@{play}}
+\index{play@{play}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}} ngind\+::animation\+::\+Aseprite\+::play (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Play a clip with specified tag. 
+\begin{DoxyParams}{Parameters}
+{\em name} & tag\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}}, the first frame\textquotesingle{}s data 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_ab552e85310fdfc01222176c40ba62929}\label{classngind_1_1animation_1_1Aseprite_ab552e85310fdfc01222176c40ba62929}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!\_config@{\_config}}
+\index{\_config@{\_config}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{\_config}{\_config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}}$\ast$ ngind\+::animation\+::\+Aseprite\+::\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}
+
+Animation config resources. \mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a4400fd92782e2ffd997b2868f0c7d42f}\label{classngind_1_1animation_1_1Aseprite_a4400fd92782e2ffd997b2868f0c7d42f}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!\_current\_index@{\_current\_index}}
+\index{\_current\_index@{\_current\_index}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{\_current\_index}{\_current\_index}}
+{\footnotesize\ttfamily unsigned int ngind\+::animation\+::\+Aseprite\+::\+\_\+current\+\_\+index\hspace{0.3cm}{\ttfamily [private]}}
+
+Frame index of frame playing. \mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a1e416032dd5c884fbc5e53ab03e7d1eb}\label{classngind_1_1animation_1_1Aseprite_a1e416032dd5c884fbc5e53ab03e7d1eb}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!\_current\_tag@{\_current\_tag}}
+\index{\_current\_tag@{\_current\_tag}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{\_current\_tag}{\_current\_tag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteTag}{Aseprite\+Tag}}$\ast$ ngind\+::animation\+::\+Aseprite\+::\+\_\+current\+\_\+tag\hspace{0.3cm}{\ttfamily [private]}}
+
+Tag that playing clip using. \mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a4189aa7eaa19292ac4ac3b18ca77dd5b}\label{classngind_1_1animation_1_1Aseprite_a4189aa7eaa19292ac4ac3b18ca77dd5b}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!\_frames@{\_frames}}
+\index{\_frames@{\_frames}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{\_frames}{\_frames}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{Aseprite\+Frame}}$>$ ngind\+::animation\+::\+Aseprite\+::\+\_\+frames\hspace{0.3cm}{\ttfamily [private]}}
+
+Animation\textquotesingle{}s frames. \mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a8d126d530bd8176365b64af3e1927d83}\label{classngind_1_1animation_1_1Aseprite_a8d126d530bd8176365b64af3e1927d83}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!\_image\_path@{\_image\_path}}
+\index{\_image\_path@{\_image\_path}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{\_image\_path}{\_image\_path}}
+{\footnotesize\ttfamily std\+::string ngind\+::animation\+::\+Aseprite\+::\+\_\+image\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+Image\textquotesingle{}s path. \mbox{\Hypertarget{classngind_1_1animation_1_1Aseprite_a4a685a323a9887511f324d7188ad8cc0}\label{classngind_1_1animation_1_1Aseprite_a4a685a323a9887511f324d7188ad8cc0}} 
+\index{ngind::animation::Aseprite@{ngind::animation::Aseprite}!\_tags@{\_tags}}
+\index{\_tags@{\_tags}!ngind::animation::Aseprite@{ngind::animation::Aseprite}}
+\doxysubsubsection{\texorpdfstring{\_tags}{\_tags}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteTag}{Aseprite\+Tag}}$>$ ngind\+::animation\+::\+Aseprite\+::\+\_\+tags\hspace{0.3cm}{\ttfamily [private]}}
+
+Animation\textquotesingle{}s tags. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/animation/\mbox{\hyperlink{aseprite_8h}{aseprite.\+h}}\end{DoxyCompactItemize}

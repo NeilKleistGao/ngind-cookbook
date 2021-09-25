@@ -1,0 +1,173 @@
+\hypertarget{classngind_1_1physics_1_1DistanceJoint}{}\doxysection{ngind\+::physics\+::Distance\+Joint Class Reference}
+\label{classngind_1_1physics_1_1DistanceJoint}\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+
+
+{\ttfamily \#include $<$physics\+\_\+joint.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::physics\+::Distance\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1DistanceJoint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Distance\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1DistanceJoint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a713c6b103c4ed595fa9089376d7cf8c5}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a8ccd451ac7f6d646f22511dacf8ccc8a}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a92f22ea399e8370ebfd6a9549b4e825b}{get\+Current\+Length}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint}{Distance\+Joint}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a7579bc6d7bf6e0511a223d94892f8275}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Distance\+Joint\+Def \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a8ea6c6c173ad7860af114d3a01993dc3}{\+\_\+def}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a3c652c431003e7eac9ef1f603cdbfdd8}{\+\_\+anchor\+\_\+a}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_ace572d9619dd6d990376af459d533643}{\+\_\+anchor\+\_\+b}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a42d977e78a2bf9d83b8379fd501f0dc5}{\+\_\+length}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a84579e31722d721558435a65b0ecbd62}{\+\_\+min\+\_\+length}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_adbb2c7013bb89b5ea022f6e86d106d3f}{\+\_\+max\+\_\+length}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a098abe2aa94159485b453bb12a9bb098}{\+\_\+damping}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a602e07657323fd737d52b2ec08b1a932}{\+\_\+stiffness}} \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Distance joint. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a7579bc6d7bf6e0511a223d94892f8275}\label{classngind_1_1physics_1_1DistanceJoint_a7579bc6d7bf6e0511a223d94892f8275}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!create@{create}}
+\index{create@{create}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint}{Distance\+Joint}}$\ast$ ngind\+::physics\+::\+Distance\+Joint\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a distance joint component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance\+Joint$\ast$, the instance of distance joint component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a92f22ea399e8370ebfd6a9549b4e825b}\label{classngind_1_1physics_1_1DistanceJoint_a92f22ea399e8370ebfd6a9549b4e825b}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!getCurrentLength@{getCurrentLength}}
+\index{getCurrentLength@{getCurrentLength}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{getCurrentLength()}{getCurrentLength()}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Distance\+Joint\+::get\+Current\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get current length of distance joint \begin{DoxyReturn}{Returns}
+float, current length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a8ccd451ac7f6d646f22511dacf8ccc8a}\label{classngind_1_1physics_1_1DistanceJoint_a8ccd451ac7f6d646f22511dacf8ccc8a}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!init@{init}}
+\index{init@{init}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Distance\+Joint\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from Component 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+\mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a713c6b103c4ed595fa9089376d7cf8c5}\label{classngind_1_1physics_1_1DistanceJoint_a713c6b103c4ed595fa9089376d7cf8c5}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!update@{update}}
+\index{update@{update}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Distance\+Joint\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a3c652c431003e7eac9ef1f603cdbfdd8}\label{classngind_1_1physics_1_1DistanceJoint_a3c652c431003e7eac9ef1f603cdbfdd8}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_anchor\_a@{\_anchor\_a}}
+\index{\_anchor\_a@{\_anchor\_a}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_anchor\_a}{\_anchor\_a}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+anchor\+\_\+a \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Anchor\textquotesingle{}s position in first rigid body. \mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_ace572d9619dd6d990376af459d533643}\label{classngind_1_1physics_1_1DistanceJoint_ace572d9619dd6d990376af459d533643}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_anchor\_b@{\_anchor\_b}}
+\index{\_anchor\_b@{\_anchor\_b}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_anchor\_b}{\_anchor\_b}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+anchor\+\_\+b \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Anchor\textquotesingle{}s position in second rigid body. \mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a098abe2aa94159485b453bb12a9bb098}\label{classngind_1_1physics_1_1DistanceJoint_a098abe2aa94159485b453bb12a9bb098}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_damping@{\_damping}}
+\index{\_damping@{\_damping}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_damping}{\_damping}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+damping \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Damping factor. \mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a8ea6c6c173ad7860af114d3a01993dc3}\label{classngind_1_1physics_1_1DistanceJoint_a8ea6c6c173ad7860af114d3a01993dc3}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_def@{\_def}}
+\index{\_def@{\_def}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_def}{\_def}}
+{\footnotesize\ttfamily b2\+Distance\+Joint\+Def ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+def\hspace{0.3cm}{\ttfamily [private]}}
+
+Joint definition data. \mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a42d977e78a2bf9d83b8379fd501f0dc5}\label{classngind_1_1physics_1_1DistanceJoint_a42d977e78a2bf9d83b8379fd501f0dc5}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_length@{\_length}}
+\index{\_length@{\_length}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_length}{\_length}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+length \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Initial length of joint. \mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_adbb2c7013bb89b5ea022f6e86d106d3f}\label{classngind_1_1physics_1_1DistanceJoint_adbb2c7013bb89b5ea022f6e86d106d3f}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_max\_length@{\_max\_length}}
+\index{\_max\_length@{\_max\_length}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_max\_length}{\_max\_length}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+max\+\_\+length \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Maximum length of joint. \mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a84579e31722d721558435a65b0ecbd62}\label{classngind_1_1physics_1_1DistanceJoint_a84579e31722d721558435a65b0ecbd62}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_min\_length@{\_min\_length}}
+\index{\_min\_length@{\_min\_length}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_min\_length}{\_min\_length}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+min\+\_\+length \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimum length of joint. \mbox{\Hypertarget{classngind_1_1physics_1_1DistanceJoint_a602e07657323fd737d52b2ec08b1a932}\label{classngind_1_1physics_1_1DistanceJoint_a602e07657323fd737d52b2ec08b1a932}} 
+\index{ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}!\_stiffness@{\_stiffness}}
+\index{\_stiffness@{\_stiffness}!ngind::physics::DistanceJoint@{ngind::physics::DistanceJoint}}
+\doxysubsubsection{\texorpdfstring{\_stiffness}{\_stiffness}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Distance\+Joint\+::\+\_\+stiffness \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Stiffness of the joints 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/\mbox{\hyperlink{physics__joint_8h}{physics\+\_\+joint.\+h}}\end{DoxyCompactItemize}

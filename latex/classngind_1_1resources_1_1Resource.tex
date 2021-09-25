@@ -1,0 +1,82 @@
+\hypertarget{classngind_1_1resources_1_1Resource}{}\doxysection{ngind\+::resources\+::Resource Class Reference}
+\label{classngind_1_1resources_1_1Resource}\index{ngind::resources::Resource@{ngind::resources::Resource}}
+
+
+{\ttfamily \#include $<$resource.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::resources\+::Resource\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1resources_1_1Resource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::resources\+::Resource\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1resources_1_1Resource__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1resources_1_1Resource_a8b5e746f35e16aabf11216cf6a5d6c70}{load}} (const std\+::string \&name)=0
+\item 
+const std\+::string \mbox{\hyperlink{classngind_1_1resources_1_1Resource_a17ece3aed865cfa93116df4d6a51165b}{get\+Resource\+Path}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1resources_1_1Resource_ae8df5cb2d0bbef3d98b312f493ca045d}{\+\_\+path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basic resource class. All kinds of resources must implement the load function. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1resources_1_1Resource_a17ece3aed865cfa93116df4d6a51165b}\label{classngind_1_1resources_1_1Resource_a17ece3aed865cfa93116df4d6a51165b}} 
+\index{ngind::resources::Resource@{ngind::resources::Resource}!getResourcePath@{getResourcePath}}
+\index{getResourcePath@{getResourcePath}!ngind::resources::Resource@{ngind::resources::Resource}}
+\doxysubsubsection{\texorpdfstring{getResourcePath()}{getResourcePath()}}
+{\footnotesize\ttfamily const std\+::string ngind\+::resources\+::\+Resource\+::get\+Resource\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get path of resource. \begin{DoxyReturn}{Returns}
+std\+::string, path of resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1Resource_a8b5e746f35e16aabf11216cf6a5d6c70}\label{classngind_1_1resources_1_1Resource_a8b5e746f35e16aabf11216cf6a5d6c70}} 
+\index{ngind::resources::Resource@{ngind::resources::Resource}!load@{load}}
+\index{load@{load}!ngind::resources::Resource@{ngind::resources::Resource}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily virtual void ngind\+::resources\+::\+Resource\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Load resource. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of resource \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classngind_1_1resources_1_1EffectResource_a5b0e35584f7f5100989fddb3ef062802}{ngind\+::resources\+::\+Effect\+Resource}}, \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a602cd59a7339801435f25648a91c8b76}{ngind\+::resources\+::\+Music\+Resource}}, \mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource_a3d0b1d9fe7f399a32afb9d0996978678}{ngind\+::resources\+::\+Config\+Resource}}, \mbox{\hyperlink{classngind_1_1resources_1_1FontResource_ad5e68ec33959d1d186dd12968c7b1153}{ngind\+::resources\+::\+Font\+Resource}}, \mbox{\hyperlink{classngind_1_1resources_1_1ShaderResource_a8ee6393f0b0be64ed6317dc660119153}{ngind\+::resources\+::\+Shader\+Resource}}, \mbox{\hyperlink{classngind_1_1resources_1_1TextureResource_a5ae8d2624dd97f3444ff5a1934694875}{ngind\+::resources\+::\+Texture\+Resource}}, \mbox{\hyperlink{classngind_1_1resources_1_1AnimationResource_a9b5dd21b612476abdc75d723c5b57a52}{ngind\+::resources\+::\+Animation\+Resource}}, and \mbox{\hyperlink{classngind_1_1resources_1_1ProgramResource_aa6b069b3bd29c7d185f060ad9528963a}{ngind\+::resources\+::\+Program\+Resource}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1resources_1_1Resource_ae8df5cb2d0bbef3d98b312f493ca045d}\label{classngind_1_1resources_1_1Resource_ae8df5cb2d0bbef3d98b312f493ca045d}} 
+\index{ngind::resources::Resource@{ngind::resources::Resource}!\_path@{\_path}}
+\index{\_path@{\_path}!ngind::resources::Resource@{ngind::resources::Resource}}
+\doxysubsubsection{\texorpdfstring{\_path}{\_path}}
+{\footnotesize\ttfamily std\+::string ngind\+::resources\+::\+Resource\+::\+\_\+path\hspace{0.3cm}{\ttfamily [protected]}}
+
+Path of resource. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/resources/\mbox{\hyperlink{resource_8h}{resource.\+h}}\end{DoxyCompactItemize}

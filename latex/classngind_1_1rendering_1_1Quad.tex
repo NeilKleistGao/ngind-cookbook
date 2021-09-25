@@ -1,0 +1,135 @@
+\hypertarget{classngind_1_1rendering_1_1Quad}{}\doxysection{ngind\+::rendering\+::Quad Class Reference}
+\label{classngind_1_1rendering_1_1Quad}\index{ngind::rendering::Quad@{ngind::rendering::Quad}}
+
+
+{\ttfamily \#include $<$quad.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::rendering\+::Quad\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1rendering_1_1Quad__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::rendering\+::Quad\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1rendering_1_1Quad__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Quad_a194de56d2bd0ea8aa22490f2390e91c5}{Quad}} (std\+::initializer\+\_\+list$<$ G\+Lfloat $>$ vs)
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a9fb0c709434a5bb7cc73dc8e016f9039}\label{classngind_1_1rendering_1_1Quad_a9fb0c709434a5bb7cc73dc8e016f9039}} 
+{\bfseries Quad} (const size\+\_\+t \&size)
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_ab80ca00c35c081bcc9845e6c7018084b}\label{classngind_1_1rendering_1_1Quad_ab80ca00c35c081bcc9845e6c7018084b}} 
+{\bfseries Quad} (const \mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a27882fccb891d78988916876a9f1c2a9}\label{classngind_1_1rendering_1_1Quad_a27882fccb891d78988916876a9f1c2a9}} 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{Quad}} \&)=delete
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Quad_a953c17decd61c36009a07d6f181add5f}{get\+V\+AO}} () const
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Quad_a0cda2ec4657a24d701e3762f4b7b93e8}{get\+V\+BO}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Quad_a59e7bd99d61ba7790fc61112cfbe07be}{\+\_\+vao}}
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Quad_ac765e39eedcf4cfb44254a3d8bd9902b}{\+\_\+vbo}}
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Quad_a0e461b096e4bd4f9b892b49594a03c4c}{\+\_\+ebo}}
+\item 
+G\+Lfloat $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Quad_a33d707ddb7c047c82ebbfb5b3abb0b4b}{\+\_\+vertex}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1rendering_1_1Quad_ab8a4d5293347db2dd3e760ca752252f1}{\+\_\+size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The quad data to be rendered. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a194de56d2bd0ea8aa22490f2390e91c5}\label{classngind_1_1rendering_1_1Quad_a194de56d2bd0ea8aa22490f2390e91c5}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{Quad()}{Quad()}}
+{\footnotesize\ttfamily ngind\+::rendering\+::\+Quad\+::\+Quad (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ G\+Lfloat $>$}]{vs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vs} & the data of vertices \\
+\hline
+{\em color\+\_\+size} & the number of color channel \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a953c17decd61c36009a07d6f181add5f}\label{classngind_1_1rendering_1_1Quad_a953c17decd61c36009a07d6f181add5f}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!getVAO@{getVAO}}
+\index{getVAO@{getVAO}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{getVAO()}{getVAO()}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Quad\+::get\+V\+AO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the vertices array object index \begin{DoxyReturn}{Returns}
+G\+Luint, the index of vao 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a0cda2ec4657a24d701e3762f4b7b93e8}\label{classngind_1_1rendering_1_1Quad_a0cda2ec4657a24d701e3762f4b7b93e8}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!getVBO@{getVBO}}
+\index{getVBO@{getVBO}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{getVBO()}{getVBO()}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Quad\+::get\+V\+BO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the vertices buffer object index \begin{DoxyReturn}{Returns}
+G\+Luint, the index of vbo 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a0e461b096e4bd4f9b892b49594a03c4c}\label{classngind_1_1rendering_1_1Quad_a0e461b096e4bd4f9b892b49594a03c4c}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!\_ebo@{\_ebo}}
+\index{\_ebo@{\_ebo}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{\_ebo}{\_ebo}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Quad\+::\+\_\+ebo\hspace{0.3cm}{\ttfamily [private]}}
+
+The element buffer object \mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_ab8a4d5293347db2dd3e760ca752252f1}\label{classngind_1_1rendering_1_1Quad_ab8a4d5293347db2dd3e760ca752252f1}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!\_size@{\_size}}
+\index{\_size@{\_size}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::rendering\+::\+Quad\+::\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+Size of vertex \mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a59e7bd99d61ba7790fc61112cfbe07be}\label{classngind_1_1rendering_1_1Quad_a59e7bd99d61ba7790fc61112cfbe07be}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!\_vao@{\_vao}}
+\index{\_vao@{\_vao}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{\_vao}{\_vao}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Quad\+::\+\_\+vao\hspace{0.3cm}{\ttfamily [private]}}
+
+The vertices array object \mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_ac765e39eedcf4cfb44254a3d8bd9902b}\label{classngind_1_1rendering_1_1Quad_ac765e39eedcf4cfb44254a3d8bd9902b}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!\_vbo@{\_vbo}}
+\index{\_vbo@{\_vbo}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{\_vbo}{\_vbo}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Quad\+::\+\_\+vbo\hspace{0.3cm}{\ttfamily [private]}}
+
+The vertices buffer object \mbox{\Hypertarget{classngind_1_1rendering_1_1Quad_a33d707ddb7c047c82ebbfb5b3abb0b4b}\label{classngind_1_1rendering_1_1Quad_a33d707ddb7c047c82ebbfb5b3abb0b4b}} 
+\index{ngind::rendering::Quad@{ngind::rendering::Quad}!\_vertex@{\_vertex}}
+\index{\_vertex@{\_vertex}!ngind::rendering::Quad@{ngind::rendering::Quad}}
+\doxysubsubsection{\texorpdfstring{\_vertex}{\_vertex}}
+{\footnotesize\ttfamily G\+Lfloat$\ast$ ngind\+::rendering\+::\+Quad\+::\+\_\+vertex\hspace{0.3cm}{\ttfamily [private]}}
+
+The vertex array 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{quad_8h}{quad.\+h}}\end{DoxyCompactItemize}

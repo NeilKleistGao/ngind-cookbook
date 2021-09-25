@@ -1,0 +1,134 @@
+\hypertarget{classngind_1_1rendering_1_1TrueTypeFont}{}\doxysection{ngind\+::rendering\+::True\+Type\+Font Class Reference}
+\label{classngind_1_1rendering_1_1TrueTypeFont}\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+
+
+{\ttfamily \#include $<$true\+\_\+type\+\_\+font.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_a37ef53cc0991a405cd1f4249f3e06842}{set\+Font\+Face}} (F\+T\+\_\+\+Face face)
+\item 
+\mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_afd3d43d47091326045a46c6b426b71fd}{generate\+Character\+Data}} (const char \&c)
+\item 
+\mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_a72e32cbdc9715063919c806f9def64f7}{generate\+Character\+Data}} (const wchar\+\_\+t \&c)
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_a4fba47da56b42b866ddf40c0dd9c9100}{get\+Max\+Height}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_a75a74ebda7a762df8cf1441901343f0f}\label{classngind_1_1rendering_1_1TrueTypeFont_a75a74ebda7a762df8cf1441901343f0f}} 
+constexpr static size\+\_\+t {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+N\+T\+\_\+\+S\+I\+ZE} = 48
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_a9fd443838474421a62a13b3ddeec260d}{bind}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+T\+\_\+\+Face \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_ab097abad4e197ba84181e68576016129}{\+\_\+font\+\_\+face}}
+\item 
+std\+::unordered\+\_\+map$<$ char, \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} $>$ \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_ab3fd6576b5ac8d46f0d99aeca1994f0d}{\+\_\+cache}}
+\item 
+std\+::unordered\+\_\+map$<$ wchar\+\_\+t, \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} $>$ \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_a223f1cbf77b258aca8b29f51b8b35e94}{\+\_\+w\+\_\+cache}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1rendering_1_1TrueTypeFont_a43ba03b48860e1d32484bb02d9e88a67}{\+\_\+max\+\_\+height}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+True type font(\+T\+T\+F) data. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_a9fd443838474421a62a13b3ddeec260d}\label{classngind_1_1rendering_1_1TrueTypeFont_a9fd443838474421a62a13b3ddeec260d}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!bind@{bind}}
+\index{bind@{bind}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} ngind\+::rendering\+::\+True\+Type\+Font\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Bind character data. \begin{DoxyReturn}{Returns}
+The available character data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_afd3d43d47091326045a46c6b426b71fd}\label{classngind_1_1rendering_1_1TrueTypeFont_afd3d43d47091326045a46c6b426b71fd}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!generateCharacterData@{generateCharacterData}}
+\index{generateCharacterData@{generateCharacterData}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{generateCharacterData()}{generateCharacterData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} ngind\+::rendering\+::\+True\+Type\+Font\+::generate\+Character\+Data (\begin{DoxyParamCaption}\item[{const char \&}]{c }\end{DoxyParamCaption})}
+
+Generate \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} bitmap if it does not exist 
+\begin{DoxyParams}{Parameters}
+{\em c} & the given character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}}, the bitmap and data of character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_a72e32cbdc9715063919c806f9def64f7}\label{classngind_1_1rendering_1_1TrueTypeFont_a72e32cbdc9715063919c806f9def64f7}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!generateCharacterData@{generateCharacterData}}
+\index{generateCharacterData@{generateCharacterData}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{generateCharacterData()}{generateCharacterData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} ngind\+::rendering\+::\+True\+Type\+Font\+::generate\+Character\+Data (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t \&}]{c }\end{DoxyParamCaption})}
+
+Generate U\+T\+F8 \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}} bitmap if it does not exist 
+\begin{DoxyParams}{Parameters}
+{\em c} & the given character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}}, the bitmap and data of character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_a4fba47da56b42b866ddf40c0dd9c9100}\label{classngind_1_1rendering_1_1TrueTypeFont_a4fba47da56b42b866ddf40c0dd9c9100}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!getMaxHeight@{getMaxHeight}}
+\index{getMaxHeight@{getMaxHeight}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{getMaxHeight()}{getMaxHeight()}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::rendering\+::\+True\+Type\+Font\+::get\+Max\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the max height of all characters. \begin{DoxyReturn}{Returns}
+size\+\_\+t, the max height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_a37ef53cc0991a405cd1f4249f3e06842}\label{classngind_1_1rendering_1_1TrueTypeFont_a37ef53cc0991a405cd1f4249f3e06842}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!setFontFace@{setFontFace}}
+\index{setFontFace@{setFontFace}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{setFontFace()}{setFontFace()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+True\+Type\+Font\+::set\+Font\+Face (\begin{DoxyParamCaption}\item[{F\+T\+\_\+\+Face}]{face }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set font face 
+\begin{DoxyParams}{Parameters}
+{\em face} & font face \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_ab3fd6576b5ac8d46f0d99aeca1994f0d}\label{classngind_1_1rendering_1_1TrueTypeFont_ab3fd6576b5ac8d46f0d99aeca1994f0d}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{\_cache}{\_cache}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$char, \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}}$>$ ngind\+::rendering\+::\+True\+Type\+Font\+::\+\_\+cache\hspace{0.3cm}{\ttfamily [private]}}
+
+A\+S\+C\+II characters cache. \mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_ab097abad4e197ba84181e68576016129}\label{classngind_1_1rendering_1_1TrueTypeFont_ab097abad4e197ba84181e68576016129}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!\_font\_face@{\_font\_face}}
+\index{\_font\_face@{\_font\_face}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{\_font\_face}{\_font\_face}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Face ngind\+::rendering\+::\+True\+Type\+Font\+::\+\_\+font\+\_\+face\hspace{0.3cm}{\ttfamily [private]}}
+
+Font face data \mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_a43ba03b48860e1d32484bb02d9e88a67}\label{classngind_1_1rendering_1_1TrueTypeFont_a43ba03b48860e1d32484bb02d9e88a67}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!\_max\_height@{\_max\_height}}
+\index{\_max\_height@{\_max\_height}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{\_max\_height}{\_max\_height}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::rendering\+::\+True\+Type\+Font\+::\+\_\+max\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+Max height of all characters. \mbox{\Hypertarget{classngind_1_1rendering_1_1TrueTypeFont_a223f1cbf77b258aca8b29f51b8b35e94}\label{classngind_1_1rendering_1_1TrueTypeFont_a223f1cbf77b258aca8b29f51b8b35e94}} 
+\index{ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}!\_w\_cache@{\_w\_cache}}
+\index{\_w\_cache@{\_w\_cache}!ngind::rendering::TrueTypeFont@{ngind::rendering::TrueTypeFont}}
+\doxysubsubsection{\texorpdfstring{\_w\_cache}{\_w\_cache}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$wchar\+\_\+t, \mbox{\hyperlink{structngind_1_1rendering_1_1Character}{Character}}$>$ ngind\+::rendering\+::\+True\+Type\+Font\+::\+\_\+w\+\_\+cache\hspace{0.3cm}{\ttfamily [private]}}
+
+U\+T\+F8 characters cache. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{true__type__font_8h}{true\+\_\+type\+\_\+font.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{structngind_1_1ui_1_1ClickableReceiver}{}\doxysection{ngind\+::ui\+::Clickable\+Receiver Struct Reference}
+\label{structngind_1_1ui_1_1ClickableReceiver}\index{ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}}
+
+
+{\ttfamily \#include $<$clickable\+\_\+receiver.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::ui\+::Clickable\+Receiver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structngind_1_1ui_1_1ClickableReceiver__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver_a3095626c6060a4c28d0e76aa8aaa78e8}{operator==}} (const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&other)
+\item 
+bool \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver_aa1582d28d237426273da083f9b8e6d9b}{operator$\ast$}} (const glm\+::vec2 \&point)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ glm\+::vec2 $>$ \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver_a74a0c18c89f8863549bc49b59a27e4e7}{vertex}}
+\item 
+unsigned int \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver_aeafcd4d3e2a662e26699d60ef3193fa3}{z\+\_\+order}}
+\item 
+\mbox{\hyperlink{classngind_1_1components_1_1Button}{components\+::\+Button}} $\ast$ \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver_aa8a8e225595a83fbc813ac41e92987d6}{button}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clickable area data set. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structngind_1_1ui_1_1ClickableReceiver_aa1582d28d237426273da083f9b8e6d9b}\label{structngind_1_1ui_1_1ClickableReceiver_aa1582d28d237426273da083f9b8e6d9b}} 
+\index{ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily bool ngind\+::ui\+::\+Clickable\+Receiver\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if given point is in the polygon. 
+\begin{DoxyParams}{Parameters}
+{\em point} & the given point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if this polygon contains this point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structngind_1_1ui_1_1ClickableReceiver_a3095626c6060a4c28d0e76aa8aaa78e8}\label{structngind_1_1ui_1_1ClickableReceiver_a3095626c6060a4c28d0e76aa8aaa78e8}} 
+\index{ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}!operator==@{operator==}}
+\index{operator==@{operator==}!ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool ngind\+::ui\+::\+Clickable\+Receiver\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compare two \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{Clickable\+Receiver}} object. 
+\begin{DoxyParams}{Parameters}
+{\em other} & another object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if they are equal 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structngind_1_1ui_1_1ClickableReceiver_aa8a8e225595a83fbc813ac41e92987d6}\label{structngind_1_1ui_1_1ClickableReceiver_aa8a8e225595a83fbc813ac41e92987d6}} 
+\index{ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}!button@{button}}
+\index{button@{button}!ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}}
+\doxysubsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1components_1_1Button}{components\+::\+Button}}$\ast$ ngind\+::ui\+::\+Clickable\+Receiver\+::button}
+
+Reference to button component. \mbox{\Hypertarget{structngind_1_1ui_1_1ClickableReceiver_a74a0c18c89f8863549bc49b59a27e4e7}\label{structngind_1_1ui_1_1ClickableReceiver_a74a0c18c89f8863549bc49b59a27e4e7}} 
+\index{ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}!vertex@{vertex}}
+\index{vertex@{vertex}!ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}}
+\doxysubsubsection{\texorpdfstring{vertex}{vertex}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec2$>$ ngind\+::ui\+::\+Clickable\+Receiver\+::vertex}
+
+Set of vertex comprise constituting the polygon. \mbox{\Hypertarget{structngind_1_1ui_1_1ClickableReceiver_aeafcd4d3e2a662e26699d60ef3193fa3}\label{structngind_1_1ui_1_1ClickableReceiver_aeafcd4d3e2a662e26699d60ef3193fa3}} 
+\index{ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}!z\_order@{z\_order}}
+\index{z\_order@{z\_order}!ngind::ui::ClickableReceiver@{ngind::ui::ClickableReceiver}}
+\doxysubsubsection{\texorpdfstring{z\_order}{z\_order}}
+{\footnotesize\ttfamily unsigned int ngind\+::ui\+::\+Clickable\+Receiver\+::z\+\_\+order}
+
+Rendering order. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/ui/clickable\+\_\+receiver.\+h\end{DoxyCompactItemize}

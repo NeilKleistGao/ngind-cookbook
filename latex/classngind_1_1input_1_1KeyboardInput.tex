@@ -1,0 +1,83 @@
+\hypertarget{classngind_1_1input_1_1KeyboardInput}{}\doxysection{ngind\+::input\+::Keyboard\+Input Class Reference}
+\label{classngind_1_1input_1_1KeyboardInput}\index{ngind::input::KeyboardInput@{ngind::input::KeyboardInput}}
+
+
+{\ttfamily \#include $<$keyboard\+\_\+input.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput_a90e2b006defb9e52b3300db6e38e19aa}{Keyboard\+Input}} (G\+L\+F\+Wwindow $\ast$window)
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput_ae337187d56f88bab1a566c2b78100db7}{get\+Key\+Pressed}} (G\+L\+F\+Wwindow $\ast$window, const \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}} \&code)
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput_a92299392f151e367b19ba0877c5b9e09}{get\+Key}} (G\+L\+F\+Wwindow $\ast$window, const \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}} \&code)
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput_aa84718440a5b3f9c8f304bd8e879adae}{get\+Key\+Released}} (G\+L\+F\+Wwindow $\ast$window, const \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}} \&code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::set$<$ \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}} $>$ \mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput_ae46cf33dcde797dc3d5e07c4ab34ab89}{\+\_\+pressed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The keyboard input manager. This is a more sophisticated interface with G\+L\+F\+Wwindow as a param. Use \mbox{\hyperlink{classngind_1_1input_1_1Input}{Input}} class instead. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1input_1_1KeyboardInput_a90e2b006defb9e52b3300db6e38e19aa}\label{classngind_1_1input_1_1KeyboardInput_a90e2b006defb9e52b3300db6e38e19aa}} 
+\index{ngind::input::KeyboardInput@{ngind::input::KeyboardInput}!KeyboardInput@{KeyboardInput}}
+\index{KeyboardInput@{KeyboardInput}!ngind::input::KeyboardInput@{ngind::input::KeyboardInput}}
+\doxysubsubsection{\texorpdfstring{KeyboardInput()}{KeyboardInput()}}
+{\footnotesize\ttfamily ngind\+::input\+::\+Keyboard\+Input\+::\+Keyboard\+Input (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the G\+L\+FW window that is the event listener \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1input_1_1KeyboardInput_a92299392f151e367b19ba0877c5b9e09}\label{classngind_1_1input_1_1KeyboardInput_a92299392f151e367b19ba0877c5b9e09}} 
+\index{ngind::input::KeyboardInput@{ngind::input::KeyboardInput}!getKey@{getKey}}
+\index{getKey@{getKey}!ngind::input::KeyboardInput@{ngind::input::KeyboardInput}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Keyboard\+Input\+::get\+Key (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{const \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}} \&}]{code }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input_8h}{kernel/input/input.\+h}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classngind_1_1input_1_1KeyboardInput_ae337187d56f88bab1a566c2b78100db7}\label{classngind_1_1input_1_1KeyboardInput_ae337187d56f88bab1a566c2b78100db7}} 
+\index{ngind::input::KeyboardInput@{ngind::input::KeyboardInput}!getKeyPressed@{getKeyPressed}}
+\index{getKeyPressed@{getKeyPressed}!ngind::input::KeyboardInput@{ngind::input::KeyboardInput}}
+\doxysubsubsection{\texorpdfstring{getKeyPressed()}{getKeyPressed()}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Keyboard\+Input\+::get\+Key\+Pressed (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{const \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}} \&}]{code }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input_8h}{kernel/input/input.\+h}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classngind_1_1input_1_1KeyboardInput_aa84718440a5b3f9c8f304bd8e879adae}\label{classngind_1_1input_1_1KeyboardInput_aa84718440a5b3f9c8f304bd8e879adae}} 
+\index{ngind::input::KeyboardInput@{ngind::input::KeyboardInput}!getKeyReleased@{getKeyReleased}}
+\index{getKeyReleased@{getKeyReleased}!ngind::input::KeyboardInput@{ngind::input::KeyboardInput}}
+\doxysubsubsection{\texorpdfstring{getKeyReleased()}{getKeyReleased()}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Keyboard\+Input\+::get\+Key\+Released (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{const \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}} \&}]{code }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input_8h}{kernel/input/input.\+h}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1input_1_1KeyboardInput_ae46cf33dcde797dc3d5e07c4ab34ab89}\label{classngind_1_1input_1_1KeyboardInput_ae46cf33dcde797dc3d5e07c4ab34ab89}} 
+\index{ngind::input::KeyboardInput@{ngind::input::KeyboardInput}!\_pressed@{\_pressed}}
+\index{\_pressed@{\_pressed}!ngind::input::KeyboardInput@{ngind::input::KeyboardInput}}
+\doxysubsubsection{\texorpdfstring{\_pressed}{\_pressed}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{Keyboard\+Code}}$>$ ngind\+::input\+::\+Keyboard\+Input\+::\+\_\+pressed\hspace{0.3cm}{\ttfamily [private]}}
+
+Record the press state of all keys 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/input/\mbox{\hyperlink{keyboard__input_8h}{keyboard\+\_\+input.\+h}}\end{DoxyCompactItemize}

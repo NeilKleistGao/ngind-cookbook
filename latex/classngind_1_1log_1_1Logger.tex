@@ -1,0 +1,172 @@
+\hypertarget{classngind_1_1log_1_1Logger}{}\doxysection{ngind\+::log\+::Logger Class Reference}
+\label{classngind_1_1log_1_1Logger}\index{ngind::log::Logger@{ngind::log::Logger}}
+
+
+{\ttfamily \#include $<$logger.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::log\+::Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1log_1_1Logger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1log_1_1Logger_a7fdf15d7503f28f6039261f22a794666}{Logger}} (const std\+::string \&filename, const \mbox{\hyperlink{log__level_8h_a37d05a580b7a92abdfef8ac6a8ab5773}{Log\+Level}} \&level)
+\item 
+{\footnotesize template$<$typename T , std\+::enable\+\_\+if\+\_\+t$<$ std\+::negation\+\_\+v$<$ std\+::is\+\_\+convertible$<$ T, std\+::string $>$$>$, bool $>$  = true$>$ }\\void \mbox{\hyperlink{classngind_1_1log_1_1Logger_a701729c8e004199ac3e5bc8234517143}{log}} (T msg)
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1Logger_a76de10e4d6ca5589c7dd194511e681f6}{log}} (const std\+::string \&msg)
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1Logger_a32164a9f5b4e319e73472bf36138d178}{log\+For\+Lua}} (const std\+::string \&msg)
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1Logger_a671bfdb2a146519a3e0c6e8a561694e7}{flush}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{log__level_8h_a37d05a580b7a92abdfef8ac6a8ab5773}{Log\+Level}} \mbox{\hyperlink{classngind_1_1log_1_1Logger_a0ee7e1767e648ccaade091a4e6fd2217}{\+\_\+level}}
+\item 
+std\+::stringstream \mbox{\hyperlink{classngind_1_1log_1_1Logger_a2332b8246575f82f8437ef68d2186766}{\+\_\+string\+\_\+stream}}
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream}{filesystem\+::\+File\+Output\+Stream}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1Logger_a0eba9334278383e5ad19aa4418edc359}{\+\_\+output}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static char \mbox{\hyperlink{classngind_1_1log_1_1Logger_a53f0055b62a9051feeb1a47a17e5edfd}{I\+N\+F\+O\+\_\+\+F\+O\+R\+M\+AT}} \mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}info \{time\}\mbox{]}\char`\"{}
+\item 
+constexpr static char \mbox{\hyperlink{classngind_1_1log_1_1Logger_a5f17c1cf7e43e0ff99850e197cf38f98}{D\+E\+B\+U\+G\+\_\+\+F\+O\+R\+M\+AT}} \mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}debug \{time\}\mbox{]}\char`\"{}
+\item 
+constexpr static char \mbox{\hyperlink{classngind_1_1log_1_1Logger_a2f5b7c8371943b6c249128610a7f2ded}{W\+A\+R\+N\+I\+N\+G\+\_\+\+F\+O\+R\+M\+AT}} \mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}warning \{time\}\mbox{]}\char`\"{}
+\item 
+constexpr static char \mbox{\hyperlink{classngind_1_1log_1_1Logger_aa9b9306afd2743066b29db3352777234}{E\+R\+R\+O\+R\+\_\+\+F\+O\+R\+M\+AT}} \mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}error \{time\}\mbox{]}\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1log_1_1Logger_adc848509e8e16a05220f2bd521682486}\label{classngind_1_1log_1_1Logger_adc848509e8e16a05220f2bd521682486}} 
+class {\bfseries Logger\+Factory}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to log text information for debug and recording data. You should not create the instance directly. Try to use factory instead. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1log_1_1Logger_a7fdf15d7503f28f6039261f22a794666}\label{classngind_1_1log_1_1Logger_a7fdf15d7503f28f6039261f22a794666}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily ngind\+::log\+::\+Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const \mbox{\hyperlink{log__level_8h_a37d05a580b7a92abdfef8ac6a8ab5773}{Log\+Level}} \&}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename this logger uses \\
+\hline
+{\em level} & the level of logger \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1log_1_1Logger_a671bfdb2a146519a3e0c6e8a561694e7}\label{classngind_1_1log_1_1Logger_a671bfdb2a146519a3e0c6e8a561694e7}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!flush@{flush}}
+\index{flush@{flush}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Logger\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Flush the current log file. \mbox{\Hypertarget{classngind_1_1log_1_1Logger_a76de10e4d6ca5589c7dd194511e681f6}\label{classngind_1_1log_1_1Logger_a76de10e4d6ca5589c7dd194511e681f6}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!log@{log}}
+\index{log@{log}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Logger\+::log (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})}
+
+Output some message to logger file 
+\begin{DoxyParams}{Parameters}
+{\em msg} & string message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1log_1_1Logger_a701729c8e004199ac3e5bc8234517143}\label{classngind_1_1log_1_1Logger_a701729c8e004199ac3e5bc8234517143}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!log@{log}}
+\index{log@{log}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , std\+::enable\+\_\+if\+\_\+t$<$ std\+::negation\+\_\+v$<$ std\+::is\+\_\+convertible$<$ T, std\+::string $>$$>$, bool $>$  = true$>$ \\
+void ngind\+::log\+::\+Logger\+::log (\begin{DoxyParamCaption}\item[{T}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Output some message to logger file 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of message, which is not convertible for std\+::string \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the message to be outputted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1log_1_1Logger_a32164a9f5b4e319e73472bf36138d178}\label{classngind_1_1log_1_1Logger_a32164a9f5b4e319e73472bf36138d178}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!logForLua@{logForLua}}
+\index{logForLua@{logForLua}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{logForLua()}{logForLua()}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Logger\+::log\+For\+Lua (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Log function for lua. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & string message \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1log_1_1Logger_a0ee7e1767e648ccaade091a4e6fd2217}\label{classngind_1_1log_1_1Logger_a0ee7e1767e648ccaade091a4e6fd2217}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!\_level@{\_level}}
+\index{\_level@{\_level}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{\_level}{\_level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{log__level_8h_a37d05a580b7a92abdfef8ac6a8ab5773}{Log\+Level}} ngind\+::log\+::\+Logger\+::\+\_\+level\hspace{0.3cm}{\ttfamily [private]}}
+
+The minimum level that could be outputted. \mbox{\Hypertarget{classngind_1_1log_1_1Logger_a0eba9334278383e5ad19aa4418edc359}\label{classngind_1_1log_1_1Logger_a0eba9334278383e5ad19aa4418edc359}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!\_output@{\_output}}
+\index{\_output@{\_output}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{\_output}{\_output}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream}{filesystem\+::\+File\+Output\+Stream}}$\ast$ ngind\+::log\+::\+Logger\+::\+\_\+output\hspace{0.3cm}{\ttfamily [private]}}
+
+Log file stream. \mbox{\Hypertarget{classngind_1_1log_1_1Logger_a2332b8246575f82f8437ef68d2186766}\label{classngind_1_1log_1_1Logger_a2332b8246575f82f8437ef68d2186766}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!\_string\_stream@{\_string\_stream}}
+\index{\_string\_stream@{\_string\_stream}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{\_string\_stream}{\_string\_stream}}
+{\footnotesize\ttfamily std\+::stringstream ngind\+::log\+::\+Logger\+::\+\_\+string\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
+
+String converter. \mbox{\Hypertarget{classngind_1_1log_1_1Logger_a5f17c1cf7e43e0ff99850e197cf38f98}\label{classngind_1_1log_1_1Logger_a5f17c1cf7e43e0ff99850e197cf38f98}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!DEBUG\_FORMAT@{DEBUG\_FORMAT}}
+\index{DEBUG\_FORMAT@{DEBUG\_FORMAT}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_FORMAT}{DEBUG\_FORMAT}}
+{\footnotesize\ttfamily constexpr static char ngind\+::log\+::\+Logger\+::\+D\+E\+B\+U\+G\+\_\+\+F\+O\+R\+M\+AT\mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}debug \{time\}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+The output format for debug text printed in files. \mbox{\Hypertarget{classngind_1_1log_1_1Logger_aa9b9306afd2743066b29db3352777234}\label{classngind_1_1log_1_1Logger_aa9b9306afd2743066b29db3352777234}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!ERROR\_FORMAT@{ERROR\_FORMAT}}
+\index{ERROR\_FORMAT@{ERROR\_FORMAT}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{ERROR\_FORMAT}{ERROR\_FORMAT}}
+{\footnotesize\ttfamily constexpr static char ngind\+::log\+::\+Logger\+::\+E\+R\+R\+O\+R\+\_\+\+F\+O\+R\+M\+AT\mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}error \{time\}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+The output format for error text printed in files. \mbox{\Hypertarget{classngind_1_1log_1_1Logger_a53f0055b62a9051feeb1a47a17e5edfd}\label{classngind_1_1log_1_1Logger_a53f0055b62a9051feeb1a47a17e5edfd}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!INFO\_FORMAT@{INFO\_FORMAT}}
+\index{INFO\_FORMAT@{INFO\_FORMAT}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{INFO\_FORMAT}{INFO\_FORMAT}}
+{\footnotesize\ttfamily constexpr static char ngind\+::log\+::\+Logger\+::\+I\+N\+F\+O\+\_\+\+F\+O\+R\+M\+AT\mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}info \{time\}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+The output format for information printed in files. \mbox{\Hypertarget{classngind_1_1log_1_1Logger_a2f5b7c8371943b6c249128610a7f2ded}\label{classngind_1_1log_1_1Logger_a2f5b7c8371943b6c249128610a7f2ded}} 
+\index{ngind::log::Logger@{ngind::log::Logger}!WARNING\_FORMAT@{WARNING\_FORMAT}}
+\index{WARNING\_FORMAT@{WARNING\_FORMAT}!ngind::log::Logger@{ngind::log::Logger}}
+\doxysubsubsection{\texorpdfstring{WARNING\_FORMAT}{WARNING\_FORMAT}}
+{\footnotesize\ttfamily constexpr static char ngind\+::log\+::\+Logger\+::\+W\+A\+R\+N\+I\+N\+G\+\_\+\+F\+O\+R\+M\+AT\mbox{[}$\,$\mbox{]} = \char`\"{}\mbox{[}warning \{time\}\mbox{]}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+The output format for warning text printed in files. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/log/\mbox{\hyperlink{logger_8h}{logger.\+h}}\end{DoxyCompactItemize}

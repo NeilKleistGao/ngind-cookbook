@@ -1,0 +1,290 @@
+\hypertarget{classngind_1_1components_1_1StateMachine}{}\doxysection{ngind\+::components\+::State\+Machine Class Reference}
+\label{classngind_1_1components_1_1StateMachine}\index{ngind::components::StateMachine@{ngind::components::StateMachine}}
+
+
+{\ttfamily \#include $<$state\+\_\+machine.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::components\+::State\+Machine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1StateMachine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::State\+Machine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1StateMachine__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a8e8374835c258e23444703bc505ad24b}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a0732af1866e12924d7aa9fb4f7e4dcf3}{move}} (const std\+::string \&state\+\_\+name)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_ac98ca0f906139e0c7b722591e4715bdd}{halt}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a0718fefc4db45852ee890f39302c269a}{update}} (const float \&dlt) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a365528e94b74a8d9eb00f2fb823db3d6}{set\+Parent}} (\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$parent) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_ae3cb9fd4e8f1dc85d902405dd5973a47}{receive}} (const luabridge\+::\+Lua\+Ref \&sender, const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_aeb4614aa3564a2572e340f5eff025df9}{receive}} (const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_aca673ce9fa9a898b00d7ccfc68eee887}{notify}} (const luabridge\+::\+Lua\+Ref \&sender, const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a9d61f9e7610161f0798ef7cb90323beb}{notify\+All}} (const luabridge\+::\+Lua\+Ref \&sender, const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data)
+\item 
+luabridge\+::\+Lua\+Ref \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a323418c459ff80ae164b9c91efa1cc5b}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{State\+Machine}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_ab46a52e41338791edfbfc151c272de08}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\item 
+static luabridge\+::\+Lua\+Ref \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a92848650664a88c104dcc8ce3b8668f9}{get\+Component}} (\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$object, const std\+::string \&name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a4c93598f3af1c702e3f8a2159b096a57}{init\+Argument}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a04b900086c1a005d2976732750defd95}{init\+Argument}} (luabridge\+::\+Lua\+Ref \&ref, const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+luabridge\+::\+Lua\+Ref \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a121023dbb54ace56c2c7ae7dc768e984}{\+\_\+instance}}
+\item 
+luabridge\+::\+Lua\+Ref \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a2f681d821fc7e4a29053dbad63529a36}{\+\_\+update\+\_\+function}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a37a712d58eca333e28e1d9248789608b}{\+\_\+state\+\_\+name}}
+\item 
+std\+::map$<$ std\+::string, std\+::unordered\+\_\+set$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_af7f4504de42bb2aaed3eb011e5f28b25}{\+\_\+subscribe}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+State machine driven by Lua. The core of this engine. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_ab46a52e41338791edfbfc151c272de08}\label{classngind_1_1components_1_1StateMachine_ab46a52e41338791edfbfc151c272de08}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!create@{create}}
+\index{create@{create}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{State\+Machine}}$\ast$ ngind\+::components\+::\+State\+Machine\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a state machine. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State\+Machine$\ast$, a new state machine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a92848650664a88c104dcc8ce3b8668f9}\label{classngind_1_1components_1_1StateMachine_a92848650664a88c104dcc8ce3b8668f9}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily static luabridge\+::\+Lua\+Ref ngind\+::components\+::\+State\+Machine\+::get\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$}]{object,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Search state machine component in given object 
+\begin{DoxyParams}{Parameters}
+{\em object} & given object \\
+\hline
+{\em name} & name of script \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+luabridge\+::\+Lua\+Ref, ref of state machine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a323418c459ff80ae164b9c91efa1cc5b}\label{classngind_1_1components_1_1StateMachine_a323418c459ff80ae164b9c91efa1cc5b}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily luabridge\+::\+Lua\+Ref ngind\+::components\+::\+State\+Machine\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get lua ref object of script instance \begin{DoxyReturn}{Returns}
+luabridge\+::\+Lua\+Ref, ref object of script instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_ac98ca0f906139e0c7b722591e4715bdd}\label{classngind_1_1components_1_1StateMachine_ac98ca0f906139e0c7b722591e4715bdd}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!halt@{halt}}
+\index{halt@{halt}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{halt()}{halt()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::halt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stop running this state machine. \mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a8e8374835c258e23444703bc505ad24b}\label{classngind_1_1components_1_1StateMachine_a8e8374835c258e23444703bc505ad24b}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!init@{init}}
+\index{init@{init}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{component_8h}{kernel/components/component.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a4c93598f3af1c702e3f8a2159b096a57}\label{classngind_1_1components_1_1StateMachine_a4c93598f3af1c702e3f8a2159b096a57}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!initArgument@{initArgument}}
+\index{initArgument@{initArgument}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{initArgument()}{initArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::init\+Argument (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initialize arguments in script 
+\begin{DoxyParams}{Parameters}
+{\em data} & json data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a04b900086c1a005d2976732750defd95}\label{classngind_1_1components_1_1StateMachine_a04b900086c1a005d2976732750defd95}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!initArgument@{initArgument}}
+\index{initArgument@{initArgument}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{initArgument()}{initArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::init\+Argument (\begin{DoxyParamCaption}\item[{luabridge\+::\+Lua\+Ref \&}]{ref,  }\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initialize arguments in script 
+\begin{DoxyParams}{Parameters}
+{\em ref} & argument receiver \\
+\hline
+{\em data} & json data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a0732af1866e12924d7aa9fb4f7e4dcf3}\label{classngind_1_1components_1_1StateMachine_a0732af1866e12924d7aa9fb4f7e4dcf3}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!move@{move}}
+\index{move@{move}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::move (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state\+\_\+name }\end{DoxyParamCaption})}
+
+Move to another state. 
+\begin{DoxyParams}{Parameters}
+{\em state\+\_\+name} & the name of next state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_aca673ce9fa9a898b00d7ccfc68eee887}\label{classngind_1_1components_1_1StateMachine_aca673ce9fa9a898b00d7ccfc68eee887}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!notify@{notify}}
+\index{notify@{notify}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::notify (\begin{DoxyParamCaption}\item[{const luabridge\+::\+Lua\+Ref \&}]{sender,  }\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data }\end{DoxyParamCaption})}
+
+Publish a new message to a random target. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & who sent this message \\
+\hline
+{\em name} & the name of this message \\
+\hline
+{\em data} & the data attended \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a9d61f9e7610161f0798ef7cb90323beb}\label{classngind_1_1components_1_1StateMachine_a9d61f9e7610161f0798ef7cb90323beb}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!notifyAll@{notifyAll}}
+\index{notifyAll@{notifyAll}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{notifyAll()}{notifyAll()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::notify\+All (\begin{DoxyParamCaption}\item[{const luabridge\+::\+Lua\+Ref \&}]{sender,  }\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data }\end{DoxyParamCaption})}
+
+Publish a new message to all targets. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & who sent this message \\
+\hline
+{\em name} & the name of this message \\
+\hline
+{\em data} & the data attended \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_ae3cb9fd4e8f1dc85d902405dd5973a47}\label{classngind_1_1components_1_1StateMachine_ae3cb9fd4e8f1dc85d902405dd5973a47}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!receive@{receive}}
+\index{receive@{receive}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::receive (\begin{DoxyParamCaption}\item[{const luabridge\+::\+Lua\+Ref \&}]{sender,  }\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data }\end{DoxyParamCaption})}
+
+Receive a new message from observer. 
+\begin{DoxyParams}{Parameters}
+{\em sender} & who sent this message \\
+\hline
+{\em name} & the name of this message \\
+\hline
+{\em data} & the data attended \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_aeb4614aa3564a2572e340f5eff025df9}\label{classngind_1_1components_1_1StateMachine_aeb4614aa3564a2572e340f5eff025df9}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!receive@{receive}}
+\index{receive@{receive}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::receive (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data }\end{DoxyParamCaption})}
+
+Receive a new message from observer. This message is sent by engine. 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of this message \\
+\hline
+{\em data} & the data attended \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a365528e94b74a8d9eb00f2fb823db3d6}\label{classngind_1_1components_1_1StateMachine_a365528e94b74a8d9eb00f2fb823db3d6}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!setParent@{setParent}}
+\index{setParent@{setParent}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{component_8h}{kernel/components/component.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_abc2bc9f18f09aab67f8ac0e14552c344}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a0718fefc4db45852ee890f39302c269a}\label{classngind_1_1components_1_1StateMachine_a0718fefc4db45852ee890f39302c269a}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!update@{update}}
+\index{update@{update}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+State\+Machine\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dlt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{kernel/objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a121023dbb54ace56c2c7ae7dc768e984}\label{classngind_1_1components_1_1StateMachine_a121023dbb54ace56c2c7ae7dc768e984}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily luabridge\+::\+Lua\+Ref ngind\+::components\+::\+State\+Machine\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [private]}}
+
+The instance of this component in lua environment. \mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a37a712d58eca333e28e1d9248789608b}\label{classngind_1_1components_1_1StateMachine_a37a712d58eca333e28e1d9248789608b}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!\_state\_name@{\_state\_name}}
+\index{\_state\_name@{\_state\_name}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_state\_name}{\_state\_name}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+State\+Machine\+::\+\_\+state\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+Name of current state \mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_af7f4504de42bb2aaed3eb011e5f28b25}\label{classngind_1_1components_1_1StateMachine_af7f4504de42bb2aaed3eb011e5f28b25}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!\_subscribe@{\_subscribe}}
+\index{\_subscribe@{\_subscribe}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_subscribe}{\_subscribe}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::unordered\+\_\+set$<$std\+::string$>$ $>$ ngind\+::components\+::\+State\+Machine\+::\+\_\+subscribe\hspace{0.3cm}{\ttfamily [private]}}
+
+Subscribe information, determining which message can be received in some state. \mbox{\Hypertarget{classngind_1_1components_1_1StateMachine_a2f681d821fc7e4a29053dbad63529a36}\label{classngind_1_1components_1_1StateMachine_a2f681d821fc7e4a29053dbad63529a36}} 
+\index{ngind::components::StateMachine@{ngind::components::StateMachine}!\_update\_function@{\_update\_function}}
+\index{\_update\_function@{\_update\_function}!ngind::components::StateMachine@{ngind::components::StateMachine}}
+\doxysubsubsection{\texorpdfstring{\_update\_function}{\_update\_function}}
+{\footnotesize\ttfamily luabridge\+::\+Lua\+Ref ngind\+::components\+::\+State\+Machine\+::\+\_\+update\+\_\+function\hspace{0.3cm}{\ttfamily [private]}}
+
+Current update function. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{state__machine_8h}{state\+\_\+machine.\+h}}\end{DoxyCompactItemize}

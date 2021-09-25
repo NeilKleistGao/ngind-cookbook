@@ -1,0 +1,182 @@
+\hypertarget{classngind_1_1log_1_1VisualLogger}{}\doxysection{ngind\+::log\+::Visual\+Logger Class Reference}
+\label{classngind_1_1log_1_1VisualLogger}\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+
+
+{\ttfamily \#include $<$visual\+\_\+logger.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::log\+::Visual\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1log_1_1VisualLogger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a67679832820fa8b4fb346010060a8a13}{enable}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_af61e128320ed7835aa57b1332ff1fd82}{disable}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a21e1aef50e2c9d58d3e64cfca2ffadc4}{draw}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a22e8b96528c63fef90875e9e37c15de3}{register\+Variable}} (const std\+::string \&key, const std\+::string \&default\+\_\+value=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_ab7dd44e60164a9bf63d4771f3291fb37}{update\+Variable}} (const std\+::string \&key, const T \&value)
+\item 
+void \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_af176b447a24bce0ec2765f70bd2be95d}{resign\+Variable}} (const std\+::string \&key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger}{Visual\+Logger}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a3af5db1f1814bb62895802321dce6230}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a836883710bc97bff0f8ca8f28eaa8a7f}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a5f6b18ecde0b6cebb939ef4c45a67717}{\+\_\+enable}}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_abe73048de12ff3e115a3cc46964422f0}{\+\_\+var}}
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{objects\+::\+Entity\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a9fdc6b453744b0e332053549c6ad59da}{\+\_\+entity}}
+\item 
+\mbox{\hyperlink{classngind_1_1components_1_1Label}{components\+::\+Label}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_ab1dcf5723b9c70cbfb1f6924cb2ce539}{\+\_\+label}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_a9fb54815f3e20d7529dd790053d8d47f}{\+\_\+text}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger}{Visual\+Logger}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger_addf619b511e158c8d24ffd5f3e0f7b18}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Display information on the screen during debug. It\textquotesingle{}s still not available for lua. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a836883710bc97bff0f8ca8f28eaa8a7f}\label{classngind_1_1log_1_1VisualLogger_a836883710bc97bff0f8ca8f28eaa8a7f}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::log\+::\+Visual\+Logger\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the instance if it exists. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_af61e128320ed7835aa57b1332ff1fd82}\label{classngind_1_1log_1_1VisualLogger_af61e128320ed7835aa57b1332ff1fd82}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!disable@{disable}}
+\index{disable@{disable}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Visual\+Logger\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Disable the logger. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a21e1aef50e2c9d58d3e64cfca2ffadc4}\label{classngind_1_1log_1_1VisualLogger_a21e1aef50e2c9d58d3e64cfca2ffadc4}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!draw@{draw}}
+\index{draw@{draw}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Visual\+Logger\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update data on the screen per frame. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a67679832820fa8b4fb346010060a8a13}\label{classngind_1_1log_1_1VisualLogger_a67679832820fa8b4fb346010060a8a13}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!enable@{enable}}
+\index{enable@{enable}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Visual\+Logger\+::enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Enable the logger. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a3af5db1f1814bb62895802321dce6230}\label{classngind_1_1log_1_1VisualLogger_a3af5db1f1814bb62895802321dce6230}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger}{Visual\+Logger}}$\ast$ ngind\+::log\+::\+Visual\+Logger\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the unique instance of class. If it does not exist, this function will create one. \begin{DoxyReturn}{Returns}
+Visual\+Logger$\ast$, the unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a22e8b96528c63fef90875e9e37c15de3}\label{classngind_1_1log_1_1VisualLogger_a22e8b96528c63fef90875e9e37c15de3}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!registerVariable@{registerVariable}}
+\index{registerVariable@{registerVariable}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{registerVariable()}{registerVariable()}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Visual\+Logger\+::register\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{default\+\_\+value = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Register a new variable to the logger. 
+\begin{DoxyParams}{Parameters}
+{\em key} & name of the variable \\
+\hline
+{\em default\+\_\+value} & default value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_af176b447a24bce0ec2765f70bd2be95d}\label{classngind_1_1log_1_1VisualLogger_af176b447a24bce0ec2765f70bd2be95d}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!resignVariable@{resignVariable}}
+\index{resignVariable@{resignVariable}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{resignVariable()}{resignVariable()}}
+{\footnotesize\ttfamily void ngind\+::log\+::\+Visual\+Logger\+::resign\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+Remove a variable from the logger. 
+\begin{DoxyParams}{Parameters}
+{\em key} & name of the variable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_ab7dd44e60164a9bf63d4771f3291fb37}\label{classngind_1_1log_1_1VisualLogger_ab7dd44e60164a9bf63d4771f3291fb37}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!updateVariable@{updateVariable}}
+\index{updateVariable@{updateVariable}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{updateVariable()}{updateVariable()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void ngind\+::log\+::\+Visual\+Logger\+::update\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update variable\textquotesingle{}s value in the logger. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type of the variable \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & name of the variable \\
+\hline
+{\em value} & variable\textquotesingle{}s value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a5f6b18ecde0b6cebb939ef4c45a67717}\label{classngind_1_1log_1_1VisualLogger_a5f6b18ecde0b6cebb939ef4c45a67717}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!\_enable@{\_enable}}
+\index{\_enable@{\_enable}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{\_enable}{\_enable}}
+{\footnotesize\ttfamily bool ngind\+::log\+::\+Visual\+Logger\+::\+\_\+enable\hspace{0.3cm}{\ttfamily [private]}}
+
+Is logger enabled. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a9fdc6b453744b0e332053549c6ad59da}\label{classngind_1_1log_1_1VisualLogger_a9fdc6b453744b0e332053549c6ad59da}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!\_entity@{\_entity}}
+\index{\_entity@{\_entity}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{\_entity}{\_entity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{objects\+::\+Entity\+Object}}$\ast$ ngind\+::log\+::\+Visual\+Logger\+::\+\_\+entity\hspace{0.3cm}{\ttfamily [private]}}
+
+Entity of label component. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_addf619b511e158c8d24ffd5f3e0f7b18}\label{classngind_1_1log_1_1VisualLogger_addf619b511e158c8d24ffd5f3e0f7b18}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1log_1_1VisualLogger}{Visual\+Logger}}$\ast$ ngind\+::log\+::\+Visual\+Logger\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_ab1dcf5723b9c70cbfb1f6924cb2ce539}\label{classngind_1_1log_1_1VisualLogger_ab1dcf5723b9c70cbfb1f6924cb2ce539}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!\_label@{\_label}}
+\index{\_label@{\_label}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{\_label}{\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1components_1_1Label}{components\+::\+Label}}$\ast$ ngind\+::log\+::\+Visual\+Logger\+::\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+Label component for displaying information. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_a9fb54815f3e20d7529dd790053d8d47f}\label{classngind_1_1log_1_1VisualLogger_a9fb54815f3e20d7529dd790053d8d47f}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!\_text@{\_text}}
+\index{\_text@{\_text}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{\_text}{\_text}}
+{\footnotesize\ttfamily std\+::string ngind\+::log\+::\+Visual\+Logger\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+Text to be display. \mbox{\Hypertarget{classngind_1_1log_1_1VisualLogger_abe73048de12ff3e115a3cc46964422f0}\label{classngind_1_1log_1_1VisualLogger_abe73048de12ff3e115a3cc46964422f0}} 
+\index{ngind::log::VisualLogger@{ngind::log::VisualLogger}!\_var@{\_var}}
+\index{\_var@{\_var}!ngind::log::VisualLogger@{ngind::log::VisualLogger}}
+\doxysubsubsection{\texorpdfstring{\_var}{\_var}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ ngind\+::log\+::\+Visual\+Logger\+::\+\_\+var\hspace{0.3cm}{\ttfamily [private]}}
+
+Variables table. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/log/\mbox{\hyperlink{visual__logger_8h}{visual\+\_\+logger.\+h}}\end{DoxyCompactItemize}

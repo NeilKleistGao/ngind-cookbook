@@ -1,0 +1,121 @@
+\hypertarget{classngind_1_1resources_1_1ResourcesManager}{}\doxysection{ngind\+::resources\+::Resources\+Manager Class Reference}
+\label{classngind_1_1resources_1_1ResourcesManager}\index{ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}}
+
+
+{\ttfamily \#include $<$resources\+\_\+manager.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::resources\+::Resources\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classngind_1_1resources_1_1ResourcesManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Type , typename std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ Resource, Type $>$, int $>$ N = 0$>$ }\\Type $\ast$ \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager_a8f79df4a81ebf1b12144ae5ce1bf947f}{load}} (const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager_a1bf9be003623079f78688d4890bac299}{release}} (const std\+::string \&path)
+\item 
+\mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_aa65c91e502e9e831b4710667c9819af5}\label{classngind_1_1resources_1_1ResourcesManager_aa65c91e502e9e831b4710667c9819af5}} 
+void {\bfseries release} (\mbox{\hyperlink{classngind_1_1resources_1_1Resource}{Resource}} $\ast$resource)
+\item 
+\mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_a9bcba743dbd376c5ac03d5de46631b94}\label{classngind_1_1resources_1_1ResourcesManager_a9bcba743dbd376c5ac03d5de46631b94}} 
+{\bfseries Resources\+Manager} (const \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager}{Resources\+Manager}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_a97f616409f4968467dca949231c1d3b6}\label{classngind_1_1resources_1_1ResourcesManager_a97f616409f4968467dca949231c1d3b6}} 
+{\bfseries Resources\+Manager} (\mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager}{Resources\+Manager}} \&\&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager}{Resources\+Manager}} $\ast$ \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager_aa5e0f98e166e4a12588095c2d12d63bf}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager_ab60eaa9ff0b669d7503c434d69a2be75}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classngind_1_1resources_1_1Resource}{Resource}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager_a2488b0f362f6d755ed9efec2f9e6a59a}{\+\_\+resources}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager}{Resources\+Manager}} $\ast$ \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager_a611afed79bd309d56b1f58284294be2c}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manager of all kinds of resources. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_ab60eaa9ff0b669d7503c434d69a2be75}\label{classngind_1_1resources_1_1ResourcesManager_ab60eaa9ff0b669d7503c434d69a2be75}} 
+\index{ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::resources\+::\+Resources\+Manager\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destory the instance of resources manager. \mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_aa5e0f98e166e4a12588095c2d12d63bf}\label{classngind_1_1resources_1_1ResourcesManager_aa5e0f98e166e4a12588095c2d12d63bf}} 
+\index{ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager}{Resources\+Manager}}$\ast$ ngind\+::resources\+::\+Resources\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the instance of resources manager. \begin{DoxyReturn}{Returns}
+Resources\+Manager$\ast$, the instance of resources manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_a8f79df4a81ebf1b12144ae5ce1bf947f}\label{classngind_1_1resources_1_1ResourcesManager_a8f79df4a81ebf1b12144ae5ce1bf947f}} 
+\index{ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}!load@{load}}
+\index{load@{load}!ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$typename Type , typename std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ Resource, Type $>$, int $>$ N = 0$>$ \\
+Type$\ast$ ngind\+::resources\+::\+Resources\+Manager\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load resource by path. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & specific type of resource \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path of resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type$\ast$, the resource object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_a1bf9be003623079f78688d4890bac299}\label{classngind_1_1resources_1_1ResourcesManager_a1bf9be003623079f78688d4890bac299}} 
+\index{ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}!release@{release}}
+\index{release@{release}!ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void ngind\+::resources\+::\+Resources\+Manager\+::release (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Release resource by path 
+\begin{DoxyParams}{Parameters}
+{\em path} & path of resource \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_a611afed79bd309d56b1f58284294be2c}\label{classngind_1_1resources_1_1ResourcesManager_a611afed79bd309d56b1f58284294be2c}} 
+\index{ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1ResourcesManager}{Resources\+Manager}}$\ast$ ngind\+::resources\+::\+Resources\+Manager\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The instance of resources manager \mbox{\Hypertarget{classngind_1_1resources_1_1ResourcesManager_a2488b0f362f6d755ed9efec2f9e6a59a}\label{classngind_1_1resources_1_1ResourcesManager_a2488b0f362f6d755ed9efec2f9e6a59a}} 
+\index{ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}!\_resources@{\_resources}}
+\index{\_resources@{\_resources}!ngind::resources::ResourcesManager@{ngind::resources::ResourcesManager}}
+\doxysubsubsection{\texorpdfstring{\_resources}{\_resources}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classngind_1_1resources_1_1Resource}{Resource}}$\ast$$>$ ngind\+::resources\+::\+Resources\+Manager\+::\+\_\+resources\hspace{0.3cm}{\ttfamily [private]}}
+
+The R\+B-\/\+Tree storing mapping between paths and resources. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/resources/\mbox{\hyperlink{resources__manager_8h}{resources\+\_\+manager.\+h}}\end{DoxyCompactItemize}

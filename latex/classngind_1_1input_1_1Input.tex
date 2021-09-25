@@ -1,0 +1,296 @@
+\hypertarget{classngind_1_1input_1_1Input}{}\doxysection{ngind\+::input\+::Input Class Reference}
+\label{classngind_1_1input_1_1Input}\index{ngind::input::Input@{ngind::input::Input}}
+
+
+{\ttfamily \#include $<$input.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::input\+::Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1input_1_1Input__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1Input_abe0cda57a1211a45630d12efb1acea60}{get\+Key}} (const int \&code)
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1Input_ac1650235246265c7ca94888b181ef75d}{get\+Key\+Pressed}} (const int \&code)
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1Input_a1ec2e53279c2d2b5d725cf9a0fbe9411}{get\+Key\+Released}} (const int \&code)
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1input_1_1Input_a819445a824a49c6d8b22c0bcd415d085}{get\+Mouse\+Pressed}} (const int \&code)
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1input_1_1Input_ac2ac831e96c624c291c98cdd34b8ce4f}{get\+Mouse}} (const int \&code)
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1input_1_1Input_abac60be1d9f2f88e84a0f2051a4d475e}{get\+Mouse\+Released}} (const int \&code)
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1input_1_1Input_a49c5755a9c1b6558fb8f02a64afffc2f}{get\+Mouse\+Moving}} ()
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1input_1_1Input_a9b17efb8a9a9b410b751d6da031c468c}{get\+String}} (const \mbox{\hyperlink{text__input_8h_a5c552c5a51866384fa19b497c7ac468a}{Encoding\+Type}} \&encoding)
+\item 
+void \mbox{\hyperlink{classngind_1_1input_1_1Input_a5b93a4afbe7a94a676f09505a84c9f68}{switch\+Text\+Mod}} (const bool \&is\+\_\+enable)
+\item 
+void \mbox{\hyperlink{classngind_1_1input_1_1Input_af41127eb2f31941d9a8b8eb20f8bfef3}{set\+Interruption}} (const bool \&interrupted)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1input_1_1Input}{Input}} $\ast$ \mbox{\hyperlink{classngind_1_1input_1_1Input_ac3e32189c858e9625298c15fd97b51e7}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1input_1_1Input_a2c0e693e11c2733f3e3220badf5ae466}{destroy\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1input_1_1Input_a5019cc5a68d41a583abe479d81cb1a75}{init}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1input_1_1Input_ad400183014c4b1b2b768f3f8b45e493a}{set\+Window\+Handler}} (G\+L\+F\+Wwindow $\ast$window)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput}{Keyboard\+Input}} $\ast$ \mbox{\hyperlink{classngind_1_1input_1_1Input_aaceef067757d6099b765ceec64847f6a}{\+\_\+keyboard}}
+\item 
+\mbox{\hyperlink{classngind_1_1input_1_1MouseInput}{Mouse\+Input}} $\ast$ \mbox{\hyperlink{classngind_1_1input_1_1Input_aeddf235de7e578eea05f15924b3e8a6a}{\+\_\+mouse}}
+\item 
+\mbox{\hyperlink{classngind_1_1input_1_1TextInput}{Text\+Input}} $\ast$ \mbox{\hyperlink{classngind_1_1input_1_1Input_adeb002d9d0ee6ebc61f79ad7a8857eac}{\+\_\+text}}
+\item 
+G\+L\+F\+Wwindow $\ast$ \mbox{\hyperlink{classngind_1_1input_1_1Input_a1c11ea8b5c3d1a2ac7263857ad64ab13}{\+\_\+window\+\_\+handler}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1Input_afa749801730ac5df501c7b20320a1971}{\+\_\+text\+\_\+mod}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1input_1_1Input_a4340cfc4e8467fffa59025013e2b9090}{\+\_\+interrupted}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1input_1_1Input}{Input}} $\ast$ \mbox{\hyperlink{classngind_1_1input_1_1Input_a83eae8ffb2c7caa007f3c90a8bb96275}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_ab4e629e42aa479ff891efeaee2ee8719}\label{classngind_1_1input_1_1Input_ab4e629e42aa479ff891efeaee2ee8719}} 
+class {\bfseries ngind\+::rendering\+::\+Window}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is in duty to manage all kinds of input event. This is a singleton class so you should use get\+Instance/destroy\+Instance rather than new/delete. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a2c0e693e11c2733f3e3220badf5ae466}\label{classngind_1_1input_1_1Input_a2c0e693e11c2733f3e3220badf5ae466}} 
+\index{ngind::input::Input@{ngind::input::Input}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::input\+::\+Input\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the instance. \mbox{\Hypertarget{classngind_1_1input_1_1Input_ac3e32189c858e9625298c15fd97b51e7}\label{classngind_1_1input_1_1Input_ac3e32189c858e9625298c15fd97b51e7}} 
+\index{ngind::input::Input@{ngind::input::Input}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1input_1_1Input}{Input}}$\ast$ ngind\+::input\+::\+Input\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get \mbox{\hyperlink{classngind_1_1input_1_1Input}{Input}} instance. If the instance is null, create one. \begin{DoxyReturn}{Returns}
+Input$\ast$, the \mbox{\hyperlink{classngind_1_1input_1_1Input}{Input}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_abe0cda57a1211a45630d12efb1acea60}\label{classngind_1_1input_1_1Input_abe0cda57a1211a45630d12efb1acea60}} 
+\index{ngind::input::Input@{ngind::input::Input}!getKey@{getKey}}
+\index{getKey@{getKey}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Input\+::get\+Key (\begin{DoxyParamCaption}\item[{const int \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get whether some key is being pressed. 
+\begin{DoxyParams}{Parameters}
+{\em code} & the key\textquotesingle{}s code that should be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if user keeps press 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_ac1650235246265c7ca94888b181ef75d}\label{classngind_1_1input_1_1Input_ac1650235246265c7ca94888b181ef75d}} 
+\index{ngind::input::Input@{ngind::input::Input}!getKeyPressed@{getKeyPressed}}
+\index{getKeyPressed@{getKeyPressed}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getKeyPressed()}{getKeyPressed()}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Input\+::get\+Key\+Pressed (\begin{DoxyParamCaption}\item[{const int \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get whether some key is pressed firstly. 
+\begin{DoxyParams}{Parameters}
+{\em code} & the key\textquotesingle{}s code that should be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if user firstly presses this key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a1ec2e53279c2d2b5d725cf9a0fbe9411}\label{classngind_1_1input_1_1Input_a1ec2e53279c2d2b5d725cf9a0fbe9411}} 
+\index{ngind::input::Input@{ngind::input::Input}!getKeyReleased@{getKeyReleased}}
+\index{getKeyReleased@{getKeyReleased}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getKeyReleased()}{getKeyReleased()}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Input\+::get\+Key\+Released (\begin{DoxyParamCaption}\item[{const int \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get whether some key is released. 
+\begin{DoxyParams}{Parameters}
+{\em code} & the key\textquotesingle{}s code that should be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if user releases this key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_ac2ac831e96c624c291c98cdd34b8ce4f}\label{classngind_1_1input_1_1Input_ac2ac831e96c624c291c98cdd34b8ce4f}} 
+\index{ngind::input::Input@{ngind::input::Input}!getMouse@{getMouse}}
+\index{getMouse@{getMouse}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getMouse()}{getMouse()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::input\+::\+Input\+::get\+Mouse (\begin{DoxyParamCaption}\item[{const int \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get whether some mouse key is being clicked. 
+\begin{DoxyParams}{Parameters}
+{\em code} & the mouse key\textquotesingle{}s code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+glm\+::vec2, the mouse\textquotesingle{}s position, glm\+::vec2\+::\+I\+N\+V\+A\+L\+ID if user never clicks 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a49c5755a9c1b6558fb8f02a64afffc2f}\label{classngind_1_1input_1_1Input_a49c5755a9c1b6558fb8f02a64afffc2f}} 
+\index{ngind::input::Input@{ngind::input::Input}!getMouseMoving@{getMouseMoving}}
+\index{getMouseMoving@{getMouseMoving}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getMouseMoving()}{getMouseMoving()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::input\+::\+Input\+::get\+Mouse\+Moving (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get current mouse\textquotesingle{}s position. \begin{DoxyReturn}{Returns}
+glm\+::vec2, the mouse\textquotesingle{}s position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a819445a824a49c6d8b22c0bcd415d085}\label{classngind_1_1input_1_1Input_a819445a824a49c6d8b22c0bcd415d085}} 
+\index{ngind::input::Input@{ngind::input::Input}!getMousePressed@{getMousePressed}}
+\index{getMousePressed@{getMousePressed}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getMousePressed()}{getMousePressed()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::input\+::\+Input\+::get\+Mouse\+Pressed (\begin{DoxyParamCaption}\item[{const int \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get whether some mouse key is clicked firstly. 
+\begin{DoxyParams}{Parameters}
+{\em code} & the mouse key\textquotesingle{}s code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+glm\+::vec2, the mouse\textquotesingle{}s position, glm\+::vec2\+::\+I\+N\+V\+A\+L\+ID if user never clicks 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_abac60be1d9f2f88e84a0f2051a4d475e}\label{classngind_1_1input_1_1Input_abac60be1d9f2f88e84a0f2051a4d475e}} 
+\index{ngind::input::Input@{ngind::input::Input}!getMouseReleased@{getMouseReleased}}
+\index{getMouseReleased@{getMouseReleased}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getMouseReleased()}{getMouseReleased()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::input\+::\+Input\+::get\+Mouse\+Released (\begin{DoxyParamCaption}\item[{const int \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get whether some mouse key is released. 
+\begin{DoxyParams}{Parameters}
+{\em code} & the mouse key\textquotesingle{}s code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+glm\+::vec2, the mouse\textquotesingle{}s position, glm\+::vec2\+::\+I\+N\+V\+A\+L\+ID if user never clicks 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a9b17efb8a9a9b410b751d6da031c468c}\label{classngind_1_1input_1_1Input_a9b17efb8a9a9b410b751d6da031c468c}} 
+\index{ngind::input::Input@{ngind::input::Input}!getString@{getString}}
+\index{getString@{getString}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily std\+::string ngind\+::input\+::\+Input\+::get\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{text__input_8h_a5c552c5a51866384fa19b497c7ac468a}{Encoding\+Type}} \&}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get user\textquotesingle{}s text input 
+\begin{DoxyParams}{Parameters}
+{\em encoding} & the encoding type of text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string, the text input 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a5019cc5a68d41a583abe479d81cb1a75}\label{classngind_1_1input_1_1Input_a5019cc5a68d41a583abe479d81cb1a75}} 
+\index{ngind::input::Input@{ngind::input::Input}!init@{init}}
+\index{init@{init}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static void ngind\+::input\+::\+Input\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize input enum. \mbox{\Hypertarget{classngind_1_1input_1_1Input_af41127eb2f31941d9a8b8eb20f8bfef3}\label{classngind_1_1input_1_1Input_af41127eb2f31941d9a8b8eb20f8bfef3}} 
+\index{ngind::input::Input@{ngind::input::Input}!setInterruption@{setInterruption}}
+\index{setInterruption@{setInterruption}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{setInterruption()}{setInterruption()}}
+{\footnotesize\ttfamily void ngind\+::input\+::\+Input\+::set\+Interruption (\begin{DoxyParamCaption}\item[{const bool \&}]{interrupted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set whether mouse input has been interrupted by event system 
+\begin{DoxyParams}{Parameters}
+{\em interrupted} & true if input has been interrupted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_ad400183014c4b1b2b768f3f8b45e493a}\label{classngind_1_1input_1_1Input_ad400183014c4b1b2b768f3f8b45e493a}} 
+\index{ngind::input::Input@{ngind::input::Input}!setWindowHandler@{setWindowHandler}}
+\index{setWindowHandler@{setWindowHandler}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{setWindowHandler()}{setWindowHandler()}}
+{\footnotesize\ttfamily void ngind\+::input\+::\+Input\+::set\+Window\+Handler (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Set the glfw window\textquotesingle{}s handler. 
+\begin{DoxyParams}{Parameters}
+{\em window} & the pointer of window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a5b93a4afbe7a94a676f09505a84c9f68}\label{classngind_1_1input_1_1Input_a5b93a4afbe7a94a676f09505a84c9f68}} 
+\index{ngind::input::Input@{ngind::input::Input}!switchTextMod@{switchTextMod}}
+\index{switchTextMod@{switchTextMod}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{switchTextMod()}{switchTextMod()}}
+{\footnotesize\ttfamily void ngind\+::input\+::\+Input\+::switch\+Text\+Mod (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+\_\+enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set whether current manager should get text input or keyboard input 
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+enable} & true if manager should get text input \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1input_1_1Input_a83eae8ffb2c7caa007f3c90a8bb96275}\label{classngind_1_1input_1_1Input_a83eae8ffb2c7caa007f3c90a8bb96275}} 
+\index{ngind::input::Input@{ngind::input::Input}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1input_1_1Input}{Input}}$\ast$ ngind\+::input\+::\+Input\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The instance object \mbox{\Hypertarget{classngind_1_1input_1_1Input_a4340cfc4e8467fffa59025013e2b9090}\label{classngind_1_1input_1_1Input_a4340cfc4e8467fffa59025013e2b9090}} 
+\index{ngind::input::Input@{ngind::input::Input}!\_interrupted@{\_interrupted}}
+\index{\_interrupted@{\_interrupted}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{\_interrupted}{\_interrupted}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Input\+::\+\_\+interrupted\hspace{0.3cm}{\ttfamily [private]}}
+
+Has mouse input been interrupted \mbox{\Hypertarget{classngind_1_1input_1_1Input_aaceef067757d6099b765ceec64847f6a}\label{classngind_1_1input_1_1Input_aaceef067757d6099b765ceec64847f6a}} 
+\index{ngind::input::Input@{ngind::input::Input}!\_keyboard@{\_keyboard}}
+\index{\_keyboard@{\_keyboard}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{\_keyboard}{\_keyboard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput}{Keyboard\+Input}}$\ast$ ngind\+::input\+::\+Input\+::\+\_\+keyboard\hspace{0.3cm}{\ttfamily [private]}}
+
+The instance of keyboard input \mbox{\Hypertarget{classngind_1_1input_1_1Input_aeddf235de7e578eea05f15924b3e8a6a}\label{classngind_1_1input_1_1Input_aeddf235de7e578eea05f15924b3e8a6a}} 
+\index{ngind::input::Input@{ngind::input::Input}!\_mouse@{\_mouse}}
+\index{\_mouse@{\_mouse}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{\_mouse}{\_mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1input_1_1MouseInput}{Mouse\+Input}}$\ast$ ngind\+::input\+::\+Input\+::\+\_\+mouse\hspace{0.3cm}{\ttfamily [private]}}
+
+The instance of mouse input \mbox{\Hypertarget{classngind_1_1input_1_1Input_adeb002d9d0ee6ebc61f79ad7a8857eac}\label{classngind_1_1input_1_1Input_adeb002d9d0ee6ebc61f79ad7a8857eac}} 
+\index{ngind::input::Input@{ngind::input::Input}!\_text@{\_text}}
+\index{\_text@{\_text}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{\_text}{\_text}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1input_1_1TextInput}{Text\+Input}}$\ast$ ngind\+::input\+::\+Input\+::\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+The instance of text input \mbox{\Hypertarget{classngind_1_1input_1_1Input_afa749801730ac5df501c7b20320a1971}\label{classngind_1_1input_1_1Input_afa749801730ac5df501c7b20320a1971}} 
+\index{ngind::input::Input@{ngind::input::Input}!\_text\_mod@{\_text\_mod}}
+\index{\_text\_mod@{\_text\_mod}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{\_text\_mod}{\_text\_mod}}
+{\footnotesize\ttfamily bool ngind\+::input\+::\+Input\+::\+\_\+text\+\_\+mod\hspace{0.3cm}{\ttfamily [private]}}
+
+Is manager should get text input \mbox{\Hypertarget{classngind_1_1input_1_1Input_a1c11ea8b5c3d1a2ac7263857ad64ab13}\label{classngind_1_1input_1_1Input_a1c11ea8b5c3d1a2ac7263857ad64ab13}} 
+\index{ngind::input::Input@{ngind::input::Input}!\_window\_handler@{\_window\_handler}}
+\index{\_window\_handler@{\_window\_handler}!ngind::input::Input@{ngind::input::Input}}
+\doxysubsubsection{\texorpdfstring{\_window\_handler}{\_window\_handler}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ ngind\+::input\+::\+Input\+::\+\_\+window\+\_\+handler\hspace{0.3cm}{\ttfamily [private]}}
+
+The handler of glfw window 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/input/\mbox{\hyperlink{input_8h}{input.\+h}}\end{DoxyCompactItemize}

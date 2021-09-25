@@ -1,0 +1,200 @@
+\hypertarget{classngind_1_1physics_1_1PhysicsJoint}{}\doxysection{ngind\+::physics\+::Physics\+Joint Class Reference}
+\label{classngind_1_1physics_1_1PhysicsJoint}\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+
+
+{\ttfamily \#include $<$physics\+\_\+joint.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::physics\+::Physics\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PhysicsJoint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Physics\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1PhysicsJoint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+\mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a9ac0c04796dbf3f70c0049c71f12c8a6}{get\+BodyA}} ()
+\item 
+\mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a4ad67ef4ec388f86fa466422815963b7}{get\+BodyB}} ()
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a03cb6657d5ea68348da23265ae0e8573}{get\+AnchorA}} () const
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a9210e23cd9e23f5afa7f5f0d817f2c52}{get\+AnchorB}} () const
+\item 
+b2\+Joint $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_aaade3b2db3152a948bb8df4d9048e3f3}{get\+Joint}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a68da298d52f0c2f89801d089600df313}{set\+Bodies}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Joint $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a220e408ff8adf8972225ee7f1ce95c50}{\+\_\+joint}}
+\item 
+int \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_ae87c50e1d7c46e769d1043532d12e426}{\+\_\+index\+\_\+a}}
+\item 
+int \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a1a8c4d8f4b940e905ebbc208ea084858}{\+\_\+index\+\_\+b}}
+\item 
+\mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_afe8ee46bfbc2f658fb3fd610c67d284c}{\+\_\+body\+\_\+a}}
+\item 
+\mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a62423921f2fadf8e537eb7aa77508dfa}{\+\_\+body\+\_\+b}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a5e3db78bc6ca1556c39f72f9c31ea4b4}{\+\_\+collide}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+2D general physics joint. You should use specified joint type rather than this. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a03cb6657d5ea68348da23265ae0e8573}\label{classngind_1_1physics_1_1PhysicsJoint_a03cb6657d5ea68348da23265ae0e8573}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!getAnchorA@{getAnchorA}}
+\index{getAnchorA@{getAnchorA}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{getAnchorA()}{getAnchorA()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Physics\+Joint\+::get\+AnchorA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get connection anchor in first rigid body. \begin{DoxyReturn}{Returns}
+glm\+::vec2, connection anchor in first rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a9210e23cd9e23f5afa7f5f0d817f2c52}\label{classngind_1_1physics_1_1PhysicsJoint_a9210e23cd9e23f5afa7f5f0d817f2c52}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!getAnchorB@{getAnchorB}}
+\index{getAnchorB@{getAnchorB}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{getAnchorB()}{getAnchorB()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::physics\+::\+Physics\+Joint\+::get\+AnchorB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get connection anchor in second rigid body. \begin{DoxyReturn}{Returns}
+glm\+::vec2, connection anchor in second rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a9ac0c04796dbf3f70c0049c71f12c8a6}\label{classngind_1_1physics_1_1PhysicsJoint_a9ac0c04796dbf3f70c0049c71f12c8a6}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!getBodyA@{getBodyA}}
+\index{getBodyA@{getBodyA}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{getBodyA()}{getBodyA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}}$\ast$ ngind\+::physics\+::\+Physics\+Joint\+::get\+BodyA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the first body connected by this joint. \begin{DoxyReturn}{Returns}
+Rigid\+Body$\ast$ the first rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a4ad67ef4ec388f86fa466422815963b7}\label{classngind_1_1physics_1_1PhysicsJoint_a4ad67ef4ec388f86fa466422815963b7}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!getBodyB@{getBodyB}}
+\index{getBodyB@{getBodyB}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{getBodyB()}{getBodyB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}}$\ast$ ngind\+::physics\+::\+Physics\+Joint\+::get\+BodyB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the second body connected by this joint. \begin{DoxyReturn}{Returns}
+Rigid\+Body$\ast$ the second rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_aaade3b2db3152a948bb8df4d9048e3f3}\label{classngind_1_1physics_1_1PhysicsJoint_aaade3b2db3152a948bb8df4d9048e3f3}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!getJoint@{getJoint}}
+\index{getJoint@{getJoint}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{getJoint()}{getJoint()}}
+{\footnotesize\ttfamily b2\+Joint$\ast$ ngind\+::physics\+::\+Physics\+Joint\+::get\+Joint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get b2joint object. \begin{DoxyReturn}{Returns}
+b2\+Joint$\ast$, b2joint object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}\label{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!init@{init}}
+\index{init@{init}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+Joint\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from Component 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a5db316fc6c1c4e8cacd21ecb4f9fe4ae}{ngind\+::physics\+::\+Gear\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a26b40e7db9cfcfda81ecc2fbd478018e}{ngind\+::physics\+::\+Pulley\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_abca5840de7034c960386b9507dfb10a2}{ngind\+::physics\+::\+Prismatic\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1RevoluteJoint_adca47198bb9bca1db9292e42923caa07}{ngind\+::physics\+::\+Revolute\+Joint}}, and \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a8ccd451ac7f6d646f22511dacf8ccc8a}{ngind\+::physics\+::\+Distance\+Joint}}.
+
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a68da298d52f0c2f89801d089600df313}\label{classngind_1_1physics_1_1PhysicsJoint_a68da298d52f0c2f89801d089600df313}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!setBodies@{setBodies}}
+\index{setBodies@{setBodies}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{setBodies()}{setBodies()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+Joint\+::set\+Bodies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initialize body information. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}\label{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!update@{update}}
+\index{update@{update}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+Joint\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a14eb0dd011b9c65a099ec3b33f7cb867}{ngind\+::physics\+::\+Gear\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a254a20bfc739f43ec0e480d46c7302b0}{ngind\+::physics\+::\+Pulley\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a8372afbd2e380d7c215c0a7b81b14502}{ngind\+::physics\+::\+Prismatic\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1RevoluteJoint_a5853ab2f08e564daa4e72937063160a7}{ngind\+::physics\+::\+Revolute\+Joint}}, and \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a713c6b103c4ed595fa9089376d7cf8c5}{ngind\+::physics\+::\+Distance\+Joint}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_afe8ee46bfbc2f658fb3fd610c67d284c}\label{classngind_1_1physics_1_1PhysicsJoint_afe8ee46bfbc2f658fb3fd610c67d284c}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!\_body\_a@{\_body\_a}}
+\index{\_body\_a@{\_body\_a}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{\_body\_a}{\_body\_a}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}}$\ast$ ngind\+::physics\+::\+Physics\+Joint\+::\+\_\+body\+\_\+a\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rigid body a. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a62423921f2fadf8e537eb7aa77508dfa}\label{classngind_1_1physics_1_1PhysicsJoint_a62423921f2fadf8e537eb7aa77508dfa}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!\_body\_b@{\_body\_b}}
+\index{\_body\_b@{\_body\_b}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{\_body\_b}{\_body\_b}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}}$\ast$ ngind\+::physics\+::\+Physics\+Joint\+::\+\_\+body\+\_\+b\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rigid body b. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a5e3db78bc6ca1556c39f72f9c31ea4b4}\label{classngind_1_1physics_1_1PhysicsJoint_a5e3db78bc6ca1556c39f72f9c31ea4b4}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!\_collide@{\_collide}}
+\index{\_collide@{\_collide}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{\_collide}{\_collide}}
+{\footnotesize\ttfamily bool ngind\+::physics\+::\+Physics\+Joint\+::\+\_\+collide\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculate collision or not. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_ae87c50e1d7c46e769d1043532d12e426}\label{classngind_1_1physics_1_1PhysicsJoint_ae87c50e1d7c46e769d1043532d12e426}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!\_index\_a@{\_index\_a}}
+\index{\_index\_a@{\_index\_a}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{\_index\_a}{\_index\_a}}
+{\footnotesize\ttfamily int ngind\+::physics\+::\+Physics\+Joint\+::\+\_\+index\+\_\+a\hspace{0.3cm}{\ttfamily [protected]}}
+
+Index of body a. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a1a8c4d8f4b940e905ebbc208ea084858}\label{classngind_1_1physics_1_1PhysicsJoint_a1a8c4d8f4b940e905ebbc208ea084858}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!\_index\_b@{\_index\_b}}
+\index{\_index\_b@{\_index\_b}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{\_index\_b}{\_index\_b}}
+{\footnotesize\ttfamily int ngind\+::physics\+::\+Physics\+Joint\+::\+\_\+index\+\_\+b\hspace{0.3cm}{\ttfamily [protected]}}
+
+Index of body b. \mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsJoint_a220e408ff8adf8972225ee7f1ce95c50}\label{classngind_1_1physics_1_1PhysicsJoint_a220e408ff8adf8972225ee7f1ce95c50}} 
+\index{ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}!\_joint@{\_joint}}
+\index{\_joint@{\_joint}!ngind::physics::PhysicsJoint@{ngind::physics::PhysicsJoint}}
+\doxysubsubsection{\texorpdfstring{\_joint}{\_joint}}
+{\footnotesize\ttfamily b2\+Joint$\ast$ ngind\+::physics\+::\+Physics\+Joint\+::\+\_\+joint\hspace{0.3cm}{\ttfamily [protected]}}
+
+B2joint object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/\mbox{\hyperlink{physics__joint_8h}{physics\+\_\+joint.\+h}}\end{DoxyCompactItemize}

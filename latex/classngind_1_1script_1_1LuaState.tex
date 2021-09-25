@@ -1,0 +1,194 @@
+\hypertarget{classngind_1_1script_1_1LuaState}{}\doxysection{ngind\+::script\+::Lua\+State Class Reference}
+\label{classngind_1_1script_1_1LuaState}\index{ngind::script::LuaState@{ngind::script::LuaState}}
+
+
+{\ttfamily \#include $<$lua\+\_\+state.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::script\+::Lua\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classngind_1_1script_1_1LuaState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1LuaState_aca27885efb793da65682d5ef8928142b}{load\+Script}} (const std\+::vector$<$ std\+::string $>$ \&filenames)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1LuaState_af9ca76aeea4b24d3c3fdd6e252f46400}{load\+Script}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1LuaState_a1b469a8423a58bf630b7a1fe0283c726}{preload}} (const std\+::string \&path)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1LuaState_a4bb322261b3f2e117d448adc2bf92739}{restart}} ()
+\item 
+luabridge\+::\+Lua\+Ref \mbox{\hyperlink{classngind_1_1script_1_1LuaState_a2989d4088895ade616127e35c8d20b1b}{create\+State\+Machine}} (const std\+::string \&classname)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1LuaState_ac336d70d64749e9e585e35bbe4cd9807}{destroy\+State\+Machine\+Instance}} (luabridge\+::\+Lua\+Ref \&instance)
+\item 
+lua\+\_\+\+State $\ast$ \mbox{\hyperlink{classngind_1_1script_1_1LuaState_a34a8320694f49e6e017fd4e0c8e4bb20}{get\+State}} ()
+\item 
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_a2dcc705d6f40f34d25761231f8d7248b}\label{classngind_1_1script_1_1LuaState_a2dcc705d6f40f34d25761231f8d7248b}} 
+luabridge\+::\+Lua\+Ref {\bfseries create\+Nil} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1script_1_1LuaState}{Lua\+State}} $\ast$ \mbox{\hyperlink{classngind_1_1script_1_1LuaState_ad277755393b8c11ddb3d6686f94e97f0}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1script_1_1LuaState_ad5952d263ba4f0a0db6950474f052efe}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const static std\+::string \mbox{\hyperlink{classngind_1_1script_1_1LuaState_aca4d6044a50e8f6f1d2ea4232977faf1}{S\+C\+R\+I\+P\+T\+\_\+\+P\+A\+TH}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+lua\+\_\+\+State $\ast$ \mbox{\hyperlink{classngind_1_1script_1_1LuaState_adc793854375cd274842982008a94f72d}{\+\_\+state}}
+\item 
+std\+::unordered\+\_\+set$<$ std\+::string $>$ \mbox{\hyperlink{classngind_1_1script_1_1LuaState_a1e227be458fb98588598db48ae627fd1}{\+\_\+visit}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classngind_1_1script_1_1LuaState_acbf9e0fc0e28baada143e9da41884e2a}{\+\_\+preload\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1script_1_1LuaState}{Lua\+State}} $\ast$ \mbox{\hyperlink{classngind_1_1script_1_1LuaState_a8162a557e0574053cd567e173138a3fa}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The lua runtime environment. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_a2989d4088895ade616127e35c8d20b1b}\label{classngind_1_1script_1_1LuaState_a2989d4088895ade616127e35c8d20b1b}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!createStateMachine@{createStateMachine}}
+\index{createStateMachine@{createStateMachine}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{createStateMachine()}{createStateMachine()}}
+{\footnotesize\ttfamily luabridge\+::\+Lua\+Ref ngind\+::script\+::\+Lua\+State\+::create\+State\+Machine (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{classname }\end{DoxyParamCaption})}
+
+Create a state machine driven by lua. 
+\begin{DoxyParams}{Parameters}
+{\em classname} & state machine class name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+luabridge\+::\+Lua\+Ref, the reference of state machine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_ad5952d263ba4f0a0db6950474f052efe}\label{classngind_1_1script_1_1LuaState_ad5952d263ba4f0a0db6950474f052efe}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::script\+::\+Lua\+State\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the environment instance. \mbox{\Hypertarget{classngind_1_1script_1_1LuaState_ac336d70d64749e9e585e35bbe4cd9807}\label{classngind_1_1script_1_1LuaState_ac336d70d64749e9e585e35bbe4cd9807}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!destroyStateMachineInstance@{destroyStateMachineInstance}}
+\index{destroyStateMachineInstance@{destroyStateMachineInstance}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{destroyStateMachineInstance()}{destroyStateMachineInstance()}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Lua\+State\+::destroy\+State\+Machine\+Instance (\begin{DoxyParamCaption}\item[{luabridge\+::\+Lua\+Ref \&}]{instance }\end{DoxyParamCaption})}
+
+Destroy a state machine driven by lua. 
+\begin{DoxyParams}{Parameters}
+{\em instance} & the reference of state machine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_ad277755393b8c11ddb3d6686f94e97f0}\label{classngind_1_1script_1_1LuaState_ad277755393b8c11ddb3d6686f94e97f0}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1script_1_1LuaState}{Lua\+State}}$\ast$ ngind\+::script\+::\+Lua\+State\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get environment instance. \begin{DoxyReturn}{Returns}
+Lua\+State$\ast$, the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_a34a8320694f49e6e017fd4e0c8e4bb20}\label{classngind_1_1script_1_1LuaState_a34a8320694f49e6e017fd4e0c8e4bb20}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!getState@{getState}}
+\index{getState@{getState}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily lua\+\_\+\+State$\ast$ ngind\+::script\+::\+Lua\+State\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get native lua state point. \begin{DoxyReturn}{Returns}
+lua\+\_\+\+State$\ast$, the native lua state point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_af9ca76aeea4b24d3c3fdd6e252f46400}\label{classngind_1_1script_1_1LuaState_af9ca76aeea4b24d3c3fdd6e252f46400}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!loadScript@{loadScript}}
+\index{loadScript@{loadScript}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{loadScript()}{loadScript()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Lua\+State\+::load\+Script (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Load a script. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of script \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_aca27885efb793da65682d5ef8928142b}\label{classngind_1_1script_1_1LuaState_aca27885efb793da65682d5ef8928142b}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!loadScript@{loadScript}}
+\index{loadScript@{loadScript}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{loadScript()}{loadScript()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Lua\+State\+::load\+Script (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{filenames }\end{DoxyParamCaption})}
+
+Load scripts on list. 
+\begin{DoxyParams}{Parameters}
+{\em filenames} & filenames list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_a1b469a8423a58bf630b7a1fe0283c726}\label{classngind_1_1script_1_1LuaState_a1b469a8423a58bf630b7a1fe0283c726}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!preload@{preload}}
+\index{preload@{preload}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{preload()}{preload()}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Lua\+State\+::preload (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Preload scripts in a fold. These scripts will be loaded again automatically when restarting. 
+\begin{DoxyParams}{Parameters}
+{\em path} & the preload fold\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_a4bb322261b3f2e117d448adc2bf92739}\label{classngind_1_1script_1_1LuaState_a4bb322261b3f2e117d448adc2bf92739}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!restart@{restart}}
+\index{restart@{restart}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Lua\+State\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Restart the interpreter. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1script_1_1LuaState_a8162a557e0574053cd567e173138a3fa}\label{classngind_1_1script_1_1LuaState_a8162a557e0574053cd567e173138a3fa}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1script_1_1LuaState}{Lua\+State}}$\ast$ ngind\+::script\+::\+Lua\+State\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The instance of lua state \mbox{\Hypertarget{classngind_1_1script_1_1LuaState_acbf9e0fc0e28baada143e9da41884e2a}\label{classngind_1_1script_1_1LuaState_acbf9e0fc0e28baada143e9da41884e2a}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!\_preload\_list@{\_preload\_list}}
+\index{\_preload\_list@{\_preload\_list}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{\_preload\_list}{\_preload\_list}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ ngind\+::script\+::\+Lua\+State\+::\+\_\+preload\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+Preloading files list \mbox{\Hypertarget{classngind_1_1script_1_1LuaState_adc793854375cd274842982008a94f72d}\label{classngind_1_1script_1_1LuaState_adc793854375cd274842982008a94f72d}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!\_state@{\_state}}
+\index{\_state@{\_state}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{\_state}{\_state}}
+{\footnotesize\ttfamily lua\+\_\+\+State$\ast$ ngind\+::script\+::\+Lua\+State\+::\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+Native lua state point \mbox{\Hypertarget{classngind_1_1script_1_1LuaState_a1e227be458fb98588598db48ae627fd1}\label{classngind_1_1script_1_1LuaState_a1e227be458fb98588598db48ae627fd1}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!\_visit@{\_visit}}
+\index{\_visit@{\_visit}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{\_visit}{\_visit}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$std\+::string$>$ ngind\+::script\+::\+Lua\+State\+::\+\_\+visit\hspace{0.3cm}{\ttfamily [private]}}
+
+Visit list recording files that have been loaded \mbox{\Hypertarget{classngind_1_1script_1_1LuaState_aca4d6044a50e8f6f1d2ea4232977faf1}\label{classngind_1_1script_1_1LuaState_aca4d6044a50e8f6f1d2ea4232977faf1}} 
+\index{ngind::script::LuaState@{ngind::script::LuaState}!SCRIPT\_PATH@{SCRIPT\_PATH}}
+\index{SCRIPT\_PATH@{SCRIPT\_PATH}!ngind::script::LuaState@{ngind::script::LuaState}}
+\doxysubsubsection{\texorpdfstring{SCRIPT\_PATH}{SCRIPT\_PATH}}
+{\footnotesize\ttfamily const static std\+::string ngind\+::script\+::\+Lua\+State\+::\+S\+C\+R\+I\+P\+T\+\_\+\+P\+A\+TH\hspace{0.3cm}{\ttfamily [static]}}
+
+Script files path. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/script/\mbox{\hyperlink{lua__state_8h}{lua\+\_\+state.\+h}}\end{DoxyCompactItemize}

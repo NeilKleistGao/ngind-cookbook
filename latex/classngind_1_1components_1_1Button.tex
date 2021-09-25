@@ -1,0 +1,305 @@
+\hypertarget{classngind_1_1components_1_1Button}{}\doxysection{ngind\+::components\+::Button Class Reference}
+\label{classngind_1_1components_1_1Button}\index{ngind::components::Button@{ngind::components::Button}}
+
+
+{\ttfamily \#include $<$button.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::components\+::Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Button__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Button__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a066a8a90f6f9f13e8d67cd7a62a316e2}\label{classngind_1_1components_1_1Button_a066a8a90f6f9f13e8d67cd7a62a316e2}} 
+{\bfseries Button} (const \mbox{\hyperlink{classngind_1_1components_1_1Button}{Button}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a37f7134f41e1e0f2176a7d548c505139}\label{classngind_1_1components_1_1Button_a37f7134f41e1e0f2176a7d548c505139}} 
+\mbox{\hyperlink{classngind_1_1components_1_1Button}{Button}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1components_1_1Button}{Button}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a7796ae18f8365ae4be19ea051434ad4b}\label{classngind_1_1components_1_1Button_a7796ae18f8365ae4be19ea051434ad4b}} 
+{\bfseries Button} (\mbox{\hyperlink{classngind_1_1components_1_1Button}{Button}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Button_a7d89e94bb196cd31604c807bd0d0b892}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Button_af3440de7098ee1d6a1bb1d3cb45b37e5}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Button_aad631da21d32903ca40ce7055e0fbe8f}{set\+Available}} (const bool \&av)
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Button_a5dc17658e2a9b18013163b0c16ee36af}{is\+Available}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Button_ae9a54734dc6bbee926a8257a1fee21bf}{set\+Pressed}} (const bool \&pr)
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Button_afd2461b15f3181a4ee22e985748b026c}{is\+Pressed}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Button_a21192d3b07fb7186fa00ef80eea6b584}{set\+Highlighted}} (const bool \&hl)
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Button_a45bd7d2faca2bc9184fbe3577c0ab977}{is\+Highlighted}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1Button}{Button}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Button_a48cfe2b235ce4b0d95face87ec885e85}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classngind_1_1components_1_1Button_acc56f2946d2008e63c72036459cd5b7d}{get\+Model\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Button_abed5c42f0465745c4b9cc3ebd11b02c8}{set\+Receiver}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Button_a72df5d41426b5fada6fbacf5363dead6}{\+\_\+available}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Button_a7f828dff213fb0e188dcc6aad1c23cb9}{\+\_\+pressed}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Button_ae5a6d94516bf321f3866dc938b106d55}{\+\_\+highlighted}}
+\item 
+\mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{ui\+::\+Clickable\+Receiver}} \mbox{\hyperlink{classngind_1_1components_1_1Button_abb8ab7771f27c1e0b29f87efeb24955c}{\+\_\+receiver}}
+\item 
+std\+::vector$<$ glm\+::vec2 $>$ \mbox{\hyperlink{classngind_1_1components_1_1Button_a2beacb42d3c74c1eb319ed8d060a3ca7}{\+\_\+vertex}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Button_a25f0baee4dced986964ae5afffa38bc1}{\+\_\+default\+\_\+image}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Button_a7dee547867d624377267b5bb98026876}{\+\_\+pressed\+\_\+image}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Button_acd8e043547e9c41720e95e610ad7bef0}{\+\_\+disable\+\_\+image}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Button_a0cc1e99150c1b074dbe46445bdbd17cc}{\+\_\+highlight\+\_\+image}}
+\item 
+\mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Button_a45a6096c1b72c10749eaf4af98d8b2ca}{\+\_\+sprite}} \{\}
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{objects\+::\+Entity\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Button_a8da570f49f8b29b0df1ac1406f05989a}{\+\_\+entity\+\_\+parent}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classngind_1_1components_1_1Button_aafa76eeaf11592d2e8d8d0ea6a2d0039}{\+\_\+model}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Button_a6f4d480267828f16da4102ce887dee07}{\+\_\+register}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clickable component. \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} sibling component is required. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a48cfe2b235ce4b0d95face87ec885e85}\label{classngind_1_1components_1_1Button_a48cfe2b235ce4b0d95face87ec885e85}} 
+\index{ngind::components::Button@{ngind::components::Button}!create@{create}}
+\index{create@{create}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1Button}{Button}}$\ast$ ngind\+::components\+::\+Button\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a button component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Button$\ast$, the instance of animation component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_acc56f2946d2008e63c72036459cd5b7d}\label{classngind_1_1components_1_1Button_acc56f2946d2008e63c72036459cd5b7d}} 
+\index{ngind::components::Button@{ngind::components::Button}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 ngind\+::components\+::\+Button\+::get\+Model\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Calculate the model matrix \begin{DoxyReturn}{Returns}
+glm\+::mat4, the model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_af3440de7098ee1d6a1bb1d3cb45b37e5}\label{classngind_1_1components_1_1Button_af3440de7098ee1d6a1bb1d3cb45b37e5}} 
+\index{ngind::components::Button@{ngind::components::Button}!init@{init}}
+\index{init@{init}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Button\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a5dc17658e2a9b18013163b0c16ee36af}\label{classngind_1_1components_1_1Button_a5dc17658e2a9b18013163b0c16ee36af}} 
+\index{ngind::components::Button@{ngind::components::Button}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Button\+::is\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get if this button is clickable. \begin{DoxyReturn}{Returns}
+bool, true if button is clickable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a45bd7d2faca2bc9184fbe3577c0ab977}\label{classngind_1_1components_1_1Button_a45bd7d2faca2bc9184fbe3577c0ab977}} 
+\index{ngind::components::Button@{ngind::components::Button}!isHighlighted@{isHighlighted}}
+\index{isHighlighted@{isHighlighted}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{isHighlighted()}{isHighlighted()}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Button\+::is\+Highlighted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get if this button is highlighted. \begin{DoxyReturn}{Returns}
+bool, true if button is highlighted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_afd2461b15f3181a4ee22e985748b026c}\label{classngind_1_1components_1_1Button_afd2461b15f3181a4ee22e985748b026c}} 
+\index{ngind::components::Button@{ngind::components::Button}!isPressed@{isPressed}}
+\index{isPressed@{isPressed}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{isPressed()}{isPressed()}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Button\+::is\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get if this button is pressed. \begin{DoxyReturn}{Returns}
+bool, true if button is pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_aad631da21d32903ca40ce7055e0fbe8f}\label{classngind_1_1components_1_1Button_aad631da21d32903ca40ce7055e0fbe8f}} 
+\index{ngind::components::Button@{ngind::components::Button}!setAvailable@{setAvailable}}
+\index{setAvailable@{setAvailable}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{setAvailable()}{setAvailable()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Button\+::set\+Available (\begin{DoxyParamCaption}\item[{const bool \&}]{av }\end{DoxyParamCaption})}
+
+Set if this button is clickable. 
+\begin{DoxyParams}{Parameters}
+{\em av} & true if button is clickable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a21192d3b07fb7186fa00ef80eea6b584}\label{classngind_1_1components_1_1Button_a21192d3b07fb7186fa00ef80eea6b584}} 
+\index{ngind::components::Button@{ngind::components::Button}!setHighlighted@{setHighlighted}}
+\index{setHighlighted@{setHighlighted}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{setHighlighted()}{setHighlighted()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Button\+::set\+Highlighted (\begin{DoxyParamCaption}\item[{const bool \&}]{hl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set if this button is highlighted. 
+\begin{DoxyParams}{Parameters}
+{\em hl} & true if button is highlighted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_ae9a54734dc6bbee926a8257a1fee21bf}\label{classngind_1_1components_1_1Button_ae9a54734dc6bbee926a8257a1fee21bf}} 
+\index{ngind::components::Button@{ngind::components::Button}!setPressed@{setPressed}}
+\index{setPressed@{setPressed}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{setPressed()}{setPressed()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Button\+::set\+Pressed (\begin{DoxyParamCaption}\item[{const bool \&}]{pr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set if this button is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em pr} & true if button is pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_abed5c42f0465745c4b9cc3ebd11b02c8}\label{classngind_1_1components_1_1Button_abed5c42f0465745c4b9cc3ebd11b02c8}} 
+\index{ngind::components::Button@{ngind::components::Button}!setReceiver@{setReceiver}}
+\index{setReceiver@{setReceiver}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{setReceiver()}{setReceiver()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Button\+::set\+Receiver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Reset receiver area data. \mbox{\Hypertarget{classngind_1_1components_1_1Button_a7d89e94bb196cd31604c807bd0d0b892}\label{classngind_1_1components_1_1Button_a7d89e94bb196cd31604c807bd0d0b892}} 
+\index{ngind::components::Button@{ngind::components::Button}!update@{update}}
+\index{update@{update}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Button\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Button_a72df5d41426b5fada6fbacf5363dead6}\label{classngind_1_1components_1_1Button_a72df5d41426b5fada6fbacf5363dead6}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_available@{\_available}}
+\index{\_available@{\_available}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_available}{\_available}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Button\+::\+\_\+available\hspace{0.3cm}{\ttfamily [private]}}
+
+If this button is clickable. \mbox{\Hypertarget{classngind_1_1components_1_1Button_a25f0baee4dced986964ae5afffa38bc1}\label{classngind_1_1components_1_1Button_a25f0baee4dced986964ae5afffa38bc1}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_default\_image@{\_default\_image}}
+\index{\_default\_image@{\_default\_image}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_default\_image}{\_default\_image}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Button\+::\+\_\+default\+\_\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+Default background image path. \mbox{\Hypertarget{classngind_1_1components_1_1Button_acd8e043547e9c41720e95e610ad7bef0}\label{classngind_1_1components_1_1Button_acd8e043547e9c41720e95e610ad7bef0}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_disable\_image@{\_disable\_image}}
+\index{\_disable\_image@{\_disable\_image}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_disable\_image}{\_disable\_image}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Button\+::\+\_\+disable\+\_\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+Background image path(disabled state). \mbox{\Hypertarget{classngind_1_1components_1_1Button_a8da570f49f8b29b0df1ac1406f05989a}\label{classngind_1_1components_1_1Button_a8da570f49f8b29b0df1ac1406f05989a}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_entity\_parent@{\_entity\_parent}}
+\index{\_entity\_parent@{\_entity\_parent}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_entity\_parent}{\_entity\_parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{objects\+::\+Entity\+Object}}$\ast$ ngind\+::components\+::\+Button\+::\+\_\+entity\+\_\+parent\hspace{0.3cm}{\ttfamily [private]}}
+
+Parent object; \mbox{\Hypertarget{classngind_1_1components_1_1Button_a0cc1e99150c1b074dbe46445bdbd17cc}\label{classngind_1_1components_1_1Button_a0cc1e99150c1b074dbe46445bdbd17cc}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_highlight\_image@{\_highlight\_image}}
+\index{\_highlight\_image@{\_highlight\_image}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_highlight\_image}{\_highlight\_image}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Button\+::\+\_\+highlight\+\_\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+Background image path(highlight state). \mbox{\Hypertarget{classngind_1_1components_1_1Button_ae5a6d94516bf321f3866dc938b106d55}\label{classngind_1_1components_1_1Button_ae5a6d94516bf321f3866dc938b106d55}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_highlighted@{\_highlighted}}
+\index{\_highlighted@{\_highlighted}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_highlighted}{\_highlighted}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Button\+::\+\_\+highlighted\hspace{0.3cm}{\ttfamily [private]}}
+
+If this button is highlighted. \mbox{\Hypertarget{classngind_1_1components_1_1Button_aafa76eeaf11592d2e8d8d0ea6a2d0039}\label{classngind_1_1components_1_1Button_aafa76eeaf11592d2e8d8d0ea6a2d0039}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_model@{\_model}}
+\index{\_model@{\_model}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_model}{\_model}}
+{\footnotesize\ttfamily glm\+::mat4 ngind\+::components\+::\+Button\+::\+\_\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+Model projection matrix \mbox{\Hypertarget{classngind_1_1components_1_1Button_a7f828dff213fb0e188dcc6aad1c23cb9}\label{classngind_1_1components_1_1Button_a7f828dff213fb0e188dcc6aad1c23cb9}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_pressed@{\_pressed}}
+\index{\_pressed@{\_pressed}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_pressed}{\_pressed}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Button\+::\+\_\+pressed\hspace{0.3cm}{\ttfamily [private]}}
+
+If this button is pressed. \mbox{\Hypertarget{classngind_1_1components_1_1Button_a7dee547867d624377267b5bb98026876}\label{classngind_1_1components_1_1Button_a7dee547867d624377267b5bb98026876}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_pressed\_image@{\_pressed\_image}}
+\index{\_pressed\_image@{\_pressed\_image}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_pressed\_image}{\_pressed\_image}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Button\+::\+\_\+pressed\+\_\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+Background image path(pressed state). \mbox{\Hypertarget{classngind_1_1components_1_1Button_abb8ab7771f27c1e0b29f87efeb24955c}\label{classngind_1_1components_1_1Button_abb8ab7771f27c1e0b29f87efeb24955c}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_receiver@{\_receiver}}
+\index{\_receiver@{\_receiver}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_receiver}{\_receiver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1ui_1_1ClickableReceiver}{ui\+::\+Clickable\+Receiver}} ngind\+::components\+::\+Button\+::\+\_\+receiver\hspace{0.3cm}{\ttfamily [private]}}
+
+Clickable area data. \mbox{\Hypertarget{classngind_1_1components_1_1Button_a6f4d480267828f16da4102ce887dee07}\label{classngind_1_1components_1_1Button_a6f4d480267828f16da4102ce887dee07}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_register@{\_register}}
+\index{\_register@{\_register}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_register}{\_register}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Button\+::\+\_\+register\hspace{0.3cm}{\ttfamily [private]}}
+
+Has this button been registered in event system. \mbox{\Hypertarget{classngind_1_1components_1_1Button_a45a6096c1b72c10749eaf4af98d8b2ca}\label{classngind_1_1components_1_1Button_a45a6096c1b72c10749eaf4af98d8b2ca}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_sprite@{\_sprite}}
+\index{\_sprite@{\_sprite}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_sprite}{\_sprite}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}}$\ast$ ngind\+::components\+::\+Button\+::\+\_\+sprite \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to sprite component. \mbox{\Hypertarget{classngind_1_1components_1_1Button_a2beacb42d3c74c1eb319ed8d060a3ca7}\label{classngind_1_1components_1_1Button_a2beacb42d3c74c1eb319ed8d060a3ca7}} 
+\index{ngind::components::Button@{ngind::components::Button}!\_vertex@{\_vertex}}
+\index{\_vertex@{\_vertex}!ngind::components::Button@{ngind::components::Button}}
+\doxysubsubsection{\texorpdfstring{\_vertex}{\_vertex}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec2$>$ ngind\+::components\+::\+Button\+::\+\_\+vertex\hspace{0.3cm}{\ttfamily [private]}}
+
+Surrounding box\textquotesingle{}s vertex. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{button_8h}{button.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\hypertarget{classngind_1_1animation_1_1AsepriteFrame}{}\doxysection{ngind\+::animation\+::Aseprite\+Frame Class Reference}
+\label{classngind_1_1animation_1_1AsepriteFrame}\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+
+
+{\ttfamily \#include $<$aseprite\+\_\+frame.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_aca2643e310e6e897353acd2d4fbf937b}{Aseprite\+Frame}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\item 
+glm\+::vec4 \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a08f4aa632c6991185bbdac60142c00e0}{get\+Rect}} () const
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a1224d34f706e674c70c8b70aea1c9588}{get\+Position}} () const
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a4754e6a3ab76097e54363260d133e816}{get\+Size}} () const
+\item 
+std\+::chrono\+::milliseconds \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a1987c04f29f2ac00634670cf487a7415}{get\+Duration}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a7d4d00c2a3d92b778c48b0f32457d5af}{\+\_\+trimmed}}
+\item 
+glm\+::vec4 \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a2adb031878cf34678e7c655d6404036c}{\+\_\+rect}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a911c59d5a4acc22c076d274324a10901}{\+\_\+position}} \{\}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_aba955fe079496044fa2ddabcb75bfdbf}{\+\_\+original\+\_\+size}} \{\}
+\item 
+std\+::chrono\+::milliseconds \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame_a1ba5c07d9cf5b3904e551d1c9382196a}{\+\_\+duration}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Animation frame data in \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite}{Aseprite}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_aca2643e310e6e897353acd2d4fbf937b}\label{classngind_1_1animation_1_1AsepriteFrame_aca2643e310e6e897353acd2d4fbf937b}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!AsepriteFrame@{AsepriteFrame}}
+\index{AsepriteFrame@{AsepriteFrame}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{AsepriteFrame()}{AsepriteFrame()}}
+{\footnotesize\ttfamily ngind\+::animation\+::\+Aseprite\+Frame\+::\+Aseprite\+Frame (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{\hyperlink{classngind_1_1animation_1_1Aseprite}{Aseprite}} frame data in json format. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a1987c04f29f2ac00634670cf487a7415}\label{classngind_1_1animation_1_1AsepriteFrame_a1987c04f29f2ac00634670cf487a7415}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily std\+::chrono\+::milliseconds ngind\+::animation\+::\+Aseprite\+Frame\+::get\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get duration time of this frame \begin{DoxyReturn}{Returns}
+std\+::chrono\+::milliseconds, the duration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a1224d34f706e674c70c8b70aea1c9588}\label{classngind_1_1animation_1_1AsepriteFrame_a1224d34f706e674c70c8b70aea1c9588}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::animation\+::\+Aseprite\+Frame\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get relevant position of trimmed sprite. \begin{DoxyReturn}{Returns}
+glm\+::vec2, relevant position, zero vector if sprite is not trimmed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a08f4aa632c6991185bbdac60142c00e0}\label{classngind_1_1animation_1_1AsepriteFrame_a08f4aa632c6991185bbdac60142c00e0}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!getRect@{getRect}}
+\index{getRect@{getRect}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily glm\+::vec4 ngind\+::animation\+::\+Aseprite\+Frame\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get Rectangular range of this frame in image \begin{DoxyReturn}{Returns}
+glm\+::vec4, rectangular range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a4754e6a3ab76097e54363260d133e816}\label{classngind_1_1animation_1_1AsepriteFrame_a4754e6a3ab76097e54363260d133e816}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!getSize@{getSize}}
+\index{getSize@{getSize}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::animation\+::\+Aseprite\+Frame\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the original size of a frame \begin{DoxyReturn}{Returns}
+glm\+::vec2, original size 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a1ba5c07d9cf5b3904e551d1c9382196a}\label{classngind_1_1animation_1_1AsepriteFrame_a1ba5c07d9cf5b3904e551d1c9382196a}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!\_duration@{\_duration}}
+\index{\_duration@{\_duration}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{\_duration}{\_duration}}
+{\footnotesize\ttfamily std\+::chrono\+::milliseconds ngind\+::animation\+::\+Aseprite\+Frame\+::\+\_\+duration \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+How long should the sprite keep this frame in animation. \mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_aba955fe079496044fa2ddabcb75bfdbf}\label{classngind_1_1animation_1_1AsepriteFrame_aba955fe079496044fa2ddabcb75bfdbf}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!\_original\_size@{\_original\_size}}
+\index{\_original\_size@{\_original\_size}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{\_original\_size}{\_original\_size}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::animation\+::\+Aseprite\+Frame\+::\+\_\+original\+\_\+size \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Original size of frame. \mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a911c59d5a4acc22c076d274324a10901}\label{classngind_1_1animation_1_1AsepriteFrame_a911c59d5a4acc22c076d274324a10901}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!\_position@{\_position}}
+\index{\_position@{\_position}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{\_position}{\_position}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::animation\+::\+Aseprite\+Frame\+::\+\_\+position \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Relevant position for trimmed sprite. \mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a2adb031878cf34678e7c655d6404036c}\label{classngind_1_1animation_1_1AsepriteFrame_a2adb031878cf34678e7c655d6404036c}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!\_rect@{\_rect}}
+\index{\_rect@{\_rect}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{\_rect}{\_rect}}
+{\footnotesize\ttfamily glm\+::vec4 ngind\+::animation\+::\+Aseprite\+Frame\+::\+\_\+rect \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Rectangular of frame in sprite. \mbox{\Hypertarget{classngind_1_1animation_1_1AsepriteFrame_a7d4d00c2a3d92b778c48b0f32457d5af}\label{classngind_1_1animation_1_1AsepriteFrame_a7d4d00c2a3d92b778c48b0f32457d5af}} 
+\index{ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}!\_trimmed@{\_trimmed}}
+\index{\_trimmed@{\_trimmed}!ngind::animation::AsepriteFrame@{ngind::animation::AsepriteFrame}}
+\doxysubsubsection{\texorpdfstring{\_trimmed}{\_trimmed}}
+{\footnotesize\ttfamily bool ngind\+::animation\+::\+Aseprite\+Frame\+::\+\_\+trimmed\hspace{0.3cm}{\ttfamily [private]}}
+
+Has sprite been trimmed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/animation/\mbox{\hyperlink{aseprite__frame_8h}{aseprite\+\_\+frame.\+h}}\end{DoxyCompactItemize}

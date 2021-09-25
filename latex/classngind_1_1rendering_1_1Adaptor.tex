@@ -1,0 +1,160 @@
+\hypertarget{classngind_1_1rendering_1_1Adaptor}{}\doxysection{ngind\+::rendering\+::Adaptor Class Reference}
+\label{classngind_1_1rendering_1_1Adaptor}\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+
+
+{\ttfamily \#include $<$adaptor.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::rendering\+::Adaptor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classngind_1_1rendering_1_1Adaptor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a7a279f64edbb92d10a6160b9d4e4ec1d}{set\+Resolution\+Adaption\+Tactic}} (\mbox{\hyperlink{adaptor_8h_a06d55bbf4f6dd112b27fe6b07667e8a5}{Resolution\+Adaption\+Tactic}} tactic)
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a78c92f07cd46754fcc1a5782d81c890f}{set\+Resolution}} (const glm\+::vec2 \&resolution)
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a499a6c6857154d80a6ca4041e57a2423}{set\+Window\+Size}} (const glm\+::vec2 \&size)
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a391dbf4ac644646eb7b8031689e10a5f}{init}} (const glm\+::vec2 \&size, const glm\+::vec2 \&resolution, \mbox{\hyperlink{adaptor_8h_a06d55bbf4f6dd112b27fe6b07667e8a5}{Resolution\+Adaption\+Tactic}} tactic=Resolution\+Adaption\+Tactic\+::\+E\+X\+A\+C\+T\+\_\+\+F\+IT)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor}{Adaptor}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a96a39f4f8a702d1ebc46d75c7f9fd412}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a15fb5ebc5509c09cc771b3b7d75e09fd}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a179083b60e26cfee6c26eb9ca5f40340}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{adaptor_8h_a06d55bbf4f6dd112b27fe6b07667e8a5}{Resolution\+Adaption\+Tactic}} \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_af2c1a846d6c5c87e880352d013acd7db}{\+\_\+tactic}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a3ed1779d1e8e646451e6d367d12731b7}{\+\_\+resolution}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a11f0b5bf0a25f35be5e38df718977d7d}{\+\_\+screen}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor}{Adaptor}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor_a9d10d03688ed157413ee5f4c35e9f678}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Screen \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor}{Adaptor}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a15fb5ebc5509c09cc771b3b7d75e09fd}\label{classngind_1_1rendering_1_1Adaptor_a15fb5ebc5509c09cc771b3b7d75e09fd}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::rendering\+::\+Adaptor\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the unique instance if it exists. \mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a96a39f4f8a702d1ebc46d75c7f9fd412}\label{classngind_1_1rendering_1_1Adaptor_a96a39f4f8a702d1ebc46d75c7f9fd412}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor}{Adaptor}}$\ast$ ngind\+::rendering\+::\+Adaptor\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the unique instance of adaptor. If it does not exist, this function will create one. \begin{DoxyReturn}{Returns}
+Adaptor$\ast$, the unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a391dbf4ac644646eb7b8031689e10a5f}\label{classngind_1_1rendering_1_1Adaptor_a391dbf4ac644646eb7b8031689e10a5f}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!init@{init}}
+\index{init@{init}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Adaptor\+::init (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{size,  }\item[{const glm\+::vec2 \&}]{resolution,  }\item[{\mbox{\hyperlink{adaptor_8h_a06d55bbf4f6dd112b27fe6b07667e8a5}{Resolution\+Adaption\+Tactic}}}]{tactic = {\ttfamily ResolutionAdaptionTactic\+:\+:EXACT\+\_\+FIT} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialize adaptor. 
+\begin{DoxyParams}{Parameters}
+{\em size} & window\textquotesingle{}s size \\
+\hline
+{\em resolution} & screen\textquotesingle{}s resolution \\
+\hline
+{\em tactic} & adaptation tactic \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a78c92f07cd46754fcc1a5782d81c890f}\label{classngind_1_1rendering_1_1Adaptor_a78c92f07cd46754fcc1a5782d81c890f}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!setResolution@{setResolution}}
+\index{setResolution@{setResolution}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{setResolution()}{setResolution()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Adaptor\+::set\+Resolution (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the resolution of screen. 
+\begin{DoxyParams}{Parameters}
+{\em resolution} & the screen\textquotesingle{}s resolution. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a7a279f64edbb92d10a6160b9d4e4ec1d}\label{classngind_1_1rendering_1_1Adaptor_a7a279f64edbb92d10a6160b9d4e4ec1d}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!setResolutionAdaptionTactic@{setResolutionAdaptionTactic}}
+\index{setResolutionAdaptionTactic@{setResolutionAdaptionTactic}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{setResolutionAdaptionTactic()}{setResolutionAdaptionTactic()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Adaptor\+::set\+Resolution\+Adaption\+Tactic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{adaptor_8h_a06d55bbf4f6dd112b27fe6b07667e8a5}{Resolution\+Adaption\+Tactic}}}]{tactic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set adaptation tactic. 
+\begin{DoxyParams}{Parameters}
+{\em tactic} & the given tactic. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a499a6c6857154d80a6ca4041e57a2423}\label{classngind_1_1rendering_1_1Adaptor_a499a6c6857154d80a6ca4041e57a2423}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{setWindowSize()}{setWindowSize()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Adaptor\+::set\+Window\+Size (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the size of window 
+\begin{DoxyParams}{Parameters}
+{\em size} & the size of window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a179083b60e26cfee6c26eb9ca5f40340}\label{classngind_1_1rendering_1_1Adaptor_a179083b60e26cfee6c26eb9ca5f40340}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!update@{update}}
+\index{update@{update}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Adaptor\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Update Open\+GL context. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a9d10d03688ed157413ee5f4c35e9f678}\label{classngind_1_1rendering_1_1Adaptor_a9d10d03688ed157413ee5f4c35e9f678}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1rendering_1_1Adaptor}{Adaptor}}$\ast$ ngind\+::rendering\+::\+Adaptor\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance. \mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a3ed1779d1e8e646451e6d367d12731b7}\label{classngind_1_1rendering_1_1Adaptor_a3ed1779d1e8e646451e6d367d12731b7}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!\_resolution@{\_resolution}}
+\index{\_resolution@{\_resolution}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{\_resolution}{\_resolution}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::rendering\+::\+Adaptor\+::\+\_\+resolution\hspace{0.3cm}{\ttfamily [private]}}
+
+Screen\textquotesingle{}s resolution. \mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_a11f0b5bf0a25f35be5e38df718977d7d}\label{classngind_1_1rendering_1_1Adaptor_a11f0b5bf0a25f35be5e38df718977d7d}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!\_screen@{\_screen}}
+\index{\_screen@{\_screen}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{\_screen}{\_screen}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::rendering\+::\+Adaptor\+::\+\_\+screen\hspace{0.3cm}{\ttfamily [private]}}
+
+Screen\textquotesingle{}s size. \mbox{\Hypertarget{classngind_1_1rendering_1_1Adaptor_af2c1a846d6c5c87e880352d013acd7db}\label{classngind_1_1rendering_1_1Adaptor_af2c1a846d6c5c87e880352d013acd7db}} 
+\index{ngind::rendering::Adaptor@{ngind::rendering::Adaptor}!\_tactic@{\_tactic}}
+\index{\_tactic@{\_tactic}!ngind::rendering::Adaptor@{ngind::rendering::Adaptor}}
+\doxysubsubsection{\texorpdfstring{\_tactic}{\_tactic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{adaptor_8h_a06d55bbf4f6dd112b27fe6b07667e8a5}{Resolution\+Adaption\+Tactic}} ngind\+::rendering\+::\+Adaptor\+::\+\_\+tactic\hspace{0.3cm}{\ttfamily [private]}}
+
+Current adaptation tactic. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{adaptor_8h}{adaptor.\+h}}\end{DoxyCompactItemize}

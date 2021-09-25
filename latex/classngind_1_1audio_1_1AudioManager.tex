@@ -1,0 +1,174 @@
+\hypertarget{classngind_1_1audio_1_1AudioManager}{}\doxysection{ngind\+::audio\+::Audio\+Manager Class Reference}
+\label{classngind_1_1audio_1_1AudioManager}\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+
+
+{\ttfamily \#include $<$audio\+\_\+manager.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::audio\+::Audio\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classngind_1_1audio_1_1AudioManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_aa4e56d45cf078d251eb75c1c8a2341cb}{play\+Music}} (\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$music)
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a9fc7d2444099836bdcc313cde442e047}{stop\+Music}} (\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$music)
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_afa781a4fcc3a6b0640c896075c0890fc}{stop\+All}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_abd77965edc89f64dce98cf3641e3a49e}{pause\+Music}} (\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$music)
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a78e66781ba83e2a2ca12b69309423a46}{resume\+Music}} (\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$music)
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a4a3026d7413ebc34e9ac0cde21795870}{pause\+All}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_af4d31fa86a4358970763bc57731e6032}{resume\+All}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a2509c43432bf284a4fd96d3a1166f82e}{play\+Effect}} (\mbox{\hyperlink{classngind_1_1resources_1_1EffectResource}{resources\+::\+Effect\+Resource}} $\ast$effect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager}{Audio\+Manager}} $\ast$ \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a5659303f0836172f56ba3f0cabe05ca1}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a326d3e28069676cfad66aba827b91627}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+So\+Loud\+::\+Soloud \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a0bca2830621c7d262eefa4e6a7316a71}{\+\_\+engine}}
+\item 
+std\+::map$<$ std\+::string, So\+Loud\+::handle $>$ \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_acbfbc38997ac9f04825172d0615e70ec}{\+\_\+handles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager}{Audio\+Manager}} $\ast$ \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager_a0778c68921d15ff6a8d4873339832118}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Management for audio process. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a326d3e28069676cfad66aba827b91627}\label{classngind_1_1audio_1_1AudioManager_a326d3e28069676cfad66aba827b91627}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::audio\+::\+Audio\+Manager\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the unique instance. \mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a5659303f0836172f56ba3f0cabe05ca1}\label{classngind_1_1audio_1_1AudioManager_a5659303f0836172f56ba3f0cabe05ca1}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager}{Audio\+Manager}}$\ast$ ngind\+::audio\+::\+Audio\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the unique instance of audio manager. \begin{DoxyReturn}{Returns}
+Audio\+Manager$\ast$, the unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a4a3026d7413ebc34e9ac0cde21795870}\label{classngind_1_1audio_1_1AudioManager_a4a3026d7413ebc34e9ac0cde21795870}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!pauseAll@{pauseAll}}
+\index{pauseAll@{pauseAll}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{pauseAll()}{pauseAll()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::pause\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pause all music. \mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_abd77965edc89f64dce98cf3641e3a49e}\label{classngind_1_1audio_1_1AudioManager_abd77965edc89f64dce98cf3641e3a49e}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!pauseMusic@{pauseMusic}}
+\index{pauseMusic@{pauseMusic}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{pauseMusic()}{pauseMusic()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::pause\+Music (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$}]{music }\end{DoxyParamCaption})}
+
+Pause given music. 
+\begin{DoxyParams}{Parameters}
+{\em music} & music that should be paused. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a2509c43432bf284a4fd96d3a1166f82e}\label{classngind_1_1audio_1_1AudioManager_a2509c43432bf284a4fd96d3a1166f82e}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!playEffect@{playEffect}}
+\index{playEffect@{playEffect}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{playEffect()}{playEffect()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::play\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1resources_1_1EffectResource}{resources\+::\+Effect\+Resource}} $\ast$}]{effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Play given effect audio. 
+\begin{DoxyParams}{Parameters}
+{\em effect} & given effect audio. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_aa4e56d45cf078d251eb75c1c8a2341cb}\label{classngind_1_1audio_1_1AudioManager_aa4e56d45cf078d251eb75c1c8a2341cb}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::play\+Music (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$}]{music }\end{DoxyParamCaption})}
+
+Start playing given music. 
+\begin{DoxyParams}{Parameters}
+{\em music} & music that will be played. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_af4d31fa86a4358970763bc57731e6032}\label{classngind_1_1audio_1_1AudioManager_af4d31fa86a4358970763bc57731e6032}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!resumeAll@{resumeAll}}
+\index{resumeAll@{resumeAll}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{resumeAll()}{resumeAll()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::resume\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resume all music from stopping. \mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a78e66781ba83e2a2ca12b69309423a46}\label{classngind_1_1audio_1_1AudioManager_a78e66781ba83e2a2ca12b69309423a46}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!resumeMusic@{resumeMusic}}
+\index{resumeMusic@{resumeMusic}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{resumeMusic()}{resumeMusic()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::resume\+Music (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$}]{music }\end{DoxyParamCaption})}
+
+Resume music that was stopped before. 
+\begin{DoxyParams}{Parameters}
+{\em music} & music that will be resumed to play. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_afa781a4fcc3a6b0640c896075c0890fc}\label{classngind_1_1audio_1_1AudioManager_afa781a4fcc3a6b0640c896075c0890fc}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!stopAll@{stopAll}}
+\index{stopAll@{stopAll}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{stopAll()}{stopAll()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::stop\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stop all music. \mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a9fc7d2444099836bdcc313cde442e047}\label{classngind_1_1audio_1_1AudioManager_a9fc7d2444099836bdcc313cde442e047}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!stopMusic@{stopMusic}}
+\index{stopMusic@{stopMusic}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{stopMusic()}{stopMusic()}}
+{\footnotesize\ttfamily void ngind\+::audio\+::\+Audio\+Manager\+::stop\+Music (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$}]{music }\end{DoxyParamCaption})}
+
+Stop playing given music. 
+\begin{DoxyParams}{Parameters}
+{\em music} & music that will be stopped. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a0bca2830621c7d262eefa4e6a7316a71}\label{classngind_1_1audio_1_1AudioManager_a0bca2830621c7d262eefa4e6a7316a71}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!\_engine@{\_engine}}
+\index{\_engine@{\_engine}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{\_engine}{\_engine}}
+{\footnotesize\ttfamily So\+Loud\+::\+Soloud ngind\+::audio\+::\+Audio\+Manager\+::\+\_\+engine\hspace{0.3cm}{\ttfamily [private]}}
+
+So\+Loud engine object. \mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_acbfbc38997ac9f04825172d0615e70ec}\label{classngind_1_1audio_1_1AudioManager_acbfbc38997ac9f04825172d0615e70ec}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!\_handles@{\_handles}}
+\index{\_handles@{\_handles}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{\_handles}{\_handles}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, So\+Loud\+::handle$>$ ngind\+::audio\+::\+Audio\+Manager\+::\+\_\+handles\hspace{0.3cm}{\ttfamily [private]}}
+
+Music playing handlers. \mbox{\Hypertarget{classngind_1_1audio_1_1AudioManager_a0778c68921d15ff6a8d4873339832118}\label{classngind_1_1audio_1_1AudioManager_a0778c68921d15ff6a8d4873339832118}} 
+\index{ngind::audio::AudioManager@{ngind::audio::AudioManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::audio::AudioManager@{ngind::audio::AudioManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1audio_1_1AudioManager}{Audio\+Manager}}$\ast$ ngind\+::audio\+::\+Audio\+Manager\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/audio/\mbox{\hyperlink{audio__manager_8h}{audio\+\_\+manager.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classngind_1_1memory_1_1AutoCollectionObject}{}\doxysection{ngind\+::memory\+::Auto\+Collection\+Object Class Reference}
+\label{classngind_1_1memory_1_1AutoCollectionObject}\index{ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}}
+
+
+{\ttfamily \#include $<$auto\+\_\+collection\+\_\+object.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::memory\+::Auto\+Collection\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classngind_1_1memory_1_1AutoCollectionObject__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject_aeac496f2356ed171f2c556450f4b3b78}{add\+Reference}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject_ae49e8dcc1b882afd6d8df3e28ec874a0}{remove\+Reference}} ()
+\item 
+int \mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject_a803a7b3c18ec7c14650c346e173b3a9c}{get\+Sustain}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject_a271087bd661aedcdffc56d7d18533010}{\+\_\+sustain}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class enables object to recycle itself if there is no reference of it. Notably this class is not an actual \char`\"{}object\char`\"{} and is not inherited from object class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1memory_1_1AutoCollectionObject_aeac496f2356ed171f2c556450f4b3b78}\label{classngind_1_1memory_1_1AutoCollectionObject_aeac496f2356ed171f2c556450f4b3b78}} 
+\index{ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}!addReference@{addReference}}
+\index{addReference@{addReference}!ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}}
+\doxysubsubsection{\texorpdfstring{addReference()}{addReference()}}
+{\footnotesize\ttfamily void ngind\+::memory\+::\+Auto\+Collection\+Object\+::add\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increase the number of reference to this. \mbox{\Hypertarget{classngind_1_1memory_1_1AutoCollectionObject_a803a7b3c18ec7c14650c346e173b3a9c}\label{classngind_1_1memory_1_1AutoCollectionObject_a803a7b3c18ec7c14650c346e173b3a9c}} 
+\index{ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}!getSustain@{getSustain}}
+\index{getSustain@{getSustain}!ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}}
+\doxysubsubsection{\texorpdfstring{getSustain()}{getSustain()}}
+{\footnotesize\ttfamily int ngind\+::memory\+::\+Auto\+Collection\+Object\+::get\+Sustain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of reference. \begin{DoxyReturn}{Returns}
+int, the number of reference 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1memory_1_1AutoCollectionObject_ae49e8dcc1b882afd6d8df3e28ec874a0}\label{classngind_1_1memory_1_1AutoCollectionObject_ae49e8dcc1b882afd6d8df3e28ec874a0}} 
+\index{ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}!removeReference@{removeReference}}
+\index{removeReference@{removeReference}!ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}}
+\doxysubsubsection{\texorpdfstring{removeReference()}{removeReference()}}
+{\footnotesize\ttfamily void ngind\+::memory\+::\+Auto\+Collection\+Object\+::remove\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decrease the number of reference to this. If the number is equal to 0, remove itself from the memory pool 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1memory_1_1AutoCollectionObject_a271087bd661aedcdffc56d7d18533010}\label{classngind_1_1memory_1_1AutoCollectionObject_a271087bd661aedcdffc56d7d18533010}} 
+\index{ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}!\_sustain@{\_sustain}}
+\index{\_sustain@{\_sustain}!ngind::memory::AutoCollectionObject@{ngind::memory::AutoCollectionObject}}
+\doxysubsubsection{\texorpdfstring{\_sustain}{\_sustain}}
+{\footnotesize\ttfamily int ngind\+::memory\+::\+Auto\+Collection\+Object\+::\+\_\+sustain\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of reference. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/memory/\mbox{\hyperlink{auto__collection__object_8h}{auto\+\_\+collection\+\_\+object.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,187 @@
+\hypertarget{classngind_1_1i18n_1_1I18N}{}\doxysection{ngind\+::i18n\+::I18N Class Reference}
+\label{classngind_1_1i18n_1_1I18N}\index{ngind::i18n::I18N@{ngind::i18n::I18N}}
+
+
+{\ttfamily \#include $<$i18n.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::i18n\+::I18N\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1i18n_1_1I18N__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_ad517856fa5dcfc6e5d56e9170b576807}{load\+Language\+Pack}} (const int \&icode, const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_a4da5670eaa39b5a6014c409b6508f61e}{use}} (const int \&code)
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_aee9cfcee4a48d91894dd5aee381534e6}{get\+By\+Name}} (const std\+::string \&name)
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_ada1315cdc57b04b7869b491f06fe517b}{get\+By\+Index}} (const size\+\_\+t \&index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1i18n_1_1I18N}{I18N}} $\ast$ \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_a400ef6326cb1d585f796a6739ce4a290}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_aaeba646fc0dc924966d34133e319e90e}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const static std\+::string \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_a86f7d77a7069d531df7508f4eea1120e}{T\+E\+X\+T\+\_\+\+P\+A\+TH}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_ac9192e3b7301dd2d13d49eded9f6e46b}\label{classngind_1_1i18n_1_1I18N_ac9192e3b7301dd2d13d49eded9f6e46b}} 
+using {\bfseries Labeled\+Language\+Pack} = std\+::map$<$ std\+::string, std\+::string $>$
+\item 
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_a34bb23cd5b8a62cb3191f4425e971a4d}\label{classngind_1_1i18n_1_1I18N_a34bb23cd5b8a62cb3191f4425e971a4d}} 
+using {\bfseries Default\+Language\+Pack} = std\+::vector$<$ std\+::string $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_a7caa5390b61f7dcdf2815707c5ecd11e}\label{classngind_1_1i18n_1_1I18N_a7caa5390b61f7dcdf2815707c5ecd11e}} 
+static void {\bfseries init} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ \mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}}, Labeled\+Language\+Pack $>$ \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_ac721a748f9560c371f9a2c73a822f144}{\+\_\+data}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}}, Default\+Language\+Pack $>$ \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_a7424b31bd2fb107ee687ee91988dbabc}{\+\_\+default}}
+\item 
+\mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}} \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_af4aff9b6cd2c1eac2aa5b4f80b349b9e}{\+\_\+lang}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1i18n_1_1I18N}{I18N}} $\ast$ \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_a67e462297268a4ad8bc91058fb1abfb5}{\+\_\+instance}}
+\item 
+static std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}}, std\+::string $>$ \mbox{\hyperlink{classngind_1_1i18n_1_1I18N_af802751a9fcfec07ceffa127a36c0dd1}{\+\_\+mapping}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Internationalisation helper. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_aaeba646fc0dc924966d34133e319e90e}\label{classngind_1_1i18n_1_1I18N_aaeba646fc0dc924966d34133e319e90e}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::i18n\+::\+I18\+N\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the unique instance. \mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_ada1315cdc57b04b7869b491f06fe517b}\label{classngind_1_1i18n_1_1I18N_ada1315cdc57b04b7869b491f06fe517b}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!getByIndex@{getByIndex}}
+\index{getByIndex@{getByIndex}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{getByIndex()}{getByIndex()}}
+{\footnotesize\ttfamily std\+::string ngind\+::i18n\+::\+I18\+N\+::get\+By\+Index (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{index }\end{DoxyParamCaption})}
+
+Get text by index. 
+\begin{DoxyParams}{Parameters}
+{\em index} & index of text item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string, the \mbox{\hyperlink{classngind_1_1i18n_1_1I18N}{I18N}} text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_aee9cfcee4a48d91894dd5aee381534e6}\label{classngind_1_1i18n_1_1I18N_aee9cfcee4a48d91894dd5aee381534e6}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!getByName@{getByName}}
+\index{getByName@{getByName}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{getByName()}{getByName()}}
+{\footnotesize\ttfamily std\+::string ngind\+::i18n\+::\+I18\+N\+::get\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Get text by name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of text item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string, the \mbox{\hyperlink{classngind_1_1i18n_1_1I18N}{I18N}} text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_a400ef6326cb1d585f796a6739ce4a290}\label{classngind_1_1i18n_1_1I18N_a400ef6326cb1d585f796a6739ce4a290}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1i18n_1_1I18N}{I18N}}$\ast$ ngind\+::i18n\+::\+I18\+N\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the unique instance of \mbox{\hyperlink{classngind_1_1i18n_1_1I18N}{I18N}} helper. \begin{DoxyReturn}{Returns}
+I18\+N$\ast$, the unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_ad517856fa5dcfc6e5d56e9170b576807}\label{classngind_1_1i18n_1_1I18N_ad517856fa5dcfc6e5d56e9170b576807}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!loadLanguagePack@{loadLanguagePack}}
+\index{loadLanguagePack@{loadLanguagePack}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{loadLanguagePack()}{loadLanguagePack()}}
+{\footnotesize\ttfamily void ngind\+::i18n\+::\+I18\+N\+::load\+Language\+Pack (\begin{DoxyParamCaption}\item[{const int \&}]{icode,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Load language package from file. 
+\begin{DoxyParams}{Parameters}
+{\em icode} & language code \\
+\hline
+{\em filename} & filename of package \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_a4da5670eaa39b5a6014c409b6508f61e}\label{classngind_1_1i18n_1_1I18N_a4da5670eaa39b5a6014c409b6508f61e}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!use@{use}}
+\index{use@{use}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void ngind\+::i18n\+::\+I18\+N\+::use (\begin{DoxyParamCaption}\item[{const int \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Use another language package. 
+\begin{DoxyParams}{Parameters}
+{\em code} & language code \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_ac721a748f9560c371f9a2c73a822f144}\label{classngind_1_1i18n_1_1I18N_ac721a748f9560c371f9a2c73a822f144}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!\_data@{\_data}}
+\index{\_data@{\_data}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}}, Labeled\+Language\+Pack$>$ ngind\+::i18n\+::\+I18\+N\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+Labeled data. \mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_a7424b31bd2fb107ee687ee91988dbabc}\label{classngind_1_1i18n_1_1I18N_a7424b31bd2fb107ee687ee91988dbabc}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!\_default@{\_default}}
+\index{\_default@{\_default}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{\_default}{\_default}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}}, Default\+Language\+Pack$>$ ngind\+::i18n\+::\+I18\+N\+::\+\_\+default\hspace{0.3cm}{\ttfamily [private]}}
+
+All data with a default index. \mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_a67e462297268a4ad8bc91058fb1abfb5}\label{classngind_1_1i18n_1_1I18N_a67e462297268a4ad8bc91058fb1abfb5}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1i18n_1_1I18N}{I18N}}$\ast$ ngind\+::i18n\+::\+I18\+N\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance. \mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_af4aff9b6cd2c1eac2aa5b4f80b349b9e}\label{classngind_1_1i18n_1_1I18N_af4aff9b6cd2c1eac2aa5b4f80b349b9e}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!\_lang@{\_lang}}
+\index{\_lang@{\_lang}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{\_lang}{\_lang}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}} ngind\+::i18n\+::\+I18\+N\+::\+\_\+lang\hspace{0.3cm}{\ttfamily [private]}}
+
+Current language. \mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_af802751a9fcfec07ceffa127a36c0dd1}\label{classngind_1_1i18n_1_1I18N_af802751a9fcfec07ceffa127a36c0dd1}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!\_mapping@{\_mapping}}
+\index{\_mapping@{\_mapping}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{\_mapping}{\_mapping}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$\mbox{\hyperlink{lang__code_8h_a00f2414c499f1ca27373e7dc911bcd5a}{Language\+Code}}, std\+::string$>$ ngind\+::i18n\+::\+I18\+N\+::\+\_\+mapping\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+A mapping from language code to string. \mbox{\Hypertarget{classngind_1_1i18n_1_1I18N_a86f7d77a7069d531df7508f4eea1120e}\label{classngind_1_1i18n_1_1I18N_a86f7d77a7069d531df7508f4eea1120e}} 
+\index{ngind::i18n::I18N@{ngind::i18n::I18N}!TEXT\_PATH@{TEXT\_PATH}}
+\index{TEXT\_PATH@{TEXT\_PATH}!ngind::i18n::I18N@{ngind::i18n::I18N}}
+\doxysubsubsection{\texorpdfstring{TEXT\_PATH}{TEXT\_PATH}}
+{\footnotesize\ttfamily const static std\+::string ngind\+::i18n\+::\+I18\+N\+::\+T\+E\+X\+T\+\_\+\+P\+A\+TH\hspace{0.3cm}{\ttfamily [static]}}
+
+Text resources path. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/i18n/\mbox{\hyperlink{i18n_8h}{i18n.\+h}}\end{DoxyCompactItemize}

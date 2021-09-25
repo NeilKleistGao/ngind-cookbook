@@ -1,0 +1,194 @@
+\hypertarget{classngind_1_1rendering_1_1RenderingCommand}{}\doxysection{ngind\+::rendering\+::Rendering\+Command Class Reference}
+\label{classngind_1_1rendering_1_1RenderingCommand}\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+
+
+{\ttfamily \#include $<$rendering\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::rendering\+::Rendering\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1rendering_1_1RenderingCommand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::rendering\+::Rendering\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1rendering_1_1RenderingCommand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a936536d04df34e0db7eba5e37b4fc3af}{call}} ()=0
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_ab586bbb83a79a7de1c6f86a5e1246275}{setZ}} (const unsigned int \&z)
+\item 
+unsigned int \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_aebe8a69db2c26ee038c65bef51faa88c}{getZ}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_ad56ed80658a1b3c46b8691caf0c5cf15}{set\+Color}} (const \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \&color)
+\item 
+\mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a50c1f47b19fd817445f09bd53599c35f}{get\+Color}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_aa67e40dd5434dda6e5587ddad1a6f3fb}{set\+Model}} (const glm\+::mat4 \&model)
+\item 
+glm\+::mat4 \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_ab8512167b795bfdb586ad6bb9db20776}{get\+Model}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a7167cfda38c510e728d3c1d3815b203c}{set\+Program}} (\mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} $\ast$program)
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a3d786de79326044fb3f7aba957624b0d}{get\+Program}} () const
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_adee5041ea04bcfc432b642bd81b42de8}{prepare}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a752ae8ebfd83649bb3f025baf791f0dd}{\+\_\+z}}
+\item 
+\mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a4a8ef8601f29c97b1ba9a0491738201c}{\+\_\+color}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_ac7c7332eca9ea840be6187600f3d0aea}{\+\_\+model}}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand_a42b4ed41c4ca760cbd01c02f675b60f8}{\+\_\+program}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Command for rendering. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_a936536d04df34e0db7eba5e37b4fc3af}\label{classngind_1_1rendering_1_1RenderingCommand_a936536d04df34e0db7eba5e37b4fc3af}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!call@{call}}
+\index{call@{call}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily virtual void ngind\+::rendering\+::\+Rendering\+Command\+::call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+execute the command. 
+
+Implemented in \mbox{\hyperlink{classngind_1_1rendering_1_1BatchQuadRenderingCommand_a67f39cbec2d12cbaeadcce7207ae08f9}{ngind\+::rendering\+::\+Batch\+Quad\+Rendering\+Command}}, and \mbox{\hyperlink{classngind_1_1rendering_1_1QuadRenderingCommand_a7b7b9e657f9a786a30474363501b256c}{ngind\+::rendering\+::\+Quad\+Rendering\+Command}}.
+
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_a50c1f47b19fd817445f09bd53599c35f}\label{classngind_1_1rendering_1_1RenderingCommand_a50c1f47b19fd817445f09bd53599c35f}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!getColor@{getColor}}
+\index{getColor@{getColor}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} ngind\+::rendering\+::\+Rendering\+Command\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the color for rendering. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}}, the color for rendering 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_ab8512167b795bfdb586ad6bb9db20776}\label{classngind_1_1rendering_1_1RenderingCommand_ab8512167b795bfdb586ad6bb9db20776}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!getModel@{getModel}}
+\index{getModel@{getModel}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily glm\+::mat4 ngind\+::rendering\+::\+Rendering\+Command\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the model matrix. \begin{DoxyReturn}{Returns}
+glm\+::mat4, he model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_a3d786de79326044fb3f7aba957624b0d}\label{classngind_1_1rendering_1_1RenderingCommand_a3d786de79326044fb3f7aba957624b0d}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!getProgram@{getProgram}}
+\index{getProgram@{getProgram}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{getProgram()}{getProgram()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}}$\ast$ ngind\+::rendering\+::\+Rendering\+Command\+::get\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the program that rendering uses. \begin{DoxyReturn}{Returns}
+Program$\ast$, the program that rendering uses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_aebe8a69db2c26ee038c65bef51faa88c}\label{classngind_1_1rendering_1_1RenderingCommand_aebe8a69db2c26ee038c65bef51faa88c}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!getZ@{getZ}}
+\index{getZ@{getZ}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{getZ()}{getZ()}}
+{\footnotesize\ttfamily unsigned int ngind\+::rendering\+::\+Rendering\+Command\+::getZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the z order. \begin{DoxyReturn}{Returns}
+unsigned int, the z order 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_adee5041ea04bcfc432b642bd81b42de8}\label{classngind_1_1rendering_1_1RenderingCommand_adee5041ea04bcfc432b642bd81b42de8}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!prepare@{prepare}}
+\index{prepare@{prepare}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily virtual void ngind\+::rendering\+::\+Rendering\+Command\+::prepare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Prepare before rendering begin, setting Open\+GL context. \mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_ad56ed80658a1b3c46b8691caf0c5cf15}\label{classngind_1_1rendering_1_1RenderingCommand_ad56ed80658a1b3c46b8691caf0c5cf15}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!setColor@{setColor}}
+\index{setColor@{setColor}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Rendering\+Command\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the color for rendering. 
+\begin{DoxyParams}{Parameters}
+{\em color} & the color. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_aa67e40dd5434dda6e5587ddad1a6f3fb}\label{classngind_1_1rendering_1_1RenderingCommand_aa67e40dd5434dda6e5587ddad1a6f3fb}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!setModel@{setModel}}
+\index{setModel@{setModel}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Rendering\+Command\+::set\+Model (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the model matrix. 
+\begin{DoxyParams}{Parameters}
+{\em model} & the model matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_a7167cfda38c510e728d3c1d3815b203c}\label{classngind_1_1rendering_1_1RenderingCommand_a7167cfda38c510e728d3c1d3815b203c}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!setProgram@{setProgram}}
+\index{setProgram@{setProgram}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{setProgram()}{setProgram()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Rendering\+Command\+::set\+Program (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} $\ast$}]{program }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the program that rendering uses. 
+\begin{DoxyParams}{Parameters}
+{\em program} & the program that rendering uses \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_ab586bbb83a79a7de1c6f86a5e1246275}\label{classngind_1_1rendering_1_1RenderingCommand_ab586bbb83a79a7de1c6f86a5e1246275}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!setZ@{setZ}}
+\index{setZ@{setZ}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{setZ()}{setZ()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Rendering\+Command\+::setZ (\begin{DoxyParamCaption}\item[{const unsigned int \&}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the z order. 
+\begin{DoxyParams}{Parameters}
+{\em z} & the z order \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_a4a8ef8601f29c97b1ba9a0491738201c}\label{classngind_1_1rendering_1_1RenderingCommand_a4a8ef8601f29c97b1ba9a0491738201c}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!\_color@{\_color}}
+\index{\_color@{\_color}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_color}{\_color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} ngind\+::rendering\+::\+Rendering\+Command\+::\+\_\+color\hspace{0.3cm}{\ttfamily [private]}}
+
+The color for rendering \mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_ac7c7332eca9ea840be6187600f3d0aea}\label{classngind_1_1rendering_1_1RenderingCommand_ac7c7332eca9ea840be6187600f3d0aea}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!\_model@{\_model}}
+\index{\_model@{\_model}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_model}{\_model}}
+{\footnotesize\ttfamily glm\+::mat4 ngind\+::rendering\+::\+Rendering\+Command\+::\+\_\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+Model projection matrix \mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_a42b4ed41c4ca760cbd01c02f675b60f8}\label{classngind_1_1rendering_1_1RenderingCommand_a42b4ed41c4ca760cbd01c02f675b60f8}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!\_program@{\_program}}
+\index{\_program@{\_program}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_program}{\_program}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}}$\ast$ ngind\+::rendering\+::\+Rendering\+Command\+::\+\_\+program\hspace{0.3cm}{\ttfamily [private]}}
+
+Render program \mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingCommand_a752ae8ebfd83649bb3f025baf791f0dd}\label{classngind_1_1rendering_1_1RenderingCommand_a752ae8ebfd83649bb3f025baf791f0dd}} 
+\index{ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}!\_z@{\_z}}
+\index{\_z@{\_z}!ngind::rendering::RenderingCommand@{ngind::rendering::RenderingCommand}}
+\doxysubsubsection{\texorpdfstring{\_z}{\_z}}
+{\footnotesize\ttfamily unsigned int ngind\+::rendering\+::\+Rendering\+Command\+::\+\_\+z\hspace{0.3cm}{\ttfamily [private]}}
+
+The z order 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/rendering\+\_\+command.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,473 @@
+\hypertarget{classngind_1_1rendering_1_1Program}{}\doxysection{ngind\+::rendering\+::Program Class Reference}
+\label{classngind_1_1rendering_1_1Program}\index{ngind::rendering::Program@{ngind::rendering::Program}}
+
+
+{\ttfamily \#include $<$program.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::rendering\+::Program\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1rendering_1_1Program__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Program_ad6b4993f84cd025834517cf6da982084}{Program}} (const std\+::string \&program\+\_\+name)
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a58461150d3e6fa6ab78e53a599f508b3}\label{classngind_1_1rendering_1_1Program_a58461150d3e6fa6ab78e53a599f508b3}} 
+{\bfseries Program} (const \mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a719e92e9701d1677a03ccdde87a0ad6b}\label{classngind_1_1rendering_1_1Program_a719e92e9701d1677a03ccdde87a0ad6b}} 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a4a65581f528476de3c6c80dd78df9d43}{use}} () const
+\item 
+G\+Lint \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a06e9e82630bc1df45b38e9286d6e139a}{get\+Uniform}} (const std\+::string \&name) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a96c3a0d4a8794c9c014d6d021c8fae22}{set\+Float}} (const std\+::string \&name, const float \&f) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_af9b650de8c16be32c0cbc07da25f0f78}{set\+Float2}} (const std\+::string \&name, const float \&x, const float \&y) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_ae19c17589e387d5c52768b20b4c73133}{set\+Float3}} (const std\+::string \&name, const float \&x, const float \&y, const float \&z) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a1581e51ccceefe76c546a82bd51b9fd3}{set\+Float4}} (const std\+::string \&name, const float \&r, const float \&g, const float \&b, const float \&a) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a035b2aef8200aeaec9111c8686112da1}{set\+Integer}} (const std\+::string \&name, const int \&i) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_ae508b4887d501eba66e295d0ec877100}{set\+Integer2}} (const std\+::string \&name, const int \&x, const int \&y) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a88fe59a7f71af282170bfe3cb707be5c}{set\+Integer3}} (const std\+::string \&name, const int \&x, const int \&y, const int \&z) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a9970ba00438882045c9f3f0386927419}{set\+Integer4}} (const std\+::string \&name, const int \&x, const int \&y, const int \&z, const int \&w) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_ab4a80095d114e19be15650e78ff0d0fc}{set\+Unsigned}} (const std\+::string \&name, const unsigned \&i) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a2ed85581c54bd9ab56c84d54c46e234f}{set\+Unsigned2}} (const std\+::string \&name, const unsigned \&x, const unsigned \&y) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_aa97f8f62e4713e3b5532031da12129ba}{set\+Unsigned3}} (const std\+::string \&name, const unsigned \&x, const unsigned \&y, const unsigned \&z) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_aff4e24ccd555336fe0ce8e1f1719db89}{set\+Unsigned4}} (const std\+::string \&name, const unsigned \&x, const unsigned \&y, const unsigned \&z, const unsigned \&w) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_aa1a1dcde7d207a125551aea4feadadc4}{set\+Matrix2}} (const std\+::string \&name, const glm\+::mat2 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a05b4d3b6a715fddc49f7e20e998d2907}{set\+Matrix3}} (const std\+::string \&name, const glm\+::mat3 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a0207c423c13e1764b3f462f78a7cbdbc}{set\+Matrix4}} (const std\+::string \&name, const glm\+::mat4 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a601f97318e07c358337da6c10254750a}{set\+Matrix2x3}} (const std\+::string \&name, const glm\+::mat2x3 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a7c52d6017d4c38d9b3971ac225fef0e0}{set\+Matrix3x2}} (const std\+::string \&name, const glm\+::mat3x2 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_aec33aff5bb1de9085492cd55a4a54a44}{set\+Matrix2x4}} (const std\+::string \&name, const glm\+::mat2x4 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a19365122b08c8308b191303993b135f3}{set\+Matrix4x2}} (const std\+::string \&name, const glm\+::mat4x2 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a86088d4495ff1e3e460c3e02ba0c4359}{set\+Matrix3x4}} (const std\+::string \&name, const glm\+::mat3x4 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a2be3243e5093a698f2a7b3bd10bc7025}{set\+Matrix4x3}} (const std\+::string \&name, const glm\+::mat4x3 \&m) const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a456bc0ef409048547f3e15c4a1039e9a}{prepare}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Program_ab7444b37315dc3d14800f0ed8b597566}{\+\_\+program}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1ShaderResource}{resources\+::\+Shader\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a9c0fde55019801f121f28cda605340d6}{\+\_\+vs}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1ShaderResource}{resources\+::\+Shader\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a424457aa2fc24a780d830c03e7ee4083}{\+\_\+fs}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Program_a033fdfff75c98648f1b4d5e91ab754b5}{\+\_\+program\+\_\+config}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains a reference of Open\+GL rendering program that linked to two shaders. One is for vertex and the other is for fragment. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_ad6b4993f84cd025834517cf6da982084}\label{classngind_1_1rendering_1_1Program_ad6b4993f84cd025834517cf6da982084}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!Program@{Program}}
+\index{Program@{Program}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{Program()}{Program()}}
+{\footnotesize\ttfamily ngind\+::rendering\+::\+Program\+::\+Program (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{program\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & program\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a06e9e82630bc1df45b38e9286d6e139a}\label{classngind_1_1rendering_1_1Program_a06e9e82630bc1df45b38e9286d6e139a}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}}
+{\footnotesize\ttfamily G\+Lint ngind\+::rendering\+::\+Program\+::get\+Uniform (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+Get Uniform variable\textquotesingle{}s index by given name 
+\begin{DoxyParams}{Parameters}
+{\em name} & the given name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G\+Lint, the uniform variable\textquotesingle{}s index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a456bc0ef409048547f3e15c4a1039e9a}\label{classngind_1_1rendering_1_1Program_a456bc0ef409048547f3e15c4a1039e9a}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!prepare@{prepare}}
+\index{prepare@{prepare}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::prepare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prepare uniform variables. \mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a96c3a0d4a8794c9c014d6d021c8fae22}\label{classngind_1_1rendering_1_1Program_a96c3a0d4a8794c9c014d6d021c8fae22}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setFloat@{setFloat}}
+\index{setFloat@{setFloat}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setFloat()}{setFloat()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Float (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const float \&}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set float uniform variable 
+\begin{DoxyParams}{Parameters}
+{\em name} & variable\textquotesingle{}s name \\
+\hline
+{\em f} & the given value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_af9b650de8c16be32c0cbc07da25f0f78}\label{classngind_1_1rendering_1_1Program_af9b650de8c16be32c0cbc07da25f0f78}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setFloat2@{setFloat2}}
+\index{setFloat2@{setFloat2}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setFloat2()}{setFloat2()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Float2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 2 float properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_ae19c17589e387d5c52768b20b4c73133}\label{classngind_1_1rendering_1_1Program_ae19c17589e387d5c52768b20b4c73133}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setFloat3@{setFloat3}}
+\index{setFloat3@{setFloat3}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setFloat3()}{setFloat3()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Float3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const float \&}]{x,  }\item[{const float \&}]{y,  }\item[{const float \&}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 3 float properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+{\em z} & the third property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a1581e51ccceefe76c546a82bd51b9fd3}\label{classngind_1_1rendering_1_1Program_a1581e51ccceefe76c546a82bd51b9fd3}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setFloat4@{setFloat4}}
+\index{setFloat4@{setFloat4}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setFloat4()}{setFloat4()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Float4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const float \&}]{r,  }\item[{const float \&}]{g,  }\item[{const float \&}]{b,  }\item[{const float \&}]{a }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 4 float properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em r} & the first property \\
+\hline
+{\em g} & the second property \\
+\hline
+{\em b} & the third property \\
+\hline
+{\em a} & the fourth property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a035b2aef8200aeaec9111c8686112da1}\label{classngind_1_1rendering_1_1Program_a035b2aef8200aeaec9111c8686112da1}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setInteger@{setInteger}}
+\index{setInteger@{setInteger}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setInteger()}{setInteger()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Integer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int \&}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set integer uniform property in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em i} & integer data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_ae508b4887d501eba66e295d0ec877100}\label{classngind_1_1rendering_1_1Program_ae508b4887d501eba66e295d0ec877100}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setInteger2@{setInteger2}}
+\index{setInteger2@{setInteger2}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setInteger2()}{setInteger2()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Integer2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int \&}]{x,  }\item[{const int \&}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 2 integer uniform properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a88fe59a7f71af282170bfe3cb707be5c}\label{classngind_1_1rendering_1_1Program_a88fe59a7f71af282170bfe3cb707be5c}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setInteger3@{setInteger3}}
+\index{setInteger3@{setInteger3}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setInteger3()}{setInteger3()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Integer3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int \&}]{x,  }\item[{const int \&}]{y,  }\item[{const int \&}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 3 integer uniform properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+{\em z} & the third property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a9970ba00438882045c9f3f0386927419}\label{classngind_1_1rendering_1_1Program_a9970ba00438882045c9f3f0386927419}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setInteger4@{setInteger4}}
+\index{setInteger4@{setInteger4}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setInteger4()}{setInteger4()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Integer4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int \&}]{x,  }\item[{const int \&}]{y,  }\item[{const int \&}]{z,  }\item[{const int \&}]{w }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 4 integer uniform properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+{\em z} & the third property \\
+\hline
+{\em w} & the forth property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_aa1a1dcde7d207a125551aea4feadadc4}\label{classngind_1_1rendering_1_1Program_aa1a1dcde7d207a125551aea4feadadc4}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix2@{setMatrix2}}
+\index{setMatrix2@{setMatrix2}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix2()}{setMatrix2()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat2 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 2x2 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a601f97318e07c358337da6c10254750a}\label{classngind_1_1rendering_1_1Program_a601f97318e07c358337da6c10254750a}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix2x3@{setMatrix2x3}}
+\index{setMatrix2x3@{setMatrix2x3}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix2x3()}{setMatrix2x3()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix2x3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat2x3 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 2x3 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_aec33aff5bb1de9085492cd55a4a54a44}\label{classngind_1_1rendering_1_1Program_aec33aff5bb1de9085492cd55a4a54a44}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix2x4@{setMatrix2x4}}
+\index{setMatrix2x4@{setMatrix2x4}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix2x4()}{setMatrix2x4()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix2x4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat2x4 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 2x4 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a05b4d3b6a715fddc49f7e20e998d2907}\label{classngind_1_1rendering_1_1Program_a05b4d3b6a715fddc49f7e20e998d2907}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix3@{setMatrix3}}
+\index{setMatrix3@{setMatrix3}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix3()}{setMatrix3()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat3 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 3x3 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a7c52d6017d4c38d9b3971ac225fef0e0}\label{classngind_1_1rendering_1_1Program_a7c52d6017d4c38d9b3971ac225fef0e0}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix3x2@{setMatrix3x2}}
+\index{setMatrix3x2@{setMatrix3x2}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix3x2()}{setMatrix3x2()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix3x2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat3x2 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 3x2 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a86088d4495ff1e3e460c3e02ba0c4359}\label{classngind_1_1rendering_1_1Program_a86088d4495ff1e3e460c3e02ba0c4359}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix3x4@{setMatrix3x4}}
+\index{setMatrix3x4@{setMatrix3x4}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix3x4()}{setMatrix3x4()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix3x4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat3x4 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 3x4 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a0207c423c13e1764b3f462f78a7cbdbc}\label{classngind_1_1rendering_1_1Program_a0207c423c13e1764b3f462f78a7cbdbc}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix4@{setMatrix4}}
+\index{setMatrix4@{setMatrix4}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix4()}{setMatrix4()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 4x4 matrix uniform property in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & matrix4 data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a19365122b08c8308b191303993b135f3}\label{classngind_1_1rendering_1_1Program_a19365122b08c8308b191303993b135f3}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix4x2@{setMatrix4x2}}
+\index{setMatrix4x2@{setMatrix4x2}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix4x2()}{setMatrix4x2()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix4x2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4x2 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 4x2 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a2be3243e5093a698f2a7b3bd10bc7025}\label{classngind_1_1rendering_1_1Program_a2be3243e5093a698f2a7b3bd10bc7025}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setMatrix4x3@{setMatrix4x3}}
+\index{setMatrix4x3@{setMatrix4x3}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setMatrix4x3()}{setMatrix4x3()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Matrix4x3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4x3 \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 4x3 matrix uniform property 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em m} & the matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_ab4a80095d114e19be15650e78ff0d0fc}\label{classngind_1_1rendering_1_1Program_ab4a80095d114e19be15650e78ff0d0fc}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setUnsigned@{setUnsigned}}
+\index{setUnsigned@{setUnsigned}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setUnsigned()}{setUnsigned()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Unsigned (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const unsigned \&}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set unsigned integer uniform property in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em i} & integer data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a2ed85581c54bd9ab56c84d54c46e234f}\label{classngind_1_1rendering_1_1Program_a2ed85581c54bd9ab56c84d54c46e234f}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setUnsigned2@{setUnsigned2}}
+\index{setUnsigned2@{setUnsigned2}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setUnsigned2()}{setUnsigned2()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Unsigned2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const unsigned \&}]{x,  }\item[{const unsigned \&}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 2 unsigned integer uniform properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_aa97f8f62e4713e3b5532031da12129ba}\label{classngind_1_1rendering_1_1Program_aa97f8f62e4713e3b5532031da12129ba}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setUnsigned3@{setUnsigned3}}
+\index{setUnsigned3@{setUnsigned3}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setUnsigned3()}{setUnsigned3()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Unsigned3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const unsigned \&}]{x,  }\item[{const unsigned \&}]{y,  }\item[{const unsigned \&}]{z }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 3 unsigned integer uniform properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+{\em z} & the third property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_aff4e24ccd555336fe0ce8e1f1719db89}\label{classngind_1_1rendering_1_1Program_aff4e24ccd555336fe0ce8e1f1719db89}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!setUnsigned4@{setUnsigned4}}
+\index{setUnsigned4@{setUnsigned4}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{setUnsigned4()}{setUnsigned4()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::set\+Unsigned4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const unsigned \&}]{x,  }\item[{const unsigned \&}]{y,  }\item[{const unsigned \&}]{z,  }\item[{const unsigned \&}]{w }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set 4 unsigned integer uniform properties in this program 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of property \\
+\hline
+{\em x} & the first property \\
+\hline
+{\em y} & the second property \\
+\hline
+{\em z} & the third property \\
+\hline
+{\em w} & the forth property \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a4a65581f528476de3c6c80dd78df9d43}\label{classngind_1_1rendering_1_1Program_a4a65581f528476de3c6c80dd78df9d43}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!use@{use}}
+\index{use@{use}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Use current rendering program 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a424457aa2fc24a780d830c03e7ee4083}\label{classngind_1_1rendering_1_1Program_a424457aa2fc24a780d830c03e7ee4083}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!\_fs@{\_fs}}
+\index{\_fs@{\_fs}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{\_fs}{\_fs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1ShaderResource}{resources\+::\+Shader\+Resource}}$\ast$ ngind\+::rendering\+::\+Program\+::\+\_\+fs\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference of segment shader \mbox{\Hypertarget{classngind_1_1rendering_1_1Program_ab7444b37315dc3d14800f0ed8b597566}\label{classngind_1_1rendering_1_1Program_ab7444b37315dc3d14800f0ed8b597566}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!\_program@{\_program}}
+\index{\_program@{\_program}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{\_program}{\_program}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Program\+::\+\_\+program\hspace{0.3cm}{\ttfamily [private]}}
+
+The index of program \mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a033fdfff75c98648f1b4d5e91ab754b5}\label{classngind_1_1rendering_1_1Program_a033fdfff75c98648f1b4d5e91ab754b5}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!\_program\_config@{\_program\_config}}
+\index{\_program\_config@{\_program\_config}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{\_program\_config}{\_program\_config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}}$\ast$ ngind\+::rendering\+::\+Program\+::\+\_\+program\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1rendering_1_1Program}{Program}} configuration \mbox{\Hypertarget{classngind_1_1rendering_1_1Program_a9c0fde55019801f121f28cda605340d6}\label{classngind_1_1rendering_1_1Program_a9c0fde55019801f121f28cda605340d6}} 
+\index{ngind::rendering::Program@{ngind::rendering::Program}!\_vs@{\_vs}}
+\index{\_vs@{\_vs}!ngind::rendering::Program@{ngind::rendering::Program}}
+\doxysubsubsection{\texorpdfstring{\_vs}{\_vs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1ShaderResource}{resources\+::\+Shader\+Resource}}$\ast$ ngind\+::rendering\+::\+Program\+::\+\_\+vs\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference of vertex shader 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{program_8h}{program.\+h}}\end{DoxyCompactItemize}

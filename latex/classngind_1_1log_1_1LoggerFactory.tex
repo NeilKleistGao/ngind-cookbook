@@ -1,0 +1,95 @@
+\hypertarget{classngind_1_1log_1_1LoggerFactory}{}\doxysection{ngind\+::log\+::Logger\+Factory Class Reference}
+\label{classngind_1_1log_1_1LoggerFactory}\index{ngind::log::LoggerFactory@{ngind::log::LoggerFactory}}
+
+
+{\ttfamily \#include $<$logger\+\_\+factory.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::log\+::Logger\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classngind_1_1log_1_1LoggerFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1log_1_1Logger}{Logger}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory_afbdf44ed86c50b2ffe8fc3cf24c085f2}{get\+Logger}} (const std\+::string \&filename, const \mbox{\hyperlink{log__level_8h_a37d05a580b7a92abdfef8ac6a8ab5773}{Log\+Level}} \&level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory}{Logger\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory_a50dda7e727b1e3c54e8acf445c8d86a0}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory_ac46c27b8818380da3cf5d0cd8fa64bd4}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classngind_1_1log_1_1Logger}{Logger}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory_a9ed2e6fac92ca860cf97ef24140aa434}{\+\_\+loggers}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory}{Logger\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory_a45b8711cbaa90058ed53831ea51b1d48}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is defined to create and manage logger instances. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1log_1_1LoggerFactory_ac46c27b8818380da3cf5d0cd8fa64bd4}\label{classngind_1_1log_1_1LoggerFactory_ac46c27b8818380da3cf5d0cd8fa64bd4}} 
+\index{ngind::log::LoggerFactory@{ngind::log::LoggerFactory}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::log::LoggerFactory@{ngind::log::LoggerFactory}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::log\+::\+Logger\+Factory\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the instance of logger factory \mbox{\Hypertarget{classngind_1_1log_1_1LoggerFactory_a50dda7e727b1e3c54e8acf445c8d86a0}\label{classngind_1_1log_1_1LoggerFactory_a50dda7e727b1e3c54e8acf445c8d86a0}} 
+\index{ngind::log::LoggerFactory@{ngind::log::LoggerFactory}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::log::LoggerFactory@{ngind::log::LoggerFactory}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory}{Logger\+Factory}}$\ast$ ngind\+::log\+::\+Logger\+Factory\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the single instance of logger factory \begin{DoxyReturn}{Returns}
+Logger\+Factory$\ast$, the instance of logger factory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1log_1_1LoggerFactory_afbdf44ed86c50b2ffe8fc3cf24c085f2}\label{classngind_1_1log_1_1LoggerFactory_afbdf44ed86c50b2ffe8fc3cf24c085f2}} 
+\index{ngind::log::LoggerFactory@{ngind::log::LoggerFactory}!getLogger@{getLogger}}
+\index{getLogger@{getLogger}!ngind::log::LoggerFactory@{ngind::log::LoggerFactory}}
+\doxysubsubsection{\texorpdfstring{getLogger()}{getLogger()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1log_1_1Logger}{Logger}}$\ast$ ngind\+::log\+::\+Logger\+Factory\+::get\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const \mbox{\hyperlink{log__level_8h_a37d05a580b7a92abdfef8ac6a8ab5773}{Log\+Level}} \&}]{level }\end{DoxyParamCaption})}
+
+Get logger instance by filename the logger uses and specify the level 
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename \\
+\hline
+{\em level} & the level of logger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Logger$\ast$, the logger object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1log_1_1LoggerFactory_a45b8711cbaa90058ed53831ea51b1d48}\label{classngind_1_1log_1_1LoggerFactory_a45b8711cbaa90058ed53831ea51b1d48}} 
+\index{ngind::log::LoggerFactory@{ngind::log::LoggerFactory}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::log::LoggerFactory@{ngind::log::LoggerFactory}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1log_1_1LoggerFactory}{Logger\+Factory}}$\ast$ ngind\+::log\+::\+Logger\+Factory\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The instance of logger factory. \mbox{\Hypertarget{classngind_1_1log_1_1LoggerFactory_a9ed2e6fac92ca860cf97ef24140aa434}\label{classngind_1_1log_1_1LoggerFactory_a9ed2e6fac92ca860cf97ef24140aa434}} 
+\index{ngind::log::LoggerFactory@{ngind::log::LoggerFactory}!\_loggers@{\_loggers}}
+\index{\_loggers@{\_loggers}!ngind::log::LoggerFactory@{ngind::log::LoggerFactory}}
+\doxysubsubsection{\texorpdfstring{\_loggers}{\_loggers}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classngind_1_1log_1_1Logger}{Logger}}$\ast$$>$ ngind\+::log\+::\+Logger\+Factory\+::\+\_\+loggers\hspace{0.3cm}{\ttfamily [private]}}
+
+The map from filename to logger instances. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/log/\mbox{\hyperlink{logger__factory_8h}{logger\+\_\+factory.\+h}}\end{DoxyCompactItemize}

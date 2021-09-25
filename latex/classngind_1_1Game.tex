@@ -1,0 +1,286 @@
+\hypertarget{classngind_1_1Game}{}\doxysection{ngind\+::Game Class Reference}
+\label{classngind_1_1Game}\index{ngind::Game@{ngind::Game}}
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1Game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_a86446b83c30da591c8a4cf165bbac57b}{load\+World}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_a61d7ca657d9904e3befd5e4a2b743397}{load\+World}} (\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$config)
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_a01c7375d8e398fc95f01a92aaac1b177}{destroy\+World}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_a1f72b0c7df2ba9c7749dd802cfc74d24}{push\+And\+Load\+World}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_aee12953472dde154ee6566caa3a7e502}{pop\+And\+Load\+World}} (const bool \&has\+\_\+destroy\+\_\+current)
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_aa28dff95f51bd8e5418e808f5595a0a2}{destroy\+And\+Load\+World}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_aef71568b610a89f5b4f6219e68abc90b}{start}} ()
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}} $\ast$ \mbox{\hyperlink{classngind_1_1Game_a1768749d731bfd243888c0bcbcf64db4}{get\+Current\+World}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_a2dd2e24176b689fc81198087d3b82fd9}{quit}} ()
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1Game_afbb150834cf021d3747690ea90bfa2e3}{get\+Current\+World\+Name}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_a6bb195913b5e30e2885990e515fd4ace}{set\+Full\+Screen}} (bool enable)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1Game}{Game}} $\ast$ \mbox{\hyperlink{classngind_1_1Game_ac9a9a72ea927535d84da8ec2a38d16c8}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1Game_a1ab1ff1d225d70be5ade18a90b0426b9}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1Game_aa981e74b82dad0e7cd2f241bafc46fa7}{update}} (float delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1Game_a8ce6c136c2f1a25ed5715da89f24ab6d}{\+\_\+global\+\_\+settings}}
+\item 
+\mbox{\hyperlink{classngind_1_1timer_1_1Timer}{timer\+::\+Timer}} \mbox{\hyperlink{classngind_1_1Game_a870bd9789d6cca87776690485da0bac2}{\+\_\+global\+\_\+timer}}
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}} $\ast$ \mbox{\hyperlink{classngind_1_1Game_a182216abcbda9f8957cf51e0676b47ec}{\+\_\+current\+\_\+world}}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1Game_af6ba765b7f8d9efabbf227839cf92540}{\+\_\+worlds}}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1Game_a27b39d1ca72870ae9602284e052384d9}{\+\_\+stack}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1Game_a9004b89e02d54af62128b206ea169809}{\+\_\+loop\+\_\+flag}}
+\item 
+std\+::function$<$ void(void)$>$ \mbox{\hyperlink{classngind_1_1Game_aeba219a4cadc1e480c0552f10aba54fe}{\+\_\+transition}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1Game_a79c3d18a96ebd2c202afe6731c4b669c}{\+\_\+trans\+\_\+next}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1Game_ad48cd9eb5e9f80df17b0f414d0f9eeb0}{\+\_\+next\+\_\+world}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1Game}{Game}} $\ast$ \mbox{\hyperlink{classngind_1_1Game_afb0b1c94426c5c7dfe6c7db47dc625b3}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1Game}{Game}} manager class. It\textquotesingle{}s a singleton class and manages all game works. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1Game_aa28dff95f51bd8e5418e808f5595a0a2}\label{classngind_1_1Game_aa28dff95f51bd8e5418e808f5595a0a2}} 
+\index{ngind::Game@{ngind::Game}!destroyAndLoadWorld@{destroyAndLoadWorld}}
+\index{destroyAndLoadWorld@{destroyAndLoadWorld}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{destroyAndLoadWorld()}{destroyAndLoadWorld()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::destroy\+And\+Load\+World (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+Load a game world into memory and destroy current world 
+\begin{DoxyParams}{Parameters}
+{\em name} & world\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1Game_a1ab1ff1d225d70be5ade18a90b0426b9}\label{classngind_1_1Game_a1ab1ff1d225d70be5ade18a90b0426b9}} 
+\index{ngind::Game@{ngind::Game}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::\+Game\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy instance of game manager. \mbox{\Hypertarget{classngind_1_1Game_a01c7375d8e398fc95f01a92aaac1b177}\label{classngind_1_1Game_a01c7375d8e398fc95f01a92aaac1b177}} 
+\index{ngind::Game@{ngind::Game}!destroyWorld@{destroyWorld}}
+\index{destroyWorld@{destroyWorld}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{destroyWorld()}{destroyWorld()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::destroy\+World (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Destroy a game world 
+\begin{DoxyParams}{Parameters}
+{\em name} & world\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1Game_a1768749d731bfd243888c0bcbcf64db4}\label{classngind_1_1Game_a1768749d731bfd243888c0bcbcf64db4}} 
+\index{ngind::Game@{ngind::Game}!getCurrentWorld@{getCurrentWorld}}
+\index{getCurrentWorld@{getCurrentWorld}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{getCurrentWorld()}{getCurrentWorld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}}$\ast$ ngind\+::\+Game\+::get\+Current\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get current world \begin{DoxyReturn}{Returns}
+World$\ast$, current world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1Game_afbb150834cf021d3747690ea90bfa2e3}\label{classngind_1_1Game_afbb150834cf021d3747690ea90bfa2e3}} 
+\index{ngind::Game@{ngind::Game}!getCurrentWorldName@{getCurrentWorldName}}
+\index{getCurrentWorldName@{getCurrentWorldName}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{getCurrentWorldName()}{getCurrentWorldName()}}
+{\footnotesize\ttfamily std\+::string ngind\+::\+Game\+::get\+Current\+World\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get world\textquotesingle{}s name \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1Game_ac9a9a72ea927535d84da8ec2a38d16c8}\label{classngind_1_1Game_ac9a9a72ea927535d84da8ec2a38d16c8}} 
+\index{ngind::Game@{ngind::Game}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1Game}{Game}}$\ast$ ngind\+::\+Game\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get instance of game manager. \begin{DoxyReturn}{Returns}
+Game$\ast$, instance of game manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1Game_a86446b83c30da591c8a4cf165bbac57b}\label{classngind_1_1Game_a86446b83c30da591c8a4cf165bbac57b}} 
+\index{ngind::Game@{ngind::Game}!loadWorld@{loadWorld}}
+\index{loadWorld@{loadWorld}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{loadWorld()}{loadWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::load\+World (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Load a game world into memory 
+\begin{DoxyParams}{Parameters}
+{\em name} & world\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1Game_a61d7ca657d9904e3befd5e4a2b743397}\label{classngind_1_1Game_a61d7ca657d9904e3befd5e4a2b743397}} 
+\index{ngind::Game@{ngind::Game}!loadWorld@{loadWorld}}
+\index{loadWorld@{loadWorld}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{loadWorld()}{loadWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::load\+World (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$}]{config }\end{DoxyParamCaption})}
+
+Load a game world by given configuration data. 
+\begin{DoxyParams}{Parameters}
+{\em config} & given configuration data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1Game_aee12953472dde154ee6566caa3a7e502}\label{classngind_1_1Game_aee12953472dde154ee6566caa3a7e502}} 
+\index{ngind::Game@{ngind::Game}!popAndLoadWorld@{popAndLoadWorld}}
+\index{popAndLoadWorld@{popAndLoadWorld}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{popAndLoadWorld()}{popAndLoadWorld()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::pop\+And\+Load\+World (\begin{DoxyParamCaption}\item[{const bool \&}]{has\+\_\+destroy\+\_\+current }\end{DoxyParamCaption})}
+
+Pop a world from stack and load it. 
+\begin{DoxyParams}{Parameters}
+{\em has\+\_\+destroy\+\_\+current} & true if destroy current world later \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1Game_a1f72b0c7df2ba9c7749dd802cfc74d24}\label{classngind_1_1Game_a1f72b0c7df2ba9c7749dd802cfc74d24}} 
+\index{ngind::Game@{ngind::Game}!pushAndLoadWorld@{pushAndLoadWorld}}
+\index{pushAndLoadWorld@{pushAndLoadWorld}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{pushAndLoadWorld()}{pushAndLoadWorld()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::push\+And\+Load\+World (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Push current world into stack and load a new one 
+\begin{DoxyParams}{Parameters}
+{\em name} & world\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1Game_a2dd2e24176b689fc81198087d3b82fd9}\label{classngind_1_1Game_a2dd2e24176b689fc81198087d3b82fd9}} 
+\index{ngind::Game@{ngind::Game}!quit@{quit}}
+\index{quit@{quit}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Quit game. \mbox{\Hypertarget{classngind_1_1Game_a6bb195913b5e30e2885990e515fd4ace}\label{classngind_1_1Game_a6bb195913b5e30e2885990e515fd4ace}} 
+\index{ngind::Game@{ngind::Game}!setFullScreen@{setFullScreen}}
+\index{setFullScreen@{setFullScreen}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{setFullScreen()}{setFullScreen()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::set\+Full\+Screen (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+Set full display. 
+\begin{DoxyParams}{Parameters}
+{\em enable} & true if display on the full screen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1Game_aef71568b610a89f5b4f6219e68abc90b}\label{classngind_1_1Game_aef71568b610a89f5b4f6219e68abc90b}} 
+\index{ngind::Game@{ngind::Game}!start@{start}}
+\index{start@{start}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start playing game. \mbox{\Hypertarget{classngind_1_1Game_aa981e74b82dad0e7cd2f241bafc46fa7}\label{classngind_1_1Game_aa981e74b82dad0e7cd2f241bafc46fa7}} 
+\index{ngind::Game@{ngind::Game}!update@{update}}
+\index{update@{update}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::\+Game\+::update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Update all components. 
+\begin{DoxyParams}{Parameters}
+{\em delta} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1Game_a182216abcbda9f8957cf51e0676b47ec}\label{classngind_1_1Game_a182216abcbda9f8957cf51e0676b47ec}} 
+\index{ngind::Game@{ngind::Game}!\_current\_world@{\_current\_world}}
+\index{\_current\_world@{\_current\_world}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_current\_world}{\_current\_world}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}}$\ast$ ngind\+::\+Game\+::\+\_\+current\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+Current world \mbox{\Hypertarget{classngind_1_1Game_a8ce6c136c2f1a25ed5715da89f24ab6d}\label{classngind_1_1Game_a8ce6c136c2f1a25ed5715da89f24ab6d}} 
+\index{ngind::Game@{ngind::Game}!\_global\_settings@{\_global\_settings}}
+\index{\_global\_settings@{\_global\_settings}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_global\_settings}{\_global\_settings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}}$\ast$ ngind\+::\+Game\+::\+\_\+global\+\_\+settings\hspace{0.3cm}{\ttfamily [private]}}
+
+Global config data \mbox{\Hypertarget{classngind_1_1Game_a870bd9789d6cca87776690485da0bac2}\label{classngind_1_1Game_a870bd9789d6cca87776690485da0bac2}} 
+\index{ngind::Game@{ngind::Game}!\_global\_timer@{\_global\_timer}}
+\index{\_global\_timer@{\_global\_timer}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_global\_timer}{\_global\_timer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1timer_1_1Timer}{timer\+::\+Timer}} ngind\+::\+Game\+::\+\_\+global\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Global timer \mbox{\Hypertarget{classngind_1_1Game_afb0b1c94426c5c7dfe6c7db47dc625b3}\label{classngind_1_1Game_afb0b1c94426c5c7dfe6c7db47dc625b3}} 
+\index{ngind::Game@{ngind::Game}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1Game}{Game}}$\ast$ ngind\+::\+Game\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Instance of game manager \mbox{\Hypertarget{classngind_1_1Game_a9004b89e02d54af62128b206ea169809}\label{classngind_1_1Game_a9004b89e02d54af62128b206ea169809}} 
+\index{ngind::Game@{ngind::Game}!\_loop\_flag@{\_loop\_flag}}
+\index{\_loop\_flag@{\_loop\_flag}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_loop\_flag}{\_loop\_flag}}
+{\footnotesize\ttfamily bool ngind\+::\+Game\+::\+\_\+loop\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}
+
+Whether game still goes on \mbox{\Hypertarget{classngind_1_1Game_ad48cd9eb5e9f80df17b0f414d0f9eeb0}\label{classngind_1_1Game_ad48cd9eb5e9f80df17b0f414d0f9eeb0}} 
+\index{ngind::Game@{ngind::Game}!\_next\_world@{\_next\_world}}
+\index{\_next\_world@{\_next\_world}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_next\_world}{\_next\_world}}
+{\footnotesize\ttfamily std\+::string ngind\+::\+Game\+::\+\_\+next\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+Next world to show. \mbox{\Hypertarget{classngind_1_1Game_a27b39d1ca72870ae9602284e052384d9}\label{classngind_1_1Game_a27b39d1ca72870ae9602284e052384d9}} 
+\index{ngind::Game@{ngind::Game}!\_stack@{\_stack}}
+\index{\_stack@{\_stack}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_stack}{\_stack}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}}$\ast$$>$ ngind\+::\+Game\+::\+\_\+stack\hspace{0.3cm}{\ttfamily [private]}}
+
+Worlds stack \mbox{\Hypertarget{classngind_1_1Game_a79c3d18a96ebd2c202afe6731c4b669c}\label{classngind_1_1Game_a79c3d18a96ebd2c202afe6731c4b669c}} 
+\index{ngind::Game@{ngind::Game}!\_trans\_next@{\_trans\_next}}
+\index{\_trans\_next@{\_trans\_next}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_trans\_next}{\_trans\_next}}
+{\footnotesize\ttfamily bool ngind\+::\+Game\+::\+\_\+trans\+\_\+next\hspace{0.3cm}{\ttfamily [private]}}
+
+Should transform to another world after this frame. \mbox{\Hypertarget{classngind_1_1Game_aeba219a4cadc1e480c0552f10aba54fe}\label{classngind_1_1Game_aeba219a4cadc1e480c0552f10aba54fe}} 
+\index{ngind::Game@{ngind::Game}!\_transition@{\_transition}}
+\index{\_transition@{\_transition}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_transition}{\_transition}}
+{\footnotesize\ttfamily std\+::function$<$void(void)$>$ ngind\+::\+Game\+::\+\_\+transition\hspace{0.3cm}{\ttfamily [private]}}
+
+World transition function. \mbox{\Hypertarget{classngind_1_1Game_af6ba765b7f8d9efabbf227839cf92540}\label{classngind_1_1Game_af6ba765b7f8d9efabbf227839cf92540}} 
+\index{ngind::Game@{ngind::Game}!\_worlds@{\_worlds}}
+\index{\_worlds@{\_worlds}!ngind::Game@{ngind::Game}}
+\doxysubsubsection{\texorpdfstring{\_worlds}{\_worlds}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classngind_1_1objects_1_1World}{objects\+::\+World}}$\ast$$>$ ngind\+::\+Game\+::\+\_\+worlds\hspace{0.3cm}{\ttfamily [private]}}
+
+Worlds dictionary 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/\mbox{\hyperlink{game_8h}{game.\+h}}\end{DoxyCompactItemize}

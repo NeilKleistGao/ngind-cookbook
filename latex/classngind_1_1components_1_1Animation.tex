@@ -1,0 +1,205 @@
+\hypertarget{classngind_1_1components_1_1Animation}{}\doxysection{ngind\+::components\+::Animation Class Reference}
+\label{classngind_1_1components_1_1Animation}\index{ngind::components::Animation@{ngind::components::Animation}}
+
+
+{\ttfamily \#include $<$animation.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::components\+::Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Animation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Animation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Animation_a875347042b657b13a4394417d263cadb}\label{classngind_1_1components_1_1Animation_a875347042b657b13a4394417d263cadb}} 
+{\bfseries Animation} (const \mbox{\hyperlink{classngind_1_1components_1_1Animation}{Animation}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Animation_acda313722e38057d23124ef2e3d05a3a}\label{classngind_1_1components_1_1Animation_acda313722e38057d23124ef2e3d05a3a}} 
+\mbox{\hyperlink{classngind_1_1components_1_1Animation}{Animation}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1components_1_1Animation}{Animation}} \&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Animation_acf71c561a0d0c7c5514e44bcb886dc98}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Animation_a46e3071297dd3d07ee347cf8a3c317c0}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Animation_a6fbd32ad8eb8921826297f3fb34124b3}{play}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Animation_a11195d7f1088c2738448fe31f8a3bca1}{stop}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Animation_abda9580bb92d913a8a9243a18f22797f}{pause}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Animation_ada4421bf53addad08455b2f73cc55bb0}{resume}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1Animation}{Animation}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Animation_ae548f315ad67d645239188a20b538054}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Animation_a7b82f1cb98a8d86ed642ade408e80253}{\+\_\+auto\+\_\+play}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Animation_a046ebbe6e00763721525aece14772576}{\+\_\+loop}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Animation_ae8f5df76054ad3d56f39468a0c41c4c3}{\+\_\+playing}}
+\item 
+float \mbox{\hyperlink{classngind_1_1components_1_1Animation_ac8613ecbae300b012751cd73305154bc}{\+\_\+timer}}
+\item 
+\mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{animation\+::\+Aseprite\+Frame}} \mbox{\hyperlink{classngind_1_1components_1_1Animation_ac9ab41b3dc6dfc127cf61f782ee7e947}{\+\_\+frame}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Animation_a9eaa9caa98b6a5ed9d6aec48cbd30eb9}{\+\_\+tag}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1AnimationResource}{resources\+::\+Animation\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Animation_a78b58266d60b672f2a76c7ce1a000700}{\+\_\+anim}}
+\item 
+\mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Animation_ac084611cdbc6ed78a6669a08e391e071}{\+\_\+sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1components_1_1Animation}{Animation}} component. \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} sibling component is required. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Animation_ae548f315ad67d645239188a20b538054}\label{classngind_1_1components_1_1Animation_ae548f315ad67d645239188a20b538054}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!create@{create}}
+\index{create@{create}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1Animation}{Animation}}$\ast$ ngind\+::components\+::\+Animation\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a animation component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Animation$\ast$, the instance of animation component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Animation_a46e3071297dd3d07ee347cf8a3c317c0}\label{classngind_1_1components_1_1Animation_a46e3071297dd3d07ee347cf8a3c317c0}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!init@{init}}
+\index{init@{init}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Animation\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Animation_abda9580bb92d913a8a9243a18f22797f}\label{classngind_1_1components_1_1Animation_abda9580bb92d913a8a9243a18f22797f}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!pause@{pause}}
+\index{pause@{pause}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Animation\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pause current animation playing. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_a6fbd32ad8eb8921826297f3fb34124b3}\label{classngind_1_1components_1_1Animation_a6fbd32ad8eb8921826297f3fb34124b3}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!play@{play}}
+\index{play@{play}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Animation\+::play (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Play a clip of animation by given name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of animation clip \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Animation_ada4421bf53addad08455b2f73cc55bb0}\label{classngind_1_1components_1_1Animation_ada4421bf53addad08455b2f73cc55bb0}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!resume@{resume}}
+\index{resume@{resume}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Animation\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resume from pausing state. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_a11195d7f1088c2738448fe31f8a3bca1}\label{classngind_1_1components_1_1Animation_a11195d7f1088c2738448fe31f8a3bca1}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!stop@{stop}}
+\index{stop@{stop}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Animation\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stop playing current clip. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_acf71c561a0d0c7c5514e44bcb886dc98}\label{classngind_1_1components_1_1Animation_acf71c561a0d0c7c5514e44bcb886dc98}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!update@{update}}
+\index{update@{update}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Animation\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Animation_a78b58266d60b672f2a76c7ce1a000700}\label{classngind_1_1components_1_1Animation_a78b58266d60b672f2a76c7ce1a000700}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_anim@{\_anim}}
+\index{\_anim@{\_anim}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_anim}{\_anim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1AnimationResource}{resources\+::\+Animation\+Resource}}$\ast$ ngind\+::components\+::\+Animation\+::\+\_\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1components_1_1Animation}{Animation}} resources. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_a7b82f1cb98a8d86ed642ade408e80253}\label{classngind_1_1components_1_1Animation_a7b82f1cb98a8d86ed642ade408e80253}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_auto\_play@{\_auto\_play}}
+\index{\_auto\_play@{\_auto\_play}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_auto\_play}{\_auto\_play}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Animation\+::\+\_\+auto\+\_\+play\hspace{0.3cm}{\ttfamily [private]}}
+
+Should animation be played automatically when ready. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_ac9ab41b3dc6dfc127cf61f782ee7e947}\label{classngind_1_1components_1_1Animation_ac9ab41b3dc6dfc127cf61f782ee7e947}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_frame@{\_frame}}
+\index{\_frame@{\_frame}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_frame}{\_frame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1animation_1_1AsepriteFrame}{animation\+::\+Aseprite\+Frame}} ngind\+::components\+::\+Animation\+::\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+Frame that is being played. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_a046ebbe6e00763721525aece14772576}\label{classngind_1_1components_1_1Animation_a046ebbe6e00763721525aece14772576}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Animation\+::\+\_\+loop\hspace{0.3cm}{\ttfamily [private]}}
+
+Should play the animation in loop. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_ae8f5df76054ad3d56f39468a0c41c4c3}\label{classngind_1_1components_1_1Animation_ae8f5df76054ad3d56f39468a0c41c4c3}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_playing@{\_playing}}
+\index{\_playing@{\_playing}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_playing}{\_playing}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Animation\+::\+\_\+playing\hspace{0.3cm}{\ttfamily [private]}}
+
+Is animation playing now. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_ac084611cdbc6ed78a6669a08e391e071}\label{classngind_1_1components_1_1Animation_ac084611cdbc6ed78a6669a08e391e071}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_sprite@{\_sprite}}
+\index{\_sprite@{\_sprite}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_sprite}{\_sprite}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}}$\ast$ ngind\+::components\+::\+Animation\+::\+\_\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} component reference. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_a9eaa9caa98b6a5ed9d6aec48cbd30eb9}\label{classngind_1_1components_1_1Animation_a9eaa9caa98b6a5ed9d6aec48cbd30eb9}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_tag@{\_tag}}
+\index{\_tag@{\_tag}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_tag}{\_tag}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Animation\+::\+\_\+tag\hspace{0.3cm}{\ttfamily [private]}}
+
+Tag of current animation clip. \mbox{\Hypertarget{classngind_1_1components_1_1Animation_ac8613ecbae300b012751cd73305154bc}\label{classngind_1_1components_1_1Animation_ac8613ecbae300b012751cd73305154bc}} 
+\index{ngind::components::Animation@{ngind::components::Animation}!\_timer@{\_timer}}
+\index{\_timer@{\_timer}!ngind::components::Animation@{ngind::components::Animation}}
+\doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
+{\footnotesize\ttfamily float ngind\+::components\+::\+Animation\+::\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Local timer for frames exchanging. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{animation_8h}{animation.\+h}}\end{DoxyCompactItemize}

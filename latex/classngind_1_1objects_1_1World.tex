@@ -1,0 +1,234 @@
+\hypertarget{classngind_1_1objects_1_1World}{}\doxysection{ngind\+::objects\+::World Class Reference}
+\label{classngind_1_1objects_1_1World}\index{ngind::objects::World@{ngind::objects::World}}
+
+
+{\ttfamily \#include $<$world.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::objects\+::World\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1objects_1_1World__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::objects\+::World\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1objects_1_1World__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1World_a439ff1a6f403422e03b3c6f1607f5c31}{World}} (std\+::string name)
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1World_a9d58e06e95e9cca764f259dd9a2fdd6a}{World}} (\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$config)
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1objects_1_1World_ab53aa4279ddebcb8dd6e83cb6ecb9061}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \mbox{\hyperlink{classngind_1_1objects_1_1World_ac3b5aa3e4edd3cb2bdbc744366309b85}{get\+Background\+Color}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1World_a89740a06ec1e0c25adfc68f9a0766629}{set\+Background\+Color}} (const \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \&color)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1World_a2e3bf7cd49a2195ebe71f4516ea7ef4a}{set\+Background\+Color}} (const std\+::string \&code)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1World_a184ab51a44be9263b4cc28c9228e1ce2}{update}} (const float \&) override
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1World_a3bf3f206505355d73c836e52b68b0795}{get\+Child\+By\+ID}} (const int \&id)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1World_a37aee88de0a965d9a32f90bd9861468c}{register\+Entity}} (int id, \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$entity)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1World_a55e2882ebc54d0fa25c38b68ad15a630}{unregister\+Entity}} (int id)
+\item 
+size\+\_\+t \mbox{\hyperlink{classngind_1_1objects_1_1World_a68e610404f384534711d447a55e52c30}{get\+Children\+Number}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1World_aed8e9abe169cf7b44f379453a9316ba2}{load\+Objects}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1objects_1_1World_a1a7735fded515d2e64bd422bcef06d12}{\+\_\+name}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1World_a7a051b8896346923196be0d04f965433}{\+\_\+config}}
+\item 
+\mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \mbox{\hyperlink{classngind_1_1objects_1_1World_a3958bd7d8d92d2e39b44190bd0ad28e9}{\+\_\+background\+\_\+color}}
+\item 
+std\+::unordered\+\_\+map$<$ int, \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1objects_1_1World_a6fbd46316abd1934e620aaee1ec38ded}{\+\_\+all\+\_\+children}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class contains everything in game. It should be set by config file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a439ff1a6f403422e03b3c6f1607f5c31}\label{classngind_1_1objects_1_1World_a439ff1a6f403422e03b3c6f1607f5c31}} 
+\index{ngind::objects::World@{ngind::objects::World}!World@{World}}
+\index{World@{World}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ngind\+::objects\+::\+World\+::\+World (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of this world \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a9d58e06e95e9cca764f259dd9a2fdd6a}\label{classngind_1_1objects_1_1World_a9d58e06e95e9cca764f259dd9a2fdd6a}} 
+\index{ngind::objects::World@{ngind::objects::World}!World@{World}}
+\index{World@{World}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ngind\+::objects\+::\+World\+::\+World (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}} $\ast$}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & the configure data of this world \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_ac3b5aa3e4edd3cb2bdbc744366309b85}\label{classngind_1_1objects_1_1World_ac3b5aa3e4edd3cb2bdbc744366309b85}} 
+\index{ngind::objects::World@{ngind::objects::World}!getBackgroundColor@{getBackgroundColor}}
+\index{getBackgroundColor@{getBackgroundColor}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{getBackgroundColor()}{getBackgroundColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} ngind\+::objects\+::\+World\+::get\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the background color of this world \begin{DoxyReturn}{Returns}
+Color, the background color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a3bf3f206505355d73c836e52b68b0795}\label{classngind_1_1objects_1_1World_a3bf3f206505355d73c836e52b68b0795}} 
+\index{ngind::objects::World@{ngind::objects::World}!getChildByID@{getChildByID}}
+\index{getChildByID@{getChildByID}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{getChildByID()}{getChildByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$ ngind\+::objects\+::\+World\+::get\+Child\+By\+ID (\begin{DoxyParamCaption}\item[{const int \&}]{id }\end{DoxyParamCaption})}
+
+Find entity object by given id 
+\begin{DoxyParams}{Parameters}
+{\em id} & the given id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity\+Object$\ast$, the object with given id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a68e610404f384534711d447a55e52c30}\label{classngind_1_1objects_1_1World_a68e610404f384534711d447a55e52c30}} 
+\index{ngind::objects::World@{ngind::objects::World}!getChildrenNumber@{getChildrenNumber}}
+\index{getChildrenNumber@{getChildrenNumber}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{getChildrenNumber()}{getChildrenNumber()}}
+{\footnotesize\ttfamily size\+\_\+t ngind\+::objects\+::\+World\+::get\+Children\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of children. \begin{DoxyReturn}{Returns}
+size\+\_\+t, the number of children 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_ab53aa4279ddebcb8dd6e83cb6ecb9061}\label{classngind_1_1objects_1_1World_ab53aa4279ddebcb8dd6e83cb6ecb9061}} 
+\index{ngind::objects::World@{ngind::objects::World}!getName@{getName}}
+\index{getName@{getName}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string ngind\+::objects\+::\+World\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get name of this world \begin{DoxyReturn}{Returns}
+std\+::string, name of this world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_aed8e9abe169cf7b44f379453a9316ba2}\label{classngind_1_1objects_1_1World_aed8e9abe169cf7b44f379453a9316ba2}} 
+\index{ngind::objects::World@{ngind::objects::World}!loadObjects@{loadObjects}}
+\index{loadObjects@{loadObjects}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{loadObjects()}{loadObjects()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+World\+::load\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Load children objects using config file \mbox{\Hypertarget{classngind_1_1objects_1_1World_a37aee88de0a965d9a32f90bd9861468c}\label{classngind_1_1objects_1_1World_a37aee88de0a965d9a32f90bd9861468c}} 
+\index{ngind::objects::World@{ngind::objects::World}!registerEntity@{registerEntity}}
+\index{registerEntity@{registerEntity}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{registerEntity()}{registerEntity()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+World\+::register\+Entity (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add an entity object to the world. 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the object \\
+\hline
+{\em entity} & the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a89740a06ec1e0c25adfc68f9a0766629}\label{classngind_1_1objects_1_1World_a89740a06ec1e0c25adfc68f9a0766629}} 
+\index{ngind::objects::World@{ngind::objects::World}!setBackgroundColor@{setBackgroundColor}}
+\index{setBackgroundColor@{setBackgroundColor}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{setBackgroundColor()}{setBackgroundColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+World\+::set\+Background\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the background color of this world 
+\begin{DoxyParams}{Parameters}
+{\em color} & the background color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a2e3bf7cd49a2195ebe71f4516ea7ef4a}\label{classngind_1_1objects_1_1World_a2e3bf7cd49a2195ebe71f4516ea7ef4a}} 
+\index{ngind::objects::World@{ngind::objects::World}!setBackgroundColor@{setBackgroundColor}}
+\index{setBackgroundColor@{setBackgroundColor}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{setBackgroundColor()}{setBackgroundColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+World\+::set\+Background\+Color (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the background color of this world 
+\begin{DoxyParams}{Parameters}
+{\em code} & the code of background color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a55e2882ebc54d0fa25c38b68ad15a630}\label{classngind_1_1objects_1_1World_a55e2882ebc54d0fa25c38b68ad15a630}} 
+\index{ngind::objects::World@{ngind::objects::World}!unregisterEntity@{unregisterEntity}}
+\index{unregisterEntity@{unregisterEntity}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{unregisterEntity()}{unregisterEntity()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+World\+::unregister\+Entity (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Remove an entity object from the world. 
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the entity object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a184ab51a44be9263b4cc28c9228e1ce2}\label{classngind_1_1objects_1_1World_a184ab51a44be9263b4cc28c9228e1ce2}} 
+\index{ngind::objects::World@{ngind::objects::World}!update@{update}}
+\index{update@{update}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+World\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{kernel/objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1objects_1_1Object_a77040c79d459da69800271b1b07ba1d3}{ngind\+::objects\+::\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1World_a6fbd46316abd1934e620aaee1ec38ded}\label{classngind_1_1objects_1_1World_a6fbd46316abd1934e620aaee1ec38ded}} 
+\index{ngind::objects::World@{ngind::objects::World}!\_all\_children@{\_all\_children}}
+\index{\_all\_children@{\_all\_children}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{\_all\_children}{\_all\_children}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$int, \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$$>$ ngind\+::objects\+::\+World\+::\+\_\+all\+\_\+children\hspace{0.3cm}{\ttfamily [private]}}
+
+Table containing all entity objects in the world \mbox{\Hypertarget{classngind_1_1objects_1_1World_a3958bd7d8d92d2e39b44190bd0ad28e9}\label{classngind_1_1objects_1_1World_a3958bd7d8d92d2e39b44190bd0ad28e9}} 
+\index{ngind::objects::World@{ngind::objects::World}!\_background\_color@{\_background\_color}}
+\index{\_background\_color@{\_background\_color}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{\_background\_color}{\_background\_color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structngind_1_1rendering_1_1Color}{rendering\+::\+Color}} ngind\+::objects\+::\+World\+::\+\_\+background\+\_\+color\hspace{0.3cm}{\ttfamily [private]}}
+
+Background color of this world \mbox{\Hypertarget{classngind_1_1objects_1_1World_a7a051b8896346923196be0d04f965433}\label{classngind_1_1objects_1_1World_a7a051b8896346923196be0d04f965433}} 
+\index{ngind::objects::World@{ngind::objects::World}!\_config@{\_config}}
+\index{\_config@{\_config}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{\_config}{\_config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1ConfigResource}{resources\+::\+Config\+Resource}}$\ast$ ngind\+::objects\+::\+World\+::\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}
+
+The resource reference of config file \mbox{\Hypertarget{classngind_1_1objects_1_1World_a1a7735fded515d2e64bd422bcef06d12}\label{classngind_1_1objects_1_1World_a1a7735fded515d2e64bd422bcef06d12}} 
+\index{ngind::objects::World@{ngind::objects::World}!\_name@{\_name}}
+\index{\_name@{\_name}!ngind::objects::World@{ngind::objects::World}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily std\+::string ngind\+::objects\+::\+World\+::\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+The name of this world 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/objects/\mbox{\hyperlink{world_8h}{world.\+h}}\end{DoxyCompactItemize}

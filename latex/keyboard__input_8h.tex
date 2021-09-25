@@ -1,0 +1,167 @@
+\hypertarget{keyboard__input_8h}{}\doxysection{kernel/input/keyboard\+\_\+input.h File Reference}
+\label{keyboard__input_8h}\index{kernel/input/keyboard\_input.h@{kernel/input/keyboard\_input.h}}
+
+
+M\+IT License Copyright (c) 2020 Neil\+Kleist\+Gao Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:  
+
+
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include \char`\"{}glfw3.\+h\char`\"{}}\newline
+Include dependency graph for keyboard\+\_\+input.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{keyboard__input_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{keyboard__input_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classngind_1_1input_1_1KeyboardInput}{ngind\+::input\+::\+Keyboard\+Input}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{ngind\+::input\+::\+Keyboard\+Code}} \{ \newline
+{\bfseries U\+N\+K\+N\+O\+WN} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+U\+N\+K\+N\+O\+WN, 
+{\bfseries S\+P\+A\+CE} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+S\+P\+A\+CE, 
+{\bfseries A\+P\+O\+S\+T\+R\+O\+P\+HE} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+A\+P\+O\+S\+T\+R\+O\+P\+HE, 
+{\bfseries C\+O\+M\+MA} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+C\+O\+M\+MA, 
+\newline
+{\bfseries M\+I\+N\+US} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+M\+I\+N\+US, 
+{\bfseries P\+E\+R\+I\+OD} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+P\+E\+R\+I\+OD, 
+{\bfseries S\+L\+A\+SH} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+S\+L\+A\+SH, 
+{\bfseries N\+U\+M\+\_\+0} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+0, 
+\newline
+{\bfseries N\+U\+M\+\_\+1} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+1, 
+{\bfseries N\+U\+M\+\_\+2} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+2, 
+{\bfseries N\+U\+M\+\_\+3} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+3, 
+{\bfseries N\+U\+M\+\_\+4} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+4, 
+\newline
+{\bfseries N\+U\+M\+\_\+5} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+5, 
+{\bfseries N\+U\+M\+\_\+6} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+6, 
+{\bfseries N\+U\+M\+\_\+7} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+7, 
+{\bfseries N\+U\+M\+\_\+8} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+8, 
+\newline
+{\bfseries N\+U\+M\+\_\+9} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+9, 
+{\bfseries S\+E\+M\+I\+C\+O\+L\+ON} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+S\+E\+M\+I\+C\+O\+L\+ON, 
+{\bfseries E\+Q\+U\+AL} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+E\+Q\+U\+AL, 
+{\bfseries A\+L\+P\+\_\+A} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+A, 
+\newline
+{\bfseries A\+L\+P\+\_\+B} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+B, 
+{\bfseries A\+L\+P\+\_\+C} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+C, 
+{\bfseries A\+L\+P\+\_\+D} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+D, 
+{\bfseries A\+L\+P\+\_\+E} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+E, 
+\newline
+{\bfseries A\+L\+P\+\_\+F} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+F, 
+{\bfseries A\+L\+P\+\_\+G} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+G, 
+{\bfseries A\+L\+P\+\_\+H} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+H, 
+{\bfseries A\+L\+P\+\_\+I} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+I, 
+\newline
+{\bfseries A\+L\+P\+\_\+J} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+J, 
+{\bfseries A\+L\+P\+\_\+K} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+K, 
+{\bfseries A\+L\+P\+\_\+L} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+L, 
+{\bfseries A\+L\+P\+\_\+M} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+M, 
+\newline
+{\bfseries A\+L\+P\+\_\+N} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+N, 
+{\bfseries A\+L\+P\+\_\+O} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+O, 
+{\bfseries A\+L\+P\+\_\+P} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+P, 
+{\bfseries A\+L\+P\+\_\+Q} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+Q, 
+\newline
+{\bfseries A\+L\+P\+\_\+R} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+R, 
+{\bfseries A\+L\+P\+\_\+S} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+S, 
+{\bfseries A\+L\+P\+\_\+T} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+T, 
+{\bfseries A\+L\+P\+\_\+U} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+U, 
+\newline
+{\bfseries A\+L\+P\+\_\+V} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+V, 
+{\bfseries A\+L\+P\+\_\+W} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+W, 
+{\bfseries A\+L\+P\+\_\+X} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+X, 
+{\bfseries A\+L\+P\+\_\+Y} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+Y, 
+\newline
+{\bfseries A\+L\+P\+\_\+Z} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+Z, 
+{\bfseries L\+E\+F\+T\+\_\+\+B\+R\+A\+C\+K\+ET} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+L\+E\+F\+T\+\_\+\+B\+R\+A\+C\+K\+ET, 
+{\bfseries B\+A\+C\+K\+S\+L\+A\+SH} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+B\+A\+C\+K\+S\+L\+A\+SH, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+B\+R\+A\+C\+K\+ET} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+R\+A\+C\+K\+ET, 
+\newline
+{\bfseries G\+R\+A\+V\+E\+\_\+\+A\+C\+C\+E\+NT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+G\+R\+A\+V\+E\+\_\+\+A\+C\+C\+E\+NT, 
+{\bfseries E\+S\+C\+A\+PE} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+E\+S\+C\+A\+PE, 
+{\bfseries E\+N\+T\+ER} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+E\+N\+T\+ER, 
+{\bfseries T\+AB} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+T\+AB, 
+\newline
+{\bfseries B\+A\+C\+K\+S\+P\+A\+CE} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+B\+A\+C\+K\+S\+P\+A\+CE, 
+{\bfseries I\+N\+S\+E\+RT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+S\+E\+RT, 
+{\bfseries D\+E\+L\+E\+TE} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+D\+E\+L\+E\+TE, 
+{\bfseries R\+I\+G\+HT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+R\+I\+G\+HT, 
+\newline
+{\bfseries L\+E\+FT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+L\+E\+FT, 
+{\bfseries D\+O\+WN} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+D\+O\+WN, 
+{\bfseries P\+A\+G\+E\+\_\+\+UP} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+G\+E\+\_\+\+UP, 
+{\bfseries P\+A\+G\+E\+\_\+\+D\+O\+WN} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+G\+E\+\_\+\+D\+O\+WN, 
+\newline
+{\bfseries H\+O\+ME} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+H\+O\+ME, 
+{\bfseries E\+ND} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+E\+ND, 
+{\bfseries C\+A\+P\+S\+\_\+\+L\+O\+CK} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+C\+A\+P\+S\+\_\+\+L\+O\+CK, 
+{\bfseries S\+C\+R\+O\+L\+L\+\_\+\+L\+O\+CK} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+\+L\+O\+CK, 
+\newline
+{\bfseries N\+U\+M\+\_\+\+L\+O\+CK} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+N\+U\+M\+\_\+\+L\+O\+CK, 
+{\bfseries P\+R\+I\+N\+T\+\_\+\+S\+C\+R\+E\+EN} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+P\+R\+I\+N\+T\+\_\+\+S\+C\+R\+E\+EN, 
+{\bfseries P\+A\+U\+SE} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+P\+A\+U\+SE, 
+{\bfseries K\+P\+\_\+0} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+0, 
+\newline
+{\bfseries K\+P\+\_\+1} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+1, 
+{\bfseries K\+P\+\_\+2} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+2, 
+{\bfseries K\+P\+\_\+3} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+3, 
+{\bfseries K\+P\+\_\+4} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+4, 
+\newline
+{\bfseries K\+P\+\_\+5} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+5, 
+{\bfseries K\+P\+\_\+6} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+6, 
+{\bfseries K\+P\+\_\+7} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+7, 
+{\bfseries K\+P\+\_\+8} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+8, 
+\newline
+{\bfseries K\+P\+\_\+9} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+9, 
+{\bfseries K\+P\+\_\+\+D\+E\+C\+I\+M\+AL} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+\+D\+E\+C\+I\+M\+AL, 
+{\bfseries K\+P\+\_\+\+D\+I\+V\+I\+DE} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+\+D\+I\+V\+I\+DE, 
+{\bfseries K\+P\+\_\+\+M\+U\+L\+T\+I\+P\+LY} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+\+M\+U\+L\+T\+I\+P\+LY, 
+\newline
+{\bfseries K\+P\+\_\+\+S\+U\+B\+T\+R\+A\+CT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+\+S\+U\+B\+T\+R\+A\+CT, 
+{\bfseries K\+P\+\_\+\+A\+DD} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+\+A\+DD, 
+{\bfseries K\+P\+\_\+\+E\+N\+T\+ER} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+\+E\+N\+T\+ER, 
+{\bfseries K\+P\+\_\+\+E\+Q\+U\+AL} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+K\+P\+\_\+\+E\+Q\+U\+AL, 
+\newline
+{\bfseries L\+E\+F\+T\+\_\+\+S\+H\+I\+FT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+L\+E\+F\+T\+\_\+\+S\+H\+I\+FT, 
+{\bfseries L\+E\+F\+T\+\_\+\+C\+O\+N\+T\+R\+OL} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+L\+E\+F\+T\+\_\+\+C\+O\+N\+T\+R\+OL, 
+{\bfseries L\+E\+F\+T\+\_\+\+A\+LT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+L\+E\+F\+T\+\_\+\+A\+LT, 
+{\bfseries L\+E\+F\+T\+\_\+\+S\+U\+P\+ER} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+L\+E\+F\+T\+\_\+\+S\+U\+P\+ER, 
+\newline
+{\bfseries R\+I\+G\+H\+T\+\_\+\+S\+H\+I\+FT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+R\+I\+G\+H\+T\+\_\+\+S\+H\+I\+FT, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+C\+O\+N\+T\+R\+OL} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+O\+N\+T\+R\+OL, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+A\+LT} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+R\+I\+G\+H\+T\+\_\+\+A\+LT, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+S\+U\+P\+ER} = G\+L\+F\+W\+\_\+\+K\+E\+Y\+\_\+\+R\+I\+G\+H\+T\+\_\+\+S\+U\+P\+ER
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+IT License Copyright (c) 2020 Neil\+Kleist\+Gao Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+: 
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}\label{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}} 
+\index{keyboard\_input.h@{keyboard\_input.h}!KeyboardCode@{KeyboardCode}}
+\index{KeyboardCode@{KeyboardCode}!keyboard\_input.h@{keyboard\_input.h}}
+\doxysubsubsection{\texorpdfstring{KeyboardCode}{KeyboardCode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{keyboard__input_8h_addcdd7a52fe2afb2beb1804589798e01}{ngind\+::input\+::\+Keyboard\+Code}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+The keyboard code for keyboard input. It\textquotesingle{}s a simple map for G\+L\+F\+W\+\_\+\+K\+EY prefixing macros. 

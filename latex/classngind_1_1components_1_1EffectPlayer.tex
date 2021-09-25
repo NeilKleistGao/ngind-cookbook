@@ -1,0 +1,147 @@
+\hypertarget{classngind_1_1components_1_1EffectPlayer}{}\doxysection{ngind\+::components\+::Effect\+Player Class Reference}
+\label{classngind_1_1components_1_1EffectPlayer}\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+
+
+{\ttfamily \#include $<$effect\+\_\+player.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::components\+::Effect\+Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1EffectPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::Effect\+Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1EffectPlayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_a80c91ff901d24ea58221782f5ce2e2e2}\label{classngind_1_1components_1_1EffectPlayer_a80c91ff901d24ea58221782f5ce2e2e2}} 
+{\bfseries Effect\+Player} (const \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer}{Effect\+Player}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_ace9889ffaf12a0d34738b497be4e8bb8}\label{classngind_1_1components_1_1EffectPlayer_ace9889ffaf12a0d34738b497be4e8bb8}} 
+\mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer}{Effect\+Player}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer}{Effect\+Player}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_ac3ea083c0ac1c83109eabd2b2ddfd360}\label{classngind_1_1components_1_1EffectPlayer_ac3ea083c0ac1c83109eabd2b2ddfd360}} 
+{\bfseries Effect\+Player} (\mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer}{Effect\+Player}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_ab4da402bd1c95752ffefdb781c9146ad}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_a5d97a7b3301165d6dcd61500bb9ac007}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_adeda6d0e5de58492ec4d1e75fa220649}{play}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_a9af6e549e4c9e6cbf74442e1da9dbb8b}{set\+Volume}} (const float \&vol)
+\item 
+float \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_a6331227248539a0869ab661dd7e43cde}{get\+Volume}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer}{Effect\+Player}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_aec51a951bc5a4bfa0f6a01ff6e615052}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1EffectResource}{resources\+::\+Effect\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_a98a141103ceef5b188a9615db336701e}{\+\_\+effect}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Sound effect player component. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_aec51a951bc5a4bfa0f6a01ff6e615052}\label{classngind_1_1components_1_1EffectPlayer_aec51a951bc5a4bfa0f6a01ff6e615052}} 
+\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}!create@{create}}
+\index{create@{create}!ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer}{Effect\+Player}}$\ast$ ngind\+::components\+::\+Effect\+Player\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a sound effect component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Effect\+Player$\ast$, the instance of sound effect component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_a6331227248539a0869ab661dd7e43cde}\label{classngind_1_1components_1_1EffectPlayer_a6331227248539a0869ab661dd7e43cde}} 
+\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily float ngind\+::components\+::\+Effect\+Player\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the volume value. \begin{DoxyReturn}{Returns}
+float, the volume 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_a5d97a7b3301165d6dcd61500bb9ac007}\label{classngind_1_1components_1_1EffectPlayer_a5d97a7b3301165d6dcd61500bb9ac007}} 
+\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}!init@{init}}
+\index{init@{init}!ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Effect\+Player\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_adeda6d0e5de58492ec4d1e75fa220649}\label{classngind_1_1components_1_1EffectPlayer_adeda6d0e5de58492ec4d1e75fa220649}} 
+\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}!play@{play}}
+\index{play@{play}!ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Effect\+Player\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Play this sound effect. \mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_a9af6e549e4c9e6cbf74442e1da9dbb8b}\label{classngind_1_1components_1_1EffectPlayer_a9af6e549e4c9e6cbf74442e1da9dbb8b}} 
+\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Effect\+Player\+::set\+Volume (\begin{DoxyParamCaption}\item[{const float \&}]{vol }\end{DoxyParamCaption})}
+
+Set volume of sound effect. 
+\begin{DoxyParams}{Parameters}
+{\em vol} & new volume value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_ab4da402bd1c95752ffefdb781c9146ad}\label{classngind_1_1components_1_1EffectPlayer_ab4da402bd1c95752ffefdb781c9146ad}} 
+\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}!update@{update}}
+\index{update@{update}!ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Effect\+Player\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1EffectPlayer_a98a141103ceef5b188a9615db336701e}\label{classngind_1_1components_1_1EffectPlayer_a98a141103ceef5b188a9615db336701e}} 
+\index{ngind::components::EffectPlayer@{ngind::components::EffectPlayer}!\_effect@{\_effect}}
+\index{\_effect@{\_effect}!ngind::components::EffectPlayer@{ngind::components::EffectPlayer}}
+\doxysubsubsection{\texorpdfstring{\_effect}{\_effect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1EffectResource}{resources\+::\+Effect\+Resource}}$\ast$ ngind\+::components\+::\+Effect\+Player\+::\+\_\+effect\hspace{0.3cm}{\ttfamily [private]}}
+
+Sound effect resource. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{effect__player_8h}{effect\+\_\+player.\+h}}\end{DoxyCompactItemize}

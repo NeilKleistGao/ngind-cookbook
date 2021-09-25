@@ -1,0 +1,114 @@
+\hypertarget{classngind_1_1components_1_1ComponentFactory}{}\doxysection{ngind\+::components\+::Component\+Factory Class Reference}
+\label{classngind_1_1components_1_1ComponentFactory}\index{ngind::components::ComponentFactory@{ngind::components::ComponentFactory}}
+
+
+{\ttfamily \#include $<$component\+\_\+factory.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::components\+::Component\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classngind_1_1components_1_1ComponentFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory_a51317687a503dc262736edb9d9fad979}{register\+Component}} (const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory_aad959dfaa5de2f41d466bf27cda702fa}{create}} (const std\+::string \&name, const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory}{Component\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory_a9203e1f4f8fc0c5b766fc02692bddc98}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory_abb15fe67d0c9b2bb6c9c3bdbad0c0fc4}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::function$<$ \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} $\ast$(const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&)$>$ $>$ \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory_a3b76a0aad4bf984aaa7161c5f9bc88ee}{\+\_\+map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory}{Component\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory_a273e5369e60794baa1f6c249c2ef0f4d}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory class that worlds use to create components. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1ComponentFactory_aad959dfaa5de2f41d466bf27cda702fa}\label{classngind_1_1components_1_1ComponentFactory_aad959dfaa5de2f41d466bf27cda702fa}} 
+\index{ngind::components::ComponentFactory@{ngind::components::ComponentFactory}!create@{create}}
+\index{create@{create}!ngind::components::ComponentFactory@{ngind::components::ComponentFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}}$\ast$ ngind\+::components\+::\+Component\+Factory\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})}
+
+Create an instance of component bu given name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of component \\
+\hline
+{\em data} & data the creation needs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component$\ast$, the component created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1ComponentFactory_abb15fe67d0c9b2bb6c9c3bdbad0c0fc4}\label{classngind_1_1components_1_1ComponentFactory_abb15fe67d0c9b2bb6c9c3bdbad0c0fc4}} 
+\index{ngind::components::ComponentFactory@{ngind::components::ComponentFactory}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::components::ComponentFactory@{ngind::components::ComponentFactory}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::components\+::\+Component\+Factory\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the instance of component factory. \mbox{\Hypertarget{classngind_1_1components_1_1ComponentFactory_a9203e1f4f8fc0c5b766fc02692bddc98}\label{classngind_1_1components_1_1ComponentFactory_a9203e1f4f8fc0c5b766fc02692bddc98}} 
+\index{ngind::components::ComponentFactory@{ngind::components::ComponentFactory}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::components::ComponentFactory@{ngind::components::ComponentFactory}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory}{Component\+Factory}}$\ast$ ngind\+::components\+::\+Component\+Factory\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the unique instance of component factory. \begin{DoxyReturn}{Returns}
+Component\+Factory$\ast$, The unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1ComponentFactory_a51317687a503dc262736edb9d9fad979}\label{classngind_1_1components_1_1ComponentFactory_a51317687a503dc262736edb9d9fad979}} 
+\index{ngind::components::ComponentFactory@{ngind::components::ComponentFactory}!registerComponent@{registerComponent}}
+\index{registerComponent@{registerComponent}!ngind::components::ComponentFactory@{ngind::components::ComponentFactory}}
+\doxysubsubsection{\texorpdfstring{registerComponent()}{registerComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void ngind\+::components\+::\+Component\+Factory\+::register\+Component (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Register a component to factory. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of component \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1ComponentFactory_a273e5369e60794baa1f6c249c2ef0f4d}\label{classngind_1_1components_1_1ComponentFactory_a273e5369e60794baa1f6c249c2ef0f4d}} 
+\index{ngind::components::ComponentFactory@{ngind::components::ComponentFactory}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::components::ComponentFactory@{ngind::components::ComponentFactory}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1components_1_1ComponentFactory}{Component\+Factory}}$\ast$ ngind\+::components\+::\+Component\+Factory\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance \mbox{\Hypertarget{classngind_1_1components_1_1ComponentFactory_a3b76a0aad4bf984aaa7161c5f9bc88ee}\label{classngind_1_1components_1_1ComponentFactory_a3b76a0aad4bf984aaa7161c5f9bc88ee}} 
+\index{ngind::components::ComponentFactory@{ngind::components::ComponentFactory}!\_map@{\_map}}
+\index{\_map@{\_map}!ngind::components::ComponentFactory@{ngind::components::ComponentFactory}}
+\doxysubsubsection{\texorpdfstring{\_map}{\_map}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::function$<$\mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}}$\ast$(const typename resources\+::\+Config\+Resource\+::\+Json\+Object\&)$>$ $>$ ngind\+::components\+::\+Component\+Factory\+::\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+Mapping from component name to component creation function 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{component__factory_8h}{component\+\_\+factory.\+h}}\end{DoxyCompactItemize}

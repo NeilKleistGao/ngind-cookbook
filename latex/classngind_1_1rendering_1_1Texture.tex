@@ -1,0 +1,129 @@
+\hypertarget{classngind_1_1rendering_1_1Texture}{}\doxysection{ngind\+::rendering\+::Texture Class Reference}
+\label{classngind_1_1rendering_1_1Texture}\index{ngind::rendering::Texture@{ngind::rendering::Texture}}
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Texture_ad9653c6d3afcc781b6bece47fe95e6c4}{Texture}} (const std\+::string \&filename, const \mbox{\hyperlink{texture_8h_a9a07da8f5f84c7e558a0aab9836bf106}{Texture\+Color\+Mode}} \&mode)
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_ae3bdf87965df923ca82d1b0dd02713b0}\label{classngind_1_1rendering_1_1Texture_ae3bdf87965df923ca82d1b0dd02713b0}} 
+{\bfseries Texture} (const \mbox{\hyperlink{classngind_1_1rendering_1_1Texture}{Texture}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_aeb3b1f45a8d99d29813310d04738d59f}\label{classngind_1_1rendering_1_1Texture_aeb3b1f45a8d99d29813310d04738d59f}} 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Texture}{Texture}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1rendering_1_1Texture}{Texture}} \&)=delete
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_aade63f89e11466f6e016fcb2f9e712f9}{get\+Texture\+ID}} () const
+\item 
+float \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_a56d2611819987871801b583679e478b7}{get\+Width}} () const
+\item 
+float \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_a0dc9dacb4ec52dca9353f508ff150922}{get\+Height}} () const
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_afa7df369ab9d5b8edea5049bfa549061}{get\+Size}} () const
+\item 
+\mbox{\hyperlink{texture_8h_a9a07da8f5f84c7e558a0aab9836bf106}{Texture\+Color\+Mode}} \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_ab6a367729b1b7da61573814757e43c89}{get\+Color\+Mode}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_ab1b9ddfe075e46b6c7a6957380d09de0}{\+\_\+texture\+\_\+id}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_ab0d2e28c85467c977aba15adb6b10fc2}{\+\_\+size}}
+\item 
+\mbox{\hyperlink{texture_8h_a9a07da8f5f84c7e558a0aab9836bf106}{Texture\+Color\+Mode}} \mbox{\hyperlink{classngind_1_1rendering_1_1Texture_a13b193b78789f6bbb72b18f70ef20253}{\+\_\+mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1rendering_1_1Texture}{Texture}} container used for rendering. It only supports J\+P\+EG and P\+NG formats now. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_ad9653c6d3afcc781b6bece47fe95e6c4}\label{classngind_1_1rendering_1_1Texture_ad9653c6d3afcc781b6bece47fe95e6c4}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}}
+{\footnotesize\ttfamily ngind\+::rendering\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const \mbox{\hyperlink{texture_8h_a9a07da8f5f84c7e558a0aab9836bf106}{Texture\+Color\+Mode}} \&}]{mode }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & picture path \\
+\hline
+{\em mode} & color mode of picture \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_ab6a367729b1b7da61573814757e43c89}\label{classngind_1_1rendering_1_1Texture_ab6a367729b1b7da61573814757e43c89}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!getColorMode@{getColorMode}}
+\index{getColorMode@{getColorMode}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{getColorMode()}{getColorMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{texture_8h_a9a07da8f5f84c7e558a0aab9836bf106}{Texture\+Color\+Mode}} ngind\+::rendering\+::\+Texture\+::get\+Color\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get color mode of texture \begin{DoxyReturn}{Returns}
+Texture\+Color\+Mode, color mode of texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_a0dc9dacb4ec52dca9353f508ff150922}\label{classngind_1_1rendering_1_1Texture_a0dc9dacb4ec52dca9353f508ff150922}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float ngind\+::rendering\+::\+Texture\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of texture \begin{DoxyReturn}{Returns}
+float, height of texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_afa7df369ab9d5b8edea5049bfa549061}\label{classngind_1_1rendering_1_1Texture_afa7df369ab9d5b8edea5049bfa549061}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!getSize@{getSize}}
+\index{getSize@{getSize}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::rendering\+::\+Texture\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the size of texture \begin{DoxyReturn}{Returns}
+Vector2D, size of texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_aade63f89e11466f6e016fcb2f9e712f9}\label{classngind_1_1rendering_1_1Texture_aade63f89e11466f6e016fcb2f9e712f9}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!getTextureID@{getTextureID}}
+\index{getTextureID@{getTextureID}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{getTextureID()}{getTextureID()}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Texture\+::get\+Texture\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the id of texture \begin{DoxyReturn}{Returns}
+G\+Luint, id of texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_a56d2611819987871801b583679e478b7}\label{classngind_1_1rendering_1_1Texture_a56d2611819987871801b583679e478b7}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily float ngind\+::rendering\+::\+Texture\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of texture \begin{DoxyReturn}{Returns}
+float, width of texture 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_a13b193b78789f6bbb72b18f70ef20253}\label{classngind_1_1rendering_1_1Texture_a13b193b78789f6bbb72b18f70ef20253}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!\_mode@{\_mode}}
+\index{\_mode@{\_mode}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{\_mode}{\_mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{texture_8h_a9a07da8f5f84c7e558a0aab9836bf106}{Texture\+Color\+Mode}} ngind\+::rendering\+::\+Texture\+::\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{structngind_1_1rendering_1_1Color}{Color}} mode of texture \mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_ab0d2e28c85467c977aba15adb6b10fc2}\label{classngind_1_1rendering_1_1Texture_ab0d2e28c85467c977aba15adb6b10fc2}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!\_size@{\_size}}
+\index{\_size@{\_size}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::rendering\+::\+Texture\+::\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+Size of texture \mbox{\Hypertarget{classngind_1_1rendering_1_1Texture_ab1b9ddfe075e46b6c7a6957380d09de0}\label{classngind_1_1rendering_1_1Texture_ab1b9ddfe075e46b6c7a6957380d09de0}} 
+\index{ngind::rendering::Texture@{ngind::rendering::Texture}!\_texture\_id@{\_texture\_id}}
+\index{\_texture\_id@{\_texture\_id}!ngind::rendering::Texture@{ngind::rendering::Texture}}
+\doxysubsubsection{\texorpdfstring{\_texture\_id}{\_texture\_id}}
+{\footnotesize\ttfamily G\+Luint ngind\+::rendering\+::\+Texture\+::\+\_\+texture\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1rendering_1_1Texture}{Texture}} id 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{texture_8h}{texture.\+h}}\end{DoxyCompactItemize}

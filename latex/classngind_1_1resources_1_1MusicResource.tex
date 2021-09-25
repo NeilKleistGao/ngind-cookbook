@@ -1,0 +1,202 @@
+\hypertarget{classngind_1_1resources_1_1MusicResource}{}\doxysection{ngind\+::resources\+::Music\+Resource Class Reference}
+\label{classngind_1_1resources_1_1MusicResource}\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+
+
+{\ttfamily \#include $<$music\+\_\+resource.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::resources\+::Music\+Resource\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classngind_1_1resources_1_1MusicResource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::resources\+::Music\+Resource\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classngind_1_1resources_1_1MusicResource__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a602cd59a7339801435f25648a91c8b76}{load}} (const std\+::string \&name) override
+\item 
+void \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a4d33cee2ab3a2ae0aee0c47dd658a416}{set\+Volume}} (const float \&vol)
+\item 
+float \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_afd5a809664d69678a0b2422acb3ac57d}{get\+Volume}} () const
+\item 
+double \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a3e0bf4f2d48d15c291f2359bf3febad4}{get\+Length}} () const
+\item 
+bool \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a9c695dfea2b05c50ca6c74070567767f}{is\+Looping}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a3bfeca24eeac5ff65783414afcbe7990}{set\+Looping}} (const bool \&loop)
+\item 
+void \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a420850c6a03cc926d53dd64acae634c0}{set\+Loop\+Point}} (const double \&point)
+\item 
+double \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a523390f0c39f058558083755df82a375}{get\+Loop\+Point}} () const
+\item 
+So\+Loud\+::\+Wav\+Stream $\ast$ \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_ab9645973a4b4be25de0f6c3e2380f898}{operator-\/$>$}} ()
+\item 
+So\+Loud\+::\+Wav\+Stream \& \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_abee33ef2d4a01564d50edb1474c7bf2e}{operator$\ast$}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const static std\+::string \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a2678824624e8d1704e5d8cb006b39028}{M\+U\+S\+I\+C\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+So\+Loud\+::\+Wav\+Stream $\ast$ \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a485e87322b7cbb8e7def4c235ff33e2d}{\+\_\+stream}}
+\item 
+double \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a86119e9041d073b14c55e745a8282579}{\+\_\+length}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource_a184860c6cc841018b3115af382b59a78}{\+\_\+is\+\_\+looping}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Music resource. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a3e0bf4f2d48d15c291f2359bf3febad4}\label{classngind_1_1resources_1_1MusicResource_a3e0bf4f2d48d15c291f2359bf3febad4}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!getLength@{getLength}}
+\index{getLength@{getLength}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily double ngind\+::resources\+::\+Music\+Resource\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the length of music. \begin{DoxyReturn}{Returns}
+double, the length in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a523390f0c39f058558083755df82a375}\label{classngind_1_1resources_1_1MusicResource_a523390f0c39f058558083755df82a375}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!getLoopPoint@{getLoopPoint}}
+\index{getLoopPoint@{getLoopPoint}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{getLoopPoint()}{getLoopPoint()}}
+{\footnotesize\ttfamily double ngind\+::resources\+::\+Music\+Resource\+::get\+Loop\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get where music starts again. \begin{DoxyReturn}{Returns}
+where music starts again 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_afd5a809664d69678a0b2422acb3ac57d}\label{classngind_1_1resources_1_1MusicResource_afd5a809664d69678a0b2422acb3ac57d}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily float ngind\+::resources\+::\+Music\+Resource\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the volume value. \begin{DoxyReturn}{Returns}
+float, the volume 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a9c695dfea2b05c50ca6c74070567767f}\label{classngind_1_1resources_1_1MusicResource_a9c695dfea2b05c50ca6c74070567767f}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!isLooping@{isLooping}}
+\index{isLooping@{isLooping}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{isLooping()}{isLooping()}}
+{\footnotesize\ttfamily bool ngind\+::resources\+::\+Music\+Resource\+::is\+Looping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get whether play music in loop. \begin{DoxyReturn}{Returns}
+bool, whether play music in loop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a602cd59a7339801435f25648a91c8b76}\label{classngind_1_1resources_1_1MusicResource_a602cd59a7339801435f25648a91c8b76}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!load@{load}}
+\index{load@{load}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void ngind\+::resources\+::\+Music\+Resource\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{resource_8h}{kernel/resources/resource.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1resources_1_1Resource_a8b5e746f35e16aabf11216cf6a5d6c70}{ngind\+::resources\+::\+Resource}}.
+
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_abee33ef2d4a01564d50edb1474c7bf2e}\label{classngind_1_1resources_1_1MusicResource_abee33ef2d4a01564d50edb1474c7bf2e}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily So\+Loud\+::\+Wav\+Stream\& ngind\+::resources\+::\+Music\+Resource\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get So\+Loud Wav Stream reference. \begin{DoxyReturn}{Returns}
+So\+Loud\+::\+Wav\+Stream\&, So\+Loud Wav Stream reference 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_ab9645973a4b4be25de0f6c3e2380f898}\label{classngind_1_1resources_1_1MusicResource_ab9645973a4b4be25de0f6c3e2380f898}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily So\+Loud\+::\+Wav\+Stream$\ast$ ngind\+::resources\+::\+Music\+Resource\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get So\+Loud Wav Stream object. \begin{DoxyReturn}{Returns}
+So\+Loud\+::\+Wav\+Stream$\ast$, So\+Loud Wav Stream object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a3bfeca24eeac5ff65783414afcbe7990}\label{classngind_1_1resources_1_1MusicResource_a3bfeca24eeac5ff65783414afcbe7990}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!setLooping@{setLooping}}
+\index{setLooping@{setLooping}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{setLooping()}{setLooping()}}
+{\footnotesize\ttfamily void ngind\+::resources\+::\+Music\+Resource\+::set\+Looping (\begin{DoxyParamCaption}\item[{const bool \&}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set whether play music in loop. 
+\begin{DoxyParams}{Parameters}
+{\em loop} & whether play music in loop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a420850c6a03cc926d53dd64acae634c0}\label{classngind_1_1resources_1_1MusicResource_a420850c6a03cc926d53dd64acae634c0}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!setLoopPoint@{setLoopPoint}}
+\index{setLoopPoint@{setLoopPoint}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{setLoopPoint()}{setLoopPoint()}}
+{\footnotesize\ttfamily void ngind\+::resources\+::\+Music\+Resource\+::set\+Loop\+Point (\begin{DoxyParamCaption}\item[{const double \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set where music starts again. 
+\begin{DoxyParams}{Parameters}
+{\em point} & where music starts again \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a4d33cee2ab3a2ae0aee0c47dd658a416}\label{classngind_1_1resources_1_1MusicResource_a4d33cee2ab3a2ae0aee0c47dd658a416}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void ngind\+::resources\+::\+Music\+Resource\+::set\+Volume (\begin{DoxyParamCaption}\item[{const float \&}]{vol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set volume of sound effect. 
+\begin{DoxyParams}{Parameters}
+{\em vol} & new volume value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a184860c6cc841018b3115af382b59a78}\label{classngind_1_1resources_1_1MusicResource_a184860c6cc841018b3115af382b59a78}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!\_is\_looping@{\_is\_looping}}
+\index{\_is\_looping@{\_is\_looping}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{\_is\_looping}{\_is\_looping}}
+{\footnotesize\ttfamily bool ngind\+::resources\+::\+Music\+Resource\+::\+\_\+is\+\_\+looping\hspace{0.3cm}{\ttfamily [private]}}
+
+Is this music playing in loop. \mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a86119e9041d073b14c55e745a8282579}\label{classngind_1_1resources_1_1MusicResource_a86119e9041d073b14c55e745a8282579}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!\_length@{\_length}}
+\index{\_length@{\_length}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{\_length}{\_length}}
+{\footnotesize\ttfamily double ngind\+::resources\+::\+Music\+Resource\+::\+\_\+length\hspace{0.3cm}{\ttfamily [private]}}
+
+Length of music. \mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a485e87322b7cbb8e7def4c235ff33e2d}\label{classngind_1_1resources_1_1MusicResource_a485e87322b7cbb8e7def4c235ff33e2d}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{\_stream}{\_stream}}
+{\footnotesize\ttfamily So\+Loud\+::\+Wav\+Stream$\ast$ ngind\+::resources\+::\+Music\+Resource\+::\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
+
+So\+Loud wave stream object. \mbox{\Hypertarget{classngind_1_1resources_1_1MusicResource_a2678824624e8d1704e5d8cb006b39028}\label{classngind_1_1resources_1_1MusicResource_a2678824624e8d1704e5d8cb006b39028}} 
+\index{ngind::resources::MusicResource@{ngind::resources::MusicResource}!MUSIC\_RESOURCE\_PATH@{MUSIC\_RESOURCE\_PATH}}
+\index{MUSIC\_RESOURCE\_PATH@{MUSIC\_RESOURCE\_PATH}!ngind::resources::MusicResource@{ngind::resources::MusicResource}}
+\doxysubsubsection{\texorpdfstring{MUSIC\_RESOURCE\_PATH}{MUSIC\_RESOURCE\_PATH}}
+{\footnotesize\ttfamily const static std\+::string ngind\+::resources\+::\+Music\+Resource\+::\+M\+U\+S\+I\+C\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+P\+A\+TH\hspace{0.3cm}{\ttfamily [static]}}
+
+Path of music resources. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/resources/\mbox{\hyperlink{music__resource_8h}{music\+\_\+resource.\+h}}\end{DoxyCompactItemize}

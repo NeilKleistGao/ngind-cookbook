@@ -1,0 +1,220 @@
+\hypertarget{classngind_1_1components_1_1MusicPlayer}{}\doxysection{ngind\+::components\+::Music\+Player Class Reference}
+\label{classngind_1_1components_1_1MusicPlayer}\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+
+
+Inheritance diagram for ngind\+::components\+::Music\+Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1MusicPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::Music\+Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1MusicPlayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_ade969c226ec680edfa235a6f69a7614f}\label{classngind_1_1components_1_1MusicPlayer_ade969c226ec680edfa235a6f69a7614f}} 
+{\bfseries Music\+Player} (const \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer}{Music\+Player}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_abaae3c79544a429f70d9c98bf701bc77}\label{classngind_1_1components_1_1MusicPlayer_abaae3c79544a429f70d9c98bf701bc77}} 
+\mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer}{Music\+Player}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer}{Music\+Player}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a2cca0c6363351bb5b250d2c4e1d69ae3}\label{classngind_1_1components_1_1MusicPlayer_a2cca0c6363351bb5b250d2c4e1d69ae3}} 
+{\bfseries Music\+Player} (\mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer}{Music\+Player}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a185613055e9c39abffd55c30a9d8e08e}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a703933bcbf1864a4cae90f65a11ec7dc}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_aac8049a2c6ad222b2b67e954d86eed01}{pause}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a6472e3f788ac5091f06ca0cf7a27d87b}{resume}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a00f374556d400676cd6bf93a7b68ef6d}{play}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a48a4320eae5d2a29f2da2d1290954207}{stop}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a131530bbb3c99d97e86eb3849e5f60c3}{set\+Volume}} (const float \&vol)
+\item 
+float \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a6861067a565e6bda2cb0c8012a44b9fb}{get\+Volume}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_af35cfd520e77c6d8278a314b1573bf59}{set\+Looping}} (const bool \&loop)
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a74ed5f0be330f14234f3e5e81be5f18c}{is\+Looping}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a6b7a465796071b5fd3b325ddc6e6821a}{set\+Loop\+Point}} (const double \&point)
+\item 
+double \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a0188adac4aea0d8341b72726c4b068de}{get\+Loop\+Point}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer}{Music\+Player}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_ada84bdd7f6dfa962dd4f8b9f772bb1ba}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a587cbdbcdb37324b1a7201ef0a044721}{\+\_\+auto}}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_ad8c73ece588383716a11a5eea08ef136}{\+\_\+music}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_ada84bdd7f6dfa962dd4f8b9f772bb1ba}\label{classngind_1_1components_1_1MusicPlayer_ada84bdd7f6dfa962dd4f8b9f772bb1ba}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!create@{create}}
+\index{create@{create}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer}{Music\+Player}}$\ast$ ngind\+::components\+::\+Music\+Player\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a music component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Music\+Player$\ast$, the instance of music component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a0188adac4aea0d8341b72726c4b068de}\label{classngind_1_1components_1_1MusicPlayer_a0188adac4aea0d8341b72726c4b068de}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!getLoopPoint@{getLoopPoint}}
+\index{getLoopPoint@{getLoopPoint}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{getLoopPoint()}{getLoopPoint()}}
+{\footnotesize\ttfamily double ngind\+::components\+::\+Music\+Player\+::get\+Loop\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get where music starts again. \begin{DoxyReturn}{Returns}
+where music starts again 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a6861067a565e6bda2cb0c8012a44b9fb}\label{classngind_1_1components_1_1MusicPlayer_a6861067a565e6bda2cb0c8012a44b9fb}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily float ngind\+::components\+::\+Music\+Player\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the volume value. \begin{DoxyReturn}{Returns}
+float, the volume 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a703933bcbf1864a4cae90f65a11ec7dc}\label{classngind_1_1components_1_1MusicPlayer_a703933bcbf1864a4cae90f65a11ec7dc}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!init@{init}}
+\index{init@{init}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{ngind\+::components\+::\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a74ed5f0be330f14234f3e5e81be5f18c}\label{classngind_1_1components_1_1MusicPlayer_a74ed5f0be330f14234f3e5e81be5f18c}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!isLooping@{isLooping}}
+\index{isLooping@{isLooping}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{isLooping()}{isLooping()}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Music\+Player\+::is\+Looping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get whether play music in loop. \begin{DoxyReturn}{Returns}
+bool, whether play music in loop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_aac8049a2c6ad222b2b67e954d86eed01}\label{classngind_1_1components_1_1MusicPlayer_aac8049a2c6ad222b2b67e954d86eed01}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!pause@{pause}}
+\index{pause@{pause}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pause music playing. \mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a00f374556d400676cd6bf93a7b68ef6d}\label{classngind_1_1components_1_1MusicPlayer_a00f374556d400676cd6bf93a7b68ef6d}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!play@{play}}
+\index{play@{play}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Play this music. \mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a6472e3f788ac5091f06ca0cf7a27d87b}\label{classngind_1_1components_1_1MusicPlayer_a6472e3f788ac5091f06ca0cf7a27d87b}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!resume@{resume}}
+\index{resume@{resume}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resume music from pausing. \mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_af35cfd520e77c6d8278a314b1573bf59}\label{classngind_1_1components_1_1MusicPlayer_af35cfd520e77c6d8278a314b1573bf59}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!setLooping@{setLooping}}
+\index{setLooping@{setLooping}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{setLooping()}{setLooping()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::set\+Looping (\begin{DoxyParamCaption}\item[{const bool \&}]{loop }\end{DoxyParamCaption})}
+
+Set whether play music in loop. 
+\begin{DoxyParams}{Parameters}
+{\em loop} & whether play music in loop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a6b7a465796071b5fd3b325ddc6e6821a}\label{classngind_1_1components_1_1MusicPlayer_a6b7a465796071b5fd3b325ddc6e6821a}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!setLoopPoint@{setLoopPoint}}
+\index{setLoopPoint@{setLoopPoint}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{setLoopPoint()}{setLoopPoint()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::set\+Loop\+Point (\begin{DoxyParamCaption}\item[{const double \&}]{point }\end{DoxyParamCaption})}
+
+Set where music starts again. 
+\begin{DoxyParams}{Parameters}
+{\em point} & where music starts again \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a131530bbb3c99d97e86eb3849e5f60c3}\label{classngind_1_1components_1_1MusicPlayer_a131530bbb3c99d97e86eb3849e5f60c3}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::set\+Volume (\begin{DoxyParamCaption}\item[{const float \&}]{vol }\end{DoxyParamCaption})}
+
+Set volume of sound effect. 
+\begin{DoxyParams}{Parameters}
+{\em vol} & new volume value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a48a4320eae5d2a29f2da2d1290954207}\label{classngind_1_1components_1_1MusicPlayer_a48a4320eae5d2a29f2da2d1290954207}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!stop@{stop}}
+\index{stop@{stop}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stop playing. \mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a185613055e9c39abffd55c30a9d8e08e}\label{classngind_1_1components_1_1MusicPlayer_a185613055e9c39abffd55c30a9d8e08e}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!update@{update}}
+\index{update@{update}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Music\+Player\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{ngind\+::components\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_a587cbdbcdb37324b1a7201ef0a044721}\label{classngind_1_1components_1_1MusicPlayer_a587cbdbcdb37324b1a7201ef0a044721}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!\_auto@{\_auto}}
+\index{\_auto@{\_auto}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{\_auto}{\_auto}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Music\+Player\+::\+\_\+auto\hspace{0.3cm}{\ttfamily [private]}}
+
+Whether music starts automatically. \mbox{\Hypertarget{classngind_1_1components_1_1MusicPlayer_ad8c73ece588383716a11a5eea08ef136}\label{classngind_1_1components_1_1MusicPlayer_ad8c73ece588383716a11a5eea08ef136}} 
+\index{ngind::components::MusicPlayer@{ngind::components::MusicPlayer}!\_music@{\_music}}
+\index{\_music@{\_music}!ngind::components::MusicPlayer@{ngind::components::MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{\_music}{\_music}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1MusicResource}{resources\+::\+Music\+Resource}}$\ast$ ngind\+::components\+::\+Music\+Player\+::\+\_\+music\hspace{0.3cm}{\ttfamily [private]}}
+
+Music resource. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{music__player_8h}{music\+\_\+player.\+h}}\end{DoxyCompactItemize}

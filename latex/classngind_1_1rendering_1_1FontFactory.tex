@@ -1,0 +1,95 @@
+\hypertarget{classngind_1_1rendering_1_1FontFactory}{}\doxysection{ngind\+::rendering\+::Font\+Factory Class Reference}
+\label{classngind_1_1rendering_1_1FontFactory}\index{ngind::rendering::FontFactory@{ngind::rendering::FontFactory}}
+
+
+{\ttfamily \#include $<$font\+\_\+factory.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::rendering\+::Font\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classngind_1_1rendering_1_1FontFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+F\+T\+\_\+\+Face \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory_a358e25dc1aead0274447ca4413607918}{load\+Font\+Face}} (const std\+::string \&filename, const long \&index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory}{Font\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory_addf743e7d549fe8b83727cd1a64d4127}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory_abd4bc0f270453d42b948d737e670c431}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+T\+\_\+\+Library \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory_a74219f4875c3a6b7ed567b44785b1ab6}{\+\_\+library}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory}{Font\+Factory}} $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory_a82794ddfa1570c8d6eb8a8e35df55e17}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is defined for font face data creating. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1FontFactory_abd4bc0f270453d42b948d737e670c431}\label{classngind_1_1rendering_1_1FontFactory_abd4bc0f270453d42b948d737e670c431}} 
+\index{ngind::rendering::FontFactory@{ngind::rendering::FontFactory}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::rendering::FontFactory@{ngind::rendering::FontFactory}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::rendering\+::\+Font\+Factory\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy instance of factory \mbox{\Hypertarget{classngind_1_1rendering_1_1FontFactory_addf743e7d549fe8b83727cd1a64d4127}\label{classngind_1_1rendering_1_1FontFactory_addf743e7d549fe8b83727cd1a64d4127}} 
+\index{ngind::rendering::FontFactory@{ngind::rendering::FontFactory}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::rendering::FontFactory@{ngind::rendering::FontFactory}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory}{Font\+Factory}}$\ast$ ngind\+::rendering\+::\+Font\+Factory\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get instance of factory \begin{DoxyReturn}{Returns}
+Font\+Factory$\ast$, the instance of factory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1FontFactory_a358e25dc1aead0274447ca4413607918}\label{classngind_1_1rendering_1_1FontFactory_a358e25dc1aead0274447ca4413607918}} 
+\index{ngind::rendering::FontFactory@{ngind::rendering::FontFactory}!loadFontFace@{loadFontFace}}
+\index{loadFontFace@{loadFontFace}!ngind::rendering::FontFactory@{ngind::rendering::FontFactory}}
+\doxysubsubsection{\texorpdfstring{loadFontFace()}{loadFontFace()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Face ngind\+::rendering\+::\+Font\+Factory\+::load\+Font\+Face (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const long \&}]{index }\end{DoxyParamCaption})}
+
+Load font face data from file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & filename of font \\
+\hline
+{\em index} & face index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+T\+\_\+\+Face, face data of font 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1FontFactory_a82794ddfa1570c8d6eb8a8e35df55e17}\label{classngind_1_1rendering_1_1FontFactory_a82794ddfa1570c8d6eb8a8e35df55e17}} 
+\index{ngind::rendering::FontFactory@{ngind::rendering::FontFactory}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::rendering::FontFactory@{ngind::rendering::FontFactory}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1rendering_1_1FontFactory}{Font\+Factory}}$\ast$ ngind\+::rendering\+::\+Font\+Factory\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The instance of font factory \mbox{\Hypertarget{classngind_1_1rendering_1_1FontFactory_a74219f4875c3a6b7ed567b44785b1ab6}\label{classngind_1_1rendering_1_1FontFactory_a74219f4875c3a6b7ed567b44785b1ab6}} 
+\index{ngind::rendering::FontFactory@{ngind::rendering::FontFactory}!\_library@{\_library}}
+\index{\_library@{\_library}!ngind::rendering::FontFactory@{ngind::rendering::FontFactory}}
+\doxysubsubsection{\texorpdfstring{\_library}{\_library}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Library ngind\+::rendering\+::\+Font\+Factory\+::\+\_\+library\hspace{0.3cm}{\ttfamily [private]}}
+
+The font library 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{font__factory_8h}{font\+\_\+factory.\+h}}\end{DoxyCompactItemize}

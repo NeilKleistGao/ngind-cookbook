@@ -1,0 +1,128 @@
+\hypertarget{classngind_1_1filesystem_1_1OutputStream}{}\doxysection{ngind\+::filesystem\+::Output\+Stream Class Reference}
+\label{classngind_1_1filesystem_1_1OutputStream}\index{ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}}
+
+
+{\ttfamily \#include $<$output\+\_\+stream.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::filesystem\+::Output\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classngind_1_1filesystem_1_1OutputStream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::filesystem\+::Output\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1OutputStream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a3a43ce904af8dc5e3b9ef91194d95d5e}{write}} (const char \&c)=0
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a5e383080dfe803ae0de09ba76fb0e974}{write}} (const char $\ast$buff)
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a9483ec5527b492a08574847f14ed3880}{write}} (const std\+::string \&str)
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a7389d8d8dea2fe1326172384c58f9a0b}{write}} (const char $\ast$buff, const size\+\_\+t \&offset, const size\+\_\+t \&len)
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_ab0ed5a3b5b8288d9d263eabdeabe010e}{flush}} ()
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_adefebb0f809662ab583fd571866cd090}{close}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+General output stream. Make sure that all other output stream classes inherit from this. Though \char`\"{}stream\char`\"{} its name is, no C++ stream will be used in all stream classes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1OutputStream_adefebb0f809662ab583fd571866cd090}\label{classngind_1_1filesystem_1_1OutputStream_adefebb0f809662ab583fd571866cd090}} 
+\index{ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}!close@{close}}
+\index{close@{close}!ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void ngind\+::filesystem\+::\+Output\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Save and close the file. 
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_aac4d449c24df52385baf6bf30341961c}{ngind\+::filesystem\+::\+File\+Output\+Stream}}, and \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_ac0f59a4a7ea48c49e5659d6678af65e4}{ngind\+::filesystem\+::\+Cipher\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1OutputStream_ab0ed5a3b5b8288d9d263eabdeabe010e}\label{classngind_1_1filesystem_1_1OutputStream_ab0ed5a3b5b8288d9d263eabdeabe010e}} 
+\index{ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}!flush@{flush}}
+\index{flush@{flush}!ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily virtual void ngind\+::filesystem\+::\+Output\+Stream\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Save all modification immediately. 
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_adc4b1fac016a22f05a5dfaf9fed0f81f}{ngind\+::filesystem\+::\+File\+Output\+Stream}}, and \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_aa5f10cb4ccceadd11f783004eb321642}{ngind\+::filesystem\+::\+Cipher\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1OutputStream_a3a43ce904af8dc5e3b9ef91194d95d5e}\label{classngind_1_1filesystem_1_1OutputStream_a3a43ce904af8dc5e3b9ef91194d95d5e}} 
+\index{ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual void ngind\+::filesystem\+::\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const char \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Write a character. 
+\begin{DoxyParams}{Parameters}
+{\em c} & character to be written. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_a5e53fc7005df212097ffeb5463d8bd26}{ngind\+::filesystem\+::\+File\+Output\+Stream}}, and \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_a7b7c5b6b8ea76b2fff3fc94061b3787b}{ngind\+::filesystem\+::\+Cipher\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1OutputStream_a5e383080dfe803ae0de09ba76fb0e974}\label{classngind_1_1filesystem_1_1OutputStream_a5e383080dfe803ae0de09ba76fb0e974}} 
+\index{ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write buffer in a file. 
+\begin{DoxyParams}{Parameters}
+{\em buff} & buffer to be written \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1OutputStream_a7389d8d8dea2fe1326172384c58f9a0b}\label{classngind_1_1filesystem_1_1OutputStream_a7389d8d8dea2fe1326172384c58f9a0b}} 
+\index{ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buff,  }\item[{const size\+\_\+t \&}]{offset,  }\item[{const size\+\_\+t \&}]{len }\end{DoxyParamCaption})}
+
+Write buffer in a file with given offset and length. 
+\begin{DoxyParams}{Parameters}
+{\em buff} & buffer to be written \\
+\hline
+{\em offset} & offset of buffer. Head of data would be written in buffer\mbox{[}offset\mbox{]} \\
+\hline
+{\em len} & how many characters you hope it writes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1OutputStream_a9483ec5527b492a08574847f14ed3880}\label{classngind_1_1filesystem_1_1OutputStream_a9483ec5527b492a08574847f14ed3880}} 
+\index{ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::OutputStream@{ngind::filesystem::OutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily virtual void ngind\+::filesystem\+::\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Write a string in a file. 
+\begin{DoxyParams}{Parameters}
+{\em str} & string to be written. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1filesystem_1_1FileOutputStream_ae456244bcc3edd121d2e0a9ce7d40c16}{ngind\+::filesystem\+::\+File\+Output\+Stream}}, and \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_a7daf7654572a23bd633877bae96faf65}{ngind\+::filesystem\+::\+Cipher\+Output\+Stream}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/filesystem/\mbox{\hyperlink{output__stream_8h}{output\+\_\+stream.\+h}}\end{DoxyCompactItemize}

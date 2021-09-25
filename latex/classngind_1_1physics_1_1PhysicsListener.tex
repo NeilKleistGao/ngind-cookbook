@@ -1,0 +1,120 @@
+\hypertarget{classngind_1_1physics_1_1PhysicsListener}{}\doxysection{ngind\+::physics\+::Physics\+Listener Class Reference}
+\label{classngind_1_1physics_1_1PhysicsListener}\index{ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}}
+
+
+{\ttfamily \#include $<$physics\+\_\+listener.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::physics\+::Physics\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classngind_1_1physics_1_1PhysicsListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Physics\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classngind_1_1physics_1_1PhysicsListener__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener_ac9d5483d001ac88ff9cb6ba1878dcaf1}{Begin\+Contact}} (b2\+Contact $\ast$contact) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener_ad035c4e4a7385978d12d0c01b9e3c245}{End\+Contact}} (b2\+Contact $\ast$contact) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener_abbb92d3d2f12b1bd8634eb850c4d22cb}{Pre\+Solve}} (b2\+Contact $\ast$contact, const b2\+Manifold $\ast$old\+Manifold) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener_a29a32008f2787345165d9f4d9b179435}{Post\+Solve}} (b2\+Contact $\ast$contact, const b2\+Contact\+Impulse $\ast$impulse) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::pair$<$ \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}} $\ast$, \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener_a52feef19d248d48152ddddd27d61f933}{get\+Contacting\+Bodies}} (b2\+Contact $\ast$contact)
+\item 
+static void \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsListener_aeef49e500fc0edf03f654eb6a0e88874}{send\+Message}} (const std\+::string \&name, \mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$sender, \mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Physics event listener. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsListener_ac9d5483d001ac88ff9cb6ba1878dcaf1}\label{classngind_1_1physics_1_1PhysicsListener_ac9d5483d001ac88ff9cb6ba1878dcaf1}} 
+\index{ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}!BeginContact@{BeginContact}}
+\index{BeginContact@{BeginContact}!ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}}
+\doxysubsubsection{\texorpdfstring{BeginContact()}{BeginContact()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+Listener\+::\+Begin\+Contact (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\begin{DoxySeeAlso}{See also}
+b2\+\_\+world\+\_\+callbacks.\+h 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsListener_ad035c4e4a7385978d12d0c01b9e3c245}\label{classngind_1_1physics_1_1PhysicsListener_ad035c4e4a7385978d12d0c01b9e3c245}} 
+\index{ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}!EndContact@{EndContact}}
+\index{EndContact@{EndContact}!ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}}
+\doxysubsubsection{\texorpdfstring{EndContact()}{EndContact()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+Listener\+::\+End\+Contact (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\begin{DoxySeeAlso}{See also}
+b2\+\_\+world\+\_\+callbacks.\+h 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsListener_a52feef19d248d48152ddddd27d61f933}\label{classngind_1_1physics_1_1PhysicsListener_a52feef19d248d48152ddddd27d61f933}} 
+\index{ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}!getContactingBodies@{getContactingBodies}}
+\index{getContactingBodies@{getContactingBodies}!ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}}
+\doxysubsubsection{\texorpdfstring{getContactingBodies()}{getContactingBodies()}}
+{\footnotesize\ttfamily static std\+::pair$<$\mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}}$\ast$, \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody}{Rigid\+Body}}$\ast$$>$ ngind\+::physics\+::\+Physics\+Listener\+::get\+Contacting\+Bodies (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Get the pair of rigid bodies by given contact object 
+\begin{DoxyParams}{Parameters}
+{\em contact} & the given contact object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$\+Rigid\+Body$\ast$, Rigid\+Body$\ast$$>$, the pair of rigid bodies 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsListener_a29a32008f2787345165d9f4d9b179435}\label{classngind_1_1physics_1_1PhysicsListener_a29a32008f2787345165d9f4d9b179435}} 
+\index{ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}!PostSolve@{PostSolve}}
+\index{PostSolve@{PostSolve}!ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}}
+\doxysubsubsection{\texorpdfstring{PostSolve()}{PostSolve()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+Listener\+::\+Post\+Solve (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact,  }\item[{const b2\+Contact\+Impulse $\ast$}]{impulse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\begin{DoxySeeAlso}{See also}
+b2\+\_\+world\+\_\+callbacks.\+h 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsListener_abbb92d3d2f12b1bd8634eb850c4d22cb}\label{classngind_1_1physics_1_1PhysicsListener_abbb92d3d2f12b1bd8634eb850c4d22cb}} 
+\index{ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}!PreSolve@{PreSolve}}
+\index{PreSolve@{PreSolve}!ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}}
+\doxysubsubsection{\texorpdfstring{PreSolve()}{PreSolve()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Physics\+Listener\+::\+Pre\+Solve (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact,  }\item[{const b2\+Manifold $\ast$}]{old\+Manifold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\begin{DoxySeeAlso}{See also}
+b2\+\_\+world\+\_\+callbacks.\+h 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classngind_1_1physics_1_1PhysicsListener_aeef49e500fc0edf03f654eb6a0e88874}\label{classngind_1_1physics_1_1PhysicsListener_aeef49e500fc0edf03f654eb6a0e88874}} 
+\index{ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!ngind::physics::PhysicsListener@{ngind::physics::PhysicsListener}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily static void ngind\+::physics\+::\+Physics\+Listener\+::send\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$}]{sender,  }\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Send messages related to physics event. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of message \\
+\hline
+{\em sender} & sender of message \\
+\hline
+{\em other} & another object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/\mbox{\hyperlink{physics__listener_8h}{physics\+\_\+listener.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,294 @@
+\hypertarget{classngind_1_1components_1_1Sprite}{}\doxysection{ngind\+::components\+::Sprite Class Reference}
+\label{classngind_1_1components_1_1Sprite}\index{ngind::components::Sprite@{ngind::components::Sprite}}
+
+
+{\ttfamily \#include $<$sprite.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::components\+::Sprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Sprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::Sprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Sprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a5f01aa0c6f03612bc0aa281ec0794ab7}\label{classngind_1_1components_1_1Sprite_a5f01aa0c6f03612bc0aa281ec0794ab7}} 
+{\bfseries Sprite} (const \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_ac4940f5768e324806f2245333a33c7ad}\label{classngind_1_1components_1_1Sprite_ac4940f5768e324806f2245333a33c7ad}} 
+\mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a0be4e5b22e2c1c977b2dfe3ee24bd1a8}\label{classngind_1_1components_1_1Sprite_a0be4e5b22e2c1c977b2dfe3ee24bd1a8}} 
+{\bfseries Sprite} (\mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a8e983595788c2b2f934ccfe6307b6c9a}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a7cb31c1d2dc3b50391076b18b569f8d3}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a3d870d58346335c0bd004595dd58c8c9}{set\+Image}} (const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a75223b597d74391c206395764506852c}{set\+Image}} (const std\+::string \&filename, const glm\+::vec2 \&lb, const glm\+::vec2 \&rt)
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a6749c51ca741e845434df6a05d015ea9}{get\+Image\+Name}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a6b3a70f5a232b1935b0cc431ce0f5688}{set\+Bound}} (const glm\+::vec2 \&lb, const glm\+::vec2 \&rt)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a06cf16adae79f02b4e01237325435527}{set\+Left\+Bottom\+Bound}} (const glm\+::vec2 \&lb)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_acd8855ca3c0cf8a6fe174930ce42af18}{set\+Right\+Top\+Bound}} (const glm\+::vec2 \&rt)
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1components_1_1Sprite_ab6e07e93af12d907bea1fc0c739d3657}{get\+Left\+Bottom\+Bound}} () const
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a69040ff2302a4f7621a9bf211789b7e1}{get\+Right\+Top\+Bound}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a657834fc826e146032a7ab6d13e06e60}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\item 
+static \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a37b38dbb8c5d02714f57ba18d171b4fc}{get\+Component}} (\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Sprite_af68ba8d6277e13e1e94ee85d78020d3a}{draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classngind_1_1components_1_1Sprite_aa3329a9e4925dc155fe0a4efdff50fdb}{get\+Model\+Matrix}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1resources_1_1TextureResource}{resources\+::\+Texture\+Resource}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Sprite_ae37d8cbb4391f8f942ff68c5bdf0c006}{\+\_\+texture}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a1e4e800ef771c5b939ec2075ad1c098c}{\+\_\+lb}}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a0aa0d6d14436e563513b9851fabfa02d}\label{classngind_1_1components_1_1Sprite_a0aa0d6d14436e563513b9851fabfa02d}} 
+glm\+::vec2 {\bfseries \+\_\+rt}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1QuadRenderingCommand}{rendering\+::\+Quad\+Rendering\+Command}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a6bedaa131267437af55e675f216db698}{\+\_\+command}}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{rendering\+::\+Quad}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a12a2827cbaf836afb4ce6b3da84c8237}{\+\_\+quad}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The renderer component for sprite. You can create an instance both by new and by create method. Just draw a lovely sprite on your screen! 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a657834fc826e146032a7ab6d13e06e60}\label{classngind_1_1components_1_1Sprite_a657834fc826e146032a7ab6d13e06e60}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!create@{create}}
+\index{create@{create}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}}$\ast$ ngind\+::components\+::\+Sprite\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static function used by configuration creators. This function create a new instance of \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}} 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sprite$\ast$, a pointer to the new instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_af68ba8d6277e13e1e94ee85d78020d3a}\label{classngind_1_1components_1_1Sprite_af68ba8d6277e13e1e94ee85d78020d3a}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!draw@{draw}}
+\index{draw@{draw}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+components/render\+\_\+component.\+h 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1components_1_1RendererComponent_a4529dd713533d10dad31646099bf3616}{ngind\+::components\+::\+Renderer\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a37b38dbb8c5d02714f57ba18d171b4fc}\label{classngind_1_1components_1_1Sprite_a37b38dbb8c5d02714f57ba18d171b4fc}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1components_1_1Sprite}{Sprite}}$\ast$ ngind\+::components\+::\+Sprite\+::get\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Search sprite component in given object. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & given object (or parent of sprite) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sprite$\ast$, sprite component. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a6749c51ca741e845434df6a05d015ea9}\label{classngind_1_1components_1_1Sprite_a6749c51ca741e845434df6a05d015ea9}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!getImageName@{getImageName}}
+\index{getImageName@{getImageName}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{getImageName()}{getImageName()}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Sprite\+::get\+Image\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the filename of the texture used in this rendering. \begin{DoxyReturn}{Returns}
+std\+::string, the filename of texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_ab6e07e93af12d907bea1fc0c739d3657}\label{classngind_1_1components_1_1Sprite_ab6e07e93af12d907bea1fc0c739d3657}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!getLeftBottomBound@{getLeftBottomBound}}
+\index{getLeftBottomBound@{getLeftBottomBound}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{getLeftBottomBound()}{getLeftBottomBound()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::components\+::\+Sprite\+::get\+Left\+Bottom\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the left bottom boundary. \begin{DoxyReturn}{Returns}
+Vector2D, the left bottom boundary position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_aa3329a9e4925dc155fe0a4efdff50fdb}\label{classngind_1_1components_1_1Sprite_aa3329a9e4925dc155fe0a4efdff50fdb}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 ngind\+::components\+::\+Sprite\+::get\+Model\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Calculate the model matrix \begin{DoxyReturn}{Returns}
+glm\+::mat4, the model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a69040ff2302a4f7621a9bf211789b7e1}\label{classngind_1_1components_1_1Sprite_a69040ff2302a4f7621a9bf211789b7e1}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!getRightTopBound@{getRightTopBound}}
+\index{getRightTopBound@{getRightTopBound}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{getRightTopBound()}{getRightTopBound()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::components\+::\+Sprite\+::get\+Right\+Top\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the right top boundary. \begin{DoxyReturn}{Returns}
+Vector2D, the right top boundary position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a7cb31c1d2dc3b50391076b18b569f8d3}\label{classngind_1_1components_1_1Sprite_a7cb31c1d2dc3b50391076b18b569f8d3}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!init@{init}}
+\index{init@{init}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1RendererComponent_a36f3a6676f971b2045ca12e5a40e5539}{ngind\+::components\+::\+Renderer\+Component}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a6b3a70f5a232b1935b0cc431ce0f5688}\label{classngind_1_1components_1_1Sprite_a6b3a70f5a232b1935b0cc431ce0f5688}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!setBound@{setBound}}
+\index{setBound@{setBound}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{setBound()}{setBound()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::set\+Bound (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{lb,  }\item[{const glm\+::vec2 \&}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the boundary of texture. 
+\begin{DoxyParams}{Parameters}
+{\em lb} & the left bottom boundary position \\
+\hline
+{\em rt} & the right top boundary position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a3d870d58346335c0bd004595dd58c8c9}\label{classngind_1_1components_1_1Sprite_a3d870d58346335c0bd004595dd58c8c9}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!setImage@{setImage}}
+\index{setImage@{setImage}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{setImage()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::set\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Set a new image to this rendering. It will release the old one texture resource. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & the image\textquotesingle{} filename \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a75223b597d74391c206395764506852c}\label{classngind_1_1components_1_1Sprite_a75223b597d74391c206395764506852c}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!setImage@{setImage}}
+\index{setImage@{setImage}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{setImage()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::set\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const glm\+::vec2 \&}]{lb,  }\item[{const glm\+::vec2 \&}]{rt }\end{DoxyParamCaption})}
+
+Set a new image and new boundary to this rendering. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & the image\textquotesingle{} filename \\
+\hline
+{\em lb} & the left bottom boundary \\
+\hline
+{\em rt} & the right top boundary \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a06cf16adae79f02b4e01237325435527}\label{classngind_1_1components_1_1Sprite_a06cf16adae79f02b4e01237325435527}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!setLeftBottomBound@{setLeftBottomBound}}
+\index{setLeftBottomBound@{setLeftBottomBound}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{setLeftBottomBound()}{setLeftBottomBound()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::set\+Left\+Bottom\+Bound (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{lb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the left bottom boundary. 
+\begin{DoxyParams}{Parameters}
+{\em lb} & the left bottom boundary position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_acd8855ca3c0cf8a6fe174930ce42af18}\label{classngind_1_1components_1_1Sprite_acd8855ca3c0cf8a6fe174930ce42af18}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!setRightTopBound@{setRightTopBound}}
+\index{setRightTopBound@{setRightTopBound}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{setRightTopBound()}{setRightTopBound()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::set\+Right\+Top\+Bound (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the right top boundary. 
+\begin{DoxyParams}{Parameters}
+{\em rt} & the right top boundary position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a8e983595788c2b2f934ccfe6307b6c9a}\label{classngind_1_1components_1_1Sprite_a8e983595788c2b2f934ccfe6307b6c9a}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!update@{update}}
+\index{update@{update}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Sprite\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1components_1_1RendererComponent_a0c424a16037f2c9c38252669acbd72a1}{ngind\+::components\+::\+Renderer\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a6bedaa131267437af55e675f216db698}\label{classngind_1_1components_1_1Sprite_a6bedaa131267437af55e675f216db698}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!\_command@{\_command}}
+\index{\_command@{\_command}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{\_command}{\_command}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1rendering_1_1QuadRenderingCommand}{rendering\+::\+Quad\+Rendering\+Command}}$\ast$ ngind\+::components\+::\+Sprite\+::\+\_\+command\hspace{0.3cm}{\ttfamily [private]}}
+
+Render command this sprite used. \mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a1e4e800ef771c5b939ec2075ad1c098c}\label{classngind_1_1components_1_1Sprite_a1e4e800ef771c5b939ec2075ad1c098c}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!\_lb@{\_lb}}
+\index{\_lb@{\_lb}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{\_lb}{\_lb}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::components\+::\+Sprite\+::\+\_\+lb\hspace{0.3cm}{\ttfamily [private]}}
+
+The boundary vectors. \mbox{\Hypertarget{classngind_1_1components_1_1Sprite_a12a2827cbaf836afb4ce6b3da84c8237}\label{classngind_1_1components_1_1Sprite_a12a2827cbaf836afb4ce6b3da84c8237}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!\_quad@{\_quad}}
+\index{\_quad@{\_quad}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{\_quad}{\_quad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1rendering_1_1Quad}{rendering\+::\+Quad}}$\ast$ ngind\+::components\+::\+Sprite\+::\+\_\+quad\hspace{0.3cm}{\ttfamily [private]}}
+
+Quad information. \mbox{\Hypertarget{classngind_1_1components_1_1Sprite_ae37d8cbb4391f8f942ff68c5bdf0c006}\label{classngind_1_1components_1_1Sprite_ae37d8cbb4391f8f942ff68c5bdf0c006}} 
+\index{ngind::components::Sprite@{ngind::components::Sprite}!\_texture@{\_texture}}
+\index{\_texture@{\_texture}!ngind::components::Sprite@{ngind::components::Sprite}}
+\doxysubsubsection{\texorpdfstring{\_texture}{\_texture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1resources_1_1TextureResource}{resources\+::\+Texture\+Resource}}$\ast$ ngind\+::components\+::\+Sprite\+::\+\_\+texture\hspace{0.3cm}{\ttfamily [private]}}
+
+The texture resource reference this sprite use. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/sprite.\+h\end{DoxyCompactItemize}

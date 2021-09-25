@@ -1,0 +1,161 @@
+\hypertarget{classngind_1_1memory_1_1MemoryPool}{}\doxysection{ngind\+::memory\+::Memory\+Pool Class Reference}
+\label{classngind_1_1memory_1_1MemoryPool}\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+
+
+{\ttfamily \#include $<$memory\+\_\+pool.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::memory\+::Memory\+Pool\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classngind_1_1memory_1_1MemoryPool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_abd7133b8665a316ce2bf550ae11a10bc}{clear}} ()
+\item 
+{\footnotesize template$<$typename T , std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ Auto\+Collection\+Object, T $>$, int $>$ N = 0$>$ }\\T $\ast$ \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a40096376e4fdc5852665f745ab6b8ac2}{create}} ()
+\item 
+{\footnotesize template$<$typename T , typename ... P, std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ Auto\+Collection\+Object, T $>$, int $>$ N = 0$>$ }\\T $\ast$ \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a187d076eb542e8c5a1bb36189b551801}{create}} (P... params)
+\item 
+void \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a2824118b4743e60ce7563d037e8d567d}{set\+Flag}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool}{Memory\+Pool}} $\ast$ \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a4c1354b7e4e048cb5da9174f8fabd06e}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a2d08258743294c52e01a086f70934008}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject}{Auto\+Collection\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a9565b97a498b3b1eb94862417b0ef77a}{allocate}} (const size\+\_\+t \&size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a32195c275595d460887fa22d9ff940ed}{\+\_\+dirty}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject}{Auto\+Collection\+Object}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a725b8457cb728a090795ede2810f4077}{\+\_\+pool}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool}{Memory\+Pool}} $\ast$ \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool_a7421688242e204e48d3dd147e58f9c5f}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to manage auto collection object. You shouldn\textquotesingle{}t call this class. Inherit auto collection object instead. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a9565b97a498b3b1eb94862417b0ef77a}\label{classngind_1_1memory_1_1MemoryPool_a9565b97a498b3b1eb94862417b0ef77a}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!allocate@{allocate}}
+\index{allocate@{allocate}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject}{Auto\+Collection\+Object}}$\ast$ ngind\+::memory\+::\+Memory\+Pool\+::allocate (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Allocate a piece of memory from pool 
+\begin{DoxyParams}{Parameters}
+{\em size} & size of memory piece \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Auto\+Collection\+Object$\ast$, new memory area 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_abd7133b8665a316ce2bf550ae11a10bc}\label{classngind_1_1memory_1_1MemoryPool_abd7133b8665a316ce2bf550ae11a10bc}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!clear@{clear}}
+\index{clear@{clear}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void ngind\+::memory\+::\+Memory\+Pool\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the memory pool \mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a40096376e4fdc5852665f745ab6b8ac2}\label{classngind_1_1memory_1_1MemoryPool_a40096376e4fdc5852665f745ab6b8ac2}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!create@{create}}
+\index{create@{create}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ Auto\+Collection\+Object, T $>$, int $>$ N = 0$>$ \\
+T$\ast$ ngind\+::memory\+::\+Memory\+Pool\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an instance of given type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type of instance \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$, the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a187d076eb542e8c5a1bb36189b551801}\label{classngind_1_1memory_1_1MemoryPool_a187d076eb542e8c5a1bb36189b551801}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!create@{create}}
+\index{create@{create}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename ... P, std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ Auto\+Collection\+Object, T $>$, int $>$ N = 0$>$ \\
+T$\ast$ ngind\+::memory\+::\+Memory\+Pool\+::create (\begin{DoxyParamCaption}\item[{P...}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an instance of given type and params. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type of instance \\
+\hline
+{\em P} & type list of params \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em params} & params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$, the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a2d08258743294c52e01a086f70934008}\label{classngind_1_1memory_1_1MemoryPool_a2d08258743294c52e01a086f70934008}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::memory\+::\+Memory\+Pool\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the instance of memory pool \mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a4c1354b7e4e048cb5da9174f8fabd06e}\label{classngind_1_1memory_1_1MemoryPool_a4c1354b7e4e048cb5da9174f8fabd06e}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool}{Memory\+Pool}}$\ast$ ngind\+::memory\+::\+Memory\+Pool\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get instance of memory pool \begin{DoxyReturn}{Returns}
+Memory\+Pool$\ast$, the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a2824118b4743e60ce7563d037e8d567d}\label{classngind_1_1memory_1_1MemoryPool_a2824118b4743e60ce7563d037e8d567d}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!setFlag@{setFlag}}
+\index{setFlag@{setFlag}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{setFlag()}{setFlag()}}
+{\footnotesize\ttfamily void ngind\+::memory\+::\+Memory\+Pool\+::set\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set dirty flag and when this frame ends unused memory would be cleaned. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a32195c275595d460887fa22d9ff940ed}\label{classngind_1_1memory_1_1MemoryPool_a32195c275595d460887fa22d9ff940ed}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!\_dirty@{\_dirty}}
+\index{\_dirty@{\_dirty}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{\_dirty}{\_dirty}}
+{\footnotesize\ttfamily bool ngind\+::memory\+::\+Memory\+Pool\+::\+\_\+dirty\hspace{0.3cm}{\ttfamily [private]}}
+
+Should pool be cleaned. \mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a7421688242e204e48d3dd147e58f9c5f}\label{classngind_1_1memory_1_1MemoryPool_a7421688242e204e48d3dd147e58f9c5f}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1memory_1_1MemoryPool}{Memory\+Pool}}$\ast$ ngind\+::memory\+::\+Memory\+Pool\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The instance of memory pool \mbox{\Hypertarget{classngind_1_1memory_1_1MemoryPool_a725b8457cb728a090795ede2810f4077}\label{classngind_1_1memory_1_1MemoryPool_a725b8457cb728a090795ede2810f4077}} 
+\index{ngind::memory::MemoryPool@{ngind::memory::MemoryPool}!\_pool@{\_pool}}
+\index{\_pool@{\_pool}!ngind::memory::MemoryPool@{ngind::memory::MemoryPool}}
+\doxysubsubsection{\texorpdfstring{\_pool}{\_pool}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classngind_1_1memory_1_1AutoCollectionObject}{Auto\+Collection\+Object}}$\ast$$>$ ngind\+::memory\+::\+Memory\+Pool\+::\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+A R\+B-\/\+Tree to manage objects 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/memory/\mbox{\hyperlink{memory__pool_8h}{memory\+\_\+pool.\+h}}\end{DoxyCompactItemize}

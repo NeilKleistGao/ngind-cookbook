@@ -1,0 +1,290 @@
+\hypertarget{classngind_1_1objects_1_1Object}{}\doxysection{ngind\+::objects\+::Object Class Reference}
+\label{classngind_1_1objects_1_1Object}\index{ngind::objects::Object@{ngind::objects::Object}}
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::objects\+::Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1objects_1_1Object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::objects\+::Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1objects_1_1Object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1Object_acc292e42532d7068a3501c28d9fb84f4}{add\+Child}} (const std\+::string \&name, \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$object)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1Object_ace74c9ec93b013ffad1716e34a0c15d2}{remove\+Child}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1Object_aac607f9bf821c84b4ffd2ac8ee7a7cdd}{remove\+All\+Children}} (const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_aeab72cf356b9b883b993bfc43186dbc2}{get\+Child\+By\+Name}} (const std\+::string \&name)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_a7a05215c5a69c2771e1f9f8c632b86a7}{get\+Children\+By\+Name}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1Object_a5d3be123c6a6ae7f51cf86d8b982888d}{get\+Children\+By\+Name}} (luabridge\+::\+Lua\+Ref ref, const std\+::string \&name)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_a7ad2befb8bf089bd7531c6068b4b4aa0}{get\+Children}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1Object_af412103aba04d8cee4b1a9f1355f7845}{set\+Parent}} (\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$object)
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_a2737ec67426330e65a864c4c68af920a}{get\+Parent}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1objects_1_1Object_a77040c79d459da69800271b1b07ba1d3}{update}} (const float \&) override
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1objects_1_1Object_ae33f2a78e1e9ab3164299b11c3ca56a7}{add\+Component}} (const std\+::string \&name, \mbox{\hyperlink{classngind_1_1components_1_1Component}{components\+::\+Component}} $\ast$component)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\Type $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_a0af9a0c2ee2d8c7e5019c5bbcfdc3b67}{get\+Component}} (const std\+::string \&name)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::vector$<$ Type $\ast$ $>$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_afc7e1fd3db11b61b6cae00577ffd97d8}{get\+Components}} (const std\+::string \&type)
+\item 
+{\footnotesize template$<$typename Type , typename std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ components\+::\+Component, Type $>$$>$ N = 0$>$ }\\void \mbox{\hyperlink{classngind_1_1objects_1_1Object_a5bcd4e76f21c0055cfcd651c35fb334b}{remove\+Component}} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::multimap$<$ std\+::string, \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_a35fac3865cc3f9ee4782bd3b906f4acd}{\+\_\+children}}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classngind_1_1components_1_1Component}{components\+::\+Component}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_a468ea3b391ce707a85f21a66eac4bc06}{\+\_\+components}}
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$ \mbox{\hyperlink{classngind_1_1objects_1_1Object_a9b9bf1e62942c5686e0ed6003e6a0a0d}{\+\_\+parent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is base of all objects in the game world. It can be serialized, auto collected and update itself in each frame. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_acc292e42532d7068a3501c28d9fb84f4}\label{classngind_1_1objects_1_1Object_acc292e42532d7068a3501c28d9fb84f4}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!addChild@{addChild}}
+\index{addChild@{addChild}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{addChild()}{addChild()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+Object\+::add\+Child (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+Add a child object 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of child \\
+\hline
+{\em object} & the pointer to child object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_ae33f2a78e1e9ab3164299b11c3ca56a7}\label{classngind_1_1objects_1_1Object_ae33f2a78e1e9ab3164299b11c3ca56a7}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily virtual void ngind\+::objects\+::\+Object\+::add\+Component (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classngind_1_1components_1_1Component}{components\+::\+Component}} $\ast$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a component. If component exists, nothing will happen. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of component \\
+\hline
+{\em component} & component pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_aeab72cf356b9b883b993bfc43186dbc2}\label{classngind_1_1objects_1_1Object_aeab72cf356b9b883b993bfc43186dbc2}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!getChildByName@{getChildByName}}
+\index{getChildByName@{getChildByName}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{getChildByName()}{getChildByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$ ngind\+::objects\+::\+Object\+::get\+Child\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Get the child. If child doesn\textquotesingle{}t exist, it returns a null pointer 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of child \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object$\ast$, the pointer to child 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a7ad2befb8bf089bd7531c6068b4b4aa0}\label{classngind_1_1objects_1_1Object_a7ad2befb8bf089bd7531c6068b4b4aa0}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!getChildren@{getChildren}}
+\index{getChildren@{getChildren}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{getChildren()}{getChildren()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$$>$ ngind\+::objects\+::\+Object\+::get\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get all children objects. \begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity\+Object$\ast$$>$, all children 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a7a05215c5a69c2771e1f9f8c632b86a7}\label{classngind_1_1objects_1_1Object_a7a05215c5a69c2771e1f9f8c632b86a7}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!getChildrenByName@{getChildrenByName}}
+\index{getChildrenByName@{getChildrenByName}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{getChildrenByName()}{getChildrenByName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$$>$ ngind\+::objects\+::\+Object\+::get\+Children\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Get children by given name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & the given name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity\+Object$\ast$$>$, the list of children 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a5d3be123c6a6ae7f51cf86d8b982888d}\label{classngind_1_1objects_1_1Object_a5d3be123c6a6ae7f51cf86d8b982888d}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!getChildrenByName@{getChildrenByName}}
+\index{getChildrenByName@{getChildrenByName}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{getChildrenByName()}{getChildrenByName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+Object\+::get\+Children\+By\+Name (\begin{DoxyParamCaption}\item[{luabridge\+::\+Lua\+Ref}]{ref,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Get children by given name, and save it in the lua ref object. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & where the object would be saved \\
+\hline
+{\em name} & name of children \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a0af9a0c2ee2d8c7e5019c5bbcfdc3b67}\label{classngind_1_1objects_1_1Object_a0af9a0c2ee2d8c7e5019c5bbcfdc3b67}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type$\ast$ ngind\+::objects\+::\+Object\+::get\+Component (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the component by name. If the component doesn\textquotesingle{}t exist, it will return a null pointer. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & the actual type of component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type$\ast$, the pointer of component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_afc7e1fd3db11b61b6cae00577ffd97d8}\label{classngind_1_1objects_1_1Object_afc7e1fd3db11b61b6cae00577ffd97d8}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!getComponents@{getComponents}}
+\index{getComponents@{getComponents}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+std\+::vector$<$Type$\ast$$>$ ngind\+::objects\+::\+Object\+::get\+Components (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all components by given type 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & given component type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & name of type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Type$\ast$$>$, list of components 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a2737ec67426330e65a864c4c68af920a}\label{classngind_1_1objects_1_1Object_a2737ec67426330e65a864c4c68af920a}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!getParent@{getParent}}
+\index{getParent@{getParent}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}}$\ast$ ngind\+::objects\+::\+Object\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get parent object of this one \begin{DoxyReturn}{Returns}
+Object$\ast$, the pointer to parent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_aac607f9bf821c84b4ffd2ac8ee7a7cdd}\label{classngind_1_1objects_1_1Object_aac607f9bf821c84b4ffd2ac8ee7a7cdd}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!removeAllChildren@{removeAllChildren}}
+\index{removeAllChildren@{removeAllChildren}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{removeAllChildren()}{removeAllChildren()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+Object\+::remove\+All\+Children (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Remove all children by given name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & the given name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_ace74c9ec93b013ffad1716e34a0c15d2}\label{classngind_1_1objects_1_1Object_ace74c9ec93b013ffad1716e34a0c15d2}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!removeChild@{removeChild}}
+\index{removeChild@{removeChild}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{removeChild()}{removeChild()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+Object\+::remove\+Child (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Remove a reference of a child. If child is not found, nothing 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of child \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a5bcd4e76f21c0055cfcd651c35fb334b}\label{classngind_1_1objects_1_1Object_a5bcd4e76f21c0055cfcd651c35fb334b}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!removeComponent@{removeComponent}}
+\index{removeComponent@{removeComponent}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{removeComponent()}{removeComponent()}}
+{\footnotesize\ttfamily template$<$typename Type , typename std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of\+\_\+v$<$ components\+::\+Component, Type $>$$>$ N = 0$>$ \\
+void ngind\+::objects\+::\+Object\+::remove\+Component (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a component by name. If the component doesn\textquotesingle{}t exist, nothing will happen. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & the actual type of component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_af412103aba04d8cee4b1a9f1355f7845}\label{classngind_1_1objects_1_1Object_af412103aba04d8cee4b1a9f1355f7845}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!setParent@{setParent}}
+\index{setParent@{setParent}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+Object\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set parent object of this one 
+\begin{DoxyParams}{Parameters}
+{\em object} & the parent object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a77040c79d459da69800271b1b07ba1d3}\label{classngind_1_1objects_1_1Object_a77040c79d459da69800271b1b07ba1d3}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!update@{update}}
+\index{update@{update}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::objects\+::\+Object\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{kernel/objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1objects_1_1UpdatableObject_ae474f007128861d15204968467796503}{ngind\+::objects\+::\+Updatable\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1objects_1_1World_a184ab51a44be9263b4cc28c9228e1ce2}{ngind\+::objects\+::\+World}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1objects_1_1Object_a35fac3865cc3f9ee4782bd3b906f4acd}\label{classngind_1_1objects_1_1Object_a35fac3865cc3f9ee4782bd3b906f4acd}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!\_children@{\_children}}
+\index{\_children@{\_children}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{\_children}{\_children}}
+{\footnotesize\ttfamily std\+::multimap$<$std\+::string, \mbox{\hyperlink{classngind_1_1objects_1_1EntityObject}{Entity\+Object}}$\ast$$>$ ngind\+::objects\+::\+Object\+::\+\_\+children\hspace{0.3cm}{\ttfamily [protected]}}
+
+A R\+B-\/tree maintaining all children \mbox{\Hypertarget{classngind_1_1objects_1_1Object_a468ea3b391ce707a85f21a66eac4bc06}\label{classngind_1_1objects_1_1Object_a468ea3b391ce707a85f21a66eac4bc06}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!\_components@{\_components}}
+\index{\_components@{\_components}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{\_components}{\_components}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classngind_1_1components_1_1Component}{components\+::\+Component}}$\ast$$>$ ngind\+::objects\+::\+Object\+::\+\_\+components\hspace{0.3cm}{\ttfamily [protected]}}
+
+A R\+B-\/tree maintaining all components \mbox{\Hypertarget{classngind_1_1objects_1_1Object_a9b9bf1e62942c5686e0ed6003e6a0a0d}\label{classngind_1_1objects_1_1Object_a9b9bf1e62942c5686e0ed6003e6a0a0d}} 
+\index{ngind::objects::Object@{ngind::objects::Object}!\_parent@{\_parent}}
+\index{\_parent@{\_parent}!ngind::objects::Object@{ngind::objects::Object}}
+\doxysubsubsection{\texorpdfstring{\_parent}{\_parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}}$\ast$ ngind\+::objects\+::\+Object\+::\+\_\+parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parent object 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/objects/\mbox{\hyperlink{object_8h}{object.\+h}}\end{DoxyCompactItemize}

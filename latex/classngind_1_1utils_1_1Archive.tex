@@ -1,0 +1,209 @@
+\hypertarget{classngind_1_1utils_1_1Archive}{}\doxysection{ngind\+::utils\+::Archive Class Reference}
+\label{classngind_1_1utils_1_1Archive}\index{ngind::utils::Archive@{ngind::utils::Archive}}
+
+
+{\ttfamily \#include $<$archive.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::utils\+::Archive\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classngind_1_1utils_1_1Archive__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1utils_1_1Archive_ac56314697fa86d34a984d2b71b71a08d}{set\+String}} (const std\+::string \&key, const std\+::string \&value)
+\item 
+void \mbox{\hyperlink{classngind_1_1utils_1_1Archive_ad20b65cec88faf1795678151b6d1f96a}{set\+Integer}} (const std\+::string \&key, int value)
+\item 
+void \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a1965f916dfecfaa638e7adafa0d62105}{set\+Float}} (const std\+::string \&key, float value)
+\item 
+void \mbox{\hyperlink{classngind_1_1utils_1_1Archive_ac2684afde1c416aceeae81d85a4d0bc8}{set\+Boolean}} (const std\+::string \&key, bool value)
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a2d992dfc5f50044af3f96e4f6691c78f}{get\+String}} (const std\+::string \&key, const std\+::string \&default\+\_\+value)
+\item 
+int \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a481abfec145d9767d9c2a3d566c70e49}{get\+Integer}} (const std\+::string \&key, int default\+\_\+value)
+\item 
+float \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a4659a34004866bfca496c652a4efdf5d}{get\+Float}} (const std\+::string \&key, float default\+\_\+value)
+\item 
+bool \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a9d8ef54f522d5e4f5012b21d8a0cfc43}{get\+Boolean}} (const std\+::string \&key, bool default\+\_\+value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1utils_1_1Archive}{Archive}} $\ast$ \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a29553abf41f5467d1b6dbb1e7cceaf8a}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a45f468f3b906fc2bf07ddd5ba4253844}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+rapidjson\+::\+Document \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a7a319dad62c93679c3e0b9d01915268a}{\+\_\+doc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1utils_1_1Archive}{Archive}} $\ast$ \mbox{\hyperlink{classngind_1_1utils_1_1Archive_a9cedd89075792740e6213c1567a0c1b4}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1utils_1_1Archive}{Archive}} manager used to save simple user data. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a45f468f3b906fc2bf07ddd5ba4253844}\label{classngind_1_1utils_1_1Archive_a45f468f3b906fc2bf07ddd5ba4253844}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::utils\+::\+Archive\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the instance if it exists. \mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a9d8ef54f522d5e4f5012b21d8a0cfc43}\label{classngind_1_1utils_1_1Archive_a9d8ef54f522d5e4f5012b21d8a0cfc43}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!getBoolean@{getBoolean}}
+\index{getBoolean@{getBoolean}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{getBoolean()}{getBoolean()}}
+{\footnotesize\ttfamily bool ngind\+::utils\+::\+Archive\+::get\+Boolean (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{bool}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+Read boolean variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em default\+\_\+value} & default value if the key does not exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, boolean variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a4659a34004866bfca496c652a4efdf5d}\label{classngind_1_1utils_1_1Archive_a4659a34004866bfca496c652a4efdf5d}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!getFloat@{getFloat}}
+\index{getFloat@{getFloat}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{getFloat()}{getFloat()}}
+{\footnotesize\ttfamily float ngind\+::utils\+::\+Archive\+::get\+Float (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{float}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+Read float variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em default\+\_\+value} & default value if the key does not exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float, float variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a29553abf41f5467d1b6dbb1e7cceaf8a}\label{classngind_1_1utils_1_1Archive_a29553abf41f5467d1b6dbb1e7cceaf8a}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1utils_1_1Archive}{Archive}}$\ast$ ngind\+::utils\+::\+Archive\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the unique instance of archive. If it does not exist, this function will create one. \begin{DoxyReturn}{Returns}
+Archive$\ast$, the unique instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a481abfec145d9767d9c2a3d566c70e49}\label{classngind_1_1utils_1_1Archive_a481abfec145d9767d9c2a3d566c70e49}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!getInteger@{getInteger}}
+\index{getInteger@{getInteger}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{getInteger()}{getInteger()}}
+{\footnotesize\ttfamily int ngind\+::utils\+::\+Archive\+::get\+Integer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{int}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+Read integer variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em default\+\_\+value} & default value if the key does not exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int, integer variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a2d992dfc5f50044af3f96e4f6691c78f}\label{classngind_1_1utils_1_1Archive_a2d992dfc5f50044af3f96e4f6691c78f}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!getString@{getString}}
+\index{getString@{getString}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily std\+::string ngind\+::utils\+::\+Archive\+::get\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+Read string variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em default\+\_\+value} & default value if the key does not exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string, string variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_ac2684afde1c416aceeae81d85a4d0bc8}\label{classngind_1_1utils_1_1Archive_ac2684afde1c416aceeae81d85a4d0bc8}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!setBoolean@{setBoolean}}
+\index{setBoolean@{setBoolean}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{setBoolean()}{setBoolean()}}
+{\footnotesize\ttfamily void ngind\+::utils\+::\+Archive\+::set\+Boolean (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+Save boolean variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em value} & variable\textquotesingle{}s value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a1965f916dfecfaa638e7adafa0d62105}\label{classngind_1_1utils_1_1Archive_a1965f916dfecfaa638e7adafa0d62105}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!setFloat@{setFloat}}
+\index{setFloat@{setFloat}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{setFloat()}{setFloat()}}
+{\footnotesize\ttfamily void ngind\+::utils\+::\+Archive\+::set\+Float (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+Save float variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em value} & variable\textquotesingle{}s value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_ad20b65cec88faf1795678151b6d1f96a}\label{classngind_1_1utils_1_1Archive_ad20b65cec88faf1795678151b6d1f96a}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!setInteger@{setInteger}}
+\index{setInteger@{setInteger}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{setInteger()}{setInteger()}}
+{\footnotesize\ttfamily void ngind\+::utils\+::\+Archive\+::set\+Integer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Save integer variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em value} & variable\textquotesingle{}s value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_ac56314697fa86d34a984d2b71b71a08d}\label{classngind_1_1utils_1_1Archive_ac56314697fa86d34a984d2b71b71a08d}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!setString@{setString}}
+\index{setString@{setString}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{setString()}{setString()}}
+{\footnotesize\ttfamily void ngind\+::utils\+::\+Archive\+::set\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+Save string variable. 
+\begin{DoxyParams}{Parameters}
+{\em key} & variable\textquotesingle{}s key \\
+\hline
+{\em value} & variable\textquotesingle{}s value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a7a319dad62c93679c3e0b9d01915268a}\label{classngind_1_1utils_1_1Archive_a7a319dad62c93679c3e0b9d01915268a}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!\_doc@{\_doc}}
+\index{\_doc@{\_doc}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{\_doc}{\_doc}}
+{\footnotesize\ttfamily rapidjson\+::\+Document ngind\+::utils\+::\+Archive\+::\+\_\+doc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1utils_1_1Archive}{Archive}} document. \mbox{\Hypertarget{classngind_1_1utils_1_1Archive_a9cedd89075792740e6213c1567a0c1b4}\label{classngind_1_1utils_1_1Archive_a9cedd89075792740e6213c1567a0c1b4}} 
+\index{ngind::utils::Archive@{ngind::utils::Archive}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::utils::Archive@{ngind::utils::Archive}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1utils_1_1Archive}{Archive}}$\ast$ ngind\+::utils\+::\+Archive\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+The unique instance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/utils/\mbox{\hyperlink{archive_8h}{archive.\+h}}\end{DoxyCompactItemize}

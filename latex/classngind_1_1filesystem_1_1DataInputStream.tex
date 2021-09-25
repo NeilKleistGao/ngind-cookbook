@@ -1,0 +1,276 @@
+\hypertarget{classngind_1_1filesystem_1_1DataInputStream}{}\doxysection{ngind\+::filesystem\+::Data\+Input\+Stream Class Reference}
+\label{classngind_1_1filesystem_1_1DataInputStream}\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+
+
+{\ttfamily \#include $<$data\+\_\+input\+\_\+stream.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::filesystem\+::Data\+Input\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1DataInputStream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::filesystem\+::Data\+Input\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1DataInputStream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a53aabde1b3c5e6cd945f00e66ca30c0d}{Data\+Input\+Stream}} (\mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream}{Input\+Stream}} $\ast$stream)
+\item 
+char \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_ae0f4de7390657bf4a0e6a224e115f15c}{read}} () override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_abcebc12d991a92837108e058114f0f87}{close}} () override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_afb9ce251d5454bfee4ac752780feb260}{read\+Fully}} (char buffer\mbox{[}$\,$\mbox{]}, const size\+\_\+t \&len)
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_af286d774de1e603bcedd7bddb66c38e3}{read\+Fully}} (char buffer\mbox{[}$\,$\mbox{]}, const size\+\_\+t \&offset, const size\+\_\+t \&len)
+\item 
+bool \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a96dcb66532c254f48f7bf54ea5d51446}{read\+Bool}} ()
+\item 
+char \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a3c71cb2a3708cc8032ef8a1c84484166}{read\+Byte}} ()
+\item 
+unsigned char \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_aa3136a4f2032651e915b2f1060861af2}{read\+Unsigned\+Byte}} ()
+\item 
+short \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a91d1506792199638cb6a0b4bd6852cec}{read\+Short}} ()
+\item 
+unsigned short \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_aee4a88717c7f208f4d40146fceae495a}{read\+Unsigned\+Short}} ()
+\item 
+int \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_ae5eef8b2527d860cc9188dc04e1a4fd7}{read\+Int}} ()
+\item 
+unsigned int \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a2f4f6d4bcc8d72f4a1c413592ebbefc8}{read\+Unsigned\+Int}} ()
+\item 
+long \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a998d691f427036562f9c26ddb792ac7b}{read\+Long}} ()
+\item 
+unsigned long \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a7c14615f4de1fd8a4670a603a5504e42}{read\+Unsigned\+Long}} ()
+\item 
+long long \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_ac579619c71b1387147d56a4a33be699d}{read\+Long\+Long}} ()
+\item 
+unsigned long long \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_adc511e441047318d19637aa6b6415c9b}{read\+Unsigned\+Long\+Long}} ()
+\item 
+float \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_a1700f6adf03938f5d34210e9887c4655}{read\+Float}} ()
+\item 
+double \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_aa861a58c3bff66350beb5815ae4cc178}{read\+Double}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream}{Input\+Stream}} $\ast$ \mbox{\hyperlink{classngind_1_1filesystem_1_1DataInputStream_ab7f4c16988e90ebeebbc57d5fd588beb}{\+\_\+stream}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Data input class, used to read plain data from file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a53aabde1b3c5e6cd945f00e66ca30c0d}\label{classngind_1_1filesystem_1_1DataInputStream_a53aabde1b3c5e6cd945f00e66ca30c0d}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!DataInputStream@{DataInputStream}}
+\index{DataInputStream@{DataInputStream}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{DataInputStream()}{DataInputStream()}}
+{\footnotesize\ttfamily ngind\+::filesystem\+::\+Data\+Input\+Stream\+::\+Data\+Input\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream}{Input\+Stream}} $\ast$}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & another input stream that data come from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_abcebc12d991a92837108e058114f0f87}\label{classngind_1_1filesystem_1_1DataInputStream_abcebc12d991a92837108e058114f0f87}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!close@{close}}
+\index{close@{close}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Data\+Input\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input__stream_8h}{kernel/filesystem/input\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream_aad8fcb1d6b0fccdd67ce27e4792935de}{ngind\+::filesystem\+::\+Input\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_ae0f4de7390657bf4a0e6a224e115f15c}\label{classngind_1_1filesystem_1_1DataInputStream_ae0f4de7390657bf4a0e6a224e115f15c}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!read@{read}}
+\index{read@{read}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily char ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{input__stream_8h}{kernel/filesystem/input\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream_ab5c25429f846492f3821ac3e724c938c}{ngind\+::filesystem\+::\+Input\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a96dcb66532c254f48f7bf54ea5d51446}\label{classngind_1_1filesystem_1_1DataInputStream_a96dcb66532c254f48f7bf54ea5d51446}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readBool@{readBool}}
+\index{readBool@{readBool}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readBool()}{readBool()}}
+{\footnotesize\ttfamily bool ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read a boolean variable. \begin{DoxyReturn}{Returns}
+bool. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a3c71cb2a3708cc8032ef8a1c84484166}\label{classngind_1_1filesystem_1_1DataInputStream_a3c71cb2a3708cc8032ef8a1c84484166}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readByte@{readByte}}
+\index{readByte@{readByte}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readByte()}{readByte()}}
+{\footnotesize\ttfamily char ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read a byte variable. \begin{DoxyReturn}{Returns}
+char. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_aa861a58c3bff66350beb5815ae4cc178}\label{classngind_1_1filesystem_1_1DataInputStream_aa861a58c3bff66350beb5815ae4cc178}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readDouble@{readDouble}}
+\index{readDouble@{readDouble}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readDouble()}{readDouble()}}
+{\footnotesize\ttfamily double ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read a double variable. \begin{DoxyReturn}{Returns}
+double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a1700f6adf03938f5d34210e9887c4655}\label{classngind_1_1filesystem_1_1DataInputStream_a1700f6adf03938f5d34210e9887c4655}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readFloat@{readFloat}}
+\index{readFloat@{readFloat}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readFloat()}{readFloat()}}
+{\footnotesize\ttfamily float ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read a float variable. \begin{DoxyReturn}{Returns}
+float. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_afb9ce251d5454bfee4ac752780feb260}\label{classngind_1_1filesystem_1_1DataInputStream_afb9ce251d5454bfee4ac752780feb260}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readFully@{readFully}}
+\index{readFully@{readFully}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readFully()}{readFully()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Fully (\begin{DoxyParamCaption}\item[{char}]{buffer\mbox{[}$\,$\mbox{]},  }\item[{const size\+\_\+t \&}]{len }\end{DoxyParamCaption})}
+
+Read bytes filling the whole buffer. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & where the data would be stored. \\
+\hline
+{\em len} & length of bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_af286d774de1e603bcedd7bddb66c38e3}\label{classngind_1_1filesystem_1_1DataInputStream_af286d774de1e603bcedd7bddb66c38e3}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readFully@{readFully}}
+\index{readFully@{readFully}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readFully()}{readFully()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Fully (\begin{DoxyParamCaption}\item[{char}]{buffer\mbox{[}$\,$\mbox{]},  }\item[{const size\+\_\+t \&}]{offset,  }\item[{const size\+\_\+t \&}]{len }\end{DoxyParamCaption})}
+
+Read bytes filling the whole buffer. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & where the data would be stored. \\
+\hline
+{\em offset} & start position of buffer \\
+\hline
+{\em len} & length of bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_ae5eef8b2527d860cc9188dc04e1a4fd7}\label{classngind_1_1filesystem_1_1DataInputStream_ae5eef8b2527d860cc9188dc04e1a4fd7}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readInt@{readInt}}
+\index{readInt@{readInt}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readInt()}{readInt()}}
+{\footnotesize\ttfamily int ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read an integer variable. \begin{DoxyReturn}{Returns}
+int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a998d691f427036562f9c26ddb792ac7b}\label{classngind_1_1filesystem_1_1DataInputStream_a998d691f427036562f9c26ddb792ac7b}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readLong@{readLong}}
+\index{readLong@{readLong}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readLong()}{readLong()}}
+{\footnotesize\ttfamily long ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read a long variable. \begin{DoxyReturn}{Returns}
+long. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_ac579619c71b1387147d56a4a33be699d}\label{classngind_1_1filesystem_1_1DataInputStream_ac579619c71b1387147d56a4a33be699d}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readLongLong@{readLongLong}}
+\index{readLongLong@{readLongLong}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readLongLong()}{readLongLong()}}
+{\footnotesize\ttfamily long long ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Long\+Long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read a long long variable. \begin{DoxyReturn}{Returns}
+long long. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a91d1506792199638cb6a0b4bd6852cec}\label{classngind_1_1filesystem_1_1DataInputStream_a91d1506792199638cb6a0b4bd6852cec}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readShort@{readShort}}
+\index{readShort@{readShort}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readShort()}{readShort()}}
+{\footnotesize\ttfamily short ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Short (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read a short variable. \begin{DoxyReturn}{Returns}
+short. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_aa3136a4f2032651e915b2f1060861af2}\label{classngind_1_1filesystem_1_1DataInputStream_aa3136a4f2032651e915b2f1060861af2}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readUnsignedByte@{readUnsignedByte}}
+\index{readUnsignedByte@{readUnsignedByte}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readUnsignedByte()}{readUnsignedByte()}}
+{\footnotesize\ttfamily unsigned char ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Unsigned\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read an unsigned byte variable. \begin{DoxyReturn}{Returns}
+unsigned char. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a2f4f6d4bcc8d72f4a1c413592ebbefc8}\label{classngind_1_1filesystem_1_1DataInputStream_a2f4f6d4bcc8d72f4a1c413592ebbefc8}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readUnsignedInt@{readUnsignedInt}}
+\index{readUnsignedInt@{readUnsignedInt}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readUnsignedInt()}{readUnsignedInt()}}
+{\footnotesize\ttfamily unsigned int ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Unsigned\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read an unsigned integer variable. \begin{DoxyReturn}{Returns}
+unsigned int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_a7c14615f4de1fd8a4670a603a5504e42}\label{classngind_1_1filesystem_1_1DataInputStream_a7c14615f4de1fd8a4670a603a5504e42}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readUnsignedLong@{readUnsignedLong}}
+\index{readUnsignedLong@{readUnsignedLong}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readUnsignedLong()}{readUnsignedLong()}}
+{\footnotesize\ttfamily unsigned long ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Unsigned\+Long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read an unsigned long variable. \begin{DoxyReturn}{Returns}
+unsigned long. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_adc511e441047318d19637aa6b6415c9b}\label{classngind_1_1filesystem_1_1DataInputStream_adc511e441047318d19637aa6b6415c9b}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readUnsignedLongLong@{readUnsignedLongLong}}
+\index{readUnsignedLongLong@{readUnsignedLongLong}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readUnsignedLongLong()}{readUnsignedLongLong()}}
+{\footnotesize\ttfamily unsigned long long ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Unsigned\+Long\+Long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read an unsigned long long variable. \begin{DoxyReturn}{Returns}
+unsigned long long. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_aee4a88717c7f208f4d40146fceae495a}\label{classngind_1_1filesystem_1_1DataInputStream_aee4a88717c7f208f4d40146fceae495a}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!readUnsignedShort@{readUnsignedShort}}
+\index{readUnsignedShort@{readUnsignedShort}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{readUnsignedShort()}{readUnsignedShort()}}
+{\footnotesize\ttfamily unsigned short ngind\+::filesystem\+::\+Data\+Input\+Stream\+::read\+Unsigned\+Short (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read an unsigned short variable. \begin{DoxyReturn}{Returns}
+unsigned short. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1DataInputStream_ab7f4c16988e90ebeebbc57d5fd588beb}\label{classngind_1_1filesystem_1_1DataInputStream_ab7f4c16988e90ebeebbc57d5fd588beb}} 
+\index{ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!ngind::filesystem::DataInputStream@{ngind::filesystem::DataInputStream}}
+\doxysubsubsection{\texorpdfstring{\_stream}{\_stream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1filesystem_1_1InputStream}{Input\+Stream}}$\ast$ ngind\+::filesystem\+::\+Data\+Input\+Stream\+::\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
+
+another input stream that data come from. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/filesystem/\mbox{\hyperlink{data__input__stream_8h}{data\+\_\+input\+\_\+stream.\+h}}\end{DoxyCompactItemize}

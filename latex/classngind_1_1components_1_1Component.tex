@@ -1,0 +1,157 @@
+\hypertarget{classngind_1_1components_1_1Component}{}\doxysection{ngind\+::components\+::Component Class Reference}
+\label{classngind_1_1components_1_1Component}\index{ngind::components::Component@{ngind::components::Component}}
+
+
+{\ttfamily \#include $<$component.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::components\+::Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::components\+::Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1components_1_1Component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_a013dc9c55d40d0633b3bfd72f3d52b67}\label{classngind_1_1components_1_1Component_a013dc9c55d40d0633b3bfd72f3d52b67}} 
+{\bfseries Component} (const \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_adaa66dc89efb5be17444f0b9e8effb58}\label{classngind_1_1components_1_1Component_adaa66dc89efb5be17444f0b9e8effb58}} 
+\mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} \& {\bfseries operator=} (const \mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} \&)=delete
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_ab1819918816c0591d5c6f89f64c49b06}\label{classngind_1_1components_1_1Component_ab1819918816c0591d5c6f89f64c49b06}} 
+{\bfseries Component} (\mbox{\hyperlink{classngind_1_1components_1_1Component}{Component}} \&\&)=delete
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}{update}} (const float \&)
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&object)
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Component_ab8586a6bd0803b4be4ec981b88a6d3d1}{get\+Parent}} () const
+\item 
+virtual void \mbox{\hyperlink{classngind_1_1components_1_1Component_abc2bc9f18f09aab67f8ac0e14552c344}{set\+Parent}} (\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$parent)
+\item 
+void \mbox{\hyperlink{classngind_1_1components_1_1Component_a2fdeac14f6fa327d65c3d2a55580eaee}{set\+Dirty}} ()
+\item 
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_aa624fe56046c997f0847888cec62bb31}\label{classngind_1_1components_1_1Component_aa624fe56046c997f0847888cec62bb31}} 
+std\+::string {\bfseries get\+Component\+Name} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$ \mbox{\hyperlink{classngind_1_1components_1_1Component_a937f2ae13b0ca66583d5f9df1c50d735}{\+\_\+parent}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1components_1_1Component_a5af73591f2c6ff16276e34fef228905a}{\+\_\+dirty}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1components_1_1Component_a860e9ceb924f5f3335970aa9831dfc55}{\+\_\+component\+\_\+name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basic class of all components. You can create an instance either by newing or by create/init functions. We do not allow user to create a basic component in configuration files so create function is not declared. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_ab8586a6bd0803b4be4ec981b88a6d3d1}\label{classngind_1_1components_1_1Component_ab8586a6bd0803b4be4ec981b88a6d3d1}} 
+\index{ngind::components::Component@{ngind::components::Component}!getParent@{getParent}}
+\index{getParent@{getParent}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}}$\ast$ ngind\+::components\+::\+Component\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the parent object of this component. \begin{DoxyReturn}{Returns}
+Object$\ast$, the parent object\textquotesingle{}s pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}\label{classngind_1_1components_1_1Component_a46f3b0ba75658b47a7f3b9b48c2cfa3f}} 
+\index{ngind::components::Component@{ngind::components::Component}!init@{init}}
+\index{init@{init}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void ngind\+::components\+::\+Component\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. 
+\begin{DoxyParams}{Parameters}
+{\em object} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a5db316fc6c1c4e8cacd21ecb4f9fe4ae}{ngind\+::physics\+::\+Gear\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a26b40e7db9cfcfda81ecc2fbd478018e}{ngind\+::physics\+::\+Pulley\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_abca5840de7034c960386b9507dfb10a2}{ngind\+::physics\+::\+Prismatic\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1RevoluteJoint_adca47198bb9bca1db9292e42923caa07}{ngind\+::physics\+::\+Revolute\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a8ccd451ac7f6d646f22511dacf8ccc8a}{ngind\+::physics\+::\+Distance\+Joint}}, \mbox{\hyperlink{classngind_1_1components_1_1Label_aa40cc9946fa387bac9443bf01cf5184a}{ngind\+::components\+::\+Label}}, \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_acc88c94341897ce604ddb06ad0b8a868}{ngind\+::physics\+::\+Physics\+World}}, \mbox{\hyperlink{classngind_1_1components_1_1RendererComponent_a36f3a6676f971b2045ca12e5a40e5539}{ngind\+::components\+::\+Renderer\+Component}}, \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a7cb31c1d2dc3b50391076b18b569f8d3}{ngind\+::components\+::\+Sprite}}, \mbox{\hyperlink{classngind_1_1components_1_1Button_af3440de7098ee1d6a1bb1d3cb45b37e5}{ngind\+::components\+::\+Button}}, \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}{ngind\+::physics\+::\+Physics\+Joint}}, \mbox{\hyperlink{classngind_1_1components_1_1Animation_a46e3071297dd3d07ee347cf8a3c317c0}{ngind\+::components\+::\+Animation}}, \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_a5d97a7b3301165d6dcd61500bb9ac007}{ngind\+::components\+::\+Effect\+Player}}, \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a703933bcbf1864a4cae90f65a11ec7dc}{ngind\+::components\+::\+Music\+Player}}, \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a9363b76558b9d23a4c6051c5e53a0fb4}{ngind\+::physics\+::\+Rigid\+Body}}, and \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a8e8374835c258e23444703bc505ad24b}{ngind\+::components\+::\+State\+Machine}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_a2fdeac14f6fa327d65c3d2a55580eaee}\label{classngind_1_1components_1_1Component_a2fdeac14f6fa327d65c3d2a55580eaee}} 
+\index{ngind::components::Component@{ngind::components::Component}!setDirty@{setDirty}}
+\index{setDirty@{setDirty}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{setDirty()}{setDirty()}}
+{\footnotesize\ttfamily void ngind\+::components\+::\+Component\+::set\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Make this component dirty, which means this component need to recalculate some properties. \mbox{\Hypertarget{classngind_1_1components_1_1Component_abc2bc9f18f09aab67f8ac0e14552c344}\label{classngind_1_1components_1_1Component_abc2bc9f18f09aab67f8ac0e14552c344}} 
+\index{ngind::components::Component@{ngind::components::Component}!setParent@{setParent}}
+\index{setParent@{setParent}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily virtual void ngind\+::components\+::\+Component\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Set the parent object of this component. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & \+: the parent object\textquotesingle{}s pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a365528e94b74a8d9eb00f2fb823db3d6}{ngind\+::components\+::\+State\+Machine}}.
+
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}\label{classngind_1_1components_1_1Component_aea41e2d294868500ea3970219b8d7057}} 
+\index{ngind::components::Component@{ngind::components::Component}!update@{update}}
+\index{update@{update}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void ngind\+::components\+::\+Component\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{kernel/objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1objects_1_1UpdatableObject_ae474f007128861d15204968467796503}{ngind\+::objects\+::\+Updatable\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classngind_1_1components_1_1StateMachine_a0718fefc4db45852ee890f39302c269a}{ngind\+::components\+::\+State\+Machine}}, \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a14eb0dd011b9c65a099ec3b33f7cb867}{ngind\+::physics\+::\+Gear\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PulleyJoint_a254a20bfc739f43ec0e480d46c7302b0}{ngind\+::physics\+::\+Pulley\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1PrismaticJoint_a8372afbd2e380d7c215c0a7b81b14502}{ngind\+::physics\+::\+Prismatic\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1RevoluteJoint_a5853ab2f08e564daa4e72937063160a7}{ngind\+::physics\+::\+Revolute\+Joint}}, \mbox{\hyperlink{classngind_1_1physics_1_1DistanceJoint_a713c6b103c4ed595fa9089376d7cf8c5}{ngind\+::physics\+::\+Distance\+Joint}}, \mbox{\hyperlink{classngind_1_1components_1_1Label_abaae0c903085bc5f8812fc4e3e41f45b}{ngind\+::components\+::\+Label}}, \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsWorld_aa3ae11cba9badd5b28528f12fe06fe28}{ngind\+::physics\+::\+Physics\+World}}, \mbox{\hyperlink{classngind_1_1components_1_1Sprite_a8e983595788c2b2f934ccfe6307b6c9a}{ngind\+::components\+::\+Sprite}}, \mbox{\hyperlink{classngind_1_1components_1_1Button_a7d89e94bb196cd31604c807bd0d0b892}{ngind\+::components\+::\+Button}}, \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}{ngind\+::physics\+::\+Physics\+Joint}}, \mbox{\hyperlink{classngind_1_1components_1_1Animation_acf71c561a0d0c7c5514e44bcb886dc98}{ngind\+::components\+::\+Animation}}, \mbox{\hyperlink{classngind_1_1components_1_1EffectPlayer_ab4da402bd1c95752ffefdb781c9146ad}{ngind\+::components\+::\+Effect\+Player}}, \mbox{\hyperlink{classngind_1_1components_1_1MusicPlayer_a185613055e9c39abffd55c30a9d8e08e}{ngind\+::components\+::\+Music\+Player}}, \mbox{\hyperlink{classngind_1_1physics_1_1RigidBody_a0a3775499a9fe7cc66316259cfb7f2c7}{ngind\+::physics\+::\+Rigid\+Body}}, and \mbox{\hyperlink{classngind_1_1components_1_1RendererComponent_a0c424a16037f2c9c38252669acbd72a1}{ngind\+::components\+::\+Renderer\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1components_1_1Component_a860e9ceb924f5f3335970aa9831dfc55}\label{classngind_1_1components_1_1Component_a860e9ceb924f5f3335970aa9831dfc55}} 
+\index{ngind::components::Component@{ngind::components::Component}!\_component\_name@{\_component\_name}}
+\index{\_component\_name@{\_component\_name}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{\_component\_name}{\_component\_name}}
+{\footnotesize\ttfamily std\+::string ngind\+::components\+::\+Component\+::\+\_\+component\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Name of component. \mbox{\Hypertarget{classngind_1_1components_1_1Component_a5af73591f2c6ff16276e34fef228905a}\label{classngind_1_1components_1_1Component_a5af73591f2c6ff16276e34fef228905a}} 
+\index{ngind::components::Component@{ngind::components::Component}!\_dirty@{\_dirty}}
+\index{\_dirty@{\_dirty}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{\_dirty}{\_dirty}}
+{\footnotesize\ttfamily bool ngind\+::components\+::\+Component\+::\+\_\+dirty\hspace{0.3cm}{\ttfamily [protected]}}
+
+Is this component need to be updated \mbox{\Hypertarget{classngind_1_1components_1_1Component_a937f2ae13b0ca66583d5f9df1c50d735}\label{classngind_1_1components_1_1Component_a937f2ae13b0ca66583d5f9df1c50d735}} 
+\index{ngind::components::Component@{ngind::components::Component}!\_parent@{\_parent}}
+\index{\_parent@{\_parent}!ngind::components::Component@{ngind::components::Component}}
+\doxysubsubsection{\texorpdfstring{\_parent}{\_parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1objects_1_1Object}{Object}}$\ast$ ngind\+::components\+::\+Component\+::\+\_\+parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parent object of this component 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/components/\mbox{\hyperlink{component_8h}{component.\+h}}\end{DoxyCompactItemize}

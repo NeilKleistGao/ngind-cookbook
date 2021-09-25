@@ -1,0 +1,146 @@
+\hypertarget{classngind_1_1filesystem_1_1CipherOutputStream}{}\doxysection{ngind\+::filesystem\+::Cipher\+Output\+Stream Class Reference}
+\label{classngind_1_1filesystem_1_1CipherOutputStream}\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+
+
+{\ttfamily \#include $<$cipher\+\_\+output\+\_\+stream.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::filesystem\+::Cipher\+Output\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1CipherOutputStream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::filesystem\+::Cipher\+Output\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classngind_1_1filesystem_1_1CipherOutputStream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_aae7e2d9786bab5dd72b7ab42a94c35ae}{Cipher\+Output\+Stream}} (\mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream}{Output\+Stream}} $\ast$stream)
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_a7b7c5b6b8ea76b2fff3fc94061b3787b}{write}} (const char \&c) override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_a7daf7654572a23bd633877bae96faf65}{write}} (const std\+::string \&str) override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_aa5f10cb4ccceadd11f783004eb321642}{flush}} () override
+\item 
+void \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_ac0f59a4a7ea48c49e5659d6678af65e4}{close}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream}{Output\+Stream}} $\ast$ \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_a9af53eaa8ae420a94868a438b01b92a0}{\+\_\+stream}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_a783cdc05b81e5388b424218950e756c4}{\+\_\+buffer}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1filesystem_1_1CipherOutputStream_a990ca93552bd2adc16f8fe8257f26eb4}{\+\_\+opened}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Output stream used for encrypted file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_aae7e2d9786bab5dd72b7ab42a94c35ae}\label{classngind_1_1filesystem_1_1CipherOutputStream_aae7e2d9786bab5dd72b7ab42a94c35ae}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!CipherOutputStream@{CipherOutputStream}}
+\index{CipherOutputStream@{CipherOutputStream}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{CipherOutputStream()}{CipherOutputStream()}}
+{\footnotesize\ttfamily ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::\+Cipher\+Output\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream}{Output\+Stream}} $\ast$}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & the general output stream \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_ac0f59a4a7ea48c49e5659d6678af65e4}\label{classngind_1_1filesystem_1_1CipherOutputStream_ac0f59a4a7ea48c49e5659d6678af65e4}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!close@{close}}
+\index{close@{close}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{output__stream_8h}{kernel/filesystem/output\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_adefebb0f809662ab583fd571866cd090}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_aa5f10cb4ccceadd11f783004eb321642}\label{classngind_1_1filesystem_1_1CipherOutputStream_aa5f10cb4ccceadd11f783004eb321642}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!flush@{flush}}
+\index{flush@{flush}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{output__stream_8h}{kernel/filesystem/output\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_ab0ed5a3b5b8288d9d263eabdeabe010e}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_a7b7c5b6b8ea76b2fff3fc94061b3787b}\label{classngind_1_1filesystem_1_1CipherOutputStream_a7b7c5b6b8ea76b2fff3fc94061b3787b}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const char \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{output__stream_8h}{kernel/filesystem/output\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a3a43ce904af8dc5e3b9ef91194d95d5e}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_a7daf7654572a23bd633877bae96faf65}\label{classngind_1_1filesystem_1_1CipherOutputStream_a7daf7654572a23bd633877bae96faf65}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!write@{write}}
+\index{write@{write}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{output__stream_8h}{kernel/filesystem/output\+\_\+stream.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream_a9483ec5527b492a08574847f14ed3880}{ngind\+::filesystem\+::\+Output\+Stream}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_a783cdc05b81e5388b424218950e756c4}\label{classngind_1_1filesystem_1_1CipherOutputStream_a783cdc05b81e5388b424218950e756c4}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!\_buffer@{\_buffer}}
+\index{\_buffer@{\_buffer}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{\_buffer}{\_buffer}}
+{\footnotesize\ttfamily std\+::string ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+Store output string temporally. When the buffer is full, the encrypting function will be executed. \mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_a990ca93552bd2adc16f8fe8257f26eb4}\label{classngind_1_1filesystem_1_1CipherOutputStream_a990ca93552bd2adc16f8fe8257f26eb4}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!\_opened@{\_opened}}
+\index{\_opened@{\_opened}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{\_opened}{\_opened}}
+{\footnotesize\ttfamily bool ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::\+\_\+opened\hspace{0.3cm}{\ttfamily [private]}}
+
+Has the stream been opened. \mbox{\Hypertarget{classngind_1_1filesystem_1_1CipherOutputStream_a9af53eaa8ae420a94868a438b01b92a0}\label{classngind_1_1filesystem_1_1CipherOutputStream_a9af53eaa8ae420a94868a438b01b92a0}} 
+\index{ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!ngind::filesystem::CipherOutputStream@{ngind::filesystem::CipherOutputStream}}
+\doxysubsubsection{\texorpdfstring{\_stream}{\_stream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1filesystem_1_1OutputStream}{Output\+Stream}}$\ast$ ngind\+::filesystem\+::\+Cipher\+Output\+Stream\+::\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
+
+The general output stream. We will encrypt the content before we put them into this stream object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/filesystem/\mbox{\hyperlink{cipher__output__stream_8h}{cipher\+\_\+output\+\_\+stream.\+h}}\end{DoxyCompactItemize}

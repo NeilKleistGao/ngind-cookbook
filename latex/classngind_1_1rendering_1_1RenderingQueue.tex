@@ -1,0 +1,91 @@
+\hypertarget{classngind_1_1rendering_1_1RenderingQueue}{}\doxysection{ngind\+::rendering\+::Rendering\+Queue Class Reference}
+\label{classngind_1_1rendering_1_1RenderingQueue}\index{ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}}
+
+
+{\ttfamily \#include $<$rendering\+\_\+queue.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingQueue_adbba2f0ff4a6e10f3f4319e0f2c52997}\label{classngind_1_1rendering_1_1RenderingQueue_adbba2f0ff4a6e10f3f4319e0f2c52997}} 
+using {\bfseries iterator} = std\+::vector$<$ \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand}{Rendering\+Command}} $\ast$ $>$\+::iterator
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+iterator \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingQueue_a42e994ec46c16ef4479c987f396237d9}{begin}} ()
+\item 
+iterator \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingQueue_a4ce55cb715fa5ad776f16f46609ad374}{end}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingQueue_a52fe325972964dd4ce738a1fb251441b}{clear}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingQueue_a4130956df8cd679a91a51faf372ba2a3}{push}} (\mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand}{Rendering\+Command}} $\ast$command)
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingQueue_a707bd123d9f3979dc9d991d8472cd5c4}{sort}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand}{Rendering\+Command}} $\ast$ $>$ \mbox{\hyperlink{classngind_1_1rendering_1_1RenderingQueue_a33f1c0c6794c83c4fefaec5bca5856d9}{\+\_\+queue}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple queue used to store the rendering commands. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingQueue_a42e994ec46c16ef4479c987f396237d9}\label{classngind_1_1rendering_1_1RenderingQueue_a42e994ec46c16ef4479c987f396237d9}} 
+\index{ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}!begin@{begin}}
+\index{begin@{begin}!ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily iterator ngind\+::rendering\+::\+Rendering\+Queue\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get iterator pointing the beginning of queue \begin{DoxyReturn}{Returns}
+iterator, beginning iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingQueue_a52fe325972964dd4ce738a1fb251441b}\label{classngind_1_1rendering_1_1RenderingQueue_a52fe325972964dd4ce738a1fb251441b}} 
+\index{ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}!clear@{clear}}
+\index{clear@{clear}!ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Rendering\+Queue\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clean the queue \mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingQueue_a4ce55cb715fa5ad776f16f46609ad374}\label{classngind_1_1rendering_1_1RenderingQueue_a4ce55cb715fa5ad776f16f46609ad374}} 
+\index{ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}!end@{end}}
+\index{end@{end}!ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily iterator ngind\+::rendering\+::\+Rendering\+Queue\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get iterator pointing the end of queue \begin{DoxyReturn}{Returns}
+iterator, end iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingQueue_a4130956df8cd679a91a51faf372ba2a3}\label{classngind_1_1rendering_1_1RenderingQueue_a4130956df8cd679a91a51faf372ba2a3}} 
+\index{ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}!push@{push}}
+\index{push@{push}!ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Rendering\+Queue\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand}{Rendering\+Command}} $\ast$}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push a command pointer into queue 
+\begin{DoxyParams}{Parameters}
+{\em command} & command to be pushed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingQueue_a707bd123d9f3979dc9d991d8472cd5c4}\label{classngind_1_1rendering_1_1RenderingQueue_a707bd123d9f3979dc9d991d8472cd5c4}} 
+\index{ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}!sort@{sort}}
+\index{sort@{sort}!ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Rendering\+Queue\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sort all commands by order in z-\/dim 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1RenderingQueue_a33f1c0c6794c83c4fefaec5bca5856d9}\label{classngind_1_1rendering_1_1RenderingQueue_a33f1c0c6794c83c4fefaec5bca5856d9}} 
+\index{ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}!\_queue@{\_queue}}
+\index{\_queue@{\_queue}!ngind::rendering::RenderingQueue@{ngind::rendering::RenderingQueue}}
+\doxysubsubsection{\texorpdfstring{\_queue}{\_queue}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classngind_1_1rendering_1_1RenderingCommand}{Rendering\+Command}}$\ast$$>$ ngind\+::rendering\+::\+Rendering\+Queue\+::\+\_\+queue\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector buffer to store commands 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/rendering\+\_\+queue.\+h\end{DoxyCompactItemize}

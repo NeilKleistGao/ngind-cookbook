@@ -1,0 +1,233 @@
+\hypertarget{classngind_1_1script_1_1Observer}{}\doxysection{ngind\+::script\+::Observer Class Reference}
+\label{classngind_1_1script_1_1Observer}\index{ngind::script::Observer@{ngind::script::Observer}}
+
+
+{\ttfamily \#include $<$observer.\+h$>$}
+
+
+
+Collaboration diagram for ngind\+::script\+::Observer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classngind_1_1script_1_1Observer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structngind_1_1script_1_1Observer_1_1MessageDataPack}{Message\+Data\+Pack}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_a5ddb34a76f7737d3f07673d7bf84c8d7}{subscribe}} (\mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{components\+::\+State\+Machine}} $\ast$machine, const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_ac671881b95b519d3a7e187fe90f924bc}{notify}} (const luabridge\+::\+Lua\+Ref \&sender, const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_aac6068f5eec261ba7bab97b2e9c5dea9}{notify\+All}} (const luabridge\+::\+Lua\+Ref \&sender, const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_a56576c337262e1be931cbcc1ca5dfa22}{notify\+Siblings}} (const std\+::string \&name, \mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$object, const luabridge\+::\+Lua\+Ref \&data)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_a6680f91cdf0f7b53b4a1e383fe80d61c}{cancel}} (\mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{components\+::\+State\+Machine}} $\ast$machine, const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_a54f855a28f1fed6555852eead16df238}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1script_1_1Observer}{Observer}} $\ast$ \mbox{\hyperlink{classngind_1_1script_1_1Observer_a36b97fa4ffe0a8c5b18310f37b750b9e}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classngind_1_1script_1_1Observer_a2b8e32a68ecc19f1f4c156862c0b4d19}{destroy\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_a11c877db166e01b2c0e37293273000f3}{notify}} (const luabridge\+::\+Lua\+Ref \&sender, const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data, int)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_adddce90e679c9cf856c464eed8626c65}{notify\+All}} (const luabridge\+::\+Lua\+Ref \&sender, const std\+::string \&name, const luabridge\+::\+Lua\+Ref \&data, int)
+\item 
+void \mbox{\hyperlink{classngind_1_1script_1_1Observer_afab4a9c112231bd841875deac39753a9}{notify\+Siblings}} (const std\+::string \&name, \mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$object, const luabridge\+::\+Lua\+Ref \&data, int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::queue$<$ \mbox{\hyperlink{structngind_1_1script_1_1Observer_1_1MessageDataPack}{Message\+Data\+Pack}} $>$ \mbox{\hyperlink{classngind_1_1script_1_1Observer_a616fa2e17eefaa6a248b188b391b43ba}{\+\_\+queue}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{components\+::\+State\+Machine}} $\ast$ $>$ $>$ \mbox{\hyperlink{classngind_1_1script_1_1Observer_a16017294a1fa8e36fcf2808a67e04d1a}{\+\_\+dependence}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1script_1_1Observer}{Observer}} $\ast$ \mbox{\hyperlink{classngind_1_1script_1_1Observer_a9c34a0f0ea3d7be507b82b75632f5971}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1script_1_1Observer}{Observer}} used to passing message between two object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_a6680f91cdf0f7b53b4a1e383fe80d61c}\label{classngind_1_1script_1_1Observer_a6680f91cdf0f7b53b4a1e383fe80d61c}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!cancel@{cancel}}
+\index{cancel@{cancel}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::cancel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{components\+::\+State\+Machine}} $\ast$}]{machine,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Cancel a subscription. 
+\begin{DoxyParams}{Parameters}
+{\em machine} & the subscriber \\
+\hline
+{\em name} & name of message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_a2b8e32a68ecc19f1f4c156862c0b4d19}\label{classngind_1_1script_1_1Observer_a2b8e32a68ecc19f1f4c156862c0b4d19}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!destroyInstance@{destroyInstance}}
+\index{destroyInstance@{destroyInstance}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{destroyInstance()}{destroyInstance()}}
+{\footnotesize\ttfamily static void ngind\+::script\+::\+Observer\+::destroy\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy the observer instance. \mbox{\Hypertarget{classngind_1_1script_1_1Observer_a36b97fa4ffe0a8c5b18310f37b750b9e}\label{classngind_1_1script_1_1Observer_a36b97fa4ffe0a8c5b18310f37b750b9e}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1script_1_1Observer}{Observer}}$\ast$ ngind\+::script\+::\+Observer\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the observer instance. \begin{DoxyReturn}{Returns}
+Observer$\ast$, the observer instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_ac671881b95b519d3a7e187fe90f924bc}\label{classngind_1_1script_1_1Observer_ac671881b95b519d3a7e187fe90f924bc}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!notify@{notify}}
+\index{notify@{notify}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::notify (\begin{DoxyParamCaption}\item[{const luabridge\+::\+Lua\+Ref \&}]{sender,  }\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notify a object randomly 
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender of message \\
+\hline
+{\em name} & name of message \\
+\hline
+{\em data} & data attained \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_a11c877db166e01b2c0e37293273000f3}\label{classngind_1_1script_1_1Observer_a11c877db166e01b2c0e37293273000f3}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!notify@{notify}}
+\index{notify@{notify}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::notify (\begin{DoxyParamCaption}\item[{const luabridge\+::\+Lua\+Ref \&}]{sender,  }\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Notify a object randomly 
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender of message \\
+\hline
+{\em name} & name of message \\
+\hline
+{\em data} & data attained \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_aac6068f5eec261ba7bab97b2e9c5dea9}\label{classngind_1_1script_1_1Observer_aac6068f5eec261ba7bab97b2e9c5dea9}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!notifyAll@{notifyAll}}
+\index{notifyAll@{notifyAll}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{notifyAll()}{notifyAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::notify\+All (\begin{DoxyParamCaption}\item[{const luabridge\+::\+Lua\+Ref \&}]{sender,  }\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notify all objects that subscribe 
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender of message \\
+\hline
+{\em name} & name of message \\
+\hline
+{\em data} & data attained \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_adddce90e679c9cf856c464eed8626c65}\label{classngind_1_1script_1_1Observer_adddce90e679c9cf856c464eed8626c65}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!notifyAll@{notifyAll}}
+\index{notifyAll@{notifyAll}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{notifyAll()}{notifyAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::notify\+All (\begin{DoxyParamCaption}\item[{const luabridge\+::\+Lua\+Ref \&}]{sender,  }\item[{const std\+::string \&}]{name,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Notify all objects that subscribe 
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender of message \\
+\hline
+{\em name} & name of message \\
+\hline
+{\em data} & data attained \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_a56576c337262e1be931cbcc1ca5dfa22}\label{classngind_1_1script_1_1Observer_a56576c337262e1be931cbcc1ca5dfa22}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!notifySiblings@{notifySiblings}}
+\index{notifySiblings@{notifySiblings}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{notifySiblings()}{notifySiblings()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::notify\+Siblings (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$}]{object,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notify sibling components that subscribe 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of message \\
+\hline
+{\em object} & object containing components \\
+\hline
+{\em data} & data attained \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_afab4a9c112231bd841875deac39753a9}\label{classngind_1_1script_1_1Observer_afab4a9c112231bd841875deac39753a9}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!notifySiblings@{notifySiblings}}
+\index{notifySiblings@{notifySiblings}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{notifySiblings()}{notifySiblings()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::notify\+Siblings (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classngind_1_1objects_1_1Object}{objects\+::\+Object}} $\ast$}]{object,  }\item[{const luabridge\+::\+Lua\+Ref \&}]{data,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Notify sibling components that subscribe 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of message \\
+\hline
+{\em object} & object containing components \\
+\hline
+{\em data} & data attained \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_a5ddb34a76f7737d3f07673d7bf84c8d7}\label{classngind_1_1script_1_1Observer_a5ddb34a76f7737d3f07673d7bf84c8d7}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{components\+::\+State\+Machine}} $\ast$}]{machine,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Subscribe a message. 
+\begin{DoxyParams}{Parameters}
+{\em machine} & state machine who subscribes \\
+\hline
+{\em name} & name of message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_a54f855a28f1fed6555852eead16df238}\label{classngind_1_1script_1_1Observer_a54f855a28f1fed6555852eead16df238}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!update@{update}}
+\index{update@{update}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::script\+::\+Observer\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update messages\textquotesingle{} states. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1script_1_1Observer_a16017294a1fa8e36fcf2808a67e04d1a}\label{classngind_1_1script_1_1Observer_a16017294a1fa8e36fcf2808a67e04d1a}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!\_dependence@{\_dependence}}
+\index{\_dependence@{\_dependence}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{\_dependence}{\_dependence}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, std\+::vector$<$\mbox{\hyperlink{classngind_1_1components_1_1StateMachine}{components\+::\+State\+Machine}}$\ast$$>$ $>$ ngind\+::script\+::\+Observer\+::\+\_\+dependence\hspace{0.3cm}{\ttfamily [private]}}
+
+Subscription list \mbox{\Hypertarget{classngind_1_1script_1_1Observer_a9c34a0f0ea3d7be507b82b75632f5971}\label{classngind_1_1script_1_1Observer_a9c34a0f0ea3d7be507b82b75632f5971}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1script_1_1Observer}{Observer}}$\ast$ ngind\+::script\+::\+Observer\+::\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Instance of observer \mbox{\Hypertarget{classngind_1_1script_1_1Observer_a616fa2e17eefaa6a248b188b391b43ba}\label{classngind_1_1script_1_1Observer_a616fa2e17eefaa6a248b188b391b43ba}} 
+\index{ngind::script::Observer@{ngind::script::Observer}!\_queue@{\_queue}}
+\index{\_queue@{\_queue}!ngind::script::Observer@{ngind::script::Observer}}
+\doxysubsubsection{\texorpdfstring{\_queue}{\_queue}}
+{\footnotesize\ttfamily std\+::queue$<$\mbox{\hyperlink{structngind_1_1script_1_1Observer_1_1MessageDataPack}{Message\+Data\+Pack}}$>$ ngind\+::script\+::\+Observer\+::\+\_\+queue\hspace{0.3cm}{\ttfamily [private]}}
+
+Message queue. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/script/\mbox{\hyperlink{observer_8h}{observer.\+h}}\end{DoxyCompactItemize}

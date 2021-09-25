@@ -1,0 +1,168 @@
+\hypertarget{classngind_1_1physics_1_1GearJoint}{}\doxysection{ngind\+::physics\+::Gear\+Joint Class Reference}
+\label{classngind_1_1physics_1_1GearJoint}\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+
+
+{\ttfamily \#include $<$physics\+\_\+joint.\+h$>$}
+
+
+
+Inheritance diagram for ngind\+::physics\+::Gear\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1GearJoint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ngind\+::physics\+::Gear\+Joint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classngind_1_1physics_1_1GearJoint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a14eb0dd011b9c65a099ec3b33f7cb867}{update}} (const float \&delta) override
+\item 
+void \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a5db316fc6c1c4e8cacd21ecb4f9fe4ae}{init}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data) override
+\item 
+\mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint}{Physics\+Joint}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a08acc8519c58a0a13a36e7f12fee1046}{get\+JointA}} () const
+\item 
+\mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint}{Physics\+Joint}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_aeef263ca7f873e4228ee4048f8861012}{get\+JointB}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint}{Gear\+Joint}} $\ast$ \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_af341deba7abe13bb472460136d8de4b0}{create}} (const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Gear\+Joint\+Def \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a2031affcb88a0b4be39010f17bc21cd1}{\+\_\+def}}
+\item 
+int \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a13f3e54c17280378bd18b27491d65be2}{\+\_\+joint\+\_\+a}} \{\}
+\item 
+int \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a25343dee1cb5d0d8f3986370ac05e1a9}{\+\_\+joint\+\_\+b}} \{\}
+\item 
+float \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a60e48c577799505d13005a70d1baeb9c}{\+\_\+ratio}} \{\}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_a1afafc703f7bf84c1ee9e685a9f52e34}{\+\_\+name\+\_\+a}}
+\item 
+std\+::string \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint_acc6636927fce40bcebadd4b730844f92}{\+\_\+name\+\_\+b}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Gear joint. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_af341deba7abe13bb472460136d8de4b0}\label{classngind_1_1physics_1_1GearJoint_af341deba7abe13bb472460136d8de4b0}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!create@{create}}
+\index{create@{create}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classngind_1_1physics_1_1GearJoint}{Gear\+Joint}}$\ast$ ngind\+::physics\+::\+Gear\+Joint\+::create (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a gear joint component instance. 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gear\+Joint$\ast$, the instance of gear joint component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a08acc8519c58a0a13a36e7f12fee1046}\label{classngind_1_1physics_1_1GearJoint_a08acc8519c58a0a13a36e7f12fee1046}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!getJointA@{getJointA}}
+\index{getJointA@{getJointA}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{getJointA()}{getJointA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint}{Physics\+Joint}}$\ast$ ngind\+::physics\+::\+Gear\+Joint\+::get\+JointA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the first joint. \begin{DoxyReturn}{Returns}
+Physics\+Joint$\ast$, the first joint. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_aeef263ca7f873e4228ee4048f8861012}\label{classngind_1_1physics_1_1GearJoint_aeef263ca7f873e4228ee4048f8861012}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!getJointB@{getJointB}}
+\index{getJointB@{getJointB}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{getJointB()}{getJointB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint}{Physics\+Joint}}$\ast$ ngind\+::physics\+::\+Gear\+Joint\+::get\+JointB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the second joint. \begin{DoxyReturn}{Returns}
+Physics\+Joint$\ast$, the second joint. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a5db316fc6c1c4e8cacd21ecb4f9fe4ae}\label{classngind_1_1physics_1_1GearJoint_a5db316fc6c1c4e8cacd21ecb4f9fe4ae}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!init@{init}}
+\index{init@{init}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Gear\+Joint\+::init (\begin{DoxyParamCaption}\item[{const typename resources\+::\+Config\+Resource\+::\+Json\+Object \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initialization function of this class used by configuration creating method. This function is inherited from Component 
+\begin{DoxyParams}{Parameters}
+{\em data} & the configuration data this component initialization process requires. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a77ead791f3bffa3a4debbdc1c9dca376}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+\mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a14eb0dd011b9c65a099ec3b33f7cb867}\label{classngind_1_1physics_1_1GearJoint_a14eb0dd011b9c65a099ec3b33f7cb867}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!update@{update}}
+\index{update@{update}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void ngind\+::physics\+::\+Gear\+Joint\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{updatable__object_8h}{objects/updatable\+\_\+object.\+h}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classngind_1_1physics_1_1PhysicsJoint_a5d43187198a6ad7c69c649018fdaa1dc}{ngind\+::physics\+::\+Physics\+Joint}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a2031affcb88a0b4be39010f17bc21cd1}\label{classngind_1_1physics_1_1GearJoint_a2031affcb88a0b4be39010f17bc21cd1}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!\_def@{\_def}}
+\index{\_def@{\_def}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{\_def}{\_def}}
+{\footnotesize\ttfamily b2\+Gear\+Joint\+Def ngind\+::physics\+::\+Gear\+Joint\+::\+\_\+def\hspace{0.3cm}{\ttfamily [private]}}
+
+Joint definition data. \mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a13f3e54c17280378bd18b27491d65be2}\label{classngind_1_1physics_1_1GearJoint_a13f3e54c17280378bd18b27491d65be2}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!\_joint\_a@{\_joint\_a}}
+\index{\_joint\_a@{\_joint\_a}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{\_joint\_a}{\_joint\_a}}
+{\footnotesize\ttfamily int ngind\+::physics\+::\+Gear\+Joint\+::\+\_\+joint\+\_\+a \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Rigid body A\textquotesingle{}s index. \mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a25343dee1cb5d0d8f3986370ac05e1a9}\label{classngind_1_1physics_1_1GearJoint_a25343dee1cb5d0d8f3986370ac05e1a9}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!\_joint\_b@{\_joint\_b}}
+\index{\_joint\_b@{\_joint\_b}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{\_joint\_b}{\_joint\_b}}
+{\footnotesize\ttfamily int ngind\+::physics\+::\+Gear\+Joint\+::\+\_\+joint\+\_\+b \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Rigid body B\textquotesingle{}s index. \mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a1afafc703f7bf84c1ee9e685a9f52e34}\label{classngind_1_1physics_1_1GearJoint_a1afafc703f7bf84c1ee9e685a9f52e34}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!\_name\_a@{\_name\_a}}
+\index{\_name\_a@{\_name\_a}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{\_name\_a}{\_name\_a}}
+{\footnotesize\ttfamily std\+::string ngind\+::physics\+::\+Gear\+Joint\+::\+\_\+name\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}
+
+Component A\textquotesingle{}s name. \mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_acc6636927fce40bcebadd4b730844f92}\label{classngind_1_1physics_1_1GearJoint_acc6636927fce40bcebadd4b730844f92}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!\_name\_b@{\_name\_b}}
+\index{\_name\_b@{\_name\_b}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{\_name\_b}{\_name\_b}}
+{\footnotesize\ttfamily std\+::string ngind\+::physics\+::\+Gear\+Joint\+::\+\_\+name\+\_\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+Component B\textquotesingle{}s name. \mbox{\Hypertarget{classngind_1_1physics_1_1GearJoint_a60e48c577799505d13005a70d1baeb9c}\label{classngind_1_1physics_1_1GearJoint_a60e48c577799505d13005a70d1baeb9c}} 
+\index{ngind::physics::GearJoint@{ngind::physics::GearJoint}!\_ratio@{\_ratio}}
+\index{\_ratio@{\_ratio}!ngind::physics::GearJoint@{ngind::physics::GearJoint}}
+\doxysubsubsection{\texorpdfstring{\_ratio}{\_ratio}}
+{\footnotesize\ttfamily float ngind\+::physics\+::\+Gear\+Joint\+::\+\_\+ratio \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Gear ratio. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+extern/physics/\mbox{\hyperlink{physics__joint_8h}{physics\+\_\+joint.\+h}}\end{DoxyCompactItemize}

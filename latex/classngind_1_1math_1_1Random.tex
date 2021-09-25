@@ -1,0 +1,89 @@
+\hypertarget{classngind_1_1math_1_1Random}{}\doxysection{ngind\+::math\+::Random Class Reference}
+\label{classngind_1_1math_1_1Random}\index{ngind::math::Random@{ngind::math::Random}}
+
+
+{\ttfamily \#include $<$random.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classngind_1_1math_1_1Random_a5fc9559f9365de080e9ce6796017f1f3}{get\+Range\+Random\+Number}} (const int \&min, const int \&max)
+\item 
+float \mbox{\hyperlink{classngind_1_1math_1_1Random_acb3b7ee38fad29c34f49eeb9f3fdc8cb}{get\+Percentage\+Random\+Number}} ()
+\item 
+float \mbox{\hyperlink{classngind_1_1math_1_1Random_a6a601da873863a39ae5a2a462d92243f}{get\+Normal\+Distribution\+Random\+Number}} (const float \&std, const float \&mean)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mt19937 \mbox{\hyperlink{classngind_1_1math_1_1Random_a6a85bc55d8df221bc2ea62acb15885fe}{\+\_\+mt}}
+\item 
+std\+::default\+\_\+random\+\_\+engine \mbox{\hyperlink{classngind_1_1math_1_1Random_ae2373ac3aa93bf551a573aefe46333a8}{\+\_\+engine}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A random number generator class. This class ues a better algorithm and is more powerful. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1math_1_1Random_a6a601da873863a39ae5a2a462d92243f}\label{classngind_1_1math_1_1Random_a6a601da873863a39ae5a2a462d92243f}} 
+\index{ngind::math::Random@{ngind::math::Random}!getNormalDistributionRandomNumber@{getNormalDistributionRandomNumber}}
+\index{getNormalDistributionRandomNumber@{getNormalDistributionRandomNumber}!ngind::math::Random@{ngind::math::Random}}
+\doxysubsubsection{\texorpdfstring{getNormalDistributionRandomNumber()}{getNormalDistributionRandomNumber()}}
+{\footnotesize\ttfamily float ngind\+::math\+::\+Random\+::get\+Normal\+Distribution\+Random\+Number (\begin{DoxyParamCaption}\item[{const float \&}]{std,  }\item[{const float \&}]{mean }\end{DoxyParamCaption})}
+
+Generate a random number meeting the requirement of normal distribute 
+\begin{DoxyParams}{Parameters}
+{\em std} & the standard deviation \\
+\hline
+{\em mean} & the mean number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float, a random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1math_1_1Random_acb3b7ee38fad29c34f49eeb9f3fdc8cb}\label{classngind_1_1math_1_1Random_acb3b7ee38fad29c34f49eeb9f3fdc8cb}} 
+\index{ngind::math::Random@{ngind::math::Random}!getPercentageRandomNumber@{getPercentageRandomNumber}}
+\index{getPercentageRandomNumber@{getPercentageRandomNumber}!ngind::math::Random@{ngind::math::Random}}
+\doxysubsubsection{\texorpdfstring{getPercentageRandomNumber()}{getPercentageRandomNumber()}}
+{\footnotesize\ttfamily float ngind\+::math\+::\+Random\+::get\+Percentage\+Random\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generate a random real number between 0 and 1. Both are included. \begin{DoxyReturn}{Returns}
+float, a real random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1math_1_1Random_a5fc9559f9365de080e9ce6796017f1f3}\label{classngind_1_1math_1_1Random_a5fc9559f9365de080e9ce6796017f1f3}} 
+\index{ngind::math::Random@{ngind::math::Random}!getRangeRandomNumber@{getRangeRandomNumber}}
+\index{getRangeRandomNumber@{getRangeRandomNumber}!ngind::math::Random@{ngind::math::Random}}
+\doxysubsubsection{\texorpdfstring{getRangeRandomNumber()}{getRangeRandomNumber()}}
+{\footnotesize\ttfamily int ngind\+::math\+::\+Random\+::get\+Range\+Random\+Number (\begin{DoxyParamCaption}\item[{const int \&}]{min,  }\item[{const int \&}]{max }\end{DoxyParamCaption})}
+
+Generate a random number in the given range 
+\begin{DoxyParams}{Parameters}
+{\em min} & left boundary, included \\
+\hline
+{\em max} & right boundary, not included \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int, a random number 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1math_1_1Random_ae2373ac3aa93bf551a573aefe46333a8}\label{classngind_1_1math_1_1Random_ae2373ac3aa93bf551a573aefe46333a8}} 
+\index{ngind::math::Random@{ngind::math::Random}!\_engine@{\_engine}}
+\index{\_engine@{\_engine}!ngind::math::Random@{ngind::math::Random}}
+\doxysubsubsection{\texorpdfstring{\_engine}{\_engine}}
+{\footnotesize\ttfamily std\+::default\+\_\+random\+\_\+engine ngind\+::math\+::\+Random\+::\+\_\+engine\hspace{0.3cm}{\ttfamily [private]}}
+
+The random engine for normal distribution \mbox{\Hypertarget{classngind_1_1math_1_1Random_a6a85bc55d8df221bc2ea62acb15885fe}\label{classngind_1_1math_1_1Random_a6a85bc55d8df221bc2ea62acb15885fe}} 
+\index{ngind::math::Random@{ngind::math::Random}!\_mt@{\_mt}}
+\index{\_mt@{\_mt}!ngind::math::Random@{ngind::math::Random}}
+\doxysubsubsection{\texorpdfstring{\_mt}{\_mt}}
+{\footnotesize\ttfamily std\+::mt19937 ngind\+::math\+::\+Random\+::\+\_\+mt\hspace{0.3cm}{\ttfamily [private]}}
+
+The real pseudo number generator 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/math/\mbox{\hyperlink{random_8h}{random.\+h}}\end{DoxyCompactItemize}

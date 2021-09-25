@@ -1,0 +1,183 @@
+\hypertarget{classngind_1_1rendering_1_1Window}{}\doxysection{ngind\+::rendering\+::Window Class Reference}
+\label{classngind_1_1rendering_1_1Window}\index{ngind::rendering::Window@{ngind::rendering::Window}}
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classngind_1_1rendering_1_1Window_af77b82fbcee340a91a8233b4e2678c12}{Window}} (const size\+\_\+t \&width, const size\+\_\+t \&height, const std\+::string \&title, const bool \&is\+\_\+full=false)
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Window_aac6a739fe1883d7dc4b6777cc1a2cf7d}{set\+Icon}} (const std\+::string \&path)
+\item 
+bool \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a62c961d249a679f33266ee578ea3d455}{is\+Loop\+End}} ()
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a220173cda1d569138520c333db1ee99f}{swap\+Buffer}} ()
+\item 
+std\+::pair$<$ float, float $>$ \mbox{\hyperlink{classngind_1_1rendering_1_1Window_ae2aa0ec7595fa61e7caf9762ce5e7dae}{get\+Content\+Scale}} () const
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a2d369c42acc1ad2a301d378157c549b0}{set\+Title}} (const std\+::string \&title)
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a8e6209295561617030c41e6e42530301}{set\+Full\+Screen}} (const bool \&is\+\_\+full)
+\item 
+void \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a7ef28e2856d475ba8901fe0b6fb1d944}{resize}} (const size\+\_\+t \&width, const size\+\_\+t \&height)
+\item 
+glm\+::vec2 \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a28233077b216c5b22d21c75da65f96c2}{get\+Window\+Size}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+L\+F\+Wwindow $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a19d395b6c1615d733bd5f4347ec23f2a}{\+\_\+window}}
+\item 
+G\+L\+F\+Wimage $\ast$ \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a13599effc9ae852a4ffe6e0242b0a673}{\+\_\+icon}}
+\item 
+int \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a11d98686ef6578a951bc1491f8a4c297}{\+\_\+width}}
+\item 
+int \mbox{\hyperlink{classngind_1_1rendering_1_1Window_aa7a03fb8b67c8d45df3c67b420438daa}{\+\_\+height}}
+\item 
+bool \mbox{\hyperlink{classngind_1_1rendering_1_1Window_a8a8bfe7483f24f70cfcdd8d3622877a9}{\+\_\+is\+\_\+full}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classngind_1_1rendering_1_1Window}{Window}} management class. It\textquotesingle{}s an encapsulation for glfw window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_af77b82fbcee340a91a8233b4e2678c12}\label{classngind_1_1rendering_1_1Window_af77b82fbcee340a91a8233b4e2678c12}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!Window@{Window}}
+\index{Window@{Window}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily ngind\+::rendering\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{width,  }\item[{const size\+\_\+t \&}]{height,  }\item[{const std\+::string \&}]{title,  }\item[{const bool \&}]{is\+\_\+full = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & width of window \\
+\hline
+{\em height} & height of window \\
+\hline
+{\em title} & title of window \\
+\hline
+{\em is\+\_\+full} & true if window should be fullscreen and default is false \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_ae2aa0ec7595fa61e7caf9762ce5e7dae}\label{classngind_1_1rendering_1_1Window_ae2aa0ec7595fa61e7caf9762ce5e7dae}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!getContentScale@{getContentScale}}
+\index{getContentScale@{getContentScale}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{getContentScale()}{getContentScale()}}
+{\footnotesize\ttfamily std\+::pair$<$float, float$>$ ngind\+::rendering\+::\+Window\+::get\+Content\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the scale of window. \begin{DoxyReturn}{Returns}
+std\+::pair$<$float, float$>$, scale vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a28233077b216c5b22d21c75da65f96c2}\label{classngind_1_1rendering_1_1Window_a28233077b216c5b22d21c75da65f96c2}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily glm\+::vec2 ngind\+::rendering\+::\+Window\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the window\textquotesingle{}s size. \begin{DoxyReturn}{Returns}
+glm\+::vec2, the window\textquotesingle{}s size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a62c961d249a679f33266ee578ea3d455}\label{classngind_1_1rendering_1_1Window_a62c961d249a679f33266ee578ea3d455}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!isLoopEnd@{isLoopEnd}}
+\index{isLoopEnd@{isLoopEnd}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{isLoopEnd()}{isLoopEnd()}}
+{\footnotesize\ttfamily bool ngind\+::rendering\+::\+Window\+::is\+Loop\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Test if user closed this window. \begin{DoxyReturn}{Returns}
+bool, true if window was closed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a7ef28e2856d475ba8901fe0b6fb1d944}\label{classngind_1_1rendering_1_1Window_a7ef28e2856d475ba8901fe0b6fb1d944}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!resize@{resize}}
+\index{resize@{resize}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Window\+::resize (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{width,  }\item[{const size\+\_\+t \&}]{height }\end{DoxyParamCaption})}
+
+Resize window, 
+\begin{DoxyParams}{Parameters}
+{\em width} & width of window \\
+\hline
+{\em height} & height of window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a8e6209295561617030c41e6e42530301}\label{classngind_1_1rendering_1_1Window_a8e6209295561617030c41e6e42530301}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!setFullScreen@{setFullScreen}}
+\index{setFullScreen@{setFullScreen}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{setFullScreen()}{setFullScreen()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Window\+::set\+Full\+Screen (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+\_\+full }\end{DoxyParamCaption})}
+
+Set fullscreen state of window. 
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+full} & true if window should be fullscreen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_aac6a739fe1883d7dc4b6777cc1a2cf7d}\label{classngind_1_1rendering_1_1Window_aac6a739fe1883d7dc4b6777cc1a2cf7d}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!setIcon@{setIcon}}
+\index{setIcon@{setIcon}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{setIcon()}{setIcon()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Window\+::set\+Icon (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+Set an icon for this window. 
+\begin{DoxyParams}{Parameters}
+{\em path} & path of icon file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a2d369c42acc1ad2a301d378157c549b0}\label{classngind_1_1rendering_1_1Window_a2d369c42acc1ad2a301d378157c549b0}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Window\+::set\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set title of window. 
+\begin{DoxyParams}{Parameters}
+{\em title} & title of window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a220173cda1d569138520c333db1ee99f}\label{classngind_1_1rendering_1_1Window_a220173cda1d569138520c333db1ee99f}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!swapBuffer@{swapBuffer}}
+\index{swapBuffer@{swapBuffer}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{swapBuffer()}{swapBuffer()}}
+{\footnotesize\ttfamily void ngind\+::rendering\+::\+Window\+::swap\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Swap rendering buffers. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classngind_1_1rendering_1_1Window_aa7a03fb8b67c8d45df3c67b420438daa}\label{classngind_1_1rendering_1_1Window_aa7a03fb8b67c8d45df3c67b420438daa}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!\_height@{\_height}}
+\index{\_height@{\_height}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{\_height}{\_height}}
+{\footnotesize\ttfamily int ngind\+::rendering\+::\+Window\+::\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1rendering_1_1Window}{Window}}\textquotesingle{}s height. \mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a13599effc9ae852a4ffe6e0242b0a673}\label{classngind_1_1rendering_1_1Window_a13599effc9ae852a4ffe6e0242b0a673}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!\_icon@{\_icon}}
+\index{\_icon@{\_icon}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{\_icon}{\_icon}}
+{\footnotesize\ttfamily G\+L\+F\+Wimage$\ast$ ngind\+::rendering\+::\+Window\+::\+\_\+icon\hspace{0.3cm}{\ttfamily [private]}}
+
+Icon data. \mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a8a8bfe7483f24f70cfcdd8d3622877a9}\label{classngind_1_1rendering_1_1Window_a8a8bfe7483f24f70cfcdd8d3622877a9}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!\_is\_full@{\_is\_full}}
+\index{\_is\_full@{\_is\_full}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{\_is\_full}{\_is\_full}}
+{\footnotesize\ttfamily bool ngind\+::rendering\+::\+Window\+::\+\_\+is\+\_\+full\hspace{0.3cm}{\ttfamily [private]}}
+
+Is window displayed in full screen. \mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a11d98686ef6578a951bc1491f8a4c297}\label{classngind_1_1rendering_1_1Window_a11d98686ef6578a951bc1491f8a4c297}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!\_width@{\_width}}
+\index{\_width@{\_width}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{\_width}{\_width}}
+{\footnotesize\ttfamily int ngind\+::rendering\+::\+Window\+::\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classngind_1_1rendering_1_1Window}{Window}}\textquotesingle{}s width. \mbox{\Hypertarget{classngind_1_1rendering_1_1Window_a19d395b6c1615d733bd5f4347ec23f2a}\label{classngind_1_1rendering_1_1Window_a19d395b6c1615d733bd5f4347ec23f2a}} 
+\index{ngind::rendering::Window@{ngind::rendering::Window}!\_window@{\_window}}
+\index{\_window@{\_window}!ngind::rendering::Window@{ngind::rendering::Window}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ ngind\+::rendering\+::\+Window\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to G\+L\+F\+Wwindow. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kernel/rendering/\mbox{\hyperlink{window_8h}{window.\+h}}\end{DoxyCompactItemize}
